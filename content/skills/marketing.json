@@ -1,0 +1,501 @@
+{
+  "id": "marketing",
+  "title": "Digital marketing basics",
+  "icon": "📣",
+  "area": "Communication",
+  "level": "Beginner",
+  "duration": "About 5 hours",
+  "summary": "Plan honest, helpful marketing for a school event or small business: understand your audience, write clear messages, plan posts, help people find you online and measure what really works.",
+  "outcomes": [
+    "Describe a target audience, their needs and one measurable goal for a campaign.",
+    "Write short, honest messages with one clear call to action.",
+    "Plan two weeks of posts for WhatsApp, social media and offline channels such as noticeboards.",
+    "Help a business get found with natural keywords, accurate titles and a correct Google Business Profile.",
+    "Build a contact list with permission and measure results without misusing anyone's data."
+  ],
+  "tools": "A notebook or notes app and a phone are enough. Optional: the free WhatsApp Business app and a free design app such as Canva. You never need to pay for adverts in this course. Learners under 18 should plan for a fictional business, or run a real account only with a parent or guardian.",
+  "resources": [
+    {
+      "title": "Google Skillshop — Fundamentals of Digital Marketing",
+      "url": "https://skillshop.exceedlms.com/student/collection/1830706?locale=en",
+      "note": "Google's free, self-paced beginner course. It is long (about 40 hours), so pick modules that match this course, such as getting to know your customers, search, social media and email."
+    },
+    {
+      "title": "Meta Blueprint — free online courses",
+      "url": "https://www.facebook.com/business/learn",
+      "note": "Meta's free, self-paced lessons on marketing with Facebook, Instagram and WhatsApp. Courses about paid adverts assume an adult account holder."
+    },
+    {
+      "title": "WhatsApp Business app features",
+      "url": "https://whatsappbusiness.com/products/business-app-features/",
+      "note": "Official overview of the business profile, catalog, quick replies, labels, and greeting and away messages."
+    },
+    {
+      "title": "WhatsApp Help Center",
+      "url": "https://faq.whatsapp.com/",
+      "note": "Official step-by-step help. Search for the feature you need, such as catalog, Status, broadcast lists or privacy settings."
+    },
+    {
+      "title": "Google Business Profile Help — Get started",
+      "url": "https://support.google.com/business/answer/7039811?hl=en",
+      "note": "Google's own guide to who can have a free Business Profile and how owners add, verify and update one."
+    },
+    {
+      "title": "Google Search Central — SEO Starter Guide",
+      "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide",
+      "note": "Google's plain-language guide to helping people find a website, including the things not worth worrying about."
+    },
+    {
+      "title": "Nigeria Data Protection Commission",
+      "url": "https://ndpc.gov.ng/",
+      "note": "The regulator for the Nigeria Data Protection Act 2023. Useful background on handling people's personal data responsibly."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Audience, needs and goals",
+      "goal": "Describe who a campaign is for, what they need and one specific goal you can measure.",
+      "sections": [
+        {
+          "heading": "What marketing really is",
+          "body": "Marketing is not shouting the loudest or tricking people into buying. It is helping the right people find out about something useful, understand why it matters to them and decide to act. **Digital marketing** uses the same ideas on phones and the internet: WhatsApp, social media, websites, search engines and email.\n\nThink of Malam Sani, who runs a provision shop in Kano. A clear sign outside his shop and a good WhatsApp Status post do the same job: they tell nearby customers what he sells, why it is worth the walk and what to do next. The tools change, but the thinking stays the same. Who is this for? What do they need? What do we want them to do?"
+        },
+        {
+          "heading": "Know your audience",
+          "body": "Your **target audience** is the group of people you most want to reach. 'Everyone' is not an audience, because a message written for everyone usually speaks to no one. Narrow it down by asking:\n\n- Who are they? For example, SS1 pupils, parents in your estate or traders at the market.\n- Where are they, and when are they free to read messages?\n- What do they already know about you?\n- What kind of phone and how much data do they usually have?\n\nIt helps to write an **audience profile**: a short description of one typical, made-up person in that group. Giving them a name and a daily routine makes it easier to picture who will read your message."
+        },
+        {
+          "heading": "Start with a need",
+          "body": "People act when something meets a **need**: saving time, saving money, feeling safe, looking good, passing exams or having fun. A **feature** describes the product; a **benefit** explains what it does for the customer. 'We have a fridge' is a feature. 'Cold drinks ready at the school gate after sports practice' is a benefit.\n\nDo not guess what people need. Ask five or six people from your audience a few short questions, such as 'What is the hardest part of buying school supplies?' or 'When do you usually check WhatsApp?' Listen more than you talk, and write down the words they use. Those words often make the best messages later."
+        },
+        {
+          "heading": "Set one SMART goal",
+          "body": "A campaign needs one clear goal so you know whether it worked. A **SMART** goal is Specific, Measurable, Achievable, Relevant and Time-bound. 'Make the science fair popular' is vague. 'Get 80 parents to confirm they will attend the science fair within two weeks' is SMART: it says what, how many and by when.\n\nWrite your audience, their need and your goal together on one card, as in the example below. Keep it in front of you while you plan every post.",
+          "code": {
+            "lang": "text",
+            "source": "AUDIENCE AND GOAL CARD\n\nCampaign:       Science Fair at a fictional secondary school\nAudience:       Parents of JSS pupils, mostly working adults\nTypical person: 'Mrs Bello', a trader who checks WhatsApp in the evening\nTheir need:     To know the date and time, and why it is worth leaving work early\nOur goal:       80 parents confirm they will attend, within two weeks\nHow we check:   Count the YES replies sent to the school's WhatsApp number"
+          }
+        }
+      ],
+      "points": [
+        "Marketing means helping the right people discover something useful and act on it",
+        "Describe one main audience in detail instead of trying to reach everyone",
+        "People respond to benefits that meet their needs, not lists of features",
+        "A SMART goal says what, how many and by when"
+      ],
+      "mistakes": [
+        "Saying 'my audience is everyone' — choose the group most likely to need what you offer.",
+        "Guessing what people want — ask a few real people short questions first.",
+        "Setting a vague goal such as 'go viral' — set a number and a deadline you can check."
+      ],
+      "task": "Choose a fictional school event (for example an inter-house sports day) or a small local business. Write an audience profile for one typical person, list two needs they have, and write one SMART goal for a two-week campaign.",
+      "quiz": [
+        {
+          "q": "A tailor in Ibadan wants more school-uniform orders before resumption. Which target audience makes most sense?",
+          "opts": ["Everyone in Nigeria with a phone", "Parents of school pupils who live near the shop", "Other tailors in Ibadan", "Tourists visiting Ibadan for the weekend"],
+          "a": 1,
+          "why": "Parents nearby are the people who need uniforms and can easily visit. A narrow audience makes the message more relevant."
+        },
+        {
+          "q": "Which of these is a SMART goal?",
+          "opts": ["Make the coding club famous", "Post about the coding club sometimes", "Get 40 students to register for the coding club within two weeks", "Get as many likes as possible"],
+          "a": 2,
+          "why": "It is specific and measurable and has a deadline, so you can check whether you reached it."
+        },
+        {
+          "q": "Which line focuses on a benefit for students rather than a feature?",
+          "opts": ["We use a five-litre fryer", "Hot puff-puff ready in a minute at break, so you are never late back to class", "Our shop opened in 2019", "We have a new signboard"],
+          "a": 1,
+          "why": "It explains what the customer gains: a quick snack without being late. The others only describe the business."
+        },
+        {
+          "q": "Why talk to a few people from your audience before planning a campaign?",
+          "opts": ["To learn their real needs and the words they use, instead of guessing", "To collect their bank details for later", "So you can copy what they post", "Because the law requires exactly five interviews"],
+          "a": 0,
+          "why": "Short conversations reveal real needs and everyday language, which make your messages more useful."
+        },
+        {
+          "q": "What is an audience profile?",
+          "opts": ["A list of real customers' phone numbers shared online", "A short description of one typical person you want to reach", "The business owner's CV", "A logo and colour scheme"],
+          "a": 1,
+          "why": "A made-up but realistic person helps you picture who will read your messages and what they need."
+        }
+      ]
+    },
+    {
+      "title": "Clear messages and calls to action",
+      "goal": "Write short, honest messages that say what is offered, why it matters and exactly what to do next.",
+      "sections": [
+        {
+          "heading": "One message, one idea",
+          "body": "Most people read on a small screen while scrolling quickly. If the first line does not tell them why to care, they move on. Put the most useful information first and keep to **one main idea** per message.\n\nA simple order that works for most posts is:\n\n1. Who it is for, or what problem it solves.\n2. What you are offering.\n3. The key details: price, place, date and time.\n4. One clear next step.\n\nUse short sentences and everyday words. Read your message aloud: if you run out of breath or stumble, it is too long or too complicated."
+        },
+        {
+          "heading": "The call to action",
+          "body": "A **call to action** (often shortened to CTA) tells people exactly what to do next. 'Reply YES to reserve a copy', 'Tap the link to register' and 'Visit us at the school gate from 2pm' are all calls to action. 'Thanks for reading' is not.\n\nGood calls to action are specific, easy and possible right now. If there is a real deadline, say so: 'Book by Thursday'. Use only one main call to action per message. When you give people three different things to do, many of them do nothing."
+        },
+        {
+          "heading": "Honest and respectful messages",
+          "body": "Trust is the most valuable thing a small business or school club has, and one misleading post can lose it. Avoid:\n\n- **Fake urgency**, such as 'Only 2 left!' when you have plenty.\n- Fake discounts, where the 'old price' was never real.\n- Claims you cannot prove, especially health claims like 'this tea cures malaria'.\n- Fake reviews, or using someone's photo or words without permission.\n\nRespect also means being easy to read. Avoid writing everything in capital letters, use strong contrast between text and background on images, and add a short caption or description so that people who cannot see the picture still get the message."
+        },
+        {
+          "heading": "Before and after",
+          "body": "Compare the two posts below for a fictional stationery shop in Lagos. The first one shouts but says nothing useful. The second tells parents what is on offer, the price, when to come and exactly how to order.\n\nCheck the arithmetic too. Ten single books at ₦250 each cost ₦2,500, so the bundle of ten for ₦2,300 saves ₦200, which works out at ₦230 a book. Always check numbers before posting, because a wrong price causes arguments later.",
+          "code": {
+            "lang": "text",
+            "source": "WEAK POST\nBIG BIG SALE!!! COME AND BUY NOW!!! BEST PRICES IN THE WHOLE OF LAGOS!!!\n\nSTRONG POST\nSchool resumes on Monday. Are your children's exercise books ready?\nMama Tolu Stores, Ojodu: 20-leaf exercise books, ₦250 each or ₦2,300 for 10.\nOpen 7am to 7pm, Monday to Saturday.\nReply BOOKS with how many you need, and we will pack your order for collection."
+          }
+        }
+      ],
+      "points": [
+        "Put the most useful information in the first line",
+        "One message should have one main idea and one call to action",
+        "A call to action is specific: reply, tap, call or visit",
+        "Never use fake urgency, fake reviews or claims you cannot prove"
+      ],
+      "mistakes": [
+        "Writing in capital letters with lots of exclamation marks — it feels like shouting and is harder to read.",
+        "Ending without a clear next step — always say exactly what to do.",
+        "Adding several calls to action at once — choose the most important one.",
+        "Making health or results claims you cannot prove — describe what the product actually is and does."
+      ],
+      "task": "Rewrite this weak post for a fictional snack business: 'WE SELL SNACKS!!! BUY NOW!!!'. In under 50 words, include who it is for, one benefit, the price, when you are open and one call to action. Read it aloud and cut any word that does not help.",
+      "quiz": [
+        {
+          "q": "Which is the clearest call to action?",
+          "opts": ["We are simply the best", "Thanks for reading", "Reply YES by Thursday to reserve your ticket", "Tickets are available"],
+          "a": 2,
+          "why": "It tells people exactly what to do and by when."
+        },
+        {
+          "q": "A zobo seller wants to write that her drink 'cures malaria'. What should she do?",
+          "opts": ["Keep the claim because it will sell more", "Remove it, because it is not proven and could stop someone getting proper treatment", "Write it in smaller letters", "Add more exclamation marks"],
+          "a": 1,
+          "why": "Unproven health claims are dishonest and can cause real harm. She should describe the drink honestly instead."
+        },
+        {
+          "q": "Audience: parents in Abuja choosing a holiday class for their children. Which message fits best?",
+          "opts": ["Coding is cool! Join us!", "Two-week holiday coding class for ages 12 to 16 in Wuse. Small groups, laptops provided, ₦15,000. Reply CODE to book a free trial lesson.", "We teach many things to many people every day", "CLASSES CLASSES CLASSES"],
+          "a": 1,
+          "why": "It gives parents what they need to decide (age, place, price) and one clear next step."
+        },
+        {
+          "q": "Why should the most useful information come first in a post?",
+          "opts": ["People scroll quickly and may read only the first line", "Search engines delete long posts", "It makes the post look longer", "The end of a post is never shown"],
+          "a": 0,
+          "why": "On small screens, the first line decides whether people stop and read the rest."
+        },
+        {
+          "q": "Which of these is fake urgency?",
+          "opts": ["'Offer ends Friday' when the offer really does end on Friday", "'Only 2 left!' when you have 50 in stock", "Listing your real opening hours", "Showing the real price"],
+          "a": 1,
+          "why": "Pretending stock is running out pressures people with a false claim and destroys trust when they find out."
+        }
+      ]
+    },
+    {
+      "title": "Content planning and social media",
+      "goal": "Plan a simple content calendar and use WhatsApp Business and social media features sensibly.",
+      "sections": [
+        {
+          "heading": "Choose your channels",
+          "body": "A **channel** is any route your message travels: a WhatsApp Status, a class group, Instagram, Facebook, TikTok, a school noticeboard, an assembly announcement or simply word of mouth. Choose the one or two channels your audience already uses and that you can keep up with. A busy Instagram page is no help if your audience is parents who mostly use WhatsApp.\n\nThink about data too. Many people in your audience may be on small data bundles. Short text, small images and clips under a minute are kinder than long, heavy videos, and offline channels such as posters still work well for school events."
+        },
+        {
+          "heading": "Plan a content calendar",
+          "body": "A **content calendar** is a simple table showing what you will post, where and when. It stops you posting five times in one day and then disappearing for a week. A useful mix of post types is:\n\n- **Inform**: the facts, such as date, price and place.\n- **Help**: a tip that is useful even if people do not buy, such as how to keep fried snacks crunchy.\n- **Show**: behind the scenes, such as students setting up the science fair.\n- **Remind**: a short nudge as a deadline gets closer.\n\nIf every post says 'buy now', people stop paying attention. Mostly helpful posts build trust, so your selling posts are taken more seriously."
+        },
+        {
+          "heading": "WhatsApp Business tools",
+          "body": "The **WhatsApp Business app** is a free app made for small businesses, separate from ordinary WhatsApp. Its main tools are:\n\n- A **business profile** with a description, address, opening hours and website.\n- A **catalog** that shows products or services with photos, prices and descriptions. You can share a link to the whole catalog or to single items, and customers can add items to a cart and send it to you as an order message. You then agree payment and delivery with them.\n- **Quick replies** for answers you type often, **labels** such as 'New order' or 'Paid' to organise chats, and automatic **greeting** and **away messages**.\n\n**Status** updates (text, photos or short videos) disappear after 24 hours. Broadcast messages only reach people who have saved your number, so politely ask customers to save it. WhatsApp has minimum age rules, so learners under 18 should practise with a fictional plan or help with a real account only alongside a parent or guardian."
+        },
+        {
+          "heading": "Post responsibly",
+          "body": "Being a good neighbour online keeps your audience on your side:\n\n- Ask permission before posting photos of people, and follow your school's rules about pictures of pupils.\n- Do not add people to groups or broadcast lists without asking, and make it easy to leave.\n- Respect group rules: adverts in a class group meant for homework annoy people.\n- Credit other people's images and ideas, or use your own.\n\nThe sample calendar below is for the first week of a fictional snack business in Port Harcourt.",
+          "code": {
+            "lang": "text",
+            "source": "WEEK 1 CONTENT CALENDAR – Ama's Snacks, Port Harcourt\n\nDay | Channel                              | Type   | Idea\nMon | WhatsApp Status                      | Inform | Photo of meat pies and chin-chin with prices and delivery times\nTue | WhatsApp Status                      | Help   | Tip: how to keep chin-chin crunchy for a week\nWed | Estate group (admin agreed)          | Inform | Price list and how to order\nThu | WhatsApp Status                      | Show   | 20-second clip of packing orders (no faces without permission)\nFri | Catalog link to customers who opted in | Remind | 'Order by 6pm for Saturday delivery'\nSat | WhatsApp Status                      | Show   | Thank-you post with a review shared with the customer's permission"
+          }
+        }
+      ],
+      "points": [
+        "Choose one or two channels your audience already uses and that you can keep up with",
+        "Mix helpful, informative, behind-the-scenes and reminder posts instead of only selling",
+        "WhatsApp Business offers a business profile, catalog, quick replies, labels and away messages",
+        "Status updates vanish after 24 hours, and broadcasts only reach people who saved your number",
+        "Ask before posting photos of people or adding anyone to a group or list"
+      ],
+      "mistakes": [
+        "Opening accounts on every app and abandoning most of them — start small and post regularly.",
+        "Adding people to groups or broadcast lists without asking — get permission first and make leaving easy.",
+        "Posting long, heavy videos when your audience has little data — use short clips, small images or text."
+      ],
+      "task": "Make a one-week content calendar for your fictional event or business with at least four posts. For each post, write the day, the channel, the type (inform, help, show or remind) and a one-line idea. Check that no more than half of the posts are direct selling.",
+      "quiz": [
+        {
+          "q": "A caterer in Port Harcourt wants customers to browse her dishes and prices inside WhatsApp. Which WhatsApp Business feature fits best?",
+          "opts": ["Labels", "The catalog", "Away messages", "Quick replies"],
+          "a": 1,
+          "why": "The catalog shows products or services with photos, prices and descriptions, and customers can send chosen items to you as an order."
+        },
+        {
+          "q": "A regular customer says they never receive your WhatsApp broadcast messages. What is the most likely reason?",
+          "opts": ["They have not saved your number in their contacts", "Broadcasts only work on Sundays", "Their phone is too new", "Broadcasts only reach groups of three people"],
+          "a": 0,
+          "why": "Broadcast messages only reach people who have saved your number, so ask customers to save it."
+        },
+        {
+          "q": "Why mix helpful posts with selling posts in a content calendar?",
+          "opts": ["Selling posts are not allowed on WhatsApp", "Helpful posts guarantee that you go viral", "People trust and keep following accounts that give them something useful", "Helpful posts never use any data"],
+          "a": 2,
+          "why": "Useful tips and information build trust, so people pay attention when you do ask them to buy."
+        },
+        {
+          "q": "You want to post a photo of classmates at the science fair. What should you do first?",
+          "opts": ["Post it on Status because it disappears after 24 hours", "Ask their permission and follow your school's rules on photos", "Post it and delete it only if someone complains", "Crop out the teacher and post it"],
+          "a": 1,
+          "why": "People have a right to decide whether their picture is shared, and schools often have rules about photos of pupils."
+        },
+        {
+          "q": "What is a WhatsApp Status update?",
+          "opts": ["A permanent page listing your products", "A paid advert shown to everyone in Nigeria", "A private message to one customer", "A text, photo or video update that disappears after 24 hours"],
+          "a": 3,
+          "why": "Status updates are short-lived posts, which makes them useful for daily offers and reminders."
+        }
+      ]
+    },
+    {
+      "title": "Search visibility done honestly",
+      "goal": "Help people find accurate information through search by using natural keywords, clear titles and a correct Google Business Profile.",
+      "sections": [
+        {
+          "heading": "How people search",
+          "body": "When people want something, many of them search for it. They type or speak a few words such as 'tailor near me', 'school uniform Ibadan' or 'birthday cake Enugu'. These everyday words are called **keywords**. Your job is to use the same words your audience uses, so that search engines and people can see your page, post or profile matches what they want.\n\nTo find good keywords:\n\n- Ask customers what they would type to find you.\n- Start typing in a search box and note the suggestions that appear.\n- Look at the related searches shown at the bottom of a results page.\n\nThen use those words naturally in titles, descriptions and product names."
+        },
+        {
+          "heading": "Titles that tell the truth",
+          "body": "A **title** is often the first thing someone sees in search results, in a catalog or above a video. A good title says what it is, where it is and who it is for, in plain words. It must match what the person will actually find.\n\nTwo tricks damage trust. **Keyword stuffing** means repeating search words unnaturally, such as 'cake cake cheap cake best cake'. **Clickbait** is a headline that promises something the content does not deliver. Google says it aims to show helpful, reliable content made for people, so honest titles and genuinely useful pages are the approach that lasts.",
+          "code": {
+            "lang": "text",
+            "source": "WEAK TITLE\nBest Cake Cake Cheap Cake Enugu Cake Lagos Abuja Cake\n\nBETTER TITLE\nBirthday cakes in Enugu – order 3 days ahead | Ada's Bakes\n\nBETTER DESCRIPTION\nCustom birthday cakes baked in Independence Layout, Enugu. Sizes from 6 to 10 inches. Collect from us or get delivery within Enugu."
+          }
+        },
+        {
+          "heading": "Google Business Profile basics",
+          "body": "A **Google Business Profile** is a free listing that can show a business on Google Search and Google Maps, with its address, phone number, opening hours, photos and reviews. It is meant for businesses that meet customers in person, either at a shop or by travelling to them; online-only businesses are not eligible. The owner needs a Google Account, adds or claims the business, and then completes Google's verification steps.\n\nFollow the rules. Use the business's real name exactly as it appears on the signboard, with no extra keywords. Give a correct address and keep opening hours up to date. Reply politely to reviews, and never write fake reviews, pay for them or offer gifts in exchange for them. Learners under 18 should leave the account to the adult who owns the business."
+        },
+        {
+          "heading": "Be consistent and helpful",
+          "body": "Make sure your business name, address, phone number and hours are the same everywhere: on your signboard, WhatsApp profile, social pages and Google listing. Mismatched details confuse customers and search engines.\n\nAlso answer the questions people ask most, such as delivery areas, prices and how to order. A short 'frequently asked questions' post or page saves you time, helps people decide and gives search engines useful, accurate words to match."
+        }
+      ],
+      "points": [
+        "Keywords are the everyday words your audience types or speaks into search",
+        "Accurate titles say what, where and for whom",
+        "Keyword stuffing and clickbait damage trust",
+        "A Google Business Profile is free and is for businesses that meet customers in person",
+        "Never buy, fake or reward reviews"
+      ],
+      "mistakes": [
+        "Adding extra keywords to the business name on Google — use the real name on your signboard.",
+        "Leaving old opening hours or a wrong phone number online — check your details every month.",
+        "Asking friends to write fake five-star reviews — ask real customers for honest feedback instead."
+      ],
+      "task": "List five keywords a customer might use to find your fictional business or event. Then write a short, accurate title and a one-sentence description that uses two of those keywords naturally. Ask a friend whether the title tells them exactly what they would find.",
+      "quiz": [
+        {
+          "q": "A barber in Enugu wants to be found by people nearby. Which title is best?",
+          "opts": ["Barber barber cheap barber best barber Enugu Lagos Abuja", "Haircuts for men and boys in Enugu – Uche's Barbing Salon", "You won't BELIEVE what happened at our shop!", "Welcome"],
+          "a": 1,
+          "why": "It says what, where and for whom in plain words that people actually search for, without tricks."
+        },
+        {
+          "q": "What is keyword stuffing?",
+          "opts": ["Using one or two accurate words people search for", "Writing a clear page title", "Repeating search words unnaturally to try to trick search engines", "Answering customers' common questions"],
+          "a": 2,
+          "why": "Stuffing makes text hard to read and goes against search engines' guidelines, so it harms trust."
+        },
+        {
+          "q": "Which of these can usually have a Google Business Profile?",
+          "opts": ["A provision shop in Kano that customers visit", "An online-only e-book seller that never meets customers", "A made-up business for a class assignment", "A WhatsApp group where friends share jokes"],
+          "a": 0,
+          "why": "Business Profiles are for real businesses that meet customers in person, at a location or by travelling to them."
+        },
+        {
+          "q": "A friend offers to write ten five-star reviews for your family's shop. What should you do?",
+          "opts": ["Accept, because reviews help", "Accept, but ask for only five", "Decline, and ask real customers for honest reviews instead", "Pay your friend so it is fair"],
+          "a": 2,
+          "why": "Fake or paid reviews mislead customers and break Google's rules. Honest reviews from real customers build lasting trust."
+        },
+        {
+          "q": "Which is a sensible way to find keywords for a small business?",
+          "opts": ["Copy a competitor's whole website", "Ask customers what they would type, and look at search suggestions", "Use long technical words nobody searches for", "Add random trending words"],
+          "a": 1,
+          "why": "Customers' own words and search suggestions show how real people search."
+        }
+      ]
+    },
+    {
+      "title": "Email and community building",
+      "goal": "Build a contact list with permission and keep people engaged with useful updates.",
+      "sections": [
+        {
+          "heading": "Why your own list matters",
+          "body": "Followers on a social app can disappear if an account is hacked or banned, or if the app simply stops showing your posts. A **contact list** of people who chose to hear from you, by email, SMS or WhatsApp broadcast, lets you reach them directly.\n\nThe key word is **chose**. This is called permission, or opt-in. In Nigeria, the **Nigeria Data Protection Act 2023** sets rules for handling people's personal data: collect only what you need, tell people why you are collecting it, keep it safe and respect their wish to stop. Learners should practise with fictional data and never collect other pupils' details without approval from the school and their parents."
+        },
+        {
+          "heading": "Collect contacts the right way",
+          "body": "Make signing up easy and honest:\n\n- Use a sign-up sheet at an event, a short online form or a QR code on a poster.\n- Ask for as little as possible, usually a name and one contact detail.\n- Say what people will get and how often, for example 'one update a week about the science fair'.\n- Explain how to stop, such as 'Reply STOP at any time'.\n\nNever buy contact lists, copy numbers from a group to message people privately or add people to lists without asking. Messages that arrive uninvited feel like spam and damage your reputation."
+        },
+        {
+          "heading": "Write a useful update",
+          "body": "Whether it is an email or a WhatsApp broadcast, a good update has a clear subject or first line, a friendly greeting, one main message in short paragraphs, one call to action and a sign-off saying who you are. End by reminding people why they are receiving it and how to stop.\n\nWhen you email many people at once, put their addresses in the **BCC** (blind carbon copy) field, not the To field. BCC hides everyone's address from the others, which protects their privacy.",
+          "code": {
+            "lang": "text",
+            "source": "Subject: Science Fair this Friday – time, place and what to expect\n\nHello,\n\nThank you for signing up for Science Fair updates.\n\n1. When: Friday, 10am to 1pm, in the main hall.\n2. Cost: Entry is free for parents and pupils.\n3. Highlight: JSS2 students will show a working solar oven.\n\nPlease reply YES if you plan to come, so we can arrange enough seats.\n\nKind regards,\nThe Science Club\n\nYou are receiving this because you signed up at the PTA meeting. Reply STOP at any time to stop these updates."
+          }
+        },
+        {
+          "heading": "Build a community",
+          "body": "A **community** is more than an audience: members talk to you and to each other. You build one by being reliable and human:\n\n- Reply to messages promptly and politely, even when the answer is 'not yet'.\n- Ask for feedback and show what you changed because of it.\n- Use polls or simple questions to involve people.\n- Share customer stories and photos only with permission.\n- If you run a group, set simple rules, remove spam and handle complaints privately and calmly."
+        }
+      ],
+      "points": [
+        "A contact list built with permission lets you reach people directly",
+        "Say what people will receive and how often, and make leaving easy",
+        "Collect only the details you need and keep them safe",
+        "Use BCC when emailing many people so their addresses stay private",
+        "A community grows when you reply, listen and let members help each other"
+      ],
+      "mistakes": [
+        "Putting everyone's email address in the To box — use BCC to protect privacy.",
+        "Buying or copying contact lists — only message people who agreed to hear from you.",
+        "Sending too many messages — agree a schedule, such as one update a week, and stick to it."
+      ],
+      "task": "Design a sign-up sheet or form for your fictional campaign. It should ask for no more than two details, explain what people will receive and how often, and say how they can stop. Then draft a short first update with a clear subject line and one call to action.",
+      "quiz": [
+        {
+          "q": "You are emailing 40 parents about a school event. Where should their addresses go?",
+          "opts": ["In the To field", "In the BCC field, so nobody sees the other addresses", "In the subject line", "In a public group post first"],
+          "a": 1,
+          "why": "BCC keeps each person's email address private from everyone else on the list."
+        },
+        {
+          "q": "Which sign-up approach respects people's data?",
+          "opts": ["Ask for home address, date of birth and BVN", "Add everyone from the school WhatsApp group without asking", "Ask only for a name and phone number, and say you will send one update a week", "Buy a list of numbers from a stranger"],
+          "a": 2,
+          "why": "Collecting only what you need and explaining how it will be used respects people's privacy and the spirit of data protection law."
+        },
+        {
+          "q": "A subscriber replies STOP. What should you do?",
+          "opts": ["Send one more message to change their mind", "Remove them from the list promptly and stop messaging them", "Move them to a different list", "Ignore it"],
+          "a": 1,
+          "why": "People have the right to stop receiving messages, and respecting that keeps your reputation good."
+        },
+        {
+          "q": "Which subject line is clearest?",
+          "opts": ["Hi", "URGENT!!! READ NOW!!!", "Update", "Science Fair this Friday: time, place and what to bring"],
+          "a": 3,
+          "why": "It tells readers exactly what the message is about before they open it."
+        },
+        {
+          "q": "What best builds a community around a small business?",
+          "opts": ["Posting adverts in every group you can find", "Deleting every complaint", "Replying to messages, asking for feedback and sharing customer stories with permission", "Only ever posting prices"],
+          "a": 2,
+          "why": "Communities grow through two-way conversation, listening and respect."
+        }
+      ]
+    },
+    {
+      "title": "Measuring results ethically and improving",
+      "goal": "Choose measures that match your goal, read them carefully and improve your campaign without misusing anyone's data.",
+      "sections": [
+        {
+          "heading": "Match the measure to the goal",
+          "body": "Numbers only help when they answer the question your goal asks. Common measures are:\n\n- **Reach or views**: how many people saw something.\n- **Engagement**: replies, reactions, shares and questions.\n- **Clicks**: how many people tapped a link.\n- **Conversions**: the action you actually wanted, such as tickets sold, sign-ups or orders.\n\nIf your goal is 50 ticket sales, the number that matters is tickets sold. Likes and views are sometimes called **vanity metrics**: they feel good but do not prove anyone acted. You can find numbers in many places: the list of people who viewed your WhatsApp Status, the insights on professional Instagram or Facebook accounts, your sign-up sheet, your sales record, or simply by asking customers 'How did you hear about us?'"
+        },
+        {
+          "heading": "Track and calculate",
+          "body": "Keep a simple tracking table, like the one below, and fill it in at the same time each day. To compare posts fairly, turn counts into percentages. For example, if 200 people viewed a Status post, 14 replied and 6 bought:\n\n- Reply rate = 14 ÷ 200 × 100 = 7%\n- Purchase rate = 6 ÷ 200 × 100 = 3%\n\nTo learn which channel works best, use simple codes. Ask people who saw the Status post to 'Reply BLUE' and people who saw the poster to 'Reply GREEN', or ask each customer how they heard about you and tick a box.",
+          "code": {
+            "lang": "text",
+            "source": "TRACKING TABLE – Reading club campaign (goal: 30 sign-ups in two weeks)\n\nDay   | Post                    | Channel         | Views | Replies | Sign-ups\nDay 1 | Club announcement       | WhatsApp Status | 180   | 9       | 4\nDay 3 | Book recommendation tip | Class group     | 60    | 12      | 7\nDay 5 | Reminder poster         | Noticeboard     | –     | –       | 3 (asked at sign-up)\n\nWeek 1 sign-ups: 4 + 7 + 3 = 14 of 30\nStatus sign-up rate:      4 ÷ 180 × 100 ≈ 2.2%\nClass group sign-up rate: 7 ÷ 60 × 100 ≈ 11.7%\nNext test: post the book tip on Status too, and compare."
+          }
+        },
+        {
+          "heading": "Measure ethically",
+          "body": "Measuring results must never mean spying on people. Responsible marketers:\n\n- Collect only the data they need, keep it safe and delete it when it is no longer needed.\n- Never share screenshots of private chats or customers' numbers.\n- Never buy followers, likes or reviews. Fake numbers make your results meaningless and break platform rules.\n- Report results honestly, including disappointing ones, and explain what they will try next.\n\nSmall numbers can mislead. If three people replied on Monday and five on Tuesday, that may be chance rather than a real pattern, so look for differences that repeat over several days."
+        },
+        {
+          "heading": "Test, learn and improve",
+          "body": "Improving a campaign works best as a series of small, fair tests. Change **one thing at a time**, such as the picture, the first line or the time of day, and compare the results with what came before. If you change everything at once, you will not know which change made the difference.\n\nAt the end of each week, write three short notes: what worked, what did not, and what you will test next. Over two weeks, these notes become a valuable record of what your audience actually responds to."
+        }
+      ],
+      "points": [
+        "Choose a measure that matches the goal, such as orders for a sales goal",
+        "Likes and views show attention, not action",
+        "Use simple codes or a quick question to learn which channel brought each person",
+        "Change one thing at a time and compare results",
+        "Never buy followers, track people secretly or share private chats"
+      ],
+      "mistakes": [
+        "Celebrating views when nobody signed up — look at the action that matches your goal.",
+        "Changing the picture, the time and the wording all at once — change one thing so you know what worked.",
+        "Hiding disappointing results — report honestly and say what you will try next."
+      ],
+      "task": "Create a tracking table for your campaign with columns for day, post, channel, views, replies and the action that matches your goal. Fill it in with realistic sample numbers, calculate one percentage step by step, and write one change you would test next week.",
+      "quiz": [
+        {
+          "q": "Goal: sell 50 tickets to a school drama night. Which measure fits best?",
+          "opts": ["Number of likes on the poster", "Number of tickets sold", "Number of colours on the flyer", "Hours spent designing"],
+          "a": 1,
+          "why": "Tickets sold directly measures the goal. Likes show attention, not action."
+        },
+        {
+          "q": "250 people viewed your Status post and 10 of them placed an order. What percentage ordered?",
+          "opts": ["10%", "25%", "4%", "2.5%"],
+          "a": 2,
+          "why": "10 ÷ 250 = 0.04, and 0.04 × 100 = 4%."
+        },
+        {
+          "q": "How could you find out whether WhatsApp Status or the school noticeboard brought more customers?",
+          "opts": ["Guess, based on which post you liked most", "Ask each customer 'How did you hear about us?' and record the answer", "Count your followers", "Read customers' private chats without asking"],
+          "a": 1,
+          "why": "A quick, honest question gives real evidence without invading anyone's privacy."
+        },
+        {
+          "q": "Someone offers you 1,000 followers for ₦2,000. Why is this a bad idea?",
+          "opts": ["Fake followers do not buy anything and make your results meaningless", "₦2,000 is too cheap for 1,000 followers", "Followers can only be bought on Fridays", "It is only a problem if someone finds out"],
+          "a": 0,
+          "why": "Bought followers are not real customers, they break platform rules and they hide what your real audience is doing."
+        },
+        {
+          "q": "Your Tuesday post got more replies than Monday's, but you changed the picture, the time and the wording. What can you conclude?",
+          "opts": ["The new picture definitely caused it", "Not much, because you changed too many things to know which one helped", "Tuesday is always the best day to post", "Wording never matters"],
+          "a": 1,
+          "why": "A fair test changes one thing at a time, so you can tell which change made the difference."
+        }
+      ]
+    }
+  ],
+  "project": {
+    "title": "A two-week campaign plan",
+    "brief": "Plan a two-week digital campaign for a fictional school event (such as a science fair or inter-house sports day) or a small local business (such as a provision shop in Kano or a snack business in Port Harcourt). The plan must be realistic for a small team with one phone and a small data budget, and it must not use real people's personal data.",
+    "steps": [
+      "Write an audience profile, the main need you are meeting and one SMART goal.",
+      "Choose one or two channels and explain why your audience uses them.",
+      "Make a two-week content calendar with at least eight posts that mix inform, help, show and remind posts.",
+      "Write three of the posts in full, each with one clear call to action.",
+      "Write an accurate search title and description, and list the details you would check on a Google Business Profile if the business serves customers in person.",
+      "Plan how you will collect contacts with permission, and draft one email or WhatsApp update.",
+      "Make a tracking table and decide which number will show whether you reached your goal."
+    ],
+    "checklist": [
+      "The goal has a number and a deadline.",
+      "Every post has one main idea and one call to action.",
+      "There is no fake urgency, no fake review and no claim you cannot prove.",
+      "Photos of people and contact details are used only with permission.",
+      "The plan says what you will measure and what you will change if results are low."
+    ]
+  }
+}

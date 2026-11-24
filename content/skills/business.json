@@ -1,0 +1,496 @@
+{
+  "id": "business",
+  "title": "Entrepreneurship and freelancing",
+  "icon": "💼",
+  "area": "Business",
+  "level": "Beginner",
+  "duration": "About 5 hours",
+  "summary": "Turn everyday problems into small business ideas, price in naira so you make a real profit, keep simple records, serve customers well and freelance online safely.",
+  "outcomes": [
+    "Spot a real problem and test a business idea cheaply before spending much money.",
+    "Calculate cost per item, price, profit, profit margin and break-even in naira.",
+    "Keep a simple cash book and keep business money separate from personal money.",
+    "Agree clear terms with customers, handle complaints calmly and build a small portfolio.",
+    "Recognise common online job scams and follow the safety and age rules for working online."
+  ],
+  "tools": "A notebook, a pen and a calculator (the one on your phone is fine), or a free spreadsheet app such as Google Sheets. Learners under 18 must involve a parent or guardian before handling customers' money, opening any account or taking paid work.",
+  "resources": [
+    {
+      "title": "OpenLearn — Entrepreneurship: from ideas to reality",
+      "url": "https://www.open.edu/openlearn/money-business/entrepreneurship-ideas-reality",
+      "note": "A free Open University course (about 24 hours, intermediate level) on finding ideas, creating value and understanding customers. A good next step for older learners."
+    },
+    {
+      "title": "OpenLearn — Introduction to bookkeeping and accounting",
+      "url": "https://www.open.edu/openlearn/money-business/introduction-bookkeeping-and-accounting/content-section-overview",
+      "note": "A free 8-hour introductory course. Its first section on percentages, rounding and checking answers supports the pricing and records chapters. Examples use UK formats."
+    },
+    {
+      "title": "Corporate Affairs Commission (CAC)",
+      "url": "https://www.cac.gov.ng/",
+      "note": "Nigeria's official registry for business names and companies. Adults should use this site and its public search instead of unofficial agents."
+    },
+    {
+      "title": "SMEDAN",
+      "url": "https://smedan.gov.ng/",
+      "note": "The federal agency that supports small and medium businesses in Nigeria, with information on training and support programmes."
+    },
+    {
+      "title": "US Federal Trade Commission — Job scams",
+      "url": "https://consumer.ftc.gov/articles/job-scams",
+      "note": "Clear consumer advice on spotting fake job offers. It is written for the USA, but the warning signs apply in Nigeria too."
+    },
+    {
+      "title": "Google Skillshop — Fundamentals of Digital Marketing",
+      "url": "https://skillshop.exceedlms.com/student/collection/1830706?locale=en",
+      "note": "Google's free, self-paced course. The modules on customers, local customers and online selling help when you start promoting a small business."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Spotting problems and testing ideas cheaply",
+      "goal": "Turn an everyday problem into a business idea and test whether people want it before spending much money.",
+      "sections": [
+        {
+          "heading": "Businesses solve problems",
+          "body": "Every successful business, from a POS agent's kiosk to a big bank, solves a problem or meets a need for someone. The easiest place to find ideas is your own daily life. Look around your school, street and market and ask: what is slow, difficult, expensive or missing?\n\nFor each problem, write down three things:\n\n- **Who** has the problem? Be specific, such as parents of primary pupils in your estate.\n- **How** do they deal with it now?\n- **What annoys them** about the way they deal with it now?\n\nIf people already spend time or money working around a problem, there may be room for a better solution."
+        },
+        {
+          "heading": "Use what you already have",
+          "body": "You do not need a big loan to start. Look at your **skills** (drawing, neat handwriting, typing, explaining Maths, braiding hair, baking with an adult) and the **resources** around you (a family sewing machine, a relative's shop where a few items could be sold, a phone with a free design app). Many good student businesses are services, which need little money to start: covering and labelling books, designing price tags for shops or tutoring younger pupils.\n\nCheck the rules before you start. Many schools do not allow pupils to sell on school grounds without permission, and anything involving money, customers or travel should be agreed with a parent or guardian."
+        },
+        {
+          "heading": "Test before you spend",
+          "body": "The biggest mistake new entrepreneurs make is spending all their money on an idea nobody wants. Instead, run a **cheap test** using the simplest version of your idea:\n\n- Make a small batch, such as 10 packs instead of 100.\n- Take pre-orders, so people say what they want before you make it.\n- Offer your service to two or three neighbours first.\n\nBe careful how you ask questions. 'Would you buy this?' usually gets a polite 'yes'. 'How do you handle this now, and what does it cost you?' gets the truth. The strongest evidence of all is people actually paying, and then coming back.",
+          "code": {
+            "lang": "text",
+            "source": "IDEA TEST CARD\n\nProblem:        At resumption, many parents on our street struggle to find time\n                to cover and label their children's exercise books.\nWho has it:     Parents of primary-school pupils on our street\nHow they cope:  They do it late at night, or pay a shop that is a bus ride away\nSimplest test:  With my mother's agreement, cover and label 10 books each\n                for two neighbours, at ₦100 per book\nCost of test:   About ₦1,000 for plastic covers and labels\nSuccess means:  Both neighbours pay (20 books × ₦100 = ₦2,000), and at least\n                one asks for more or recommends us to another parent"
+          }
+        },
+        {
+          "heading": "Go, change or stop",
+          "body": "After your test, look at what really happened, not at what people said. If most items sold and people asked for more, **go**: carry on and grow slowly. If people were interested but complained about the price, size or taste, **change** one thing and test again. If almost nobody paid, **stop** and try another idea. Stopping after a ₦1,000 test is a success, because it saved you from losing ₦20,000 later."
+        }
+      ],
+      "points": [
+        "Every business solves a problem or meets a need for someone",
+        "Write down who has the problem and how they deal with it now",
+        "Test with the simplest version before spending much money",
+        "Real sales tell you more than polite praise",
+        "Stopping a weak idea early saves money"
+      ],
+      "mistakes": [
+        "Asking only friends 'Would you buy this?' — they may say yes to be kind, so ask real potential customers about their problem.",
+        "Spending all your savings before testing — start with a tiny batch or with pre-orders.",
+        "Ignoring school rules — get permission before selling anything at school."
+      ],
+      "task": "List three problems you notice at school, at home or in your street. For one of them, fill in an idea test card: the problem, who has it, how they cope now, the simplest test, its cost and what result would count as success.",
+      "quiz": [
+        {
+          "q": "What is the best starting point for a business idea?",
+          "opts": ["Designing a logo", "Borrowing a large amount of money", "A real problem that a group of people want solved", "Renting a shop"],
+          "a": 2,
+          "why": "Customers pay for solutions to their problems. The logo, money and shop come later, if the idea works."
+        },
+        {
+          "q": "Five friends all say they would buy your bead bracelets. What is the most reliable next step?",
+          "opts": ["Make 500 bracelets immediately", "Make a small batch and see how many people actually pay", "Borrow ₦100,000 for materials", "Stop asking anyone else"],
+          "a": 1,
+          "why": "Friends may be polite. Real sales from a small batch show whether people truly want the product."
+        },
+        {
+          "q": "Which is a sensible cheap test for a cake-slice business?",
+          "opts": ["Bake a small batch with an adult's help, sell it and see whether people buy and come back", "Buy an industrial oven first", "Print 1,000 flyers before baking anything", "Ask only your family whether it tastes good"],
+          "a": 0,
+          "why": "A small, real test shows demand while risking very little money."
+        },
+        {
+          "q": "After a test, nobody bought your product, even at a low price. What is the sensible decision?",
+          "opts": ["Spend more on the same product", "Blame the customers", "Keep making it without changes", "Stop or change the idea, because the test saved you from a bigger loss"],
+          "a": 3,
+          "why": "A test that shows no demand has done its job: it stopped you spending more on something people do not want."
+        },
+        {
+          "q": "Which question gives you the most useful information from a potential customer?",
+          "opts": ["Don't you think my idea is brilliant?", "How do you deal with this problem now, and what annoys you about it?", "Can you lend me some money?", "What is your favourite colour?"],
+          "a": 1,
+          "why": "Asking about their current situation reveals real needs, instead of inviting a polite yes."
+        }
+      ]
+    },
+    {
+      "title": "Customers and value",
+      "goal": "Describe your customers, the value you offer them and why they would choose you over other options.",
+      "sections": [
+        {
+          "heading": "Who exactly is your customer?",
+          "body": "Your **customer** is the person who pays; your **user** is the person who uses what you sell. Sometimes they are the same person, but often they are not. A lesson for JSS1 pupils is used by the pupil but paid for by a parent, so you must convince the parent and keep the pupil happy and learning.\n\nDescribe your main customer group as clearly as you can: their age or role, where they are, how much they usually spend on things like yours and what matters most to them. A snack seller near a secondary school in Port Harcourt has very different customers from one at a busy office junction."
+        },
+        {
+          "heading": "Value: what the customer gets",
+          "body": "Customers do not really buy products; they buy results. A **value proposition** is a short statement of the result you offer. Common kinds of value are:\n\n- Saving time, such as delivery to the door.\n- Saving money, such as smaller, cheaper packs.\n- Convenience, such as being open when others are closed.\n- Quality and trust, such as fresh food made in a clean kitchen.\n\nA helpful pattern is: **For** (customer) **who** (need), **we offer** (product) **that** (benefit), **unlike** (the alternative). See the example below.",
+          "code": {
+            "lang": "text",
+            "source": "VALUE STATEMENT – Ama's Snacks, Port Harcourt (fictional)\n\nFor:       busy parents in our estate\nWho:       want healthy snacks for their children's lunch boxes\nWe offer:  fresh fruit cups and plantain chips, packed every school morning\nThat:      save parents time and are ready to drop into a school bag\nUnlike:    sweets and biscuits bought in a hurry at the school gate"
+          }
+        },
+        {
+          "heading": "Competitors and alternatives",
+          "body": "Your **competitors** are not only other sellers. They include anything customers do instead of buying from you, including doing it themselves or doing nothing. For a phone-charging stall at a market, competitors include other stalls and the power banks people already own.\n\nStudy two or three competitors politely. Note their prices, quality, location, opening hours and how they treat customers. Then find your difference: perhaps you are closer, more reliable, friendlier or offer a size nobody else does. Competing only on a lower price is risky, because someone can always go lower, and you may end up working for no profit. Never criticise competitors in public; focus on what you do well."
+        },
+        {
+          "heading": "Listen and improve",
+          "body": "Ask for feedback after every sale or job: 'What did you like? What would make it better?' Write the answers down and look for patterns. If several students say ₦500 is too much for a snack pack, you might test a smaller pack at ₦300, but only after checking that the new price still covers your costs. You will learn how to do that check in the next chapter."
+        }
+      ],
+      "points": [
+        "Describe a specific customer group, not 'everybody'",
+        "The person who pays is not always the person who uses the product",
+        "Value is the result the customer gets: time saved, money saved, convenience or quality",
+        "Competitors include other sellers and the option of doing nothing",
+        "Ask for feedback after sales and improve one thing at a time"
+      ],
+      "mistakes": [
+        "Thinking a low price is the only way to compete — reliability, location and service matter too.",
+        "Describing your product's features instead of the customer's result — explain what changes for them.",
+        "Criticising competitors publicly — focus on what you do well."
+      ],
+      "task": "Write a value statement for your idea using the 'For… who… we offer… that… unlike…' pattern. Then visit or look up two competitors or alternatives, and note one thing each does well and one way you could be different.",
+      "quiz": [
+        {
+          "q": "A tutor teaches JSS1 pupils Maths, but the parents pay. Who must the tutor convince to buy?",
+          "opts": ["Only the pupils", "The parents, while keeping the pupils happy and learning", "Other tutors", "The pupils' classmates"],
+          "a": 1,
+          "why": "The parent is the customer who pays, while the pupil is the user whose progress keeps the parent buying."
+        },
+        {
+          "q": "Which is a value statement focused on the customer?",
+          "opts": ["We use clear plastic covers that are 0.5 mm thick", "Our business was started by two students", "Parents get their children's books covered and labelled in one day, so resumption week is less stressful", "We enjoy covering books"],
+          "a": 2,
+          "why": "It describes the result the customer gets, not just facts about the product or the business."
+        },
+        {
+          "q": "Who is a competitor for a phone-charging stall at a market?",
+          "opts": ["A tailor across the road", "Other charging stalls, and the power banks people already own", "The local football team", "The weather"],
+          "a": 1,
+          "why": "Competitors include anything customers can use instead of you, including solving the problem themselves."
+        },
+        {
+          "q": "Customers say your ₦500 snack packs are too expensive for students. What is a sensible response?",
+          "opts": ["Ignore them", "Double the price", "Test a smaller pack at a lower price, after checking that it still makes a profit", "Argue with them online"],
+          "a": 2,
+          "why": "Feedback is useful, but any new price must still cover your costs, so check the numbers before changing."
+        },
+        {
+          "q": "Apart from price, what can make customers choose you?",
+          "opts": ["Reliable, friendly service and a convenient location", "Copying a competitor's logo", "Refusing to answer questions", "Changing prices every day without notice"],
+          "a": 0,
+          "why": "Trust, convenience and good service are strong reasons to choose a business, even when it is not the cheapest."
+        }
+      ]
+    },
+    {
+      "title": "Costs, pricing and profit in naira",
+      "goal": "Work out cost per item, set a sensible price, and calculate profit, profit margin and break-even in naira.",
+      "sections": [
+        {
+          "heading": "Know every cost",
+          "body": "Before you can set a price, you must know what it really costs to make and sell your product. Costs come in two main types:\n\n- **Variable costs** change with how much you make: ingredients, packaging, labels.\n- **Fixed costs** stay the same however much you sell: a weekly stall fee, a cool box you bought once, or the data you use for marketing each week.\n\nBeginners often forget small, hidden costs: transport to the market, cooking gas, nylon bags, phone data and items that spoil or break. Each one may be only a few hundred naira, but together they can eat all your profit. Write everything down, even ₦200."
+        },
+        {
+          "heading": "Cost per item",
+          "body": "Work out the **cost per item** by adding up all the costs for one batch and dividing by the number of items the batch makes:\n\n**Cost per item = total cost of the batch ÷ number of items**\n\nIn the worksheet below, Ama makes 40 packs of chin-chin in Port Harcourt. Her ingredients, gas, packaging and transport add up to ₦14,000, so each pack costs her ₦14,000 ÷ 40 = ₦350. Any price below ₦350 loses money on every pack, however many she sells.",
+          "code": {
+            "lang": "text",
+            "source": "PRICING WORKSHEET – Chin-chin packs (one batch of 40)\n\nStep 1: List every cost for the batch\n  Ingredients (flour, sugar, margarine, milk, oil)   ₦9,600\n  Cooking gas                                         ₦1,200\n  Packaging and labels                                ₦1,600\n  Transport to and from the market                    ₦1,600\n  Total cost: 9,600 + 1,200 + 1,600 + 1,600         = ₦14,000\n\nStep 2: Cost per pack\n  ₦14,000 ÷ 40 packs = ₦350 per pack\n\nStep 3: Check the market\n  Similar packs nearby sell for ₦500 to ₦600\n  Chosen price: ₦500 per pack\n\nStep 4: Profit per pack and margin\n  ₦500 − ₦350 = ₦150 profit per pack\n  Margin: ₦150 ÷ ₦500 × 100 = 30%\n\nStep 5: Profit if all 40 sell\n  Revenue: 40 × ₦500 = ₦20,000\n  Profit:  ₦20,000 − ₦14,000 = ₦6,000\n\nStep 6: Break-even\n  ₦14,000 ÷ ₦500 = 28 packs\n  Packs 1 to 28 cover the costs; packs 29 to 40 are profit."
+          }
+        },
+        {
+          "heading": "Setting a price",
+          "body": "A sensible price passes three checks:\n\n1. **Cost**: it is comfortably above your cost per item.\n2. **Competitors**: it makes sense next to what similar sellers charge.\n3. **Customers**: your customers can and will pay it.\n\nAma finds that similar packs nearby sell for ₦500 to ₦600, and her student customers can manage ₦500. At ₦500, her **profit per pack** is ₦500 − ₦350 = ₦150. Her **profit margin**, the share of the price that is profit, is ₦150 ÷ ₦500 × 100 = 30%.\n\n**Revenue** is all the money customers pay you; **profit** is what is left after costs:\n\n**Profit = revenue − total costs**\n\nIf Ama sells all 40 packs, her revenue is 40 × ₦500 = ₦20,000 and her profit is ₦20,000 − ₦14,000 = ₦6,000. If 5 packs go stale and she sells only 35, her revenue is 35 × ₦500 = ₦17,500 and her profit falls to ₦17,500 − ₦14,000 = ₦3,500. Waste is expensive."
+        },
+        {
+          "heading": "Break-even and your time",
+          "body": "The **break-even point** is the number of items you must sell to cover all your costs. For one batch:\n\n**Break-even = total cost ÷ price per item**\n\nFor Ama, ₦14,000 ÷ ₦500 = 28 packs. Selling all 40 packs means 40 − 28 = 12 packs beyond break-even, bringing in 12 × ₦500 = ₦6,000, which matches the profit worked out above. If the answer is not a whole number, round **up**: at ₦600 a pack, ₦14,000 ÷ ₦600 is about 23.3, so she would need to sell 24 packs.\n\nYour time has value too. If the batch took Ama six hours, ₦6,000 of profit is ₦6,000 ÷ 6 = ₦1,000 an hour. Decide whether that is worth it."
+        }
+      ],
+      "points": [
+        "Count every cost, including transport, gas, packaging, data and waste",
+        "Cost per item = total cost ÷ number of items",
+        "Profit = revenue − total costs",
+        "Break-even is the number of items you must sell to cover your costs (round up)",
+        "Check your price against competitors and what customers can pay"
+      ],
+      "mistakes": [
+        "Forgetting small costs such as transport and data — list everything, even ₦200 items.",
+        "Confusing revenue with profit — revenue is all the money received; profit is what is left after costs.",
+        "Pricing below cost to beat competitors — you lose money on every sale.",
+        "Forgetting that unsold or spoiled items still cost money — make batches you can realistically sell."
+      ],
+      "task": "Cost a small product of your choice, such as 20 packs of popcorn. List every cost, calculate the cost per item, choose a price after checking two competitors, then work out the profit per item, the profit if everything sells and the break-even number. Show each step and check your arithmetic with a calculator.",
+      "quiz": [
+        {
+          "q": "You spend ₦12,000 in total to make 30 bottles of zobo. What is the cost per bottle?",
+          "opts": ["₦360", "₦4,000", "₦400", "₦300"],
+          "a": 2,
+          "why": "₦12,000 ÷ 30 = ₦400 per bottle."
+        },
+        {
+          "q": "You made 30 bottles of zobo for ₦12,000 in total and sold 25 of them at ₦600 each. The other 5 spoiled. What is your profit?",
+          "opts": ["₦5,000", "₦3,000", "₦15,000", "₦6,000"],
+          "a": 1,
+          "why": "Revenue = 25 × ₦600 = ₦15,000. Profit = ₦15,000 − ₦12,000 = ₦3,000. The 5 spoiled bottles still had to be paid for."
+        },
+        {
+          "q": "A batch of hair bands costs ₦9,000 in total and you sell each one for ₦300. How many must you sell to break even?",
+          "opts": ["27", "30", "300", "3"],
+          "a": 1,
+          "why": "₦9,000 ÷ ₦300 = 30, so the first 30 sales cover your costs."
+        },
+        {
+          "q": "Which of these is a fixed cost for a small snack stall?",
+          "opts": ["Flour for each batch", "A weekly stall fee that stays the same however much you sell", "Packaging for each pack", "Money a customer pays you"],
+          "a": 1,
+          "why": "Fixed costs do not change with the number of items sold. Flour and packaging are variable costs, and customer payments are revenue."
+        },
+        {
+          "q": "Similar snack packs sell for ₦500 nearby, but your cost per pack is ₦550. What is the best decision?",
+          "opts": ["Sell at ₦450 to beat the competition", "Sell at ₦500 and hope for the best", "Find ways to cut costs or offer something different, because selling at ₦500 would lose ₦50 a pack", "Stop recording your costs"],
+          "a": 2,
+          "why": "At ₦500 you would lose ₦550 − ₦500 = ₦50 on every pack, so you must lower your costs or change your offer."
+        }
+      ]
+    },
+    {
+      "title": "Record keeping and saving",
+      "goal": "Keep a simple record of money in and money out, separate business money from personal money, and plan how to save and reinvest.",
+      "sections": [
+        {
+          "heading": "Why records matter",
+          "body": "Memory is not a record. After a busy week it is easy to believe you made money when you actually lost some. A written record shows whether you are making a profit, which items sell best, when to buy more stock and where money is leaking away. It also builds trust: a parent, a partner or, later, a bank will take you more seriously if you can show clear records.\n\nKeep every receipt you can, including screenshots of transfers, in one folder or envelope, and write in your record book on the same day as each sale or purchase."
+        },
+        {
+          "heading": "A simple cash book",
+          "body": "A **cash book** has five columns: date, description, money in, money out and balance. The **balance** is how much business money you should have at that moment:\n\n**New balance = previous balance + money in − money out**\n\nBelow are Hauwa's first three days selling popcorn in Kano. She started with ₦5,000 of her own savings. Her money in from sales was ₦4,000 + ₦3,600 = ₦7,600, and her money out was ₦3,200 + ₦800 + ₦400 = ₦4,400, so her profit so far is ₦7,600 − ₦4,400 = ₦3,200. Her closing balance of ₦8,200 is exactly her starting ₦5,000 plus that ₦3,200, which shows the book adds up.\n\nEach evening, count your cash and check any account. If the total does not match the balance, find out why before the next day.",
+          "code": {
+            "lang": "text",
+            "source": "CASH BOOK – Hauwa's Popcorn, Kano (fictional)\n\nDay | Description                  | Money in | Money out | Balance\nMon | Opening balance (my savings) |          |           | ₦5,000\nMon | Corn kernels, oil and salt   |          | ₦3,200    | ₦1,800\nMon | 50 popcorn bags              |          | ₦800      | ₦1,000\nTue | Sold 20 packs at ₦200        | ₦4,000   |           | ₦5,000\nWed | Sold 18 packs at ₦200        | ₦3,600   |           | ₦8,600\nWed | Transport to the market      |          | ₦400      | ₦8,200\n\nMoney in from sales: ₦4,000 + ₦3,600 = ₦7,600\nMoney out: ₦3,200 + ₦800 + ₦400 = ₦4,400\nProfit so far: ₦7,600 − ₦4,400 = ₦3,200\nCheck: ₦5,000 + ₦3,200 = ₦8,200 (matches the balance)"
+          }
+        },
+        {
+          "heading": "Keep business money separate",
+          "body": "Keep business money in its own place: a separate tin, envelope or account. Do not 'borrow' from it for airtime or snacks. It is very easy to forget, and soon you cannot tell whether the business is working. Instead, pay yourself a fixed amount from the profit.\n\nIf you want to use a bank account for your business, talk to a parent or guardian. Accounts for under-18s are usually opened and supervised by an adult, and you should never share your PIN, OTP or password with anyone."
+        },
+        {
+          "heading": "Saving, reinvesting and avoiding traps",
+          "body": "Decide in advance how to split each profit. One simple plan is 50% to **reinvest** in the next batch, 30% to **save** and 20% for **you**. With Hauwa's ₦3,200 profit, that is ₦1,600 to reinvest, ₦960 to save and ₦640 for herself, and ₦1,600 + ₦960 + ₦640 = ₦3,200.\n\nBe very careful with anyone who promises to grow your savings quickly. 'Double your money in a week' schemes, often called Ponzi schemes, pay early members with newer members' money and then collapse, and many Nigerians have lost savings this way. If an offer sounds too good to be true, talk to a trusted adult before sending a single naira."
+        }
+      ],
+      "points": [
+        "Write down every sale and expense on the same day",
+        "New balance = previous balance + money in − money out",
+        "Keep business money separate from personal money",
+        "Split each profit between reinvesting, saving and paying yourself",
+        "Promises to double your money quickly are a warning sign of a scam"
+      ],
+      "mistakes": [
+        "Relying on memory — use a notebook or spreadsheet every day.",
+        "Taking money from the business tin for snacks or airtime — pay yourself a fixed amount instead.",
+        "Spending all the profit — keep some back to buy the next batch.",
+        "Putting savings into schemes that promise huge, quick returns — ask a trusted adult first."
+      ],
+      "task": "Draw a cash book with columns for date, description, money in, money out and balance. Record at least six sample transactions for your business idea, then check that the final balance equals the opening balance plus total money in minus total money out.",
+      "quiz": [
+        {
+          "q": "Your business balance is ₦6,500. You sell items worth ₦2,000, then pay ₦1,200 for transport. What is the new balance?",
+          "opts": ["₦9,700", "₦7,300", "₦5,700", "₦3,300"],
+          "a": 1,
+          "why": "₦6,500 + ₦2,000 − ₦1,200 = ₦7,300."
+        },
+        {
+          "q": "Why should you keep business money separate from your pocket money?",
+          "opts": ["Mixing money is always illegal", "To hide money from your parents", "So you can see whether the business is really making a profit", "So you never need to keep records"],
+          "a": 2,
+          "why": "When the money is mixed, you cannot tell how much the business has earned or spent."
+        },
+        {
+          "q": "You made ₦4,000 profit and plan to reinvest 50%, save 30% and keep 20%. How much do you save?",
+          "opts": ["₦2,000", "₦1,200", "₦800", "₦3,000"],
+          "a": 1,
+          "why": "30% of ₦4,000 = 0.3 × ₦4,000 = ₦1,200. You reinvest ₦2,000 and keep ₦800, and ₦2,000 + ₦1,200 + ₦800 = ₦4,000."
+        },
+        {
+          "q": "A stranger on WhatsApp promises to double your ₦10,000 savings in one week. What should you do?",
+          "opts": ["Send ₦5,000 first as a test", "Refuse and tell a trusted adult, because this is a sign of a scam", "Share it with friends so they can join too", "Send your bank details so they can pay you"],
+          "a": 1,
+          "why": "Genuine savings do not double in a week. Schemes like this take your money and often collapse."
+        },
+        {
+          "q": "Which record is most useful for a small business?",
+          "opts": ["A list of only the good days", "A rough memory of sales at the end of the month", "Only the total sales for the year", "Date, description, money in, money out and balance, written the same day"],
+          "a": 3,
+          "why": "A daily cash book with a running balance shows exactly where money came from and where it went."
+        }
+      ]
+    },
+    {
+      "title": "Serving customers, building trust and a portfolio",
+      "goal": "Agree clear terms with customers, handle problems professionally and show your work in a simple portfolio.",
+      "sections": [
+        {
+          "heading": "Agree before you start",
+          "body": "Most arguments with customers come from unclear agreements. Before you start any job or custom order, agree in writing:\n\n- **What** you will deliver, including size, quantity and colours.\n- **How much** it costs, and whether there is a deposit.\n- **When** it will be ready, and how it will be delivered or collected.\n- **How** payment will be made.\n- **Changes**: how many changes are included in the price.\n\nA clear WhatsApp message that the customer replies 'Yes' to is a useful written record. For bigger custom orders, a **deposit** (part of the price paid in advance) covers your materials and shows the customer is serious. If you are under 18, a parent or guardian should agree to any job before you accept it.",
+          "code": {
+            "lang": "text",
+            "source": "Hello Mrs Okafor, thank you for your order. Here is what we agreed:\n\n- Item: 2 birthday banners (A3 size) with the name 'Chidera' and the number 10\n- Price: ₦3,000 each, so ₦6,000 in total\n- Deposit: ₦3,000 now, and the other ₦3,000 on delivery\n- Ready: Saturday by 12 noon, for collection from our gate\n- Changes: one free change to the design before printing\n\nPlease reply YES if this is correct, and I will start today."
+          }
+        },
+        {
+          "heading": "Keep promises and communicate",
+          "body": "Trust grows each time you do what you said you would. Reply to messages politely and within a reasonable time, even if only to say 'I will check and reply this evening'. Check your work carefully before handing it over, and give a simple receipt for every payment.\n\nIf you are going to be late, tell the customer as early as possible, apologise and agree a new time. A customer who is told early is usually understanding; a customer left waiting without a word rarely comes back."
+        },
+        {
+          "heading": "When something goes wrong",
+          "body": "Problems happen to every business. What matters is how you handle them:\n\n1. **Listen** to the whole complaint without interrupting.\n2. **Apologise** for the trouble, even before you know whose fault it was.\n3. **Fix** it: redo the work, replace the item or give a refund.\n4. **Learn** from it, so it does not happen again.\n\nKeep the conversation private and calm, and never argue on your Status or in a group chat. If a customer becomes threatening or abusive, stop replying and tell a parent or guardian."
+        },
+        {
+          "heading": "Build a portfolio and reputation",
+          "body": "A **portfolio** is a collection of your best work that shows customers what you can do. It can be a WhatsApp Business catalog, a photo album or a simple shared folder. Include clear photos, a one-line description of each job and, where possible, a short comment from a happy customer, shared with their permission.\n\nOnly show work you actually did. Ask before photographing a customer's home, children or face, or photograph only the product. Keep your own personal details private: there is no need to show your home address or school name. Honest reviews from real customers are worth far more than any number of fake ones."
+        }
+      ],
+      "points": [
+        "Agree what, how much, when and how to pay before you start",
+        "Write the agreement down, even as a simple message",
+        "Tell customers early if there will be a delay",
+        "Listen, apologise and fix problems calmly and privately",
+        "A portfolio of your real work, shared with permission, builds trust"
+      ],
+      "mistakes": [
+        "Starting work on a spoken 'OK' — send a written summary and wait for a yes.",
+        "Arguing with an unhappy customer in public — move to a private, calm conversation.",
+        "Posting photos of customers' homes, children or faces without permission — ask first, or photograph only the product."
+      ],
+      "task": "Write a confirmation message for a small job, such as designing a poster for a shop in Enugu, that states what you will deliver, the price, any deposit, the deadline and how changes work. Then list three items you could put in a beginner portfolio and how you would get permission to show each one.",
+      "quiz": [
+        {
+          "q": "Before starting a custom job, what should you agree with the customer?",
+          "opts": ["Only your favourite colours", "What you will deliver, the price, the deadline and how payment works", "Nothing; just start", "Their home address, so you can post it online"],
+          "a": 1,
+          "why": "A clear agreement on the key details prevents most disputes."
+        },
+        {
+          "q": "You realise an order will be finished a day late. What should you do?",
+          "opts": ["Say nothing and hope they don't notice", "Stop replying until it is ready", "Tell the customer now, apologise and agree a new time", "Blame the customer for ordering late"],
+          "a": 2,
+          "why": "Early, honest communication protects trust, even when something goes wrong."
+        },
+        {
+          "q": "A customer complains that a cake arrived damaged. What is the best first response?",
+          "opts": ["Listen, apologise and offer to fix it, such as with a replacement or refund", "Argue about it on your Status", "Block their number", "Insist it was their fault without checking"],
+          "a": 0,
+          "why": "Listening and fixing the problem often turns an unhappy customer into a loyal one."
+        },
+        {
+          "q": "Which is a good item for a beginner's portfolio?",
+          "opts": ["A design copied from the internet and presented as yours", "A photo of a poster you designed for a shop, shared with the owner's permission", "A screenshot of a private chat showing a customer's number", "A fake review written by a friend"],
+          "a": 1,
+          "why": "A portfolio must show your own real work, shared with permission and without anyone's private details."
+        },
+        {
+          "q": "A customer orders 30 T-shirts with custom printed names. Why is asking for a deposit sensible?",
+          "opts": ["It covers your material costs and shows the customer is serious", "It means you no longer need to deliver", "It is a fee for talking to you", "It lets you skip writing down the agreement"],
+          "a": 0,
+          "why": "Custom items cannot easily be sold to someone else, so a deposit protects you if the customer changes their mind."
+        }
+      ]
+    },
+    {
+      "title": "Freelancing and selling online safely",
+      "goal": "Find genuine work, recognise common online scams and follow age, payment and legal rules.",
+      "sections": [
+        {
+          "heading": "What freelancing is",
+          "body": "A **freelancer** sells their skills job by job instead of working for one employer. Popular beginner skills include graphic design, typing and formatting documents, writing, social media help, simple video editing, tutoring and translating into Hausa, Igbo, Yoruba or other languages.\n\nStart **locally**: shops that need price lists or posters, community and religious groups that need flyers, and family friends who need documents typed. Local work is easier to check and safer than working for strangers online. Many large online freelance platforms and payment services only accept adults, often aged 18 or over. Read their rules and never lie about your age. If you are under 18, a parent or guardian must be involved in every account, payment and meeting."
+        },
+        {
+          "heading": "Scams and warning signs",
+          "body": "Scammers often target young people looking for work. Learn these warning signs:\n\n- You are asked to pay a 'registration', 'training' or 'activation' fee to get work. Genuine clients pay you; you never pay to get a job.\n- Someone asks for your PIN, OTP, password or BVN. Never share these with anyone.\n- A 'client' overpays and asks you to send back the difference quickly. The first payment often turns out to be fake or is reversed.\n- You are shown a transfer alert by SMS or screenshot. Alerts can be faked, so check the real balance in the bank app, or ask the adult who manages the account to check, before handing over work or goods.\n- The pay is far too high for easy work, such as ₦50,000 a day for liking posts.\n- Someone asks you to receive money into your account and pass it on. This can make you part of a crime.\n- A stranger wants to meet you alone. Do not go, and tell a parent or guardian."
+        },
+        {
+          "heading": "Keep payments and work safe",
+          "body": "If you use an online platform, keep messages and payments **on the platform**. Platforms usually offer payment protection and help with disputes only when everything happens there, which is why scammers try to move you to WhatsApp or Telegram.\n\nFor local work, agree terms in writing, take a deposit on larger jobs and have payments made into an account a parent or guardian can check. Share a preview or watermarked version of design work until payment is confirmed. Keep copies of agreements, receipts and messages."
+        },
+        {
+          "heading": "Registering a business (for adults)",
+          "body": "In Nigeria, the **Corporate Affairs Commission (CAC)** is the official registry for business names and companies. Registration gives a business legal recognition, makes it easier to open a business bank account and helps customers and partners trust it. Registration is done through the CAC's official website. Fees and requirements change, so adults should always check the current details there, and be wary of agents who promise instant certificates. The CAC website also has a public search for checking whether a business is really registered.\n\nA small practice business run with your family does not need registering while you are learning. If your business grows, a parent or guardian can find out what is required, including any tax responsibilities."
+        }
+      ],
+      "points": [
+        "Start with local, trusted clients before global platforms",
+        "Never pay to get work, and never share your PIN, OTP, BVN or passwords",
+        "Keep messages and payments on the platform, or in an account a parent can check",
+        "Check the real bank balance, not an SMS alert or screenshot, before releasing goods or work",
+        "Under 18? A parent or guardian must be involved, and many platforms only accept adults"
+      ],
+      "mistakes": [
+        "Lying about your age to join a platform — it breaks the rules and removes your protection, so work with a parent instead.",
+        "Delivering the full project before agreeing payment — agree terms first and take a deposit where suitable.",
+        "Moving a 'client' to WhatsApp and accepting payment outside the platform — you lose the platform's protection.",
+        "Paying an agent who promises a 'CAC certificate in one hour' — adults should use the official CAC website and check results with its public search."
+      ],
+      "task": "Write a checklist of six warning signs of an online job scam. Then read this scenario: a client says they sent you ₦80,000 by mistake instead of ₦8,000 and asks you to transfer back ₦72,000 quickly. Write, step by step, what you would do and who you would involve.",
+      "quiz": [
+        {
+          "q": "A message says: 'Pay ₦5,000 registration and get a data-entry job paying ₦20,000 a week.' What should you do?",
+          "opts": ["Pay, because ₦20,000 a week is more than ₦5,000", "Pay half first to test it", "Ignore it and tell a trusted adult, because genuine employers never charge you to work", "Forward it to classmates so they can apply"],
+          "a": 2,
+          "why": "Asking you to pay to get work is one of the clearest signs of a job scam."
+        },
+        {
+          "q": "A customer shows you a transfer SMS screenshot and asks you to hand over the goods now. What should you do?",
+          "opts": ["Hand over the goods, because the screenshot looks real", "Check in the bank app, or ask the parent who manages the account, that the money has really arrived", "Ask them to send the screenshot again", "Give them the goods and promise to check later"],
+          "a": 1,
+          "why": "Alerts and screenshots can be faked. Only the real account balance proves you have been paid."
+        },
+        {
+          "q": "A client on a freelance platform asks you to continue on Telegram and be paid there to 'avoid fees'. What is the best response?",
+          "opts": ["Agree, because platform fees are annoying", "Send your bank PIN so they can pay faster", "Share your login so they can check your profile", "Keep messages and payment on the platform so you stay protected"],
+          "a": 3,
+          "why": "Platform protection usually only covers work and payments that stay on the platform."
+        },
+        {
+          "q": "A client 'accidentally' sends ₦50,000 instead of ₦5,000 and asks you to return ₦45,000 at once. What is safest?",
+          "opts": ["Send back ₦45,000 immediately to be polite", "Send nothing yet; involve a parent and check with the bank whether the money is real", "Send back the full ₦50,000 immediately", "Spend it quickly before they ask again"],
+          "a": 1,
+          "why": "Overpayment is a common trick: the first transfer may be fake or reversed, leaving you ₦45,000 poorer. A trusted adult and the bank should check first."
+        },
+        {
+          "q": "You are 16 and want to earn money from your design skills. What is the right approach?",
+          "opts": ["Sign up with an older cousin's ID", "Say you are 18 on the sign-up form", "Keep it secret from your family", "Involve a parent or guardian, check each platform's age rules and start with trusted local clients"],
+          "a": 3,
+          "why": "Age rules protect young people, and a parent or guardian helps keep money, accounts and meetings safe."
+        }
+      ]
+    }
+  ],
+  "project": {
+    "title": "A one-page business plan",
+    "brief": "Write a one-page business plan for a small, student-friendly business, such as covering exercise books, a snack stall at a school event, designing price tags for local shops or tutoring younger pupils. Use naira for every figure, show your calculations step by step, and ask a parent or guardian to read the plan before you start trading.",
+    "steps": [
+      "Describe the problem, your customer and your value statement in two or three sentences.",
+      "Explain how you tested, or will test, the idea cheaply and what result would count as success.",
+      "List your competitors or alternatives and say how you will be different.",
+      "Cost your product or service: list every cost, then calculate the cost per item, price, profit per item, profit margin and break-even.",
+      "Explain how you will keep records, where business money will be kept and how you will split each profit.",
+      "Write your customer promise: how you will agree terms, handle complaints and collect portfolio examples.",
+      "Add a safety section: who your responsible adult is, how payments will be checked and which scams you will watch out for."
+    ],
+    "checklist": [
+      "The plan fits on one page and uses plain language.",
+      "Every naira calculation is shown step by step and has been checked.",
+      "The price covers all costs, including transport, packaging, data and likely waste.",
+      "A parent or guardian has read the plan and agreed the safety section.",
+      "Nothing in the plan involves paying to get work or sharing a PIN, OTP, BVN or password."
+    ]
+  }
+}

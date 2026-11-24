@@ -1,0 +1,271 @@
+/* Studyly theme layer.
+   Fonts apply to both themes. The dark "night" theme (the default) uses a near-black background, dark cards and a
+   rose-gold gradient accent. Every dark rule is scoped to html[data-theme="dark"], so the original light design
+   stays intact when a learner switches to light mode. */
+
+:root{--font-display:"Syne",system-ui,-apple-system,"Segoe UI",sans-serif;--font-body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+html body{font-family:var(--font-body)!important;-webkit-font-smoothing:antialiased}
+/* The page's own <style> blocks load after this file, so shared rules start with "html" to take priority. */
+html :is(h1,h2,h3,.brand,.auth-brand,.auth-mobile-brand,.btn,.stat,.revise-big,.cbt-score,.result-score,.big-countdown,.home-eyebrow,.nav-section-label,.cls-code,.flash-front,.cbt-timer){font-family:var(--font-display)}
+html :is(h1,h2,h3){text-wrap:balance;letter-spacing:-.02em}
+html :is(p,li){text-wrap:pretty}
+html :is(.stat,.revise-big,.cbt-score,.cbt-timer,.home-stats b,.timer,.revise-stat b,.report-stat b,.big-countdown){font-variant-numeric:tabular-nums}
+html .btn{transition-property:transform,filter,box-shadow,background-color,border-color,color;transition-duration:.16s;transition-timing-function:cubic-bezier(.2,0,0,1)}
+html .btn:active:not(:disabled){transform:scale(.96)}
+html .btn:disabled{opacity:.5;cursor:not-allowed}
+/* "Pick a path" cards: on wider screens stack the icon above the text so five cards fit without cramped wrapping. */
+@media(min-width:701px){html .home-path{position:relative;flex-direction:column;align-items:flex-start;gap:12px;padding:18px}html .home-path .path-arrow{position:absolute;top:18px;right:18px}html .home-path .path-copy{gap:5px}html .home-path .path-copy b{font-size:15px}}
+html .nav{scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+/* Phones: keep the theme switch on the same row as the search box. */
+@media(max-width:700px){html .top{flex-direction:row;align-items:center}html .top .search{flex:1;min-width:0;width:auto}html .home-eyebrow{letter-spacing:.6px}html .flash-keys{display:none}}
+/* Exam Prep mock: show the chosen option (it previously had no visible selected state). */
+html .topic.selected{border-color:var(--accent);background:var(--soft)}
+html .skills-filter{align-items:flex-end}html .skills-filter input{align-self:flex-end}
+html :is(.revise-today .card,.skill-course-card,.deck-card,.cls-card) > .tag,html .revise-today .card > .tag{align-self:flex-start}
+
+/* Light/dark switch in the top bar */
+html .top .row{flex-wrap:nowrap}
+.theme-toggle{position:relative;flex:none;width:44px;height:44px;border:1px solid var(--line);border-radius:12px;background:var(--panel);color:var(--ink);transition:border-color .16s,transform .16s}
+.theme-toggle:hover{border-color:var(--accent)}
+.theme-toggle:active{transform:scale(.96)}
+.theme-toggle svg{position:absolute;inset:0;margin:auto;width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;transition:opacity .3s cubic-bezier(.2,0,0,1),transform .3s cubic-bezier(.2,0,0,1),filter .3s cubic-bezier(.2,0,0,1)}
+.theme-toggle .i-sun,html[data-theme="dark"] .theme-toggle .i-moon{opacity:1;transform:scale(1);filter:blur(0)}
+.theme-toggle .i-moon,html[data-theme="dark"] .theme-toggle .i-sun{opacity:0;transform:scale(.25);filter:blur(4px)}
+
+/* ---------------- Dark theme tokens ---------------- */
+html[data-theme="dark"]{color-scheme:dark;
+  --bg:#121212;--panel:#1b1b1e;--panel2:#212125;--panel3:#2a2a2f;--ink:#f6f5f8;--text:#c7c6d3;--muted:#8b8a91;--line:#2b2b30;--line2:#3e3e44;
+  --rose:#e1bac5;--bronze:#b68362;--accent:#dcae9f;--accent2:#b68362;--grad:linear-gradient(135deg,#e1bac5 0%,#b68362 100%);
+  --soft:rgba(225,186,197,.1);--soft2:rgba(225,186,197,.18);--good:#72d7aa;--good-soft:rgba(114,215,170,.12);--warn:#f2b866;--warn-soft:rgba(242,184,102,.13);--bad:#ff8a9b;--bad-soft:rgba(255,138,155,.12);
+  --glow:radial-gradient(620px 320px at 92% 0%,rgba(225,186,197,.2),transparent 62%),radial-gradient(520px 300px at 0% 110%,rgba(182,131,98,.22),transparent 62%);
+  --lift:0 1px 0 rgba(255,255,255,.04) inset,0 12px 32px rgba(0,0,0,.38);
+  --border:var(--line);--surface:var(--panel);--text-color:var(--text);--primary:var(--rose)}
+html[data-theme="dark"] body{background:radial-gradient(900px 520px at 85% -12%,rgba(225,186,197,.07),transparent 60%),radial-gradient(760px 460px at -12% 112%,rgba(182,131,98,.07),transparent 60%),var(--bg) fixed;color:var(--text)}
+html[data-theme="dark"] ::selection{background:rgba(225,186,197,.35);color:#fff}
+html[data-theme="dark"] h1,html[data-theme="dark"] h2,html[data-theme="dark"] h3,html[data-theme="dark"] h4,html[data-theme="dark"] b,html[data-theme="dark"] strong,html[data-theme="dark"] legend{color:var(--ink)}
+html[data-theme="dark"] .muted{color:var(--muted)}
+html[data-theme="dark"] a{color:var(--rose)}
+html[data-theme="dark"] .stat{color:var(--ink)}
+
+/* Inputs */
+html[data-theme="dark"] input:not([type=checkbox]):not([type=radio]):not([type=range]):not([type=file]),html[data-theme="dark"] select,html[data-theme="dark"] textarea{background:#17171a;color:var(--ink);border-color:var(--line2)}
+html[data-theme="dark"] input::placeholder,html[data-theme="dark"] textarea::placeholder{color:#6f6e76}
+html[data-theme="dark"] input:focus,html[data-theme="dark"] select:focus,html[data-theme="dark"] textarea:focus{border-color:var(--rose);box-shadow:0 0 0 3px rgba(225,186,197,.16);outline:none}
+html[data-theme="dark"] option{background:#1b1b1e;color:var(--ink)}
+html[data-theme="dark"] input[type=checkbox],html[data-theme="dark"] input[type=radio]{accent-color:var(--rose)}
+
+/* Buttons */
+html[data-theme="dark"] .btn{background:var(--grad);color:#121212;font-weight:600}
+html[data-theme="dark"] .btn:hover:not(:disabled){filter:brightness(1.06);box-shadow:0 8px 22px rgba(225,186,197,.18)}
+html[data-theme="dark"] .btn.ghost,html[data-theme="dark"] .home-secondary{background:transparent;color:var(--ink);border:1px solid var(--line2);box-shadow:none}
+html[data-theme="dark"] .btn.ghost:hover:not(:disabled){border-color:#5d5c63;background:rgba(255,255,255,.03);filter:none}
+html[data-theme="dark"] .btn.secondary{background:var(--panel3);color:var(--ink)}
+html[data-theme="dark"] .btn.ghost.exam-tab.active{background:var(--soft);border-color:rgba(225,186,197,.45);color:var(--rose)}
+
+/* Shared surfaces: cards, list items and option buttons */
+html[data-theme="dark"] :is(.card,.home-path,.home-subject-card,.home-progress-card,.home-streak-card,.topic,.library-card,.library-topic,.resource-card,.cls-card,.cls-assign,.cls-q,.cls-preview-q,.cbt-mode,.cbt-length,.cbt-qrev,.report,.weak-item,.flashcard,.skill-exam-question,.stat-line,.plan-day,.mock-option,.card-list-item,.auth-role-option,.photo-btn){background:var(--panel);border-color:var(--line);color:var(--text);box-shadow:none}
+html[data-theme="dark"] :is(.home-path,.home-subject-card,.topic,.library-card,.weak-item,.cbt-mode,.cbt-length,.auth-role-option,.photo-btn):hover{border-color:rgba(225,186,197,.42);box-shadow:var(--lift)}
+html[data-theme="dark"] .card h2,html[data-theme="dark"] .card h3{color:var(--ink)}
+html[data-theme="dark"] .modal{background:rgba(5,5,7,.66);backdrop-filter:blur(6px)}
+html[data-theme="dark"] .modalBox{background:#18181b;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.55)}
+html[data-theme="dark"] .toast{background:#26262b;color:var(--ink);border:1px solid var(--line2);box-shadow:0 12px 30px rgba(0,0,0,.45)}
+html[data-theme="dark"] .tag{background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .tag-more{background:#232327;color:var(--muted)}
+html[data-theme="dark"] .ai-tag{background:var(--warn-soft);color:var(--warn)}
+html[data-theme="dark"] :is(.progress,.cls-bar){background:#2a2a2f}
+html[data-theme="dark"] :is(.progress,.cls-bar) i{background:var(--grad)}
+html[data-theme="dark"] :is(.table,.cls-table) :is(th,td){border-color:var(--line)}
+html[data-theme="dark"] :is(.table,.cls-table) th{color:var(--muted)}
+html[data-theme="dark"] .chip{background:transparent;border-color:var(--line2);color:var(--text)}
+html[data-theme="dark"] .chip:hover{border-color:rgba(225,186,197,.5)}
+html[data-theme="dark"] .chip.active{background:var(--grad);border-color:transparent;color:#121212}
+
+/* Sidebar, top bar and mobile navigation */
+html[data-theme="dark"] .side{background:#151517;color:var(--ink);border-right:1px solid var(--line);box-shadow:none}
+html[data-theme="dark"] :is(.brand,.auth-mobile-brand){color:var(--ink)}
+html[data-theme="dark"] :is(.brand,.auth-brand,.auth-mobile-brand) span{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+html[data-theme="dark"] .nav-section-label{color:#6f6e76}
+html[data-theme="dark"] .nav button.nav-item{color:#a3a2ab}
+html[data-theme="dark"] .nav button.nav-item:hover{background:#1f1f23;color:var(--ink)}
+html[data-theme="dark"] .nav button.nav-item.active{background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .nav button.nav-item.active:before{background:var(--grad)}
+html[data-theme="dark"] .profileMini{background:#1b1b1e;border-color:var(--line);color:var(--ink);box-shadow:none}
+html[data-theme="dark"] .profileMini .muted{color:var(--muted)!important}
+html[data-theme="dark"] .avatar{background:var(--grad);color:#121212}
+html[data-theme="dark"] .search{background:var(--panel);border-color:var(--line);color:var(--ink)}
+html[data-theme="dark"] .mobileNav{background:rgba(24,24,27,.86);border-color:var(--line);box-shadow:0 12px 34px rgba(0,0,0,.55)}
+html[data-theme="dark"] .mobileNav button.mobile-nav-item{background:transparent;color:#8f8e97}
+html[data-theme="dark"] :is(.mobileNav button.mobile-nav-item.active,.mobileNav button.mobile-more-toggle.active){background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .mobile-more-panel{background:#1b1b1e;border-color:var(--line);box-shadow:0 16px 40px rgba(0,0,0,.55)}
+html[data-theme="dark"] .mobile-more-panel button{background:transparent;color:var(--text)}
+html[data-theme="dark"] :is(.mobile-more-panel button:hover,.mobile-more-panel button.active){background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .mobile-more-panel .more-arrow{color:var(--muted)}
+
+/* Hero banners (home, skills, revise, CBT) share the portfolio's dark glow */
+html[data-theme="dark"] :is(.home-hero,.skills-hero,.revise-hero,.cbt-hero,.hero){background:var(--glow),#1a1a1d;border:1px solid var(--line);color:var(--ink);box-shadow:var(--lift)}
+html[data-theme="dark"] :is(.home-hero-copy>p,.skills-hero p,.revise-hero p,.cbt-hero p,.hero p){color:var(--text)}
+html[data-theme="dark"] :is(.skills-hero,.revise-hero,.cbt-hero) .home-eyebrow{color:var(--rose)!important}
+html[data-theme="dark"] .home-hero:after{border-color:rgba(225,186,197,.16);box-shadow:0 0 0 36px rgba(225,186,197,.03),0 0 0 72px rgba(225,186,197,.02)}
+html[data-theme="dark"] .home-tag{background:transparent;border:1px solid var(--line2);color:var(--text)}
+html[data-theme="dark"] .home-primary{background:var(--grad);color:#121212;box-shadow:0 8px 22px rgba(225,186,197,.16)}
+html[data-theme="dark"] .home-focus-meta{color:var(--muted)}
+html[data-theme="dark"] .meta-divider{background:var(--line2)}
+html[data-theme="dark"] .orbit{border-color:rgba(225,186,197,.22)}
+html[data-theme="dark"] .book-illustration{background:linear-gradient(135deg,#f3d9df,#c9977b);color:#2a1d1a;box-shadow:10px 12px 0 rgba(0,0,0,.38),0 18px 34px rgba(0,0,0,.45)}
+html[data-theme="dark"] .book-illustration:before{border-color:rgba(42,29,26,.25)}
+html[data-theme="dark"] .book-illustration span{color:#7a4f3d}
+html[data-theme="dark"] .book-illustration i{color:#6b4c40}
+html[data-theme="dark"] .art-spark{color:var(--rose)}
+html[data-theme="dark"] :is(.revise-stat){background:rgba(255,255,255,.03);border-color:var(--line2)}
+html[data-theme="dark"] .revise-stat span{color:var(--muted)}
+
+/* Home page */
+html[data-theme="dark"] .home-eyebrow{color:var(--rose)}
+html[data-theme="dark"] .eyebrow-dot{background:var(--grad)}
+html[data-theme="dark"] .home-welcome h1{color:var(--ink)}
+html[data-theme="dark"] #welcomeHeading .type-name{background:var(--grad);-webkit-background-clip:text;background-clip:text}
+html[data-theme="dark"] #welcomeHeading .type-cursor{background:var(--rose)}
+html[data-theme="dark"] .home-class-picker{color:var(--muted)}
+html[data-theme="dark"] .path-icon{background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .path-practice .path-icon,html[data-theme="dark"] .path-skills .path-icon{background:var(--good-soft);color:var(--good)}
+html[data-theme="dark"] .path-exams .path-icon{background:var(--warn-soft);color:var(--warn)}
+html[data-theme="dark"] .path-revise .path-icon{background:var(--bad-soft);color:var(--bad)}
+html[data-theme="dark"] :is(.path-copy small,.home-subject-card p,.home-subject-progress span,.home-progress-copy span,.home-streak-card>div>span,.home-stats){color:var(--muted)}
+html[data-theme="dark"] :is(.path-arrow,.home-text-link,.library-arrow){color:var(--rose)}
+html[data-theme="dark"] :is(.home-subject-icon,.library-icon,.teacher-action-icon,.auth-role-icon){background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .home-progress-icon{background:var(--good-soft);color:var(--good)}
+html[data-theme="dark"] .home-stats b{color:var(--ink)}
+html[data-theme="dark"] #homeAssignments{background:var(--soft);border-color:rgba(225,186,197,.3)}
+
+/* Sign-in screen */
+html[data-theme="dark"] .auth-screen{background:radial-gradient(ellipse at 80% 10%,rgba(225,186,197,.12) 0,transparent 42%),radial-gradient(ellipse at 10% 100%,rgba(182,131,98,.12) 0,transparent 40%),var(--bg)}
+html[data-theme="dark"] .auth-shell{background:#17171a;border-color:var(--line);box-shadow:0 30px 80px rgba(0,0,0,.5)}
+html[data-theme="dark"] .auth-story{background:var(--glow),#1d1b1c;color:var(--ink)}
+html[data-theme="dark"] .auth-story-copy .home-eyebrow,html[data-theme="dark"] .auth-story-note span{color:var(--rose)}
+html[data-theme="dark"] .auth-story-copy p,html[data-theme="dark"] .auth-story-note{color:var(--text)}
+html[data-theme="dark"] .auth-orbit{border-color:rgba(225,186,197,.18);box-shadow:0 0 0 28px rgba(225,186,197,.03),0 0 0 58px rgba(225,186,197,.02)}
+html[data-theme="dark"] .auth-heading h2{color:var(--ink)}
+html[data-theme="dark"] :is(.auth-heading p,.auth-footnote,.auth-role-option small,.account-sync){color:var(--muted)}
+html[data-theme="dark"] .auth-tabs{background:#1f1f23}
+html[data-theme="dark"] .auth-tab{color:var(--muted)}
+html[data-theme="dark"] .auth-tab.active{background:var(--panel3);color:var(--ink);box-shadow:none}
+html[data-theme="dark"] :is(.auth-field,.auth-role-picker legend){color:var(--text)}
+html[data-theme="dark"] .auth-role-option b{color:var(--ink)}
+html[data-theme="dark"] .auth-role-option.active{border-color:var(--rose);background:var(--soft);box-shadow:0 0 0 2px rgba(225,186,197,.14)}
+html[data-theme="dark"] .auth-error{color:var(--bad)}
+html[data-theme="dark"] .auth-error:not(:empty){background:var(--bad-soft)}
+html[data-theme="dark"] .auth-migrate{background:#1b1b1e;border-color:var(--line);color:var(--text)}
+
+/* AI Tutor */
+html[data-theme="dark"] .bubble.ai{background:var(--panel);border-color:var(--line);color:var(--text)}
+html[data-theme="dark"] .bubble.me{background:var(--grad);color:#121212}
+html[data-theme="dark"] .bubble.ai[data-failure="true"]{background:var(--bad-soft);border-color:rgba(255,138,155,.35)}
+html[data-theme="dark"] .bubble-actions{border-color:var(--line)}
+html[data-theme="dark"] .bubble-action{background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .typing i{background:var(--rose)}
+html[data-theme="dark"] .photo-preview{background:var(--soft);border-color:rgba(225,186,197,.35)}
+html[data-theme="dark"] .rich code{background:#26262b;color:var(--rose)}
+html[data-theme="dark"] .rich pre{background:#0c0c0e;color:#e8e7ee}
+html[data-theme="dark"] .rich-table :is(th,td){border-color:var(--line)}
+html[data-theme="dark"] .rich-table th{background:#202024}
+html[data-theme="dark"] .rich hr{border-color:var(--line)}
+
+/* Practice and exam prep */
+html[data-theme="dark"] .topic.selected,html[data-theme="dark"] .mock-option.selected{border-color:var(--rose);background:var(--soft)}
+html[data-theme="dark"] #explanation .card{background:var(--panel)!important;color:var(--text)}
+html[data-theme="dark"] #explanation .card[style*="9ddccc"]{border-color:rgba(114,215,170,.45)!important;background:var(--good-soft)!important}
+html[data-theme="dark"] #explanation .card[style*="ffc2ce"]{border-color:rgba(255,138,155,.45)!important;background:var(--bad-soft)!important}
+html[data-theme="dark"] .mock-option.correct,html[data-theme="dark"] .cls-q .right{background:var(--good-soft);border-color:rgba(114,215,170,.45)}
+html[data-theme="dark"] .mock-option.incorrect,html[data-theme="dark"] .cls-q .wrong{background:var(--bad-soft);border-color:rgba(255,138,155,.45)}
+html[data-theme="dark"] .subject .subject-icon{color:var(--rose)}
+
+/* Online skills */
+html[data-theme="dark"] .skill-course-icon{background:var(--good-soft)}
+html[data-theme="dark"] .skill-detail-header{background:var(--panel2)}
+html[data-theme="dark"] .skill-chapter-number{background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] :is(.skill-exam-question label:hover,.cls-q label:hover){background:rgba(255,255,255,.04)}
+html[data-theme="dark"] :is(.skill-feedback,.cls-q .why,.cbt-qrev .why){background:var(--good-soft);color:var(--text)}
+html[data-theme="dark"] .skill-complete{background:var(--good-soft);border-color:rgba(114,215,170,.35)}
+
+/* Revise and flashcards */
+html[data-theme="dark"] :is(.deck-source,.flash-side){color:var(--rose)}
+html[data-theme="dark"] .weak-item b{color:var(--bad)}
+html[data-theme="dark"] .revision-sheet{background:#18181b}
+html[data-theme="dark"] .flashcard{box-shadow:var(--lift)}
+html[data-theme="dark"] .flashcard.flipped{background:var(--panel2);border-color:rgba(225,186,197,.4)}
+html[data-theme="dark"] .flash-front{color:var(--ink)}
+html[data-theme="dark"] .flash-back{color:var(--text);border-color:var(--line2)}
+
+/* Resources and teacher workspace */
+html[data-theme="dark"] :is(.library-toolbar label,.cls-form label,.cbt-row label){color:var(--text)}
+html[data-theme="dark"] :is(.library-group-title,.library-status){color:var(--muted)}
+html[data-theme="dark"] .library-num{background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .library-topic.is-saved{border-color:rgba(114,215,170,.4)}
+html[data-theme="dark"] .library-topic.is-saved .library-status{color:var(--good)}
+html[data-theme="dark"] .resource-kind{color:var(--rose)}
+html[data-theme="dark"] .teacher-class-badge{background:var(--soft);border-color:rgba(225,186,197,.3);color:var(--rose)}
+html[data-theme="dark"] .teacher-plan-output{color:var(--text)}
+html[data-theme="dark"] .teacher-skill-output{background:var(--panel2)}
+
+/* Classes */
+html[data-theme="dark"] .cls-code-box{background:var(--glow),var(--panel2);border:1px solid var(--line)}
+html[data-theme="dark"] .cls-code{background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+html[data-theme="dark"] :is(.cls-tabs,.exam-tabs){border-color:var(--line)}
+html[data-theme="dark"] .cls-tab.active{border-bottom-color:var(--rose);color:var(--rose)}
+html[data-theme="dark"] .cls-badge{background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .cls-badge.task,html[data-theme="dark"] .cls-badge.done{background:var(--good-soft);color:var(--good)}
+html[data-theme="dark"] .cls-badge.late{background:var(--bad-soft);color:var(--bad)}
+html[data-theme="dark"] .cls-badge.soon{background:var(--warn-soft);color:var(--warn)}
+html[data-theme="dark"] .cls-badge.live{background:var(--bad-soft);color:var(--bad)}
+html[data-theme="dark"] .cls-live-text{color:var(--bad)}
+html[data-theme="dark"] .cls-preview-q li.correct,html[data-theme="dark"] .cbt-qrev .ok{color:var(--good)}
+html[data-theme="dark"] .cbt-qrev .bad,html[data-theme="dark"] .cls-meta [style*="b4233c"]{color:var(--bad)!important}
+
+/* CBT and mock papers */
+html[data-theme="dark"] .cbt-hero .home-eyebrow{color:var(--rose)!important}
+html[data-theme="dark"] :is(.cbt-mode.active,.cbt-length.active){border-color:var(--rose);background:var(--soft)}
+html[data-theme="dark"] .cbt-chip{background:transparent;border-color:var(--line2);color:var(--text)}
+html[data-theme="dark"] .cbt-chip.on{background:var(--grad);border-color:transparent;color:#121212}
+html[data-theme="dark"] .cbt-chip.fixed{background:var(--panel3);border-color:var(--line2);color:var(--ink)}
+html[data-theme="dark"] .cbt-shell{background:#161618;border-color:var(--line)}
+html[data-theme="dark"] .cbt-top{background:#1d1d21;color:var(--ink);border-bottom:1px solid var(--line)}
+html[data-theme="dark"] .cbt-top small{color:var(--muted)}
+html[data-theme="dark"] .cbt-timer{background:rgba(255,255,255,.06);border:1px solid var(--line2)}
+html[data-theme="dark"] .cbt-timer.low{background:#c63f5a;border-color:transparent}
+html[data-theme="dark"] .cbt-tabs{background:#1a1a1d}
+html[data-theme="dark"] .cbt-tab{color:var(--muted)}
+html[data-theme="dark"] .cbt-tab.active{background:#161618;color:var(--rose)}
+html[data-theme="dark"] :is(.cbt-main,.cbt-keys){border-color:var(--line)}
+html[data-theme="dark"] .cbt-question{color:var(--ink)}
+html[data-theme="dark"] .cbt-option{background:var(--panel2);border-color:var(--line2);color:var(--text)}
+html[data-theme="dark"] .cbt-option:hover{border-color:rgba(225,186,197,.5)}
+html[data-theme="dark"] .cbt-option.picked{border-color:var(--rose);background:var(--soft);color:var(--ink)}
+html[data-theme="dark"] .cbt-letter{background:var(--panel3);color:var(--text)}
+html[data-theme="dark"] .cbt-option.picked .cbt-letter{background:var(--grad);color:#121212}
+html[data-theme="dark"] .cbt-num{background:var(--panel2);border-color:var(--line2);color:var(--text)}
+html[data-theme="dark"] .cbt-num.answered{background:var(--good);border-color:var(--good);color:#0c2a1e}
+html[data-theme="dark"] .cbt-num.flagged{box-shadow:inset 0 -4px 0 var(--warn)}
+html[data-theme="dark"] .cbt-num.current{outline-color:var(--rose)}
+html[data-theme="dark"] .cbt-legend i[style*="#fff"]{background:var(--panel2)!important;border-color:var(--line2)!important}
+html[data-theme="dark"] .cbt-legend i[style*="#23885f"]{background:var(--good)!important}
+html[data-theme="dark"] .cbt-legend i[style*="#e0a32c"]{background:var(--warn)!important}
+html[data-theme="dark"] .cbt-keys{background:#1a1a1d;color:var(--muted)}
+html[data-theme="dark"] .cbt-calc{background:var(--panel2);border-color:var(--line2)}
+html[data-theme="dark"] .cbt-calc input{background:#111113;border-color:var(--line2)}
+html[data-theme="dark"] .cbt-calc-keys button{background:var(--panel);border-color:var(--line2);color:var(--ink)}
+html[data-theme="dark"] .cbt-calc-keys .op{background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .cbt-calc-keys .eq{background:var(--grad);color:#121212}
+html[data-theme="dark"] .cbt-score{color:var(--ink)}
+
+/* Lesson code blocks and the Try-it playground */
+html[data-theme="dark"] .code-btn.run{background:var(--grad);color:#121212}
+html .skill-section-num{font-family:var(--font-body);font-size:14px;font-weight:700;font-variant-numeric:tabular-nums}
+html[data-theme="dark"] .skill-section-num{background:var(--soft);color:var(--rose)}
+html[data-theme="dark"] .skill-checklist li:before{border-color:var(--rose)}
+html[data-theme="dark"] .skill-task{border-left-color:var(--rose)!important}
+html[data-theme="dark"] .skill-mistakes{border-left-color:var(--bad)!important}
+html[data-theme="dark"] .skill-project{border-left-color:var(--good)!important}
+
+/* Weekly report */
+html[data-theme="dark"] .report-stat{background:var(--panel2);border-color:var(--line)}
+@media print{html[data-theme="dark"] body.print-report #parentReport{background:#fff;color:#111}html[data-theme="dark"] body.print-report #parentReport *{color:#111!important;background:transparent!important}}

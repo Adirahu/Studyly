@@ -1,0 +1,621 @@
+{
+  "id": "ai",
+  "title": "Using AI tools to learn",
+  "icon": "🤖",
+  "area": "Technology",
+  "level": "Beginner",
+  "duration": "About 4 hours",
+  "summary": "Find out how AI chatbots work and where they go wrong, then learn to use them as an honest study partner that explains, quizzes and checks your work without doing your thinking for you.",
+  "outcomes": [
+    "Explain in simple words how an AI chatbot produces an answer and why it can be wrong",
+    "Spot hallucinations, out-of-date information and bias in AI answers",
+    "Write clear prompts with context, a task and a format, and improve them with follow-up messages",
+    "Use AI to explain topics, quiz yourself and make flashcards while you still do the thinking",
+    "Check AI answers against your textbook, syllabus and other trusted sources",
+    "Follow school rules, avoid exam malpractice and keep personal information out of AI tools"
+  ],
+  "tools": "A phone or computer with any AI chatbot your school allows, such as the Studyly AI Tutor, plus your textbook and a notebook. Text chats use little data; avoid uploading photos or voice notes when data is low. Many AI tools have a minimum age (often 13, sometimes 18), so check the rules and ask a parent or guardian before you sign up for anything.",
+  "resources": [
+    {
+      "title": "Elements of AI — Introduction to AI",
+      "url": "https://www.elementsofai.com/",
+      "note": "A free online course from the University of Helsinki and MinnaLearn on what AI is and what it can and cannot do. No maths or coding needed; good for SS students who want to go deeper."
+    },
+    {
+      "title": "Microsoft Learn — Introduction to AI concepts",
+      "url": "https://learn.microsoft.com/en-us/training/modules/get-started-ai-fundamentals/",
+      "note": "A free beginner module in ten short units covering the main kinds of AI, including generative AI, and how to use AI responsibly. The short pages suit phone reading."
+    },
+    {
+      "title": "Experience AI (Raspberry Pi Foundation and Google DeepMind)",
+      "url": "https://experience-ai.org/",
+      "note": "Free lessons for secondary schools on how AI and machine learning work, including bias and fairness. Ideal for a teacher or computer club to use with a class."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "What AI is and how chatbots answer",
+      "goal": "Explain what AI is, give everyday examples of it, and describe how a chatbot builds an answer one piece at a time.",
+      "sections": [
+        {
+          "heading": "AI is already around you",
+          "body": "**Artificial intelligence (AI)** is the name for computer systems that do tasks we usually connect with human thinking, such as recognising faces, understanding speech or suggesting the next word you want to type. You probably use AI every day without calling it that.\n\n- Your phone keyboard suggests the next word as you type a WhatsApp message.\n- Face unlock recognises you, even with a new haircut.\n- A maps app predicts traffic on the way to school.\n- Your email app moves obvious spam out of your inbox.\n- A video app recommends what to watch next.\n\nMost of these systems are built with **machine learning**. Instead of a programmer writing a rule for every situation, the computer is shown many examples and finds the patterns itself. A spam filter, for instance, learns from thousands of messages that people have already marked as spam or not spam."
+        },
+        {
+          "heading": "How a chatbot writes an answer",
+          "body": "Chatbots such as ChatGPT, Gemini, Copilot, Claude and the Meta AI assistant inside WhatsApp are a kind of **generative AI**: they create new text instead of just sorting things. Inside each one is a **large language model**, trained on a huge collection of writing from books, websites and other sources.\n\nDuring training, the model practises one skill billions of times: guessing which piece of text is likely to come next. When you ask a question, it builds its reply step by step, each time choosing a likely next word based on your question and everything it has written so far. Extra training with feedback from people teaches it to be helpful and polite.\n\nThis explains a lot. The answer sounds fluent because the model has seen a great deal of fluent writing. But it is producing text that is **likely**, which is not always the same as text that is **true**. Unless the tool is connected to web search, it is not looking anything up, and even with search it can misread what it finds."
+        },
+        {
+          "heading": "A useful way to picture it",
+          "body": "Picture a very well-read study partner who answers instantly and never gets tired, but has a poor memory for exact facts. Such a partner is brilliant for explaining an idea in five different ways or inventing practice questions. You would still check their dates and figures before writing them in an exam.\n\nA chatbot does not understand the world the way you do and has no feelings. It does not know you, your school or your teacher's marking scheme unless you tell it things, and Chapter 6 explains why you should be careful about what you tell it.\n\nKeep one rule in mind for the rest of this course: **AI is a helper for your learning, not a replacement for it.**"
+        }
+      ],
+      "points": [
+        "AI covers systems that recognise, predict or generate things, such as face unlock, spam filters and chatbots",
+        "Machine learning means a computer learns patterns from many examples instead of following hand-written rules",
+        "A chatbot builds its answer by repeatedly predicting a likely next piece of text",
+        "Likely-sounding is not the same as true, so fluent answers still need checking",
+        "AI supports your learning; it does not do the learning for you"
+      ],
+      "mistakes": [
+        "Thinking a chatbot looks every answer up in a reliable book — it usually generates text from patterns, so it can be wrong",
+        "Believing an answer because it sounds confident and well written — confidence is not evidence",
+        "Assuming the chatbot knows your syllabus, school or teacher — it only knows what it learned in training and what you tell it"
+      ],
+      "task": "List five places you met AI this week, such as keyboard suggestions or a video app. Then ask an allowed chatbot: “In three sentences, how do you produce an answer?” Compare its reply with this chapter and write down one thing that matches and one thing it left out.",
+      "quiz": [
+        {
+          "q": "Your phone suggests “Good morning” as you start typing a message. What best describes what is happening?",
+          "opts": [
+            "A phone company worker is choosing words for you",
+            "A trained model predicts a likely next phrase from patterns",
+            "The phone copies the sentence from one fixed website each time",
+            "It picks a random greeting from a short list, with no learning"
+          ],
+          "a": 1,
+          "why": "Keyboard suggestions come from a model that learned which words usually follow others."
+        },
+        {
+          "q": "Why can a chatbot give an answer that sounds perfect but is wrong?",
+          "opts": [
+            "It produces likely-sounding text that is not automatically fact-checked",
+            "It only makes mistakes when your internet connection is weak",
+            "It always copies one website word for word, so errors come from that site",
+            "It is programmed to include a few wrong answers to test you"
+          ],
+          "a": 0,
+          "why": "The model chooses probable words; fluent writing does not guarantee accurate facts."
+        },
+        {
+          "q": "Which of these is an example of machine learning?",
+          "opts": [
+            "A calculator that follows fixed rules to add and multiply numbers",
+            "A light switch that turns on a bulb whenever you press it",
+            "A printed timetable that lists every lesson for the whole term",
+            "A spam filter that learned from thousands of labelled messages"
+          ],
+          "a": 3,
+          "why": "Machine learning finds patterns in examples, which is exactly how a spam filter learns."
+        },
+        {
+          "q": "A classmate says, “The chatbot knows our teacher's marking scheme, so just copy what it says.” What is the best reply?",
+          "opts": [
+            "Agree, because chatbots are trained on every school's private files",
+            "It can, but only paid chatbots are allowed to see marking schemes",
+            "It cannot see our scheme; it only knows its training and what we type",
+            "It can see the scheme if the teacher's laptop is on the same Wi-Fi network"
+          ],
+          "a": 2,
+          "why": "A chatbot has no access to your school's private documents, so it cannot know how your teacher marks."
+        },
+        {
+          "q": "Which description of an AI chatbot is most accurate?",
+          "opts": [
+            "A digital teacher that has checked every fact it gives you",
+            "A fast, well-read helper that can still be wrong about exact facts",
+            "A search engine that only shows answers taken from official websites",
+            "A team of people somewhere typing replies very quickly"
+          ],
+          "a": 1,
+          "why": "It is useful for explaining and practising, but its facts must be checked."
+        }
+      ]
+    },
+    {
+      "title": "What AI does well, and where it goes wrong",
+      "goal": "Choose tasks AI is good at, and recognise hallucinations, out-of-date information and bias when you see them.",
+      "sections": [
+        {
+          "heading": "Where AI is genuinely useful",
+          "body": "Used well, a chatbot is a patient helper available at any hour. It is especially good at tasks where you can judge the result yourself:\n\n- **Explaining** a topic in simpler words, or in a different way from your textbook.\n- **Giving examples**, such as five sentences that use the past perfect tense.\n- **Making practice material**, such as quiz questions or flashcards on a topic you name.\n- **Giving feedback** on a paragraph you wrote, such as pointing out unclear sentences.\n- **Planning**, such as turning your list of subjects into a revision timetable.\n\nNotice the pattern: in each of these, a small mistake is easy to spot and does little harm."
+        },
+        {
+          "heading": "Hallucinations: confident inventions",
+          "body": "A **hallucination** is when an AI tool states something false as if it were fact. It might invent a date, a quotation, a statistic, or even the title of a book that does not exist. It is not lying on purpose; it is producing words that fit the pattern of a good answer.\n\nHallucinations are most common with exact details: names, dates, numbers, formulas, references and anything very local, such as facts about a particular town or school. Maths is another weak spot, because the model may write steps that look right but contain a slip. If you ask for sources, it can even invent web links or book titles that look real. Treat every precise detail as unconfirmed until you have checked it."
+        },
+        {
+          "heading": "Out of date and one-sided",
+          "body": "A language model learns from text collected up to a certain date, called its **training cut-off**. Unless the tool searches the web, it may not know about a new syllabus, a changed exam date, a new law or recent news. Always get dates and rules for WAEC, NECO or JAMB from the exam body or your school, never from a chatbot alone.\n\nAI can also show **bias**, because it learned from writing that over-represents some countries and points of view. You may see it say “grade 10” instead of SS1, price things in dollars, use American spelling, or give examples that do not fit life in Nigeria. Bias can be more serious too, such as repeating unfair stereotypes about groups of people. When an answer assumes a different country or treats people unfairly, question it and ask for a fairer or local version."
+        },
+        {
+          "heading": "It may agree with you too easily",
+          "body": "Chatbots are trained to be helpful, and sometimes that makes them too agreeable. If you insist, “No, I'm sure the answer is 12,” some tools will apologise and change a correct answer into a wrong one. Pushing back is therefore not a way to find the truth. Ask the tool to show its working instead, then check it against a trusted source."
+        }
+      ],
+      "points": [
+        "AI is strongest at explaining, giving examples, making practice questions and giving feedback on your own work",
+        "A hallucination is a confident but false statement, often a date, number, quote or reference",
+        "A training cut-off means AI may not know recent changes, so get exam rules from official sources",
+        "Bias shows up as foreign assumptions or unfair stereotypes, so question answers that do not fit",
+        "A chatbot may agree with you just because you pushed back, so ask for reasons and check them"
+      ],
+      "mistakes": [
+        "Using AI for the latest exam dates or registration rules — check the exam body's official website or your school",
+        "Trusting a reference or link the AI gives without opening it — it may not exist",
+        "Accepting American examples and spellings in work for a Nigerian teacher — ask for local examples and British spelling"
+      ],
+      "task": "Ask an allowed chatbot three questions: one asking it to explain a topic you know well, one for a precise fact from your textbook (a date or a number), and one about a recent event or rule. Mark each answer correct, partly correct or wrong using your textbook or teacher, and note which kind of question it handled best.",
+      "quiz": [
+        {
+          "q": "Which task is a chatbot most likely to do well?",
+          "opts": [
+            "Telling you today's exact JAMB registration deadline",
+            "Telling you what your teacher will set in next week's test",
+            "Explaining photosynthesis again in simpler words",
+            "Quoting the exact page number of a fact in your textbook"
+          ],
+          "a": 2,
+          "why": "Explaining in simpler words plays to AI's strengths, and you can judge whether the explanation makes sense."
+        },
+        {
+          "q": "A chatbot gives you a quote it says comes from a famous Nigerian author, with a book title you cannot find anywhere. What is most likely happening?",
+          "opts": [
+            "It is probably a hallucination: the quote and title may be invented",
+            "The book exists, but publishers keep it hidden from search engines",
+            "The author recently removed every copy of the book from the internet",
+            "The chatbot can read unpublished books that the public cannot see"
+          ],
+          "a": 0,
+          "why": "Invented quotations and references are one of the most common kinds of hallucination."
+        },
+        {
+          "q": "Why should you not rely on a chatbot for this year's WAEC timetable?",
+          "opts": [
+            "Chatbots cannot handle dates, so they always refuse timetable questions",
+            "WAEC timetables are kept secret until the morning of each examination paper",
+            "It is against the law in Nigeria to ask a chatbot about exams",
+            "Its dates may be old or invented; WAEC and your school have the real one"
+          ],
+          "a": 3,
+          "why": "Training cut-offs and hallucinations make AI unreliable for current dates and rules."
+        },
+        {
+          "q": "An AI answer for your SS1 Economics homework uses dollars, talks about “grade 10” and gives American examples. What does this show?",
+          "opts": [
+            "Every part of the answer is definitely wrong",
+            "A bias towards other countries, so ask it for Nigerian examples",
+            "Economics works differently in Nigeria, so AI cannot help with it at all",
+            "The chatbot is broken and needs to be reinstalled before you use it again"
+          ],
+          "a": 1,
+          "why": "AI often defaults to the countries most common in its training text, and you can ask it to use local context."
+        },
+        {
+          "q": "You tell a chatbot its correct answer is wrong, and it apologises and changes it. What should you learn from this?",
+          "opts": [
+            "The new answer must be right, because the chatbot corrected itself",
+            "Arguing with the chatbot is the most reliable way to find the truth",
+            "It may just be agreeing with you, so check a trusted source",
+            "You should always keep the first answer"
+          ],
+          "a": 2,
+          "why": "Agreement is not proof. Only an independent, trusted source can settle the question."
+        }
+      ]
+    },
+    {
+      "title": "Writing good prompts",
+      "goal": "Write prompts that give context, a clear task and a useful format, and improve weak answers with follow-up messages.",
+      "sections": [
+        {
+          "heading": "The four parts of a strong prompt",
+          "body": "A **prompt** is the message you type to an AI tool. The tool cannot see you, your class or your textbook, so a vague prompt gets a vague, general answer. A strong prompt usually has four parts:\n\n1. **Context**: who you are and what you are studying, for example “I am an SS2 student preparing for WAEC Biology.”\n2. **Task**: exactly what you want, starting with a clear verb such as explain, compare, list, quiz or check.\n3. **Format**: how the answer should look, for example five bullet points, a table, numbered steps, or under 150 words.\n4. **Refinement**: follow-up messages that fix whatever is not right yet.\n\nYou do not need fancy words. Clear, specific, everyday English works best."
+        },
+        {
+          "heading": "Before and after: a science example",
+          "body": "Here is the same request written twice. The weak version leaves the tool guessing. The strong version tells it the level, the focus and the shape of the answer, so the reply is far more likely to suit an SS1 student.\n\nRead both and find each of the four parts in the stronger version. Notice that it also asks the AI to finish with two questions, which turns a plain explanation into active practice.",
+          "code": {
+            "lang": "text",
+            "source": "WEAK PROMPT\nexplain osmosis\n\nSTRONG PROMPT\nI am an SS1 student in Nigeria studying Biology.     <- context\nExplain osmosis in simple words, using one everyday  <- task\nexample from a Nigerian kitchen.\nUse no more than 6 short bullet points, then ask me  <- format\n2 quick questions to check that I understood."
+          }
+        },
+        {
+          "heading": "Refine instead of restarting",
+          "body": "The first answer is a starting point, not the end. Read it, decide what is missing, and say so in a follow-up message. The chat remembers what came before, so you do not need to repeat everything.\n\n- Too hard? “Explain that again as if I am in JSS1, with a simpler example.”\n- Too long? “Shorten that to five key points I can copy into my notebook.”\n- Wrong focus? “I only need the part about how water moves through the membrane.”\n- Wrong words? “Use the terms in the WAEC syllabus, such as selectively permeable membrane.”\n\nYou can also give the AI a role, such as “Act as a patient Chemistry teacher,” or show it one example of a question style you like and ask for more in the same style."
+        },
+        {
+          "heading": "Before and after: help that keeps the work yours",
+          "body": "Prompts can protect your own learning too. In this example, the student asks for help with planning and feedback but clearly tells the AI not to write the essay. The thinking and the writing stay with the student, and the follow-up asks for comments rather than a rewrite.",
+          "code": {
+            "lang": "text",
+            "source": "WEAK PROMPT\nhelp me with essay\n\nSTRONG PROMPT\nI am a JSS3 student. My English teacher asked for a\n250-word essay titled 'A Market Day in My Town'.\nDo not write the essay for me. Give me 3 ideas for an\nopening sentence and a simple 4-paragraph plan, with\none question to think about for each paragraph.\n\nFOLLOW-UP\nThanks. Here is my first paragraph. Point out two\nsentences that are unclear, but do not rewrite them."
+          }
+        }
+      ],
+      "points": [
+        "A strong prompt gives context, a clear task and a format",
+        "Start the task with a clear verb such as explain, compare, list or quiz",
+        "Ask for a study-friendly format, such as bullet points, steps, a table or a word limit",
+        "Improve answers with follow-up messages instead of starting again",
+        "You can tell the AI what not to do, such as “do not write it for me”"
+      ],
+      "mistakes": [
+        "Typing one or two words like “osmosis” and expecting a perfect answer — add your class, your exact need and a format",
+        "Asking for everything at once — break a big request into smaller steps",
+        "Giving up after a weak first answer — say what is wrong and ask again"
+      ],
+      "task": "Take the weak prompt “tell me about the water cycle” and rewrite it with context, a task and a format that suit your class. Send it to an allowed chatbot, then send two follow-up messages that improve the answer. Copy all three prompts into your notebook and note what each one changed.",
+      "quiz": [
+        {
+          "q": "Which prompt is most likely to get a useful answer for a JSS2 student?",
+          "opts": [
+            "fractions",
+            "Tell me absolutely everything there is to know about fractions, decimals, percentages and maths",
+            "I'm in JSS2. Explain adding fractions with different denominators in 4 steps, with one example",
+            "Write out every fraction question in my JSS2 textbook with full answers so I can copy them"
+          ],
+          "a": 2,
+          "why": "It gives context (JSS2), a precise task and a format (four steps plus a worked example)."
+        },
+        {
+          "q": "Prompt P says “Explain photosynthesis.” Prompt Q says “I'm in SS1. Explain photosynthesis in 5 bullet points, then ask me 2 questions.” Why is Prompt Q better?",
+          "opts": [
+            "It adds context, a format and a way to check understanding",
+            "It is longer, and chatbots always give better answers to longer prompts",
+            "It sounds more polite, and politeness is what makes prompts work",
+            "It leaves the AI free to decide what matters most"
+          ],
+          "a": 0,
+          "why": "Context and format shape the answer, and the questions turn reading into practice."
+        },
+        {
+          "q": "The AI's explanation of simultaneous equations is too hard to follow. What is the best next step?",
+          "opts": [
+            "Give up, because AI cannot teach this topic",
+            "Type the same question again, but this time in capital letters",
+            "Copy the explanation into your notes and hope it makes sense later",
+            "Ask it to explain again more simply, with a worked example"
+          ],
+          "a": 3,
+          "why": "A follow-up message adjusts the level without starting over."
+        },
+        {
+          "q": "Your teacher says your essay must be your own writing. Which prompt fits that rule?",
+          "opts": [
+            "Write my essay on 'A Market Day in My Town' in simple JSS3 English",
+            "Give me a plan and opening ideas, but do not write the essay for me",
+            "Write an essay I can hand in, and make it sound like a student wrote it",
+            "Rewrite my friend's essay in different words so it looks like mine"
+          ],
+          "a": 1,
+          "why": "Asking for planning help and feedback keeps the thinking and the writing yours."
+        },
+        {
+          "q": "Which of these is a format instruction?",
+          "opts": [
+            "I am an SS3 student preparing for my WAEC Government paper",
+            "Explain how a bill becomes law in Nigeria's National Assembly",
+            "Thank you, that explanation was really helpful for my revision",
+            "Put the answer in a table with two columns: cause and effect"
+          ],
+          "a": 3,
+          "why": "A format instruction tells the AI how to lay out its answer."
+        }
+      ]
+    },
+    {
+      "title": "Studying with AI without letting it think for you",
+      "goal": "Use AI to explain topics, quiz you, check your summaries and make flashcards in ways that build real understanding.",
+      "sections": [
+        {
+          "heading": "Try first, then ask",
+          "body": "Your brain learns most when it works hard: when you try to recall something, explain it in your own words, or attempt a problem before seeing the answer. If AI does all of that for you, you may feel you understand, but the knowledge will not be there in the exam hall.\n\nSo use one simple rule: **try first, then ask.** Attempt the question, write your own summary or make your own guess, then use AI to check, explain or challenge it. When you are stuck, ask for a **hint** rather than the answer, for example: “Give me a hint for the next step, but do not solve it.”"
+        },
+        {
+          "heading": "Four study moves that work",
+          "body": "- **Explain it to me.** Ask for a topic in simple words, then for a second explanation from a different angle. Close the chat and explain it on paper or out loud without looking.\n- **Quiz me.** Ask the AI to quiz you one question at a time and to wait for your answer before marking it. Answering from memory builds far stronger learning than reading.\n- **Check my summary.** Write your own summary of a topic first, paste it in, and ask what is missing or wrong. Summarising your own notes teaches you more than reading an AI summary.\n- **Make flashcards.** Ask for question-and-answer pairs based on your own notes, copy them onto cards or paper, and practise them over several days.\n\nYou can also swap roles: tell the AI to act as a confused classmate and explain the topic to it. Teaching is one of the best ways to discover gaps in your own understanding."
+        },
+        {
+          "heading": "Example: a quiz-me session",
+          "body": "Below is the start of a quiz session for SS2 Chemistry. The student sets the rules at the beginning: one question at a time, wait for my answer, give a hint if I am wrong. The AI then behaves like a patient tutor instead of a machine that dumps answers.\n\nCopy good questions into your notebook. Reusing them later costs no data, and you can practise even when there is no network.",
+          "code": {
+            "lang": "text",
+            "source": "STUDENT: I'm in SS2 revising Chemistry: the mole concept.\nQuiz me with 5 questions, one at a time. Wait for my\nanswer before giving the next one. If I'm wrong, give\nme a hint first and let me try again.\n\nAI: Question 1. How many moles are in 36 g of water\n(H2O)? Use H = 1 and O = 16.\n\nSTUDENT: 2 moles\n\nAI: Correct. The molar mass of water is 18 g/mol,\nand 36 / 18 = 2. Question 2. ..."
+          }
+        },
+        {
+          "heading": "Signs you are leaning on it too much",
+          "body": "Watch for these warning signs: you cannot explain a topic unless the chat is open; you copy answers into your notebook without reading them; you ask AI before you have even read the question; or your homework is perfect but your test scores are not improving. If you notice any of these, go back to try first, then ask, and spend more time on quiz-me sessions than on reading explanations."
+        }
+      ],
+      "points": [
+        "Try first, then ask: attempt the work before using AI",
+        "Ask for hints rather than full answers when you are stuck",
+        "Quiz-me sessions, one question at a time, build memory better than reading explanations",
+        "Write your own summary and let AI check it, rather than letting AI summarise for you",
+        "Copy useful questions and flashcards into your notebook so you can practise offline"
+      ],
+      "mistakes": [
+        "Reading a long AI explanation and feeling you understand — close the chat and explain it yourself to check",
+        "Asking AI to summarise a chapter you have not read — read it first, summarise it yourself, then compare",
+        "Making flashcards once and never using them — review them several times over a week"
+      ],
+      "task": "Choose one topic you are studying this week. Write a five-line summary from memory, then ask an allowed chatbot to check it and list what you missed. Next, ask it to quiz you with five questions, one at a time. Record your score and the gaps you found in your notebook.",
+      "quiz": [
+        {
+          "q": "You are stuck on step 3 of a maths problem. Which prompt helps you learn the most?",
+          "opts": [
+            "Solve the whole question for me, showing every step clearly",
+            "Give me only the final answer so I can write it down",
+            "Give me a hint for step 3, but do not solve it for me",
+            "Solve this one and the next nine questions in the exercise"
+          ],
+          "a": 2,
+          "why": "A hint keeps you doing the thinking, which is how you learn the method."
+        },
+        {
+          "q": "Which study approach builds the strongest memory before an exam?",
+          "opts": [
+            "Being quizzed one question at a time and answering from memory",
+            "Rereading the AI's explanation until it feels familiar",
+            "Copying the AI's neat summary into your notebook in your best handwriting",
+            "Saving the whole chat so that you can scroll through it on exam morning"
+          ],
+          "a": 0,
+          "why": "Recalling answers yourself strengthens memory far more than rereading."
+        },
+        {
+          "q": "Adaeze asks AI to summarise a chapter she has not read, then copies the summary into her notes. What would be a better plan?",
+          "opts": [
+            "Ask the AI for a longer, more detailed summary and copy that instead",
+            "Read the chapter, write her own summary, then ask AI what she missed",
+            "Copy summaries from two different chatbots so nothing is left out",
+            "Skip the chapter, since the AI summary already covers the key points"
+          ],
+          "a": 1,
+          "why": "Writing her own summary makes her process the ideas, and AI then helps her spot gaps."
+        },
+        {
+          "q": "Which is a warning sign that you are depending on AI too much?",
+          "opts": [
+            "You use AI to quiz yourself after you have finished studying a topic",
+            "You check the AI's answers against your textbook and class notes",
+            "You write prompts that include context, a clear task and a format",
+            "You cannot explain a topic unless the chat is open in front of you"
+          ],
+          "a": 3,
+          "why": "If your understanding disappears when the chat closes, the learning has not happened in your own head."
+        },
+        {
+          "q": "Why is it useful to copy good AI quiz questions into your notebook?",
+          "opts": [
+            "Because chatbots delete every conversation as soon as you close them",
+            "So your teacher cannot tell you used AI",
+            "So you can practise again later without using data",
+            "Because copying something out is the same as learning it properly"
+          ],
+          "a": 2,
+          "why": "Saved questions can be reused for practice over several days, even offline."
+        }
+      ]
+    },
+    {
+      "title": "Checking AI answers against trusted sources",
+      "goal": "Decide which parts of an AI answer to check, and confirm them using your textbook, the syllabus and other trusted sources.",
+      "sections": [
+        {
+          "heading": "Treat every answer as a draft",
+          "body": "An AI answer is a first draft, and you are responsible for anything you copy from it. Before you put a fact in your notes, homework or exam answer, ask yourself: **would I be happy to defend this to my teacher?** If not, check it.\n\nYou do not need to check every word with the same care. Focus on the parts most likely to be wrong and the parts that matter most:\n\n- names, dates, numbers and units\n- formulas, definitions and calculations\n- quotations, references and links\n- anything about laws, exam rules, health or money\n- anything that surprises you or sounds too neat"
+        },
+        {
+          "heading": "Where to check",
+          "body": "Good checking means going to a source that does not depend on the AI. For school work, these are the most useful, in order:\n\n1. **Your textbook and class notes**, because they match what your teacher will mark.\n2. **The official syllabus** for your exam from WAEC, NECO or JAMB, which shows the topics and terms you are expected to know.\n3. **Your teacher**, who can settle disagreements and explain the marking.\n4. **Official and well-known websites**, such as Nigerian government sites ending in .gov.ng, university sites, and respected encyclopaedias and news organisations.\n\nIf the AI gives a link, open it and confirm that the page exists and really says what the AI claimed. A real-looking link that leads nowhere is a sign of a hallucination."
+        },
+        {
+          "heading": "Practise: check this answer",
+          "body": "For maths and science, redo the working yourself. A final answer can look right even when a step is wrong, and copying a wrong method costs marks. For facts, find at least one trusted source that agrees.\n\nTry it now. The AI answer below has three facts for revision. Check each one in your textbook or notes before you read the next section, and decide which are right and which are wrong.",
+          "code": {
+            "lang": "text",
+            "source": "QUESTION: Give me three quick facts for my revision.\n\nAI ANSWER:\n1. Nigeria gained independence from Britain on\n   1 October 1963.\n2. Abuja replaced Lagos as Nigeria's capital in 1991.\n3. The chemical symbol for sodium is So."
+          }
+        },
+        {
+          "heading": "What the checks found, and using AI to help",
+          "body": "A quick textbook check shows two mistakes. Nigeria became independent on **1 October 1960**; 1963 is the year it became a republic, which makes it an easy mix-up. The symbol for sodium is **Na**, from its Latin name natrium. The Abuja fact is correct: the capital officially moved from Lagos in December 1991.\n\nOnce you know the facts, AI can still help. Paste the correct information from your textbook and ask it to explain why it is true, or ask where its earlier answer and your textbook disagree. You can also ask the same question in a fresh chat; if the two answers differ, check extra carefully. What you should never do is ask the same chatbot “Are you sure?” and treat its reply as proof."
+        }
+      ],
+      "points": [
+        "Treat AI output as a draft you are responsible for",
+        "Check names, dates, numbers, formulas, quotations and links first",
+        "Use sources that do not depend on the AI: textbook, syllabus, teacher and official websites",
+        "Redo calculations yourself to check the method, not just the final answer",
+        "Open any link the AI gives and confirm it says what was claimed"
+      ],
+      "mistakes": [
+        "Asking the same chatbot “Are you sure?” and accepting its reply as proof — check an independent source",
+        "Checking only the final number in a calculation — rework each step",
+        "Trusting a website just because it appears first in search results — prefer official and well-known sources"
+      ],
+      "task": "Ask an allowed chatbot for five facts on a topic from your syllabus. Check each one in your textbook or with your teacher and mark it correct, wrong or unsure. For any wrong fact, write the correct version and the name of the source where you found it.",
+      "quiz": [
+        {
+          "q": "An AI tells you Nigeria became independent in 1963. What should you do?",
+          "opts": [
+            "Write 1963, because the AI sounded confident and gave a full date",
+            "Ask the AI to repeat the fact and accept whatever it says the second time",
+            "Check a trusted source, which shows independence was on 1 October 1960",
+            "Leave the date out of your answer so that you cannot be marked wrong"
+          ],
+          "a": 2,
+          "why": "Independent checking catches the error; 1963 is when Nigeria became a republic."
+        },
+        {
+          "q": "Which source best matches what your WAEC examiner expects?",
+          "opts": [
+            "The official WAEC syllabus and your recommended textbook",
+            "The top blog post in your search results",
+            "A screenshot of notes shared by a senior student in a WhatsApp group",
+            "The chatbot's first answer, since it was trained on lots of textbooks"
+          ],
+          "a": 0,
+          "why": "The official syllabus and recommended textbooks set the expected content and terms."
+        },
+        {
+          "q": "An AI gives you a website link as its source. What should you do before trusting it?",
+          "opts": [
+            "Copy the link into your homework, because a link proves the fact",
+            "Open it and confirm the page exists and says what the AI claimed",
+            "Trust it if the web address looks official and ends in .com",
+            "Ask the chatbot to confirm the link is real, then use it"
+          ],
+          "a": 1,
+          "why": "AI can invent links, so only the page itself can confirm the claim."
+        },
+        {
+          "q": "An AI solves a physics calculation for you. What is the best way to check it?",
+          "opts": [
+            "Check only that the final number has the right units",
+            "Ask the AI whether it is sure and accept its reply",
+            "Choose the AI's longest answer, as it shows the most working",
+            "Work through each step yourself using the correct formula"
+          ],
+          "a": 3,
+          "why": "Reworking the method shows whether each step, not just the final number, is right."
+        },
+        {
+          "q": "Which part of an AI answer most needs checking?",
+          "opts": [
+            "Its friendly greeting",
+            "Whether it split the answer into short paragraphs",
+            "The exact dates, numbers and formulas",
+            "Its offer at the end to help you with anything else"
+          ],
+          "a": 2,
+          "why": "Precise details are where hallucinations are most common and where mistakes cost the most marks."
+        }
+      ]
+    },
+    {
+      "title": "Using AI honestly and safely",
+      "goal": "Follow your school's AI rules, stay clear of exam malpractice, be open about how you used AI and protect personal information.",
+      "sections": [
+        {
+          "heading": "Learning help or cheating?",
+          "body": "Ask one simple question: **whose thinking is being marked?** Homework, projects and tests exist so your teacher can see what you understand. Using AI to explain a topic, quiz you or point out unclear sentences supports your learning. Handing in AI-written answers, essays or code as your own, when your teacher has not allowed it, is cheating, even if you change a few words.\n\nRules differ between schools, subjects and even individual tasks. One teacher may allow AI for brainstorming; another may ban it completely for a particular assignment. If you are not sure, ask before you start, not after you submit."
+        },
+        {
+          "heading": "Be open about how you used AI",
+          "body": "When AI has helped with a piece of work, say so honestly. A short note at the end is enough, for example:\n\n“I used an AI chatbot to explain the causes of erosion and to quiz me. All the writing in this report is my own.”\n\nBeing open protects you. Teachers can often tell when work does not sound like the student who handed it in, and an honest note shows you used the tool responsibly. Never use AI to make up quotations, results or sources for a project: inventing evidence is dishonest whether a person or a machine produced it."
+        },
+        {
+          "heading": "Exams are AI-free zones",
+          "body": "Using AI, a phone or any other unauthorised help during a test or a public exam such as WAEC, NECO, BECE or JAMB's UTME is **examination malpractice**. Exam bodies can cancel results and bar candidates, and malpractice is also an offence under Nigerian law. Simply having a phone with you in the exam hall can be treated as malpractice, even if you never use it.\n\nBe wary of WhatsApp groups and websites offering “expo”, “runs” or AI tricks for live papers. They are dishonest, and many are simply scams that take your money. JAMB has repeatedly warned that nobody can “upgrade” a UTME score for a fee. The only reliable plan is preparation, and that is where AI can genuinely help, long before exam day."
+        },
+        {
+          "heading": "Keep personal information out of prompts",
+          "body": "What you type into an AI tool may be stored and, with some tools, used to improve future versions. Treat a chatbot like a public noticeboard: do not type anything you would not want strangers to read.\n\n- Never share passwords, PINs, OTPs, bank details, your BVN or your NIN.\n- Leave out your full name, home address, phone number and school name where you can.\n- Do not upload photos of other people, or their private messages, without permission.\n- Keep private matters about health or family out of general chatbots; talk to a trusted adult instead.\n\nCheck the tool's age rules and privacy settings with a parent or guardian, and use the tools your school recommends."
+        }
+      ],
+      "points": [
+        "Ask whose thinking is being marked: AI may help you learn, but submitted work must follow your teacher's rules",
+        "When AI helped with a piece of work, add a short honest note saying how",
+        "Using, or even carrying, a phone or AI tool in a test or public exam can count as malpractice",
+        "Offers of exam “expo” or score upgrades are dishonest and usually scams",
+        "Never type passwords, PINs, OTPs, your BVN, your NIN or other private details into AI tools"
+      ],
+      "mistakes": [
+        "Thinking that changing a few words makes AI-written work your own — it is still not your thinking",
+        "Guessing the AI rules for an assignment — ask your teacher before you start",
+        "Pasting a friend's private chat or photo into an AI tool — get permission first and remove personal details"
+      ],
+      "task": "Draft your own five-rule “AI honesty code” covering homework, projects, tests and exams, privacy, and how you will say when you used AI. Show it to a parent, guardian or teacher and ask whether it matches your school's rules. Keep it at the front of your notebook.",
+      "quiz": [
+        {
+          "q": "Your teacher allows AI for brainstorming but says the essay must be your own writing. What is the honest approach?",
+          "opts": [
+            "Ask AI to write the essay, then change enough words to make it yours",
+            "Get a friend to submit the AI essay",
+            "Use AI for ideas, write the essay yourself and say how you used AI",
+            "Submit the AI essay, since brainstorming with AI is already allowed"
+          ],
+          "a": 2,
+          "why": "Using AI within the rules and saying so keeps the work honest."
+        },
+        {
+          "q": "During a class test, a classmate offers to show you an AI answer on their phone. What is this?",
+          "opts": [
+            "Examination malpractice, which can lead to serious penalties",
+            "Allowed, as long as you only look at it for a few seconds",
+            "A clever revision tip, because you still have to read the answer",
+            "Fine, provided the teacher is busy and does not see you"
+          ],
+          "a": 0,
+          "why": "Any unauthorised help during an assessment is malpractice."
+        },
+        {
+          "q": "A WhatsApp message offers to “upgrade” your UTME score for ₦25,000. What is the best response?",
+          "opts": [
+            "Pay quickly before the slots run out, then check your JAMB profile",
+            "Share it with friends in your class group so they can upgrade too",
+            "Send half the money first to test it",
+            "Ignore and report it; JAMB scores cannot be upgraded"
+          ],
+          "a": 3,
+          "why": "Score upgrades do not exist. The offer is fraud, and taking part could also get you into trouble."
+        },
+        {
+          "q": "Which of these is safe to type into an AI chatbot?",
+          "opts": [
+            "Your bank PIN, so it can explain why your account is blocked",
+            "A request for quiz questions on the Nigerian constitution",
+            "Your full name, home address and phone number for a CV",
+            "A screenshot of your friend's private messages for advice"
+          ],
+          "a": 1,
+          "why": "A study question shares no personal or private information."
+        },
+        {
+          "q": "You are unsure whether AI is allowed for a project. What should you do?",
+          "opts": [
+            "Use it secretly and hope no one notices",
+            "Assume every teacher allows it",
+            "Ask the chatbot whether your teacher allows it",
+            "Ask your teacher before you start"
+          ],
+          "a": 3,
+          "why": "Only your teacher or school can tell you the rules for that task."
+        }
+      ]
+    }
+  ],
+  "project": {
+    "title": "My AI study plan and honesty code",
+    "brief": "Create a two-week AI study plan for one subject you find difficult, together with your personal “AI honesty code”. The plan is for you, and you will show it to a parent, guardian or teacher, so it must show exactly how you will use AI to learn, how you will check its answers and how you will stay within your school's rules.",
+    "steps": [
+      "Choose one subject and list three topics from your syllabus or scheme of work that you want to improve.",
+      "For each topic, write three prompts with context, a task and a format: one to explain the topic, one to quiz you one question at a time, and one to check a summary you write yourself.",
+      "Make a two-week timetable showing when you will study each topic, when you will use AI and when you will study without it.",
+      "For each topic, name the trusted source you will use to check AI answers, such as a textbook chapter, the syllabus or your teacher.",
+      "Write your AI honesty code: at least five rules covering homework, tests and exams, privacy, checking answers and how you will say when you used AI.",
+      "Try the plan for one topic, then write three sentences about what worked and what you will change.",
+      "Show the plan and the code to a parent, guardian or teacher and add one improvement they suggest."
+    ],
+    "checklist": [
+      "Every prompt includes context, a clear task and a format",
+      "The timetable includes time to study without AI and to try questions before asking for help",
+      "Each topic names a trusted source for checking answers",
+      "The honesty code covers school rules, exams, privacy and declaring AI use",
+      "No passwords, personal details or other people's information appear anywhere in the plan"
+    ]
+  }
+}

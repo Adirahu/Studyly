@@ -1,0 +1,632 @@
+{
+  "id": "docs",
+  "title": "Typing and word processing",
+  "icon": "⌨️",
+  "area": "Productivity",
+  "level": "Beginner",
+  "duration": "About 5 hours, plus 10–15 minutes of typing practice a day",
+  "summary": "Learn to touch type, then create, format and save neat documents, from study notes and timetables to a formal letter and a one-page CV saved as a PDF.",
+  "outcomes": [
+    "Touch type using the home row, good posture and a daily practice routine",
+    "Create, name, save and find documents on a phone or a computer",
+    "Format text and paragraphs consistently using styles",
+    "Organise information with lists, tables and images",
+    "Use undo, find and replace, spell check and other shortcuts on Windows, Mac and phone apps",
+    "Produce a formal letter and a one-page CV and save them as PDF files"
+  ],
+  "tools": "Any word processor: Google Docs (free on Android, iPhone and the web), Microsoft Word (the phone app and Word for the web offer free basic editing with a Microsoft account) or LibreOffice Writer (free for computers, works without internet). For typing practice a computer keyboard is best; on a phone, a cheap Bluetooth or OTG keyboard helps. Ask a parent or guardian before creating any account.",
+  "resources": [
+    {
+      "title": "TypingClub — free touch-typing lessons",
+      "url": "https://www.typingclub.com/",
+      "note": "Free step-by-step lessons in the browser with hand-position guides; you can start without an account. Best on a computer or a phone with a keyboard attached."
+    },
+    {
+      "title": "Microsoft Support — Word help and learning",
+      "url": "https://support.microsoft.com/en-us/word",
+      "note": "Official free guides for every Word task, from creating and formatting a document to saving it as a PDF."
+    },
+    {
+      "title": "Microsoft Support — Keyboard shortcuts in Word",
+      "url": "https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-word-95ef89dd-7142-4b50-afb2-f762f663ceb2",
+      "note": "The full official list of Word shortcuts, with separate tabs for Windows and Mac."
+    },
+    {
+      "title": "Google Docs Editors Help — How to use Google Docs",
+      "url": "https://support.google.com/docs/answer/7068618",
+      "note": "Official getting-started guide for creating, editing and sharing documents, with versions for computer, Android and iPhone."
+    },
+    {
+      "title": "Google Docs Editors Help — Keyboard shortcuts for Google Docs",
+      "url": "https://support.google.com/docs/answer/179738",
+      "note": "Official shortcut list for Windows, Chromebook and Mac. Note that a few shortcuts differ from Word."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Touch typing: home row, posture and practice",
+      "goal": "Place your fingers on the home row, sit comfortably and follow a daily routine that builds accuracy first and speed later.",
+      "sections": [
+        {
+          "heading": "Why touch typing is worth learning",
+          "body": "**Touch typing** means typing with all ten fingers without looking at the keyboard. At first it feels slower than hunting for keys with two fingers, but with regular practice it becomes faster and more accurate, and your eyes can stay on the screen where your words are.\n\nIt is a skill for life: typing assignments, filling in online forms, writing a CV and, later, working in almost any job. You do not need a computer of your own to begin. A few minutes on a school or cyber café computer, or on a phone with a cheap keyboard attached, is enough to start."
+        },
+        {
+          "heading": "Finding the home row",
+          "body": "The **home row** is where your fingers rest between key presses.\n\n- Left hand: little finger on `A`, ring finger on `S`, middle finger on `D`, index finger on `F`.\n- Right hand: index finger on `J`, middle finger on `K`, ring finger on `L`, little finger on `;`.\n- Both thumbs rest lightly on the space bar.\n\nFeel for the small raised bumps on `F` and `J`; they let you find home without looking. Each finger also types the keys above and below its home key. For example, the left middle finger types `E`, `D` and `C`, and each index finger covers two columns: `R`, `F`, `V` and `T`, `G`, `B` on the left, and `Y`, `H`, `N` and `U`, `J`, `M` on the right. After every reach, return to the home row."
+        },
+        {
+          "heading": "Posture that protects your body",
+          "body": "Good posture lets you type for longer without pain in your neck, back or wrists.\n\n- Sit back in the chair with your feet flat on the floor.\n- Keep your shoulders relaxed and your elbows close to your sides, bent at about a right angle.\n- Keep your wrists straight and floating just above the keys, not bent upwards or resting on the edge of the desk.\n- Place the screen about an arm's length away, with its top near eye level.\n- Take a short break every 20 to 30 minutes to stretch your hands and look into the distance.\n\nIf you type on a phone with a keyboard, prop the phone up on a stand or a pile of books so you are not bending your neck."
+        },
+        {
+          "heading": "Accuracy first, then speed",
+          "body": "Typing speed is measured in **words per minute (WPM)**, where a word counts as five characters, and accuracy is the percentage of keys you typed correctly. Learners who chase speed too early build bad habits that are hard to undo, so aim for about 95% accuracy before you try to go faster.\n\nA simple routine for 10 to 15 minutes a day:\n\n1. Warm up with two minutes of home-row drills, like the ones below.\n2. Do one new lesson on a free typing site such as TypingClub.\n3. Type a short paragraph from your textbook without looking down.\n4. Record your WPM and accuracy in a notebook.\n\nShort daily practice beats one long session a week. Your speed may drop when you stop looking at the keys; that is normal, and it soon recovers.",
+          "code": {
+            "lang": "text",
+            "source": "HOME-ROW DRILL (type each line 3 times, eyes on the screen)\n\nasdf jkl; asdf jkl;\nfjfj dkdk slsl a;a;\nfall sad lads ask flask\na lad asks dad; dad falls\nall lads ask; a sad dad falls"
+          }
+        }
+      ],
+      "points": [
+        "The left hand rests on A S D F, the right hand on J K L ; and the thumbs on the space bar",
+        "Use the bumps on F and J to find the home row without looking",
+        "Sit upright with feet flat, wrists straight and the screen at about eye level",
+        "Aim for about 95% accuracy before pushing for speed",
+        "Ten to fifteen minutes every day beats one long session a week"
+      ],
+      "mistakes": [
+        "Looking down at the keys — cover your hands with a light cloth or a sheet of paper if you keep peeking",
+        "Sticking with two fingers because it feels faster today — it limits your speed later",
+        "Resting your wrists on the desk edge and bending them upwards — keep them straight and floating"
+      ],
+      "task": "Type the home-row drill in this chapter three times without looking at your hands. Then do one beginner lesson on a free typing site and record your words per minute and accuracy. Repeat this for five days and compare your first and last results.",
+      "quiz": [
+        {
+          "q": "Where should your right index finger rest?",
+          "opts": [
+            "On F",
+            "On H",
+            "On J",
+            "On the space bar"
+          ],
+          "a": 2,
+          "why": "The right index finger rests on J, which has a raised bump to help you find it."
+        },
+        {
+          "q": "Tobi types 40 words per minute with 80% accuracy. Emeka types 25 words per minute with 97% accuracy. Who is building better habits as a beginner?",
+          "opts": [
+            "Emeka, because accuracy comes first and speed follows",
+            "Tobi, because speed is what matters most",
+            "Neither of them, because beginners should look at the keys",
+            "Tobi, because typing mistakes can be fixed later with spell check"
+          ],
+          "a": 0,
+          "why": "Accurate habits make speed easier to build, while fixing many errors wastes time."
+        },
+        {
+          "q": "Which finger should type the letter E?",
+          "opts": [
+            "Left index finger",
+            "Right middle finger",
+            "Left little finger",
+            "Left middle finger"
+          ],
+          "a": 3,
+          "why": "The left middle finger rests on D and also types E above it and C below it."
+        },
+        {
+          "q": "What are the small bumps on the F and J keys for?",
+          "opts": [
+            "They show which keys wear out fastest from heavy use",
+            "They let you find the home row by touch, without looking",
+            "They mark the two keys used for capital letters",
+            "They switch the keyboard to another language when pressed"
+          ],
+          "a": 1,
+          "why": "The bumps let your index fingers find home quickly, so your eyes can stay on the screen."
+        },
+        {
+          "q": "Which practice plan is most likely to improve your typing?",
+          "opts": [
+            "One long two-hour session at the end of each month",
+            "Typing only when you have a homework assignment to do",
+            "Ten to fifteen minutes daily, recording your accuracy",
+            "Watching videos of fast typists to copy their style"
+          ],
+          "a": 2,
+          "why": "Short, regular practice that you track builds the finger habits that lead to speed."
+        }
+      ]
+    },
+    {
+      "title": "Creating, saving and naming files",
+      "goal": "Create a document, save it in the right place with a clear name, and find it again on a phone or a computer.",
+      "sections": [
+        {
+          "heading": "Choosing an app",
+          "body": "A **word processor** is an app for writing and formatting documents. Three popular choices work in similar ways:\n\n- **Google Docs**: free on Android, iPhone and the web. Documents save automatically to your Google Drive.\n- **Microsoft Word**: widely used in schools and offices, with a desktop version, a phone app and a free web version.\n- **LibreOffice Writer**: free and open-source for Windows, Mac and Linux, and works without internet.\n\nOnce you know one, the others are easy to pick up, because they share the same ideas: tools along the top, the page in the middle, and the same basic commands."
+        },
+        {
+          "heading": "Creating and saving a document",
+          "body": "On a computer in Word or LibreOffice, open the app and choose a **blank document**. Press `Ctrl + S` (`Cmd + S` on a Mac) to save. The first time, the app asks where to save and what to call the file; after that, the same shortcut quickly saves your latest changes. Use **Save As** (or **Save a Copy**) when you want a second version with a different name or format.\n\nOn a phone, open Google Docs or Word, tap the **+** button and choose a new document. Google Docs saves every change automatically while you are online, and the Word phone app saves automatically once the file has a name and a location.\n\nPower cuts and flat batteries happen, so on a computer save in the first minute and then every few minutes. If data is limited, turn on **offline access** in Google Docs while you are connected, so you can keep working without data and let the changes sync later."
+        },
+        {
+          "heading": "Naming files so you can find them",
+          "body": "A name like `Document1` or `new new final 2` means nothing a week later. A good file name tells you what is inside at a glance. A simple pattern is **class, subject, topic, date**:\n\n- `SS1-Biology-Cell-Structure-2026-03-14`\n- `JSS3-English-Formal-Letter-Draft1`\n- `Chiamaka-Obi-CV-2026`\n\nUse hyphens or underscores instead of spaces, and avoid symbols such as slashes, colons, question marks, asterisks and quotation marks, which Windows does not allow in file names. Writing dates as year-month-day makes files sort into date order automatically."
+        },
+        {
+          "heading": "Folders and finding files again",
+          "body": "Keep related files together in **folders**, for example one folder for each subject inside a folder for your class. On a computer, files usually go to the Documents folder unless you choose somewhere else; use **File > Open** or the app's list of recent files to find them. On a phone, Google Docs files live in Google Drive, and downloaded files go to the Files or Downloads app.\n\nIf you use a shared computer at school or a cyber café, save a copy to a flash drive or your own cloud storage before you leave, then sign out of any accounts. Never leave your only copy on someone else's machine."
+        }
+      ],
+      "points": [
+        "Google Docs, Microsoft Word and LibreOffice Writer share the same basic ideas",
+        "Ctrl + S (Cmd + S on a Mac) saves; Save As or Save a Copy makes a separate version",
+        "Name files with class, subject, topic and date, using hyphens instead of spaces",
+        "Keep files in subject folders so you can find them quickly",
+        "On shared computers, take a copy with you and sign out"
+      ],
+      "mistakes": [
+        "Working for an hour without saving — save in the first minute and then often",
+        "Leaving names like Document1 — give files clear names as soon as you create them",
+        "Leaving your only copy on a school or cyber café computer — save to a flash drive or your own storage as well"
+      ],
+      "task": "On your phone (in Google Drive) or computer, create a folder for your class with a subfolder for each of three subjects. In one subfolder, create a new document, type a heading and two lines of notes, and save it with a name that follows the class-subject-topic-date pattern. Close the app, then find and open the file again.",
+      "quiz": [
+        {
+          "q": "Which file name is most useful?",
+          "opts": [
+            "Document1",
+            "new final final (2) - edited last",
+            "notes from that week we did the chemistry topic",
+            "SS2-Chemistry-Mole-Concept-2026-02-10"
+          ],
+          "a": 3,
+          "why": "It tells you the class, subject, topic and date without opening the file."
+        },
+        {
+          "q": "You saved a file called Letter-Draft1 and want to keep it unchanged while you make a second version. What should you use?",
+          "opts": [
+            "Save As or Save a Copy, and give it a new name",
+            "Ctrl + S, which keeps the old version automatically",
+            "Ctrl + Z, then type the new version over the old one",
+            "Close the app without saving, then reopen it"
+          ],
+          "a": 0,
+          "why": "Save As or Save a Copy creates a separate file, while Ctrl + S would overwrite the original."
+        },
+        {
+          "q": "Which shortcut saves a document in Word on a Mac?",
+          "opts": [
+            "Ctrl + S",
+            "Cmd + P",
+            "Cmd + S",
+            "Option + S"
+          ],
+          "a": 2,
+          "why": "Mac shortcuts usually use Cmd where Windows uses Ctrl, and Cmd + P prints."
+        },
+        {
+          "q": "Why write dates in file names as year-month-day, such as 2026-03-14?",
+          "opts": [
+            "Windows will not save a file unless the date is written that way",
+            "Files then sort into date order automatically",
+            "It makes the file smaller and quicker to send",
+            "It hides the file from other people who use the computer"
+          ],
+          "a": 1,
+          "why": "With the year first, then the month, then the day, sorting by name also sorts by date."
+        },
+        {
+          "q": "You finish typing an assignment at a cyber café. What is the safest thing to do before leaving?",
+          "opts": [
+            "Leave the file on the desktop so you can collect it next time",
+            "Email the file to the café owner",
+            "Turn off the screen so the next customer cannot see your work",
+            "Save a copy to your own storage and sign out of accounts"
+          ],
+          "a": 3,
+          "why": "Your own copy keeps your work safe, and signing out protects your accounts from the next user."
+        }
+      ]
+    },
+    {
+      "title": "Formatting text and paragraphs with styles",
+      "goal": "Format characters and paragraphs neatly and use heading styles to give a document a clear structure.",
+      "sections": [
+        {
+          "heading": "Character formatting",
+          "body": "**Character formatting** changes how letters look: the font, size, bold, italic, underline and colour. Select the text first (double-tap or drag on a phone, double-click or drag on a computer), then choose the format from the toolbar.\n\nA few habits keep documents readable:\n\n- Use one clear body font, such as Calibri, Arial or Times New Roman, at 11 or 12 points.\n- Use bold for a few key words, not for whole paragraphs.\n- Use underline sparingly, because on screen it can look like a link.\n- Keep colours dark and simple; yellow text on white paper cannot be read when printed."
+        },
+        {
+          "heading": "Paragraph formatting",
+          "body": "**Paragraph formatting** affects a whole paragraph at once: alignment, line spacing, spacing before and after, and indentation.\n\n- **Alignment**: left-aligned text is easiest to read for most documents. Centre suits titles. Justified text lines up on both sides, which looks neat in letters and reports but can leave big gaps on narrow pages.\n- **Line spacing**: 1.15 or 1.5 is easier to read than single spacing, and teachers often ask for 1.5 or double spacing so they have room to write comments.\n- **Spacing after paragraphs**: set a small space after each paragraph instead of pressing Enter twice.\n- **Indents**: use the indent buttons or the ruler, not rows of spaces.\n\nText pushed into place with the space bar may look fine on your screen but falls apart on another device or when printed."
+        },
+        {
+          "heading": "Styles: the professional's shortcut",
+          "body": "A **style** is a saved set of formatting with a name, such as Normal, Title, Heading 1 and Heading 2. Instead of making each heading bold, bigger and blue by hand, you apply Heading 1 with one click. Every Heading 1 then looks the same, and if you change the style, every heading updates together.\n\nStyles also give your document a structure the app understands. Word's **Navigation Pane** and Google Docs' **document outline** list your headings so you can jump around a long document, and both apps can build an automatic **table of contents** from them.\n\nOn a computer, apply styles from the styles gallery on Word's Home tab or the style drop-down (it shows Normal text) in Google Docs. The shortcut `Ctrl + Alt + 1` applies Heading 1 in both Word and Google Docs on Windows, and `Cmd + Option + 1` does the same on a Mac. In the phone apps, tap the formatting button (often shown as a letter A) and look for the style options."
+        },
+        {
+          "heading": "Example: notes structured with styles",
+          "body": "Here is how a page of SS1 study notes might be structured. The words in square brackets show the style used for each line; you would not type them. Notice that the numbering of headings makes the order clear, and the body text all uses the same Normal style.",
+          "code": {
+            "lang": "text",
+            "source": "[Title]      SS1 Biology Notes: The Cell\n[Heading 1]  1. Parts of a cell\n[Normal]     Every cell has a cell membrane and\n             cytoplasm, and most cells have a nucleus.\n[Heading 2]  1.1 Plant cells\n[Normal]     Plant cells also have a cell wall, a large\n             vacuole and, in green parts, chloroplasts.\n[Heading 1]  2. Cell division\n[Normal]     ..."
+          }
+        }
+      ],
+      "points": [
+        "Select text first, then apply character formatting such as font, size or bold",
+        "Paragraph formatting controls alignment, line spacing, spacing and indents",
+        "Use paragraph spacing and indents instead of extra Enter presses or rows of spaces",
+        "Heading styles keep headings consistent and build the outline and table of contents",
+        "Ctrl + Alt + 1 (Cmd + Option + 1 on a Mac) applies Heading 1 in Word and Google Docs"
+      ],
+      "mistakes": [
+        "Making headings by hand with bold and a bigger size — use Heading styles so they stay consistent",
+        "Using many fonts and colours in one document — stick to one body font and simple colours",
+        "Lining text up with the space bar — use alignment, tabs or indents instead"
+      ],
+      "task": "Type a one-page study note for any subject with a title, two Heading 1 sections and one Heading 2 under each. Apply styles instead of formatting by hand, set the body text to 1.15 line spacing, and open the outline or navigation pane to check that all your headings appear.",
+      "quiz": [
+        {
+          "q": "You want all 12 headings in a report to look identical and be easy to change later. What is the best method?",
+          "opts": [
+            "Make each one bold and bigger by hand, checking they match",
+            "Type every heading in capital letters so they stand out",
+            "Apply the Heading 1 style, then edit the style if needed",
+            "Copy the first heading's look onto the others one by one"
+          ],
+          "a": 2,
+          "why": "A style formats every heading the same way and updates them all together when you change it."
+        },
+        {
+          "q": "Which of these is a paragraph format rather than a character format?",
+          "opts": [
+            "Line spacing",
+            "Bold",
+            "Text highlight colour",
+            "Italic"
+          ],
+          "a": 0,
+          "why": "Line spacing applies to whole paragraphs; bold, colour and italic apply to selected characters."
+        },
+        {
+          "q": "Ngozi presses the space bar 20 times to centre her title. What would work better?",
+          "opts": [
+            "Pressing the space bar 30 times instead of 20",
+            "Changing the font to Arial so it fits better",
+            "Making the title bold and a bigger size",
+            "Using the Centre alignment button instead"
+          ],
+          "a": 3,
+          "why": "Alignment centres text exactly and stays correct on any device or printer."
+        },
+        {
+          "q": "What does Ctrl + Alt + 1 do in Word or Google Docs on Windows?",
+          "opts": [
+            "Prints one copy of the page",
+            "Applies the Heading 1 style",
+            "Opens a new blank document",
+            "Undoes your last single action"
+          ],
+          "a": 1,
+          "why": "Ctrl + Alt + 1 applies Heading 1; on a Mac the shortcut is Cmd + Option + 1."
+        },
+        {
+          "q": "Why do teachers often ask for 1.5 line spacing in typed assignments?",
+          "opts": [
+            "It fits more words onto each page and saves paper",
+            "It hides small spelling mistakes from the marker",
+            "It is easier to read and leaves room for comments",
+            "Files will not convert to PDF with single spacing"
+          ],
+          "a": 2,
+          "why": "Extra space between lines improves readability and gives the marker room to write."
+        }
+      ]
+    },
+    {
+      "title": "Lists, tables and images",
+      "goal": "Use bulleted and numbered lists, build clear tables and insert images that genuinely help the reader.",
+      "sections": [
+        {
+          "heading": "Bulleted and numbered lists",
+          "body": "Lists break information into easy pieces.\n\n- Use a **bulleted list** when order does not matter, such as items to bring on a school excursion.\n- Use a **numbered list** when order matters, such as the steps of an experiment.\n\nClick the bullet or numbering button and start typing. Press Enter for the next item, and press Enter on an empty item to end the list. Press `Tab` at the start of an item to make it a sub-point, and `Shift + Tab` to move it back. In Google Docs, `Ctrl + Shift + 8` starts a bulleted list and `Ctrl + Shift + 7` a numbered one (`Cmd + Shift + 8` and `Cmd + Shift + 7` on a Mac).\n\nLet the app do the numbering. If you type 1, 2, 3 by hand, adding a step in the middle means renumbering everything yourself."
+        },
+        {
+          "heading": "Building a table",
+          "body": "A **table** arranges information in rows (across) and columns (down). It is ideal for a revision timetable, a price list for a school shop or a comparison of two things.\n\n1. Place the cursor where the table should go.\n2. Choose **Insert > Table** and pick the number of columns and rows.\n3. Type in the first cell and press `Tab` to move to the next one. Pressing `Tab` in the last cell adds a new row.\n4. Make the top row a **header row**: bold it and, if you like, add light shading.\n5. Use the table tools to add or delete rows and columns and to adjust borders.\n\nKeep tables simple: short entries, clear headings and the same kind of information in each column. On a phone, a table with many columns is hard to read, so split it up or turn the page to landscape.",
+          "code": {
+            "lang": "text",
+            "source": "A revision timetable: 3 columns, 4 rows (header + 3 days)\n\n| Day       | 4:00-4:45 pm | 5:00-5:45 pm |\n|-----------|--------------|--------------|\n| Monday    | Mathematics  | English      |\n| Tuesday   | Biology      | Civic Educ.  |\n| Wednesday | Chemistry    | Mathematics  |"
+          }
+        },
+        {
+          "heading": "Adding images responsibly",
+          "body": "Images help when they show something words cannot, such as a labelled diagram of the heart or a photo of your project. Use **Insert > Image** and choose a file from your device, or take a photo from inside the phone app.\n\n- Resize from a **corner** handle so the picture keeps its shape instead of stretching.\n- Use the **text wrapping** options to control how words flow around the picture; In line with text is the most predictable.\n- Add a short **caption** below it, such as “Figure 1: A plant cell under a microscope”.\n- Add **alt text**, a short description that screen readers read aloud for people who cannot see the image.\n\nOnly use pictures you took, drew or have permission to use, and say where they came from. Large photos make files heavy to send on WhatsApp or by email, so resize photos before inserting them, or use **Compress Pictures** in Word."
+        }
+      ],
+      "points": [
+        "Use bullets for items in any order and numbers for steps in order",
+        "Tab makes a sub-point in a list, and Shift + Tab moves it back",
+        "In a table, Tab moves to the next cell, and Tab in the last cell adds a row",
+        "Resize images from a corner, and add a caption and alt text",
+        "Use only images you made or have permission to use"
+      ],
+      "mistakes": [
+        "Typing list numbers by hand — use automatic numbering so it updates itself",
+        "Stretching a photo by dragging a side handle — drag a corner to keep its shape",
+        "Copying any picture from the internet — use your own images or ones you are allowed to use, and credit them"
+      ],
+      "task": "Create a one-page document called “My revision week”. Add a table with days as rows and two study times as columns, a numbered list of three steps you follow when you sit down to study, and one photo you took yourself with a caption. Save it with a clear file name.",
+      "quiz": [
+        {
+          "q": "Which content is best set out as a numbered list?",
+          "opts": [
+            "Items to pack for a school excursion to Kano",
+            "Your favourite foods from a party, in any order",
+            "The steps of a titration, done in a set order",
+            "Names of club members, in no particular order"
+          ],
+          "a": 2,
+          "why": "Numbers show sequence, so they suit steps that must happen in order."
+        },
+        {
+          "q": "You are typing in the last cell of a table and need another row. What is the quickest way?",
+          "opts": [
+            "Press Tab",
+            "Press Ctrl + S",
+            "Press Esc",
+            "Delete the table and start again"
+          ],
+          "a": 0,
+          "why": "Pressing Tab in the last cell adds a new row automatically."
+        },
+        {
+          "q": "A photo of your science project looks squashed after resizing. What most likely went wrong?",
+          "opts": [
+            "You added a caption underneath the photo",
+            "You saved the file too often while editing",
+            "You inserted it inside a numbered list",
+            "You dragged a side handle, not a corner"
+          ],
+          "a": 3,
+          "why": "Corner handles keep the proportions; side handles stretch or squash the picture."
+        },
+        {
+          "q": "Which is the responsible way to use a diagram in a school project?",
+          "opts": [
+            "Copy any image from the internet, since it is free to view",
+            "Use your own diagram or a permitted one, and credit it",
+            "Use any image but crop out the creator's name or logo",
+            "Trace over a diagram from a website and say you drew it"
+          ],
+          "a": 1,
+          "why": "Most images online belong to someone, so use your own or permitted images and give credit."
+        },
+        {
+          "q": "You want a sub-point under item 2 in a bulleted list. What should you press at the start of the new item?",
+          "opts": [
+            "Enter twice",
+            "Ctrl + Z",
+            "Tab",
+            "Shift + Enter"
+          ],
+          "a": 2,
+          "why": "Tab moves a list item down one level, and Shift + Tab moves it back up."
+        }
+      ]
+    },
+    {
+      "title": "Shortcuts and handy tools",
+      "goal": "Use the most useful shortcuts and tools, including undo, redo, find and replace, spell check and word count, on Windows, Mac and phone apps.",
+      "sections": [
+        {
+          "heading": "The shortcuts everyone uses",
+          "body": "Shortcuts save time because your hands stay on the keyboard. On Windows, Chromebooks and Android devices with a keyboard, most shortcuts use `Ctrl`. On a Mac, the same shortcuts usually use `Cmd` (the ⌘ key) instead.\n\n- Save: `Ctrl + S` / `Cmd + S`\n- Copy, cut, paste: `Ctrl + C`, `Ctrl + X`, `Ctrl + V` / `Cmd + C`, `Cmd + X`, `Cmd + V`\n- Select all: `Ctrl + A` / `Cmd + A`\n- Bold, italic, underline: `Ctrl + B`, `Ctrl + I`, `Ctrl + U` / `Cmd + B`, `Cmd + I`, `Cmd + U`\n- Print: `Ctrl + P` / `Cmd + P`\n- Insert a link: `Ctrl + K` / `Cmd + K`\n\nOn a phone touchscreen, use the toolbar buttons instead, and press and hold on text to copy and paste."
+        },
+        {
+          "heading": "Undo and redo: your safety net",
+          "body": "**Undo** reverses your last action, and you can press it several times to go further back. **Redo** brings back what you just undid.\n\n- Undo: `Ctrl + Z` on Windows, `Cmd + Z` on a Mac.\n- Redo in Word: `Ctrl + Y` on Windows, `Cmd + Y` on a Mac.\n- Redo in Google Docs: `Ctrl + Shift + Z` on Windows and Chromebooks, `Cmd + Shift + Z` on a Mac.\n- In the phone apps, tap the curved arrow buttons near the top of the screen.\n\nDeleted a paragraph by mistake? Undo straight away, before you type anything else. Google Docs (**File > Version history**) and Word files saved to OneDrive also keep earlier versions you can go back to."
+        },
+        {
+          "heading": "Find and replace",
+          "body": "**Find** jumps to every place a word appears: `Ctrl + F` on Windows, `Cmd + F` on a Mac. **Find and replace** swaps one word for another throughout the document:\n\n- Word on Windows: `Ctrl + H`. Word on a Mac: `Control + H` (the Control key, not Command).\n- Google Docs: `Ctrl + H` on Windows and Chromebooks, `Cmd + Shift + H` on a Mac.\n- Google Docs phone app: tap the three-dot menu and choose **Find and replace**.\n\nUse **Replace All** with care: replacing “he” with “she” also turns “the” into “tshe” and “help” into “shelp”. In Word, tick **Find whole words only** first; in any app, you can step through the matches and replace them one at a time."
+        },
+        {
+          "heading": "Spell check, grammar and word count",
+          "body": "Red wavy lines mark possible spelling mistakes, and other colours suggest grammar changes; right-click or tap a word for suggestions. To check the whole document, press `F7` in Word on Windows or use the spelling check on the Review tab; in Google Docs use **Tools > Spelling and grammar** or `Ctrl + Alt + X` (`Cmd + Option + X` on a Mac).\n\nSet the language to **English (United Kingdom)** so the checker accepts British spellings such as “colour”, which Nigerian schools use. Do not accept every suggestion: correct names like Oluwaseun or Nnamdi may be flagged, so ignore them or add them to the dictionary. A spell checker also misses real words in the wrong place, such as “there” for “their”.\n\nFor word limits, use **Word Count** on Word's Review tab (the count also shows at the bottom of the window), or **Tools > Word count** in Google Docs (`Ctrl + Shift + C`, or `Cmd + Shift + C` on a Mac)."
+        }
+      ],
+      "points": [
+        "Windows and Chromebooks use Ctrl for most shortcuts; a Mac usually uses Cmd",
+        "Ctrl + Z undoes; redo is Ctrl + Y in Word and Ctrl + Shift + Z in Google Docs",
+        "Ctrl + F finds, and Ctrl + H opens find and replace on Windows",
+        "Use Replace All carefully, with whole-word matching where possible",
+        "Set the language to English (United Kingdom) and judge each spelling suggestion yourself"
+      ],
+      "mistakes": [
+        "Pressing Replace All without checking — short words can change inside longer words",
+        "Accepting every spell-check suggestion — names and local words may already be correct",
+        "Using Ctrl shortcuts on a Mac — most use Cmd instead, although find and replace in Word for Mac is Control + H"
+      ],
+      "task": "Open any document of at least two paragraphs. Use find and replace to change one word throughout, then undo the change and redo it. Run the spell check, decide on each suggestion yourself, and note the word count. Write down every shortcut you used and which device it was for.",
+      "quiz": [
+        {
+          "q": "You are using Google Docs on a Windows laptop and want to change “Lagos” to “Ibadan” throughout your essay. Which shortcut opens the right tool?",
+          "opts": [
+            "Ctrl + F",
+            "Ctrl + R",
+            "Ctrl + H",
+            "Ctrl + P"
+          ],
+          "a": 2,
+          "why": "Ctrl + H opens find and replace in Google Docs and Word on Windows; Ctrl + F only finds."
+        },
+        {
+          "q": "Which shortcut undoes your last change on a Mac?",
+          "opts": [
+            "Cmd + Z",
+            "Ctrl + Z",
+            "Cmd + U",
+            "Option + Z"
+          ],
+          "a": 0,
+          "why": "Mac shortcuts use Cmd in place of Ctrl, so undo is Cmd + Z; Cmd + U underlines."
+        },
+        {
+          "q": "Amaka replaced every “he” with “she” using Replace All, and now her essay says “tshe” in many places. What should she have done?",
+          "opts": [
+            "Pressed Ctrl + P to preview the document first",
+            "Typed “She” with a capital letter so it replaced correctly",
+            "Turned off spell check so it ignored “tshe”",
+            "Used whole-word matching or replaced one at a time"
+          ],
+          "a": 3,
+          "why": "“he” appears inside “the”, so whole-word matching or checking each replacement prevents the damage."
+        },
+        {
+          "q": "Your spell checker underlines the name “Chukwuemeka” in red. What is the right action?",
+          "opts": [
+            "Accept the first suggestion",
+            "Ignore it or add it to the dictionary",
+            "Delete the name and write “my friend” instead",
+            "Switch the language to English (United States)"
+          ],
+          "a": 1,
+          "why": "Spell checkers do not know every name; you decide whether a word is correct."
+        },
+        {
+          "q": "You undid a change in Word on Windows and now want it back. Which shortcut does that?",
+          "opts": [
+            "Ctrl + Z",
+            "Ctrl + Y",
+            "Ctrl + B",
+            "Ctrl + K"
+          ],
+          "a": 1,
+          "why": "Ctrl + Y is redo in Word on Windows; in Google Docs, redo is Ctrl + Shift + Z."
+        }
+      ]
+    },
+    {
+      "title": "Formal letters, a simple CV, printing and PDF",
+      "goal": "Lay out a formal letter and a one-page CV, check them in print preview and save them as PDF files.",
+      "sections": [
+        {
+          "heading": "Formal letter layout",
+          "body": "A formal letter goes to someone in an official role, such as a principal, an employer or a government office. Your English teacher may prefer a particular layout, so follow it; this one is widely used in Nigerian schools.\n\n1. **Your address** at the top right, with the **date** underneath.\n2. **The recipient's title and address** on the left, a little lower.\n3. **Salutation**: “Dear Sir,” or “Dear Madam,”.\n4. **Title**: a short heading stating the subject, often in capitals or bold.\n5. **Body**: why you are writing, the details, and what you hope will happen.\n6. **Closing**: “Yours faithfully,” then your signature and full name.\n\nPlace the right-hand address with right alignment or an indent, never with spaces. Many offices use **block style**, with everything on the left; use it if your teacher allows.",
+          "code": {
+            "lang": "text",
+            "source": "                                   SS1 Gold,\n                                   Bright Future College,\n                                   Ibadan, Oyo State.\n                                   14th March, 2026.\n\nThe Principal,\nBright Future College,\nIbadan, Oyo State.\n\nDear Sir,\n\nREQUEST TO START A CODING CLUB\n\nI am writing to ask for permission to start a coding\nclub for JSS and SS students ...\n\n[One or two paragraphs of details: who, when, where]\n\nI would be grateful if you would consider this request.\n\nYours faithfully,\n\n[signature]\nChiamaka Obi"
+          }
+        },
+        {
+          "heading": "A simple one-page CV",
+          "body": "A **CV** (curriculum vitae) is a short summary of who you are, what you have learnt and what you can do. Students use one for scholarships, competitions, holiday jobs and, later, university and work. Keep a school CV to **one page**, with a Heading style for each section:\n\n- **Name and contact**: your name, town or city, and an email address you check.\n- **Profile**: two or three sentences about your strengths and goals.\n- **Education**: your school, class and years.\n- **Skills**: typing speed, languages you speak, software you can use.\n- **Activities and achievements**: clubs, prefect roles, competitions, volunteering.\n- **Referees**: a teacher who has agreed to speak for you, or “Available on request”.\n\nLeave out your home address. If you are under 18, agree with a parent or guardian which phone number and email to use. Be truthful: an exaggeration that is discovered can cost you the opportunity."
+        },
+        {
+          "heading": "Print preview and page set-up",
+          "body": "Before printing or sharing, check how the pages will look. `Ctrl + P` (`Cmd + P` on a Mac) shows a print preview in both Word and Google Docs. Check that:\n\n- the paper size is **A4**, which Nigerian schools and offices use (some apps start on US Letter)\n- the margins are even, usually about 2.5 cm\n- nothing spills onto an extra page by one or two lines\n- no heading sits alone at the bottom of a page\n\nChange paper size and margins on the **Layout** tab in Word or in **File > Page setup** in Google Docs."
+        },
+        {
+          "heading": "Saving as PDF",
+          "body": "A **PDF** keeps your layout, fonts and pictures the same on every device, which makes it the best format for sending a letter or CV.\n\n- **Word on a computer**: File > Save As (or Save a Copy), choose PDF as the file type, then Save.\n- **Google Docs on a computer**: File > Download > PDF Document (.pdf).\n- **Google Docs phone app**: three-dot menu > Share & export > Save as > PDF.\n- **LibreOffice Writer**: File > Export As > Export as PDF.\n- **Android**: in any app that can print, choose Print and pick **Save as PDF** as the printer.\n\nKeep the editable version too, and open the PDF once to check it before you send it."
+        }
+      ],
+      "points": [
+        "A formal letter has two addresses, a date, a salutation, a title, the body and a closing",
+        "“Dear Sir,” or “Dear Madam,” pairs with “Yours faithfully,”",
+        "Keep a school CV to one truthful page with clear headings and no home address",
+        "Check print preview for A4 paper, even margins and no stray lines on an extra page",
+        "Save letters and CVs as PDF to keep the layout, and keep the editable copy too"
+      ],
+      "mistakes": [
+        "Closing a “Dear Sir” letter with “Yours lovingly” or “Your friend” — use “Yours faithfully”",
+        "Lining up the address with the space bar — use right alignment or an indent",
+        "Putting your home address or other private details on a CV you share widely — include only what is needed",
+        "Sending the editable file instead of a PDF — the layout can change on the reader's device"
+      ],
+      "task": "Type a short formal letter to the librarian of a public library near you, asking whether your class may visit. Use the layout in this chapter, check it in print preview on A4 paper, fix any layout problems and save it as a PDF with a clear file name.",
+      "quiz": [
+        {
+          "q": "A formal letter begins “Dear Sir,”. Which closing is correct?",
+          "opts": [
+            "Yours lovingly,",
+            "Bye for now,",
+            "Yours faithfully,",
+            "Yours affectionately,"
+          ],
+          "a": 2,
+          "why": "“Yours faithfully” is the closing used when the recipient is addressed as Sir or Madam."
+        },
+        {
+          "q": "In the school layout described in this chapter, where does the recipient's address go?",
+          "opts": [
+            "On the left, below your address and the date",
+            "At the top right, just above the date",
+            "At the very bottom, after your signature and name",
+            "On the right, between the title and the body"
+          ],
+          "a": 0,
+          "why": "The writer's address and date come first at the top right, then the recipient's address on the left."
+        },
+        {
+          "q": "Which detail should you leave off a CV that you will send to several organisations?",
+          "opts": [
+            "Your clubs and achievements",
+            "Your skills",
+            "Your school and class",
+            "Your home address"
+          ],
+          "a": 3,
+          "why": "A home address is private and is not needed for a school CV; your town or city is enough."
+        },
+        {
+          "q": "Your CV fits on one page on screen, but print preview shows two lines on a second page. What is the best fix?",
+          "opts": [
+            "Print it anyway; two stray lines do not matter",
+            "Tighten the spacing or shorten a section",
+            "Switch to A3 paper",
+            "Delete the whole Education section to save space"
+          ],
+          "a": 1,
+          "why": "Small changes to spacing or wording keep the CV to one tidy page without losing important sections."
+        },
+        {
+          "q": "Why send your CV as a PDF rather than as an editable document?",
+          "opts": [
+            "PDFs check and correct your spelling automatically",
+            "PDFs can only be opened by the person you send them to",
+            "PDFs keep the layout the same on any device",
+            "PDFs make a CV look longer"
+          ],
+          "a": 2,
+          "why": "A PDF looks the same wherever it is opened, so your careful formatting survives."
+        }
+      ]
+    }
+  ],
+  "project": {
+    "title": "A formal letter to the principal and a one-page CV",
+    "brief": "Produce two documents a real reader could use: a formal letter to your principal asking for something that would improve your school (for example starting a club, organising a clean-up or setting up a reading corner), and a one-page CV you could attach to a scholarship or competition application. Both must be neatly formatted with styles and saved as PDF files.",
+    "steps": [
+      "Plan the letter: decide your request, your reasons and what you want the principal to do. Write one short note for each body paragraph.",
+      "Type the letter in the formal layout: your class and school address with the date, the principal's address, “Dear Sir,” or “Dear Madam,”, a clear title, the body, and “Yours faithfully,” with your name.",
+      "Plan your CV sections: name and contact, profile, education, skills, activities and achievements, and referees.",
+      "Type the CV using a Heading style for each section, bulleted lists for skills and activities, and one body font at 11 or 12 points.",
+      "Set the language to English (United Kingdom), run spell check, read both documents aloud and fix anything that sounds wrong.",
+      "Check both documents in print preview on A4 paper with even margins, and make sure the CV fits on one page.",
+      "Save each as a PDF with a clear name, such as Chiamaka-Obi-Letter-to-Principal.pdf and Chiamaka-Obi-CV.pdf, and keep the editable versions."
+    ],
+    "checklist": [
+      "The letter follows the formal layout and pairs “Dear Sir” or “Dear Madam” with “Yours faithfully”",
+      "CV headings use styles, and the CV fits on one A4 page",
+      "Neither document contains a home address, passwords or other private details",
+      "Spelling is British English, and every spell-check suggestion was checked rather than accepted blindly",
+      "Both PDFs open correctly and look the same as the originals"
+    ]
+  }
+}

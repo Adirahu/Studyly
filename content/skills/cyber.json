@@ -1,0 +1,622 @@
+{
+  "id": "cyber",
+  "title": "Cybersecurity and digital safety",
+  "icon": "🛡️",
+  "area": "Technology",
+  "level": "Beginner",
+  "duration": "About 4 hours",
+  "summary": "Protect your accounts and devices, spot scams such as fake JAMB upgrades and OTP requests, manage your privacy, and know exactly how to get help if something goes wrong online.",
+  "outcomes": [
+    "Create strong, unique passwords and turn on multi-factor authentication",
+    "Recognise scam and phishing messages and respond safely",
+    "Keep a phone or computer updated, protected and backed up",
+    "Manage privacy settings and think before sharing to protect your digital footprint",
+    "Use social media and messaging apps safely and respectfully",
+    "Respond to online harassment by blocking, reporting, keeping evidence and getting help"
+  ],
+  "tools": "Your own phone or computer and its settings, plus a notebook. If you are under 18, do the account and settings activities with a parent or guardian. This course is about protecting yourself and others: never try to get into an account, device or system that is not yours.",
+  "resources": [
+    {
+      "title": "Be Internet Awesome (Google)",
+      "url": "https://beinternetawesome.withgoogle.com/en_us/",
+      "note": "Free lessons and the Interland game built around five ideas: share with care, don't fall for fake, secure your secrets, be kind, and talk to an adult when in doubt."
+    },
+    {
+      "title": "Google Safety Center",
+      "url": "https://safety.google/",
+      "note": "Official guides to security settings, safer ways to sign in, and how to recognise scams on Google accounts and Android phones."
+    },
+    {
+      "title": "Nigeria Police Force National Cybercrime Centre — E-Reporting Portal",
+      "url": "https://nccc.npf.gov.ng/ereport",
+      "note": "The Nigeria Police Force's official online portal for reporting cybercrime such as fraud, threats and sextortion. Use it together with a parent or guardian."
+    },
+    {
+      "title": "Nigerian Communications Commission — the 112 emergency number",
+      "url": "https://ncc.gov.ng/node/1397",
+      "note": "The NCC's notice about 112, Nigeria's toll-free national emergency number, which connects callers to the police, fire service and other emergency responders."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Passwords, password managers and extra sign-in checks",
+      "goal": "Create strong, unique passwords, store them safely and add multi-factor authentication to your important accounts.",
+      "sections": [
+        {
+          "heading": "What makes a password strong",
+          "body": "Criminals rarely guess passwords one by one. They use programs that try huge lists of common passwords, and passwords leaked when websites were hacked. A strong password is one that is not on those lists and is too long to try every combination.\n\n- **Long beats complicated.** Three or four random words joined together, following a pattern like `Kettle-Harmattan-Violin-42`, are long, easy to remember and hard to crack. Do not use this example; make your own.\n- **Avoid the obvious**: names, birthdays, your school, your phone number, `123456` or `password`.\n- **Never reuse a password.** If one website leaks it, criminals try the same email and password on WhatsApp, Instagram, Gmail and bank apps.\n\nYour email password matters most, because your email can be used to reset all your other passwords."
+        },
+        {
+          "heading": "Password managers",
+          "body": "Nobody can remember twenty strong, different passwords. A **password manager** stores them for you in an encrypted vault and fills them in on the right websites. You only need to remember one strong master password, or unlock it with your phone's screen lock.\n\n- **Google Password Manager** is built into Android and Chrome.\n- **iCloud Keychain**, shown in the Passwords app, is built into iPhones, iPads and Macs.\n- Free independent apps such as **Bitwarden** work across devices.\n\nA password manager also protects you from fake websites, because it will not fill in your password on a look-alike address. If you cannot use one, a notebook kept safely at home is better than reusing the same password everywhere, but never write passwords on your phone case or in a shared document."
+        },
+        {
+          "heading": "Multi-factor authentication",
+          "body": "**Multi-factor authentication (MFA)**, also called two-step verification, means signing in needs a second proof as well as your password: a code sent by SMS, a code from an authenticator app, a prompt on your phone, or a **passkey** that uses your fingerprint or face. Even if someone steals your password, they still cannot get in without that second step.\n\nTurn it on first for your email, then for WhatsApp and your social media accounts. In WhatsApp, go to **Settings > Account > Two-step verification** and choose a six-digit PIN that is not your birthday. Write down any **backup codes** a service gives you and keep them somewhere safe, offline.\n\nThe golden rule: **a sign-in code is only for you to type into the app yourself.** No real bank, school, friend or company will ever ask you to read it out or forward it."
+        },
+        {
+          "heading": "Lock your phone and sign out",
+          "body": "Set a screen lock (a PIN, pattern, fingerprint or face) so a lost or borrowed phone does not hand over every account. On shared computers at school or a cyber café, do not tick “Remember me”, always sign out when you finish, and close the browser."
+        }
+      ],
+      "points": [
+        "Long, unique passphrases beat short, complicated passwords",
+        "Never reuse a password, especially the one for your email",
+        "A password manager remembers strong passwords and will not fill them in on fake sites",
+        "Turn on multi-factor authentication, starting with your email and WhatsApp",
+        "Never share a sign-in code, OTP or PIN with anyone"
+      ],
+      "mistakes": [
+        "Using one password for everything — a single leak then opens every account",
+        "Building a password from your name, birthday or phone number — these are easy to find or guess",
+        "Forwarding a verification code to someone who says it was sent to you by mistake — it lets them take over your account"
+      ],
+      "task": "With a parent or guardian, choose your most important account (usually your email). Check that its password is long and used nowhere else, and turn on two-step verification. Then turn on two-step verification in WhatsApp. Write down the steps you followed, but never write the passwords or codes in your notes.",
+      "quiz": [
+        {
+          "q": "Which password is the strongest choice?",
+          "opts": [
+            "Your name and birth year with a capital letter, such as Tunde2009",
+            "A common word with symbols swapped in, such as P@ssw0rd!",
+            "A long phrase of four random words that you made up yourself",
+            "A long run of numbers that is easy to type, such as 123456789"
+          ],
+          "a": 2,
+          "why": "Length and unpredictability make a password hard to crack; names, years and common patterns are on attackers' lists."
+        },
+        {
+          "q": "Why is it dangerous to reuse the same password on several sites?",
+          "opts": [
+            "One leak lets criminals try it on all your other accounts",
+            "It makes your phone run slower each time you sign in",
+            "Websites can see that you used the same password elsewhere",
+            "It automatically switches off your phone's screen lock"
+          ],
+          "a": 0,
+          "why": "Criminals test leaked passwords on many popular services, so one leak can open several accounts."
+        },
+        {
+          "q": "Someone messages you: “I sent my WhatsApp code to your number by mistake. Please forward the 6 digits to me.” What should you do?",
+          "opts": [
+            "Forward it quickly, since the code is useless to you anyway",
+            "Post the code in the class group so the person can find it",
+            "Send only the first three digits to be on the safe side",
+            "Refuse; it is a trick to take over your WhatsApp account"
+          ],
+          "a": 3,
+          "why": "That code would let them register your WhatsApp account on their phone. A two-step PIN adds protection."
+        },
+        {
+          "q": "Your password was stolen, but you had multi-factor authentication turned on. What is most likely?",
+          "opts": [
+            "The thief can still get in easily, because MFA only protects email",
+            "The second check stops them, but change the password anyway",
+            "MFA will delete your account to protect it",
+            "Your phone will lock itself and stop working until you visit a shop"
+          ],
+          "a": 1,
+          "why": "Without your second factor the thief is blocked, but a stolen password should always be changed."
+        },
+        {
+          "q": "What is a key advantage of using a password manager?",
+          "opts": [
+            "It lets you safely use one short password on every website",
+            "It shares your passwords with your friends in case you forget them",
+            "It stores strong, unique passwords and avoids filling fake sites",
+            "It removes the need for passwords on every website you use"
+          ],
+          "a": 2,
+          "why": "It makes unique passwords practical and helps protect you from fake sign-in pages."
+        }
+      ]
+    },
+    {
+      "title": "Spotting scams and phishing",
+      "goal": "Recognise the warning signs of scam messages, including fake prizes, jobs, scholarships and OTP requests, and respond safely.",
+      "sections": [
+        {
+          "heading": "How scams press your buttons",
+          "body": "**Phishing** is a fake message, by SMS, WhatsApp, email, phone call or social media, that pretends to come from someone you trust so you will hand over money, passwords, codes or personal details. Scammers rely on feelings more than technology. Watch for these pressure buttons:\n\n- **Urgency**: “Act within 30 minutes or your account will be blocked.”\n- **Excitement**: “Congratulations, you have won ₦500,000!”\n- **Fear**: “Your BVN has been suspended.”\n- **Authority**: a logo or a name such as JAMB, WAEC, your bank or your school.\n- **Secrecy**: “Do not tell anyone about this offer.”\n\nIf a message makes you feel rushed, excited or scared, that is exactly the moment to stop and check."
+        },
+        {
+          "heading": "Common scams in Nigeria",
+          "body": "- **Fake JAMB or WAEC “upgrades”**: offers to raise your score or release results early for a fee. JAMB has repeatedly said that scores cannot be upgraded.\n- **Fake scholarships and grants**: a real scholarship does not ask you to pay a “processing fee” before you receive money.\n- **Fake jobs**: easy online work with high pay, as long as you first pay for “registration” or a “starter kit”.\n- **OTP and PIN requests**: a caller claims to be from your bank and says they need your OTP to “stop fraud” or “update your BVN”. Banks never ask for your PIN, OTP, password or full card details.\n- **Fake alerts and “wrong transfers”**: someone shows a fake credit alert, or says they sent money by mistake and begs you to send it back. Check the real balance in the bank app first; alert messages can be faked.\n- **Impersonation**: a “new number” claiming to be a relative, a teacher or the school bursar, asking for urgent money or announcing new account details.\n- **Money mule offers**: someone asks to use your bank account to receive money for them. This can drag you into fraud, so always refuse.\n\nIf you are under 18, never send money, codes or personal details without talking to a parent or guardian first."
+        },
+        {
+          "heading": "Analyse a scam message",
+          "body": "Read the fictional message below and count the warning signs before you read on.\n\nA careful reader notices that it comes from an ordinary mobile number, not an official channel; it creates urgency with “only 20 slots left today”; it offers something that does not exist, a score upgrade; it asks for payment into a personal account; it asks for your registration details; it demands secrecy; and the link is not JAMB's official website. Any one of these is a reason to stop. Together they prove a scam.",
+          "code": {
+            "lang": "text",
+            "source": "From: +234 81x xxx xxxx\n\nJAMB OFFICIAL NOTICE!!! Dear candidate, your UTME score\ncan be UPGRADED to 280+ before the admission list closes.\nOnly 20 slots left TODAY. Pay N15,000 to the account below\nand send your registration number and profile code.\nAcct: 0123456789 (Emeka B.)\nClick: www.jamb-score-upgrade.example\nDon't tell anybody, this offer is confidential."
+          }
+        },
+        {
+          "heading": "What to do instead",
+          "body": "1. **Stop.** Do not click links, reply, call back or pay.\n2. **Check independently.** Contact the organisation through a channel you find yourself: the official website you type in, the number on the back of the bank card, the school office or your teacher.\n3. **Report and block.** Use the app's report option, and warn your class group without forwarding the link.\n4. **Tell an adult.** If you already shared a code or sent money, tell a parent or guardian at once and call the bank's official number to block the account; speed matters.\n\nAn adult can also report online fraud to the Nigeria Police Force National Cybercrime Centre, which Chapter 6 explains."
+        }
+      ],
+      "points": [
+        "Urgency, excitement, fear, authority and secrecy are the scammer's favourite pressure buttons",
+        "Banks never ask for your PIN, OTP, password or full card details",
+        "Real scholarships and jobs do not ask you to pay before you receive money",
+        "JAMB scores cannot be upgraded, so anyone offering this is a fraudster",
+        "Check through an official channel you find yourself, never through the link or number in the message"
+      ],
+      "mistakes": [
+        "Trusting a message because it has a logo or an official-sounding name — logos are easy to copy",
+        "Believing a credit alert SMS without checking the real balance in the bank app",
+        "Forwarding a scam link to the class group as a warning — describe it, or share a screenshot with the link crossed out"
+      ],
+      "task": "Look through your own SMS and WhatsApp messages for up to three suspicious ones, or use the example in this chapter, without clicking any links. For each message, list its warning signs, name the official channel you would use to check it, and write the safe action you would take. Share your best tip with your family.",
+      "quiz": [
+        {
+          "q": "A caller says they are from your bank and need the OTP just sent to your phone to “stop fraud on your account”. What should you do?",
+          "opts": [
+            "Read out the OTP, since the caller already knows your account name",
+            "Send the OTP by SMS instead, because texting it is safer than saying it",
+            "Hang up and call the number on the back of your bank card",
+            "Give them only half of the digits"
+          ],
+          "a": 2,
+          "why": "Banks never ask for your OTP. Calling the official number yourself lets you check safely."
+        },
+        {
+          "q": "A WhatsApp post offers a ₦300,000 scholarship if you pay a ₦5,000 processing fee. What is the strongest warning sign?",
+          "opts": [
+            "You must pay money in order to receive money",
+            "The amount is written in naira instead of dollars",
+            "It was sent in the evening",
+            "The post uses the word scholarship in its title"
+          ],
+          "a": 0,
+          "why": "Genuine scholarships do not charge you to release funds; an upfront fee is a classic scam sign."
+        },
+        {
+          "q": "A buyer at your family's provision shop shows a credit alert on their phone and asks to leave with the goods. What should the shop do first?",
+          "opts": [
+            "Trust the alert, because it shows the bank's name and logo",
+            "Ask the buyer to show the alert a second time to be sure",
+            "Take a photo of the buyer's screen as proof of payment",
+            "Check the shop's own bank app to confirm the money arrived"
+          ],
+          "a": 3,
+          "why": "Alerts can be faked; only the shop's own account shows whether the money really arrived."
+        },
+        {
+          "q": "Which of these messages is most likely genuine?",
+          "opts": [
+            "“Congratulations! Click this link within 1 hour to claim your promo prize.”",
+            "Your teacher says in class that the timetable is on the notice board",
+            "“Your BVN is blocked. Reply with your PIN today to reactivate it.”",
+            "“Pay ₦10,000 for guaranteed admission. Don't tell anyone.”"
+          ],
+          "a": 1,
+          "why": "It comes through a trusted, face-to-face channel and asks for nothing; the others use urgency, payment, PIN requests or secrecy."
+        },
+        {
+          "q": "Someone online offers you ₦20,000 just for letting them receive money into your bank account. What is this?",
+          "opts": [
+            "Easy pocket money, since you are not stealing anything yourself",
+            "A normal bank service",
+            "A money mule scheme: refuse and tell an adult",
+            "A kind of scholarship paid in small amounts to young people"
+          ],
+          "a": 2,
+          "why": "Letting criminals move money through your account can make you part of the crime."
+        }
+      ]
+    },
+    {
+      "title": "Keeping devices and apps safe",
+      "goal": "Keep your phone or computer updated, install apps safely, control app permissions and back up what matters.",
+      "sections": [
+        {
+          "heading": "Updates are security fixes",
+          "body": "Software updates are not just new features. Many of them fix security weaknesses that criminals have discovered, so a phone that has not been updated for months is easier to attack.\n\n- On Android, look in **Settings** for **Software update** or **System update** (the exact name varies by brand).\n- On an iPhone, go to **Settings > General > Software Update**.\n- Update your apps through the Google Play Store or the App Store.\n- On a Windows computer, use **Settings > Windows Update**.\n\nUpdates can be large, so set automatic downloads to **Wi-Fi only** and install them when you are on home or school Wi-Fi."
+        },
+        {
+          "heading": "Install apps only from trusted stores",
+          "body": "Install apps only from the **Google Play Store** on Android or the **App Store** on an iPhone. Avoid APK files passed around on WhatsApp, Telegram or websites, including “modded” versions of popular apps that promise extra features or free data. These can contain malware that steals passwords, reads your messages or empties bank apps.\n\nEven in an official store, check before you install:\n\n- the developer's name matches the real company\n- the number of downloads and what the reviews say\n- whether the permissions make sense for what the app does\n\nKeep **Google Play Protect** turned on in the Play Store settings, because it scans apps for harmful behaviour. Remove apps you no longer use."
+        },
+        {
+          "heading": "App permissions",
+          "body": "**Permissions** control what an app can reach: your location, camera, microphone, contacts, photos and files. A torch app has no reason to read your contacts, and a calculator does not need your location.\n\nReview them in **Settings > Apps** on Android (choose an app, then Permissions) or in **Settings > Privacy & Security** on an iPhone. Where you can, choose **only while using the app** instead of all the time, and turn off anything an app does not need. Newer Android phones can also remove permissions automatically from apps you have not used for a while."
+        },
+        {
+          "heading": "Back up and plan for loss",
+          "body": "Phones get lost, stolen, dropped in water or wiped by malware. A **backup** is a copy of your files stored somewhere else, so you do not lose everything.\n\n- Turn on backup for photos and documents in Google Photos, Google Drive or iCloud, set to back up on Wi-Fi only to save data.\n- Turn on WhatsApp chat backup in **Settings > Chats > Chat backup**.\n- On a computer, copy important schoolwork to a flash drive or external drive as well as to cloud storage.\n- Turn on **Find Hub** (formerly Find My Device) on Android or **Find My** on Apple devices, so a lost phone can be located, locked or erased.\n\nA backup you have never tested may not work, so open a backed-up file now and then to check."
+        }
+      ],
+      "points": [
+        "Updates fix security weaknesses, so install them promptly, on Wi-Fi to save data",
+        "Install apps only from the Play Store or App Store, never from forwarded APK files",
+        "Give apps only the permissions they need, and prefer only while using the app",
+        "Back up photos, documents and chats, and check that the backup works",
+        "Turn on a find-my-phone service so a lost phone can be located, locked or erased"
+      ],
+      "mistakes": [
+        "Ignoring update notifications for months — set a regular time to update on Wi-Fi",
+        "Installing a “modded” app or free-data APK from a WhatsApp link — use the official stores only",
+        "Tapping Allow on every permission request — first ask whether the app really needs it"
+      ],
+      "task": "With a parent or guardian, do a 15-minute safety check on your phone: install any waiting updates on Wi-Fi, remove two apps you no longer use, review the permissions of three apps and turn off any they do not need, and confirm that photo and chat backups are switched on. Write down what you changed.",
+      "quiz": [
+        {
+          "q": "Why should you install software updates promptly?",
+          "opts": [
+            "They mainly add new emojis and wallpapers to your phone",
+            "They delete old photos automatically to free up space",
+            "They reset your passwords so that you have to choose new ones",
+            "Many of them fix security weaknesses that criminals could use"
+          ],
+          "a": 3,
+          "why": "Updates often close the security holes that malware and attackers rely on."
+        },
+        {
+          "q": "A friend sends you an APK for a “GB” version of WhatsApp with extra features. What is the safest choice?",
+          "opts": [
+            "Do not install it; use only the official app from the store",
+            "Install it, since a friend you trust sent it to you directly",
+            "Install it, but turn off Play Protect first so it can run",
+            "Forward it to the class group so everyone gets the extra features"
+          ],
+          "a": 0,
+          "why": "Unofficial modified apps can hide malware and are not checked by the official stores."
+        },
+        {
+          "q": "A simple torch app asks to read your contacts and your location. What should you do?",
+          "opts": [
+            "Allow everything, otherwise the torch will not switch on",
+            "Restart the phone, then allow the permissions the second time",
+            "Deny them and consider another app; a torch does not need them",
+            "Allow them, because every app in the Play Store is fully checked"
+          ],
+          "a": 2,
+          "why": "Permissions that do not match an app's purpose are a warning sign."
+        },
+        {
+          "q": "Which backup plan best protects your school projects?",
+          "opts": [
+            "One copy on your phone, since phones rarely get lost or damaged",
+            "Copies in the cloud and on a flash drive, checked now and then",
+            "Emailing the files to strangers so that someone else keeps them",
+            "Printing the first page of each project"
+          ],
+          "a": 1,
+          "why": "Copies in two separate places, checked regularly, survive a lost or broken device."
+        },
+        {
+          "q": "You want your photos backed up but you have very little mobile data. What is a sensible setting?",
+          "opts": [
+            "Turn off backup forever",
+            "Back up only when the battery is almost empty",
+            "Back up through a stranger's hotspot",
+            "Back up over Wi-Fi only"
+          ],
+          "a": 3,
+          "why": "Wi-Fi-only backup protects your photos without using your mobile data."
+        }
+      ]
+    },
+    {
+      "title": "Privacy and your digital footprint",
+      "goal": "Understand your digital footprint, control who sees your information and think carefully before you share.",
+      "sections": [
+        {
+          "heading": "Your digital footprint",
+          "body": "Your **digital footprint** is the trail of information you leave online: posts, comments, photos, likes, searches, the groups you join and what other people post about you. Some of it you create on purpose, like a post. Some is collected quietly, like your location history or the adverts you tap.\n\nFootprints last. A post can be screenshotted, forwarded and saved long after you delete it, and universities, scholarship panels and employers sometimes look people up online. That does not mean you should be afraid to post. It means you should post things you would be comfortable for a teacher, a parent or a future employer to see."
+        },
+        {
+          "heading": "What to keep private",
+          "body": "Some details help strangers find you or pretend to be you. Keep them off public profiles and out of group chats with people you do not know:\n\n- your home address and daily routine, such as when you leave home and which bus you take\n- your phone number and date of birth\n- photos that show your school badge, house number or street sign\n- your live location, especially while you are out\n- ID numbers such as your NIN, BVN or exam registration number, and photos of your ID card or exam slip\n\nPhotos can also carry hidden location data. Many phones let you remove it when you share a picture, so check your camera and sharing settings."
+        },
+        {
+          "heading": "Privacy settings",
+          "body": "Every app has privacy settings that control who can see what. Spend a few minutes on each app you use:\n\n- Set social media accounts to **private**, so only people you approve can see your posts.\n- In WhatsApp, open **Settings > Privacy** and set who can see your profile photo, about and status to My contacts instead of Everyone.\n- Turn off location tags on posts, and share live location only with family when needed.\n- Review which apps and websites are connected to your Google or Facebook account, and remove the ones you no longer use.\n\nYou can also search for your own name online to see what others can find, and ask a friend to remove a post about you that you are not happy with."
+        },
+        {
+          "heading": "Think before you share",
+          "body": "Before posting, ask three quick questions: **Is it true? Is it kind? Would I be happy for anyone to see it in five years?**\n\nOther people have privacy too. Ask before posting a photo of a friend, never share someone's private messages or screenshots without permission, and never post other people's personal details. In Nigeria, the **Nigeria Data Protection Act 2023** sets rules for how organisations collect and use personal data, and it gives people rights over their own information."
+        }
+      ],
+      "points": [
+        "Your digital footprint includes what you post and what others post or collect about you",
+        "Posts can be saved and shared even after you delete them",
+        "Keep your address, routine, phone number, ID numbers and live location private",
+        "Set accounts to private and review app privacy settings regularly",
+        "Ask permission before posting photos or details of other people"
+      ],
+      "mistakes": [
+        "Posting photos with your school name or badge visible on a public account — crop them or keep the account private",
+        "Sharing live location in a big group chat — share it only with family, and only when needed",
+        "Thinking a deleted post is gone for good — assume anything you post can be copied"
+      ],
+      "task": "Look at one of your own social media or WhatsApp profiles, or a fictional profile your teacher gives you. List every detail a stranger could learn from it, then change at least three privacy settings so fewer people can see them. Write down what you changed and why.",
+      "quiz": [
+        {
+          "q": "Which detail is safest to share on a public profile?",
+          "opts": [
+            "Your house address",
+            "Your exam registration number",
+            "Your favourite football club",
+            "The time you leave home each day"
+          ],
+          "a": 2,
+          "why": "A general interest does not help a stranger find you or pretend to be you."
+        },
+        {
+          "q": "You deleted an embarrassing post after one hour. What should you assume?",
+          "opts": [
+            "Someone may already have screenshotted or saved it",
+            "Nobody could have seen it in such a short time",
+            "Deleting it removed every copy from every phone",
+            "The app automatically hides deleted posts from teachers"
+          ],
+          "a": 0,
+          "why": "Posts can be copied within seconds, so think before posting rather than relying on deleting."
+        },
+        {
+          "q": "A friend posts a photo of you without asking, and you are not happy with it. What is the most respectful way to handle it?",
+          "opts": [
+            "Post an embarrassing photo of them so they know how it feels",
+            "Share it more widely so that it stops looking like a big deal",
+            "Say nothing and hide your feelings so the friendship is not affected",
+            "Ask them politely to remove it, and report it if it is harmful"
+          ],
+          "a": 3,
+          "why": "A calm request respects both of you, and reporting tools exist for harmful posts."
+        },
+        {
+          "q": "Which WhatsApp privacy choice best protects you from strangers in large groups?",
+          "opts": [
+            "Profile photo visible to Everyone so friends can recognise you",
+            "Profile photo, about and status visible to My contacts only",
+            "Sharing your live location with the group so people know you are safe",
+            "Posting your number on social media"
+          ],
+          "a": 1,
+          "why": "Limiting these to your contacts stops strangers in big groups from seeing them."
+        },
+        {
+          "q": "Why could a photo of you in front of your house be risky on a public account?",
+          "opts": [
+            "Pictures taken outdoors use far more data to upload than indoor ones",
+            "The photo might be blurry, which makes your profile look bad",
+            "It could reveal your house number, street or location to strangers",
+            "Houses are not allowed in photos on most social media apps"
+          ],
+          "a": 2,
+          "why": "Background details can show where you live, which is information strangers should not have."
+        }
+      ]
+    },
+    {
+      "title": "Safe social media and messaging",
+      "goal": "Use social media and messaging apps safely, treat images and consent responsibly, and deal wisely with people you only know online.",
+      "sections": [
+        {
+          "heading": "Age limits and group chats",
+          "body": "Most big social media apps, including Instagram, TikTok, Snapchat and Facebook, require users to be at least 13, and some features have higher limits. These rules exist to protect young people, so follow them and involve a parent or guardian when you set up accounts.\n\nWhatsApp groups are part of school life: class groups, club groups and youth groups at church or mosque. Keep them safe and pleasant:\n\n- In WhatsApp, go to **Settings > Privacy > Groups** and choose who can add you, so strangers cannot drop you into scam groups.\n- Do not forward messages you have not checked, especially ones labelled “Forwarded many times”.\n- Leave groups that turn hostile or share harmful content, and tell an adult if needed."
+        },
+        {
+          "heading": "Images, consent and sharing",
+          "body": "Once you send a picture, you lose control of it. The person you send it to can save it, screenshot it or share it, even on apps that say messages disappear.\n\n- Ask before you take or share a photo of someone, and respect a no.\n- Never share embarrassing, private or hurtful pictures of other people. Forwarding them spreads the harm and can be a crime.\n- Never send nude or sexual images of yourself, and never ask anyone for them. In Nigeria, making, sending or keeping sexual images of anyone under 18 is a serious crime, even if they agreed.\n- If someone threatens to share a picture of you unless you pay or send more, which is called **sextortion**, do not pay and do not send anything. Stop replying, keep the evidence and tell a trusted adult straight away. It is not your fault, and help is available."
+        },
+        {
+          "heading": "Strangers and online friends",
+          "body": "People online are not always who they say they are. A friendly “student” could be an adult, a scammer or someone trying to groom young people. Be cautious when someone you have never met:\n\n- gives you lots of compliments or gifts, such as airtime or data, very quickly\n- asks you to keep the friendship secret or to move to a private app\n- asks for photos, your location or personal details\n- offers you a job, a modelling contract or easy money\n- wants to meet in person\n\nNever meet someone you only know online unless a parent or guardian knows and agrees, and any meeting should be in a busy public place with a trusted adult present. Trust your feelings: if something feels wrong, stop chatting and talk to someone."
+        },
+        {
+          "heading": "Be kind, and check before you forward",
+          "body": "How you treat others online matters as much as how you protect yourself. Do not join in when someone is being mocked in a group; a private message of support or a word with a teacher can make a big difference. Check facts before forwarding news, because false stories about exams, health or security spread fast in WhatsApp groups and can cause real panic."
+        }
+      ],
+      "points": [
+        "Follow age limits and involve a parent or guardian when you set up accounts",
+        "Control who can add you to WhatsApp groups, and check messages before forwarding them",
+        "Ask before taking or sharing photos of other people, and never share private images",
+        "If someone threatens to share an image unless you pay or send more, do not pay; keep evidence and tell a trusted adult",
+        "Never meet an online-only contact without a parent or guardian's agreement and presence"
+      ],
+      "mistakes": [
+        "Thinking disappearing messages are safe for private pictures — they can still be screenshotted",
+        "Forwarding a humiliating video of a classmate “just to show one person” — it spreads the harm",
+        "Keeping a worrying online friendship secret — secrecy is exactly what groomers and scammers want"
+      ],
+      "task": "If you use WhatsApp, change the group setting so only your contacts can add you, then check two other privacy settings in an app you use. Next, write down three warning signs from this chapter that would make you stop chatting with an online contact and tell a trusted adult.",
+      "quiz": [
+        {
+          "q": "Someone you met in an online game sends you free data, says you are very mature for your age and asks you to keep the friendship secret. What should you do?",
+          "opts": [
+            "Keep it secret as they asked, since they have been kind to you",
+            "Send a photo to thank them",
+            "Share your location so they can send more gifts",
+            "Stop chatting, save the messages and tell a trusted adult"
+          ],
+          "a": 3,
+          "why": "Gifts, flattery and requests for secrecy are classic grooming warning signs."
+        },
+        {
+          "q": "A classmate shares an embarrassing photo of another student in the class group. What is the best response?",
+          "opts": [
+            "Forward it to other groups so more people can see what happened",
+            "Don't share it; support the student and tell a teacher or admin",
+            "Reply with a laughing emoji so you do not look like the odd one out",
+            "Save it to your phone in case you need it for something later"
+          ],
+          "a": 1,
+          "why": "Not spreading it, supporting the target and involving an adult limits the harm."
+        },
+        {
+          "q": "Someone threatens to post a private photo of you unless you send ₦20,000. What should you do?",
+          "opts": [
+            "Don't pay; keep the evidence, stop replying and tell an adult",
+            "Pay quickly, because paying once usually makes them go away for good",
+            "Send another photo to calm them down and buy yourself time",
+            "Delete everything, block them and never tell anyone about it"
+          ],
+          "a": 0,
+          "why": "Paying usually leads to more demands. Evidence and adult help make it possible to stop the person."
+        },
+        {
+          "q": "Which WhatsApp setting helps stop strangers adding you to scam groups?",
+          "opts": [
+            "Turning off your screen lock so the app runs faster",
+            "Changing your wallpaper and profile photo every week",
+            "Settings > Privacy > Groups, then choosing who can add you",
+            "Muting notifications for every group you have already been added to"
+          ],
+          "a": 2,
+          "why": "The Groups privacy setting controls who is allowed to add you to a group."
+        },
+        {
+          "q": "An online contact you have never met asks you to meet them at a hotel in Abuja. What is the safe choice?",
+          "opts": [
+            "Go alone, since they seemed friendly in all their messages",
+            "Go with a friend your own age so that you are not alone",
+            "Refuse, and tell a parent or guardian about the request",
+            "Send them your home address so they can visit you there"
+          ],
+          "a": 2,
+          "why": "Meeting an online-only contact without a parent or guardian involved can be dangerous."
+        }
+      ]
+    },
+    {
+      "title": "Handling online harassment and getting help",
+      "goal": "Respond to online harassment by blocking, reporting and keeping evidence, and get help from trusted adults and official services.",
+      "sections": [
+        {
+          "heading": "What harassment looks like",
+          "body": "**Cyberbullying** and online harassment mean using phones, apps or the internet to hurt, threaten, shame or frighten someone, usually again and again. It can look like insulting messages, cruel comments, being deliberately shut out of a group, a fake account pretending to be you, spreading rumours, or sharing private photos or messages.\n\nIf it happens to you, remember that it is not your fault and you do not have to deal with it alone. Feeling upset is a normal reaction, and talking to someone you trust is a sign of strength, not weakness."
+        },
+        {
+          "heading": "Stop, save, block and report, tell",
+          "body": "1. **Stop.** Do not reply or retaliate. Angry replies often make things worse and can be used against you.\n2. **Save evidence.** Take screenshots that show the message, the sender's name or number, and the date and time, and copy links to posts. Keep them in a private folder and do not forward them around.\n3. **Block and report.** Use the app's block and report tools; WhatsApp, Instagram, TikTok, Facebook and others let you report messages, posts and fake accounts. You can also leave or mute a group.\n4. **Tell a trusted adult.** A parent, guardian, teacher, school counsellor or religious leader can help you decide what to do next and can contact the school or the other student's family.\n\nIf you see someone else being targeted, support them privately and help them report it.",
+          "code": {
+            "lang": "text",
+            "source": "EVIDENCE LOG (keep it private)\n\nEntry 1\nDate and time:  12 March, 7:40 pm\nApp:            WhatsApp (class group)\nFrom:           +234 80x xxx xxxx\nWhat happened:  threatening voice note\nSaved as:       screenshot 1 and the audio file\nReported to:    WhatsApp, and my class teacher"
+          }
+        },
+        {
+          "heading": "Getting official help in Nigeria",
+          "body": "Some online harm is a crime, including threats of violence, sextortion, impersonation, stalking and fraud. Nigeria's Cybercrimes (Prohibition, Prevention, etc.) Act covers many of these. With a parent or guardian, you can:\n\n- report to the **Nigeria Police Force National Cybercrime Centre (NPF-NCCC)** through its online e-reporting portal, or go to the nearest police station\n- for money lost to fraud, call the bank immediately on the official number in its app, on its website or on the card, to block the account and make a complaint\n- tell your school, which can act on bullying between students\n\nIf anyone is in **immediate danger**, call **112**, Nigeria's toll-free national emergency number, which connects to the police, fire service and other emergency responders."
+        },
+        {
+          "heading": "Look after yourself",
+          "body": "Take breaks from the app when things feel heavy, mute or leave groups that upset you, and spend time with people who make you feel safe. If you ever feel unable to cope, or have thoughts of hurting yourself, tell a trusted adult right away, or call 112 if you are in danger. You deserve help and support."
+        }
+      ],
+      "points": [
+        "Do not reply or retaliate; stay calm and step away",
+        "Save evidence that shows the message, the sender, the date and the time before you block",
+        "Use block and report tools, and leave or mute hostile groups",
+        "Tell a trusted adult, who can help you report to the school, the platform or the police",
+        "In immediate danger, call 112, Nigeria's toll-free national emergency number"
+      ],
+      "mistakes": [
+        "Deleting abusive messages straight away — screenshot them first so you have evidence",
+        "Replying with threats or insults — it can make things worse and put you in the wrong",
+        "Keeping serious harassment, threats or sextortion secret — tell a trusted adult the same day"
+      ],
+      "task": "Write a one-page “if something goes wrong online” plan: the names of two trusted adults, how to take a screenshot on your phone, where to find block and report in the two apps you use most, and when to call 112. Keep it somewhere you can find it quickly.",
+      "quiz": [
+        {
+          "q": "You receive a threatening message in a class WhatsApp group. What should you do first?",
+          "opts": [
+            "Reply with a stronger threat so they know you are not scared",
+            "Delete it at once so you never have to see it again",
+            "Forward it to every group you are in to warn other people",
+            "Don't reply; screenshot it, then tell a trusted adult"
+          ],
+          "a": 3,
+          "why": "Not replying keeps things calm, and evidence plus adult help makes action possible."
+        },
+        {
+          "q": "Why take screenshots before you block someone?",
+          "opts": [
+            "Blocking can hide messages, and evidence helps others act",
+            "Screenshots clear the phone's memory and make it run faster",
+            "Apps will not let you block anyone until you take a screenshot",
+            "So you can post them publicly and shame the person"
+          ],
+          "a": 0,
+          "why": "Once you block or delete, the messages may be hard to get back, and evidence supports any report."
+        },
+        {
+          "q": "A fake Instagram account is using your photo and name. What is the best response?",
+          "opts": [
+            "Create a fake account of them in return so they learn a lesson",
+            "Ignore it; fake accounts vanish by themselves",
+            "Report it as impersonation, save evidence and tell an adult",
+            "Send the fake account your password so it can be merged with yours"
+          ],
+          "a": 2,
+          "why": "Platforms remove impersonation accounts when they are reported, and an adult can help if it continues."
+        },
+        {
+          "q": "Your friend is being mocked in a group chat and seems upset. What is a helpful thing to do?",
+          "opts": [
+            "Join in a little so that you do not become the next target",
+            "Support your friend privately and help them report it",
+            "Screenshot the chat and post it on your status to expose them",
+            "Stay out of it completely"
+          ],
+          "a": 1,
+          "why": "Support from a friend and help to report can stop harassment and reduce its harm."
+        },
+        {
+          "q": "Someone online says they are outside your house and will hurt you. What should you and your family do?",
+          "opts": [
+            "Wait a few days to see whether they really mean it",
+            "Reply to the message and ask them what they want",
+            "Post about it online and hope that someone helps",
+            "Call 112 for emergency help and keep the evidence"
+          ],
+          "a": 3,
+          "why": "A threat of immediate harm is an emergency, and 112 connects you to the police and other responders."
+        }
+      ]
+    }
+  ],
+  "project": {
+    "title": "A digital safety guide for my family or class",
+    "brief": "Create a short, practical digital safety guide for your family or class: a checklist for securing a phone and its accounts, a warning poster or message about one scam based on a fictional example, and a help plan for when something goes wrong online. It should be clear enough for a younger sibling, or for a parent who is new to smartphones, to follow.",
+    "steps": [
+      "With a parent or guardian, do a safety check on your own phone: updates, screen lock, two-step verification on email and WhatsApp, app permissions and backups. Note what you changed, never the passwords or codes.",
+      "Turn your check into a one-page checklist of 8 to 10 clear steps that others can follow.",
+      "Write a fictional scam message set in Nigeria, such as a fake scholarship or a bank OTP request, and label at least four warning signs.",
+      "Design a short poster or WhatsApp message explaining how to spot and handle that scam, without any real links, phone numbers or account numbers.",
+      "Write a help plan covering who to tell, how to save evidence, how to block and report, how an adult can report to the NPF National Cybercrime Centre, and when to call 112.",
+      "Test the guide by explaining it to a family member or friend, and improve anything they found confusing.",
+      "Share the final guide with your family or, with your teacher's permission, with your class group."
+    ],
+    "checklist": [
+      "The checklist covers passwords, two-step verification, updates, permissions and backups",
+      "The scam example is fictional and clearly labels at least four warning signs",
+      "No real passwords, codes, phone numbers, account numbers or personal details appear anywhere",
+      "The help plan includes stop, save evidence, block and report, tell a trusted adult, and 112 for emergencies",
+      "Someone else tested the guide and could follow it"
+    ]
+  }
+}

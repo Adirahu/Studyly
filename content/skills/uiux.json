@@ -1,0 +1,514 @@
+{
+  "id": "uiux",
+  "title": "UI/UX design basics",
+  "icon": "📱",
+  "area": "Design",
+  "level": "Beginner",
+  "duration": "About 6 hours",
+  "summary": "Learn how designers understand users, plan app screens and test their ideas, then design and test a simple school app flow, starting on paper.",
+  "outcomes": [
+    "Explain the difference between UX and UI, and why design starts with users.",
+    "Run short, respectful interviews and observations, and turn what you learn into a persona and a problem statement.",
+    "Map a user flow and sketch wireframes on paper and in a free tool such as Figma or Penpot.",
+    "Design clear, consistent screens with readable contrast and tap targets that suit a thumb.",
+    "Build a simple prototype, run a usability test and improve the design from what you observe."
+  ],
+  "tools": "Paper, a pencil and sticky notes (or small squares of paper) are enough for most of the course. For digital wireframes and prototypes, use a free tool such as Figma (free Starter plan) or Penpot (free and open source); both work best in a browser on a laptop or desktop computer. Both need an account, so learners under 18 should ask a parent or guardian before signing up. Only interview or test with people who agree to take part.",
+  "resources": [
+    {
+      "title": "Google UX Design Professional Certificate (Coursera)",
+      "url": "https://www.coursera.org/professional-certificates/google-ux-design",
+      "note": "Its course outline shows a sensible order: foundations, research, wireframes, testing, then polished designs in Figma. It is a paid subscription with financial aid available, so talk to a parent or guardian before enrolling."
+    },
+    {
+      "title": "Figma — Figma Design for beginners",
+      "url": "https://help.figma.com/hc/en-us/articles/30848209492887",
+      "note": "Figma's own free beginner course. It only uses features on the free Starter plan."
+    },
+    {
+      "title": "Penpot user guide",
+      "url": "https://help.penpot.app/user-guide/",
+      "note": "Official guide to Penpot, a free, open-source design and prototyping tool that runs in the browser."
+    },
+    {
+      "title": "Interaction Design Foundation — What is UX design?",
+      "url": "https://ixdf.org/literature/topics/ux-design",
+      "note": "Free articles that explain UX, UI and the design process, with links to topics such as personas and wireframes."
+    },
+    {
+      "title": "Nielsen Norman Group — Why you only need to test with 5 users",
+      "url": "https://www.nngroup.com/articles/why-you-only-need-to-test-with-5-users/",
+      "note": "A short, free article on why small, repeated tests find most usability problems."
+    },
+    {
+      "title": "Nielsen Norman Group — Thinking aloud",
+      "url": "https://www.nngroup.com/articles/thinking-aloud-the-1-usability-tool/",
+      "note": "How to ask testers to say what they are thinking while they use your design."
+    },
+    {
+      "title": "Android Developers — Make apps more accessible",
+      "url": "https://developer.android.com/guide/topics/ui/accessibility/apps",
+      "note": "Google's guidance on touch target size, colour contrast and clear labels."
+    },
+    {
+      "title": "WebAIM Contrast Checker",
+      "url": "https://webaim.org/resources/contrastchecker/",
+      "note": "Check that text and buttons have enough contrast with their background."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "What UX and UI are",
+      "goal": "Explain the difference between UX and UI and describe the basic steps of a user-centred design process.",
+      "sections": [
+        {
+          "heading": "UX and UI in everyday life",
+          "body": "**UX (user experience)** is the whole experience someone has while trying to reach a goal with a product: buying airtime, checking exam results or paying a POS agent. It includes how easy it is to understand, how long it takes, how the person feels and whether they succeed. **UI (user interface)** is the part they see and touch: the screens, buttons, text, icons and menus.\n\nThe two are connected but not the same. A results portal can have a beautiful UI and still give a poor experience if it needs nine screens and two logins to show your scores. A plain-looking app can give a great experience if it gets you to your goal quickly and without confusion."
+        },
+        {
+          "heading": "What makes an experience good",
+          "body": "Good UX usually means a product is:\n\n- **Useful:** it solves a real need that people have\n- **Usable:** it is easy to learn, quick to use and hard to make mistakes with\n- **Accessible:** it works for people with different abilities, ages and devices\n\nIn Nigeria, accessible design also means thinking about conditions many users face: small or older phones, cracked screens, bright sunlight, slow or expensive data and network drops. An app that works well on a cheap phone with one bar of signal is better designed than one that only shines on the newest handset."
+        },
+        {
+          "heading": "The design process is a loop",
+          "body": "Most designers follow a process something like this:\n\n1. **Understand:** learn about the users and their situation\n2. **Define:** describe the problem you are solving\n3. **Ideate:** come up with and sketch many possible solutions\n4. **Prototype:** make a simple model of the best ideas\n5. **Test:** watch real people try it\n6. **Improve:** fix what you learned, then test again\n\nIt is a loop, not a straight line. Testing nearly always reveals something new, which sends you back to improve the design or even rethink the problem. That is normal, and it is how good products are made."
+        },
+        {
+          "heading": "You are not your user",
+          "body": "Designers easily assume that everyone thinks the way they do. You might love tiny icons and dark screens, but the school librarian using your app might want large, clear words. Your classmates might use different phones, read at different speeds or care about different things.\n\nThis is why UX design relies on talking to and watching real users instead of guessing. Whenever you catch yourself saying 'users will obviously…', treat it as a question to check, not a fact."
+        }
+      ],
+      "points": [
+        "UX is the whole experience of reaching a goal; UI is the screens and controls people use.",
+        "A good-looking interface can still give a poor experience.",
+        "Good UX is useful, usable and accessible, including on cheap phones and slow networks.",
+        "Design is a loop: understand, define, ideate, prototype, test and improve.",
+        "You are not your user, so check your ideas with real people."
+      ],
+      "mistakes": [
+        "Thinking UI/UX just means making things pretty — appearance matters, but solving the user's problem comes first.",
+        "Designing only for the newest phone and fast internet — check your ideas on a small screen and imagine a slow connection.",
+        "Jumping straight to colours and logos — understand the problem before you decide how it looks."
+      ],
+      "task": "Choose an app or website you use often, such as a school portal, a data-purchase app or a bank app. Write down one task you do with it, every step it takes, one thing that works well and one frustration. Then decide whether each point is mostly about UX or UI.",
+      "quiz": [
+        {
+          "q": "A results-checking portal looks beautiful but needs nine screens and two logins to show your scores. What is the main problem?",
+          "opts": ["The colours are wrong", "The logo is too small", "The UX is poor, because reaching the goal takes too long", "Nothing, because it looks good"],
+          "a": 2,
+          "why": "A good-looking interface can still give a poor experience. Too many steps make the goal hard to reach."
+        },
+        {
+          "q": "Which of these changes is mainly a UI change?",
+          "opts": ["Making the 'Pay' button larger and easier to see", "Removing two unnecessary steps from checkout", "Interviewing customers about their problems", "Deciding which features the app should have"],
+          "a": 0,
+          "why": "The button's look is part of the interface. The other options change the overall experience or the research behind it."
+        },
+        {
+          "q": "Many of your users have older phones and limited data. Which design decision best respects this?",
+          "opts": ["Autoplay a video on the home screen", "Keep screens light, with few large images and clear text", "Require the latest phone software", "Use tiny text so more fits on each screen"],
+          "a": 1,
+          "why": "Light screens load faster and cost less data, and clear text works on small, older screens."
+        },
+        {
+          "q": "You love your design idea, but your first two testers are confused by it. What does the design process suggest?",
+          "opts": ["Keep it, because you are the designer", "Find testers who will agree with you", "Launch it anyway", "Learn from the confusion, improve the design and test again"],
+          "a": 3,
+          "why": "Design is a loop. Confusion during testing is useful evidence about what to improve."
+        },
+        {
+          "q": "A classmate says, 'Everyone will obviously know to swipe left to delete.' What is the best response?",
+          "opts": ["Agree, since swiping is common", "Check it by watching real users try it", "Add swipe gestures to every screen", "Remove the delete option"],
+          "a": 1,
+          "why": "You are not your user. Assumptions should be tested with real people, because many users never discover hidden gestures."
+        }
+      ]
+    },
+    {
+      "title": "User research, done ethically",
+      "goal": "Plan and run short interviews and observations respectfully, and turn what you learn into a persona.",
+      "sections": [
+        {
+          "heading": "Research with care",
+          "body": "User research means learning from people, so it must be done respectfully. Before any interview or observation:\n\n- explain who you are, what the project is and how long it will take\n- ask clearly whether they agree to take part, and tell them they can stop or skip a question at any time\n- ask before recording audio, video or photos, and do not record if they say no\n- collect only what you need, using code names such as 'Student A' instead of full names\n- keep notes safe, and delete recordings when the project ends\n\nFor school projects, research with classmates, friends or family, and tell your teacher what you are doing. Never approach strangers online or arrange to meet people you do not know."
+        },
+        {
+          "heading": "Interviews: ask about real experiences",
+          "body": "A good interview feels like a friendly conversation guided by a few prepared questions. Ask **open questions** that begin with words like 'how', 'tell me about' or 'what happened', and ask about real past experiences rather than guesses about the future. People are often polite, so 'Would you use my app?' tends to get a kind 'yes' that tells you nothing.\n\nAvoid **leading questions** that suggest an answer, such as 'You find revision hard, don't you?'. Listen more than you talk, ask 'why?' when something is interesting, and write down people's exact words for important points.",
+          "code": {
+            "lang": "text",
+            "source": "INTERVIEW GUIDE — revision planning (about 10 minutes)\nIntro: 'I'm designing a revision planner for a school project.\n        There are no right or wrong answers, and you can stop\n        at any time. Is it okay if I take notes?'\n1. Tell me about the last time you planned your revision.\n2. Where do you keep your plan? Show me, if you like.\n3. What usually stops you sticking to it?\n4. How do you find out which topics are coming in a test?\n5. What phone do you use, and when do you usually have data?\nClose: 'Thank you! Is there anything else you'd like to add?'"
+          }
+        },
+        {
+          "heading": "Observation: watch what people do",
+          "body": "What people say and what they do are often different. If you can, ask permission to watch someone carry out the task, such as a student planning revision or the librarian lending books. Sit quietly, take notes and save your questions for afterwards.\n\nLook especially for **workarounds**: the clever tricks people use because the current system does not quite work. A student who writes test dates on the back of an exercise book, or a librarian who keeps a separate notebook of overdue books, is showing you a need that a better design could meet."
+        },
+        {
+          "heading": "Personas: a summary of what you learned",
+          "body": "A **persona** is a short profile of a typical user, built from your research. It uses a made-up name so that no real person can be identified, and lists the user's goals, frustrations and situation, such as the phone they use and when they have data. Every detail should come from something you actually heard or saw, not from imagination.\n\nOne or two personas are enough for a small project. Keep them where you can see them while designing, and ask 'Would this work for her?' whenever you make a decision.",
+          "code": {
+            "lang": "text",
+            "source": "PERSONA (fictional, based on three interviews)\nName:     Amina, 16, SS2 student in Kano\nPhone:    shared family Android phone, mostly in the evenings\nData:     buys small bundles; often offline during the day\nGoal:     know exactly what to revise each evening before mock exams\nFrustrations:\n  - plans are spread across notebooks and class WhatsApp groups\n  - forgets which topics she has already covered\nIn her words: 'I spend more time looking for my plan than revising.'"
+          }
+        }
+      ],
+      "points": [
+        "Always ask permission, explain the purpose and let people stop at any time.",
+        "Ask open questions about real past experiences, not leading questions about your idea.",
+        "Watching people do a task reveals things they forget to mention.",
+        "Workarounds, such as reminder notes on paper, point to unmet needs.",
+        "A persona summarises real research findings; it is not an invented character."
+      ],
+      "mistakes": [
+        "Asking 'Would you use my app?' — people are polite, so ask what they did last time instead.",
+        "Collecting full names, phone numbers or photos you do not need — use code names such as 'Student A'.",
+        "Inventing a persona from imagination — base every detail on something you heard or saw."
+      ],
+      "task": "With permission, interview two or three classmates or family members about how they plan revision or borrow books, using open questions. If one of them agrees, observe them doing the task. Write up your notes using code names, then create one persona from what you found.",
+      "quiz": [
+        {
+          "q": "Which interview question is least likely to push the answer in one direction?",
+          "opts": ["Wouldn't a revision app make your life easier?", "You find revision timetables hard, don't you?", "Tell me about the last time you planned your revision.", "Would you download my amazing app?"],
+          "a": 2,
+          "why": "It is open and asks about real past behaviour. The others suggest the answer the interviewer wants to hear."
+        },
+        {
+          "q": "During an interview, a classmate says she would rather not answer a question about her family. What should you do?",
+          "opts": ["Thank her, skip the question and move on", "Explain why she has to answer", "Ask her friends instead", "Guess the answer and write it down"],
+          "a": 0,
+          "why": "Participants can skip questions or stop at any time. Respecting that is part of ethical research."
+        },
+        {
+          "q": "A student says he always follows his timetable, but when you observe him he checks class WhatsApp messages to decide what to revise. What does this tell you?",
+          "opts": ["He is lying, so ignore everything he said", "Observation is not useful", "Timetables are not needed at all", "What people do can differ from what they say, and his workaround is a useful clue"],
+          "a": 3,
+          "why": "Workarounds reveal real needs that interviews alone can miss."
+        },
+        {
+          "q": "Which persona detail is most useful when designing a school library app?",
+          "opts": ["Her favourite colour is purple", "She usually uses a shared family phone with limited data in the evenings", "Her full name and home address", "She was born on a Tuesday"],
+          "a": 1,
+          "why": "Device, data and timing affect design decisions. Personal identifiers should never go in a persona."
+        },
+        {
+          "q": "You recorded an interview with permission, and the project is now finished. What should you do with the recording?",
+          "opts": ["Post it in the class group chat", "Share it on social media for feedback", "Delete it, unless the person agreed to it being kept and it is stored safely", "Send it to anyone who asks"],
+          "a": 2,
+          "why": "Keep personal data only as long as you need it, and only for the purpose people agreed to."
+        }
+      ]
+    },
+    {
+      "title": "Problem statements and user flows",
+      "goal": "Turn research into a clear problem statement and map the steps a user takes to complete a task.",
+      "sections": [
+        {
+          "heading": "From notes to insights",
+          "body": "After research you will have pages of notes. Write each separate observation or quote on its own sticky note or small square of paper, then group similar notes together on a wall or table. This is often called **affinity mapping**. Give each group a name, such as 'plans in too many places' or 'only revise when there is data'.\n\nThe biggest groups usually point to the most important needs. An **insight** combines a pattern with the reason behind it, for example: 'Students lose track of revision because their plans are spread across chats, notebooks and memory.'"
+        },
+        {
+          "heading": "Writing a problem statement",
+          "body": "A problem statement explains whose problem you are solving and why it matters, without describing the solution yet. A simple pattern is:\n\n**[User] needs a way to [do something] because [insight].**\n\nThen turn it into one or more **'How might we…?'** questions, which invite many possible answers. Keeping the solution out of the problem stops you jumping to the first idea, such as 'an app with five tabs', before you know whether it is the best one.",
+          "code": {
+            "lang": "text",
+            "source": "WEAK:   Students need a revision app with a calendar, a chat and a quiz.\n        (This lists features, not a need.)\n\nBETTER: SS3 students preparing for WASSCE need a way to see what to\n        revise each day because their plans are spread across chats\n        and notebooks.\n\nHow might we help students see today's revision plan in one place?\nHow might we help students notice topics they have not revised yet?"
+          }
+        },
+        {
+          "heading": "Mapping a user flow",
+          "body": "A **user flow** is a diagram of the steps a user takes to complete one task, from where they start to their goal. Use simple shapes: an oval for the start and end, a rectangle for each screen or step and a diamond for a decision, with arrows between them.\n\nOnce the flow is drawn, count the steps and ask whether each one is needed. Also show what happens when things go wrong: no network, a mistyped student number or a book that is already borrowed. Real users meet these situations, and your design should tell them what to do next.",
+          "code": {
+            "lang": "text",
+            "source": "USER FLOW — Reserve a book (school library app)\n(Start: open app)\n  -> [Home: search bar]\n  -> [Type book title]\n  -> <Book found?>\n       no  -> [Message: 'Not found. Check the spelling or ask\n               the librarian.'] -> back to search\n       yes -> [Book page: shows whether it is available]\n  -> <Available?>\n       no  -> [Join waiting list] -> (End)\n       yes -> [Tap 'Reserve book'] -> [Confirmation: collect\n               by Friday] -> (End)\nError path: no network -> [Message: 'You are offline. Try again\n            when you are connected.']"
+          }
+        },
+        {
+          "heading": "Choose one core task",
+          "body": "Real apps do many things, but a first version should do one or two things very well. Look at your persona and problem statement and pick the task that matters most, such as 'see today's revision plan' or 'reserve a book'.\n\nTo find ideas for it, try quick sketching: fold a sheet of paper into eight boxes and sketch a different idea for the main screen in each, spending about a minute per box. The speed stops you getting attached to your first idea. Then choose the most promising sketch or combine the best parts of several."
+        }
+      ],
+      "points": [
+        "Group research notes to find patterns before deciding what to design.",
+        "A problem statement names the user, their need and the reason, without describing a solution.",
+        "'How might we…?' questions turn a problem into a starting point for ideas.",
+        "A user flow shows every step and decision from start to finish, including what happens when something goes wrong.",
+        "Fewer, clearer steps usually mean a better experience."
+      ],
+      "mistakes": [
+        "Writing the solution into the problem — describe the need, not the feature.",
+        "Mapping only the path where everything goes right — also show what happens with no network or a wrong entry.",
+        "Trying to design every feature at once — start with the one task that matters most to your persona."
+      ],
+      "task": "Write a problem statement and two 'How might we…?' questions from your Chapter 2 research. Then draw a user flow for the most important task, marking each screen, decision and end point, and include at least one error path such as 'no network'.",
+      "quiz": [
+        {
+          "q": "Which of these is the best problem statement?",
+          "opts": ["Students need an app with a blue home screen and five tabs", "SS3 students preparing for WASSCE need a way to see what to revise each day because their plans are spread across chats and notebooks", "Revision is bad", "We need to build the best app in Nigeria"],
+          "a": 1,
+          "why": "It names the user, the need and the reason, without jumping to features."
+        },
+        {
+          "q": "Your user flow for borrowing a book has 11 steps, including typing the student number three times. What should you do?",
+          "opts": ["Remove repeated or unnecessary steps", "Add a tutorial screen explaining all 11 steps", "Keep them, since more steps means more features", "Make the buttons more colourful"],
+          "a": 0,
+          "why": "Every extra step is a chance to give up or make a mistake, and a tutorial does not fix a long flow."
+        },
+        {
+          "q": "Why include an error path such as 'no network' in your user flow?",
+          "opts": ["Longer diagrams look more professional", "Networks never fail, so it is just practice", "It is only needed for games", "Real users will meet it, so the design must tell them what to do next"],
+          "a": 3,
+          "why": "Planning for problems such as poor network coverage means users are not left stuck or confused."
+        },
+        {
+          "q": "Five of your interviewees mentioned forgetting revision plans written in different places. What is this?",
+          "opts": ["A coincidence to ignore", "A reason to stop researching", "A pattern that could become a key insight", "A colour problem in the interface"],
+          "a": 2,
+          "why": "The same observation from several people points to a shared need worth designing for."
+        },
+        {
+          "q": "Which 'How might we…?' question is most useful for generating ideas?",
+          "opts": ["How might we build a timetable app with exactly six screens?", "How might we help students see today's revision plan in one place?", "How might we make students revise ten hours a day?", "How might we design a logo for the app?"],
+          "a": 1,
+          "why": "It focuses on the user's need and leaves room for many possible solutions."
+        }
+      ]
+    },
+    {
+      "title": "Wireframes: paper first, then a free tool",
+      "goal": "Sketch low-fidelity wireframes on paper and rebuild the best one in a free tool such as Figma or Penpot.",
+      "sections": [
+        {
+          "heading": "What a wireframe is",
+          "body": "A **wireframe** is a simple plan of a screen that shows what goes where: headings, text, buttons, images and menus. It is usually drawn in black, white and grey, with boxes for images (often with a cross through them) and lines for blocks of text. Colours, photos and final fonts come later.\n\nWireframes are called **low fidelity** because they are rough on purpose. They are quick to make and easy to throw away, and when you show them to people, they comment on the structure and steps instead of arguing about colours."
+        },
+        {
+          "heading": "Sketching on paper",
+          "body": "Draw a phone-shaped rectangle for each screen; tracing around your own phone is fine. Number the screens to match the steps in your user flow so the order is clear. For each screen, sketch two or three different versions before choosing one.\n\nThink about how people hold phones. Many use one thumb, which reaches the middle and lower part of the screen most easily. Put the main action where it is easy to reach and make it big, and leave less important things for the edges. Add short notes beside the sketch to explain anything that moves or changes.",
+          "code": {
+            "lang": "text",
+            "source": "Screen 2 — Today's revision (wireframe)\n+------------------------+\n| <   Today, Wednesday   |\n|------------------------|\n| Biology                |\n|   Topic: Osmosis       |\n|   30 min      [ Done ] |\n|------------------------|\n| Mathematics            |\n|   Topic: Indices       |\n|   30 min      [ Done ] |\n|------------------------|\n|                        |\n| [   + Add subject    ] |\n| [   Start session    ] |\n+------------------------+"
+          }
+        },
+        {
+          "heading": "Rebuilding it in Figma or Penpot",
+          "body": "If you have a laptop or desktop computer, you can redraw your best wireframes in a free browser tool such as **Figma** (free Starter plan) or **Penpot** (free and open source). Both need an account, so check the age rules and ask a parent or guardian before signing up.\n\n1. Create a new design file.\n2. Add a phone-sized container: in Figma this is a **frame** (press `F`), and in Penpot it is a **board** (press `B`). Both let you pick a phone size from a list of presets.\n3. Use the rectangle tool (`R`) for boxes and buttons, and the text tool (`T`) for words.\n4. Keep everything grey, and name each frame or board to match your flow, such as '2 Today's revision'.\n\nIf you only have a phone, keep working on paper. Neat paper wireframes are completely acceptable, and you can photograph them to share."
+        },
+        {
+          "heading": "Use real words",
+          "body": "Fill wireframes with realistic content: real subject names, sensible times and genuine button labels. Placeholder text such as 'Lorem ipsum', or a button simply called 'Button', hides problems; you only find out that 'Further Mathematics' does not fit on one line when you write it in.\n\nCheck each screen against your flow. What is the one main thing the user should do here, and is it obvious? If a screen is trying to do three jobs, consider splitting it into two screens."
+        }
+      ],
+      "points": [
+        "Wireframes show structure and content, not colour or decoration.",
+        "Paper is the fastest way to try several layouts.",
+        "Number your wireframes to match the steps in your user flow.",
+        "Use real words and labels instead of placeholder text.",
+        "Put the main action where a thumb can reach it easily."
+      ],
+      "mistakes": [
+        "Spending hours on colours at the wireframe stage — keep it grey and simple until the layout works.",
+        "Drawing only one version — sketch at least two or three before choosing.",
+        "Using 'Lorem ipsum' or 'Button' as labels — write what the screen will really say."
+      ],
+      "task": "Sketch two different paper versions of each screen in your user flow, choose the best version of each and number them in order. If you can use a computer, rebuild them in Figma or Penpot using phone-sized frames or boards and grey boxes; if not, redraw them neatly on paper and photograph them.",
+      "quiz": [
+        {
+          "q": "At the wireframe stage, a teammate wants to spend the afternoon choosing the perfect shade of green. What is the best advice?",
+          "opts": ["Agree on the layout and content first; colour comes later", "Choose every colour before drawing anything", "Skip wireframes and go straight to colour", "Use every shade on one screen to compare them"],
+          "a": 0,
+          "why": "Wireframes test structure. Colour decisions are easier once the layout works."
+        },
+        {
+          "q": "Wireframe A labels its main button 'Button'. Wireframe B labels it 'Add subject'. Which is better?",
+          "opts": ["A, because programmers decide labels later", "A, because short labels are always clearer", "B, because real labels show testers what will happen", "Neither, because wireframes never have labels"],
+          "a": 2,
+          "why": "Real words let testers judge whether the screen makes sense, and reveal text that does not fit."
+        },
+        {
+          "q": "Why sketch several versions of a screen on paper before opening a design tool?",
+          "opts": ["Design tools cannot draw rectangles", "It is quick and cheap to compare ideas before committing to one", "Paper wireframes are the final product", "Figma will not open without them"],
+          "a": 1,
+          "why": "Fast sketches let you explore options without getting attached to the first idea."
+        },
+        {
+          "q": "On your 'Today's revision' screen, the main 'Start session' button is tiny and in the top-left corner. What is a better choice for a phone?",
+          "opts": ["Hide it in a menu", "Make it even smaller to save space", "Move it to a separate screen", "Make it large and place it where a thumb reaches easily, often lower on the screen"],
+          "a": 3,
+          "why": "The main action should be obvious and easy to reach with one thumb."
+        },
+        {
+          "q": "You only have a phone, not a laptop. What is the best way to continue with wireframes?",
+          "opts": ["Keep working on paper and photograph neat versions", "Stop the course until you get a laptop", "Skip wireframes completely", "Pay for an app without asking anyone"],
+          "a": 0,
+          "why": "Paper wireframes teach the same skills. Anything that costs money should be discussed with a parent or guardian."
+        }
+      ]
+    },
+    {
+      "title": "Visual UI: clear, consistent and accessible",
+      "goal": "Turn wireframes into clear screens with consistent components, readable contrast and tap targets that suit a thumb.",
+      "sections": [
+        {
+          "heading": "Buttons people understand",
+          "body": "Buttons are how users act, so they should look tappable and say what they do. Most screens need one **primary** button for the main action, usually filled with a strong colour. Other actions can be **secondary** buttons (an outline or lighter fill) or simple text links. When three buttons all look equally important, users have to stop and think.\n\nLabel buttons with a verb that describes the result: 'Reserve book' or 'Save plan' is clearer than 'OK' or 'Submit'. Show changes of state too, such as a button that looks pressed when tapped, or one that is greyed out with a short explanation when it cannot be used yet."
+        },
+        {
+          "heading": "Spacing and consistency",
+          "body": "Even spacing makes screens look calm and organised. Many designers choose a spacing system based on multiples of 8 (8, 16, 24 and 32 pixels) and use only those values for gaps and margins. Use the same side margins on every screen, and put more space between groups than within them.\n\n**Consistency** means the same thing always looks and behaves the same way. If the back arrow is top-left on one screen, keep it there on all of them; if an action is called 'Save', do not call it 'Store' elsewhere. In both Figma and Penpot you can turn a button into a reusable **component**, so every copy updates when you change the original."
+        },
+        {
+          "heading": "Contrast and readable text",
+          "body": "Text and important controls must stand out from their background. Accessibility guidelines recommend a contrast ratio of at least **4.5:1** for normal text, and at least **3:1** for large text and for the visible edges of things like buttons, input boxes and icons. Pale grey text on white may look stylish, but it is hard to read, especially outdoors in bright sunlight.\n\nKeep body text comfortably large; around 16 pixels is a common minimum on phone screens. Never use colour as the only signal: an error shown only by a red outline may be missed, so add words or an icon as well."
+        },
+        {
+          "heading": "Tap targets and forms",
+          "body": "Fingers are much less precise than a mouse pointer. Apple recommends tap targets of at least **44 × 44 points** and Google's Android guidance suggests **48 × 48 dp**; in a phone-sized frame in Figma or Penpot, that means aiming for about 44–48 pixels. Leave space between targets so people do not tap 'Delete' when they meant 'Edit'.\n\nIn forms, put a visible label above each field, because placeholder text inside the box disappears as soon as someone starts typing. Ask only for information you truly need. When something goes wrong, show a helpful message next to the field that says how to fix it, such as 'Phone number should have 11 digits'.",
+          "code": {
+            "lang": "text",
+            "source": "UI CHECKLIST (for each screen)\n[ ] One clear primary button with a specific label\n[ ] Spacing uses one set of values, e.g. 8, 16, 24, 32 px\n[ ] Text contrast at least 4.5:1 (large text at least 3:1)\n[ ] Body text around 16 px or larger\n[ ] Tap targets at least about 44–48 px, with gaps between them\n[ ] Meaning never shown by colour alone\n[ ] Same words and icons for the same actions on every screen"
+          }
+        }
+      ],
+      "points": [
+        "One clear primary button per screen shows users the main action.",
+        "A spacing system, such as multiples of 8, and reusable components keep screens consistent.",
+        "Normal text needs a contrast ratio of at least 4.5:1; large text and key control edges at least 3:1.",
+        "Make tap targets at least about 44–48 pixels and leave space between them.",
+        "Error messages should say what went wrong and how to fix it, right next to the problem."
+      ],
+      "mistakes": [
+        "Three equally bold buttons on one screen — choose one primary action and make the others secondary.",
+        "Light grey text on white because it 'looks clean' — check it in a contrast checker first.",
+        "Using placeholder text as the only label — it disappears when users start typing, so put a label above the field.",
+        "Calling the same action by different names — pick one word and use it everywhere."
+      ],
+      "task": "Turn your wireframes into clean UI screens on paper or in Figma or Penpot. Use one primary button per screen, a consistent spacing system and the same style for repeated parts. Check every text colour in a contrast checker and make sure every tap target is at least about 44–48 pixels.",
+      "quiz": [
+        {
+          "q": "A sign-up screen has 'Register', 'Log in', 'Help' and 'Continue' buttons, all the same size and bright colour. What is the best fix?",
+          "opts": ["Make every button flash", "Add two more buttons for balance", "Make the main action the only filled button and style the others as secondary", "Remove the labels and use icons only"],
+          "a": 2,
+          "why": "One primary button shows the main action, while secondary styles keep the other options available without competing."
+        },
+        {
+          "q": "Your 'Edit' and 'Delete' icons are 20 pixels wide and touching each other. What is the risk?",
+          "opts": ["People may tap the wrong one, so make them larger and add space between them", "They will load too slowly", "Their colours will fade", "There is no risk on phones"],
+          "a": 0,
+          "why": "Small, crowded targets cause mis-taps. Aim for about 44–48 px with gaps between targets."
+        },
+        {
+          "q": "One screen says 'Save', another says 'Store' and a third says 'Keep' for the same action. Why is this a problem?",
+          "opts": ["Users enjoy variety", "Three words take up less space", "It only matters to programmers", "Users may think they are three different actions"],
+          "a": 3,
+          "why": "Consistent words and styles let people learn the app once and use it with confidence."
+        },
+        {
+          "q": "A form shows 'Invalid input' at the top of the screen when a phone number is too short. How could it be improved?",
+          "opts": ["Show only a red outline with no words", "Show a message next to the field, such as 'Phone number should have 11 digits'", "Clear the whole form so the user starts again", "Show the message for one second only"],
+          "a": 1,
+          "why": "Helpful errors appear near the problem, explain it in plain words and say how to fix it."
+        },
+        {
+          "q": "A contrast checker shows your grey button text on a light grey button is 2.5:1. What should you do?",
+          "opts": ["Keep it, because grey looks modern", "Make the text thinner", "Remove the button label", "Darken the text or the button until normal text reaches at least 4.5:1"],
+          "a": 3,
+          "why": "Low contrast is hard to read, especially in sunlight or for people with low vision."
+        }
+      ]
+    },
+    {
+      "title": "Prototype, test and improve",
+      "goal": "Build a simple prototype, run a fair usability test and use the results to improve your design.",
+      "sections": [
+        {
+          "heading": "Making a prototype",
+          "body": "A **prototype** is a model of your design that people can try. It only needs to work for the tasks you plan to test, and it can be very simple:\n\n- **Paper prototype:** lay out your paper screens. The tester taps a drawn button with a finger, and you act as the 'computer', swapping in the next screen.\n- **Digital prototype:** in Figma, switch to the **Prototype** tab, select a button and drag a connection to the next frame, so tapping it moves there. Penpot has a similar prototype mode for linking boards. Use the play or present button to try it, and open it on a phone if you can.\n\nClick through your prototype yourself first, so testers are not stopped by a missing link."
+        },
+        {
+          "heading": "Planning a usability test",
+          "body": "In a **usability test**, you watch someone try to complete realistic tasks with your prototype. Write each task as a goal, not as instructions: 'You want to borrow a chemistry textbook for next week. Show me how you would do that' rather than 'Tap Search, then tap Reserve.' If you name the buttons, you will never find out whether people can find them.\n\nAbout three to five testers from your audience are enough for one round; usability research suggests a small group like this finds most of the big problems. Get each tester's agreement first, and use a short script so every session is fair.",
+          "code": {
+            "lang": "text",
+            "source": "TEST SCRIPT (about 10 minutes)\n1. 'Thanks for helping. We're testing the design, not you.\n    If something is confusing, that is useful for me to know.'\n2. 'Please say what you're thinking as you go.\n    You can stop at any time.'\n3. Task 1: 'You want to see what to revise this evening.\n            Show me how you would do that.'\n4. Task 2: 'You have finished Biology. Mark it as done.'\n5. Afterwards: 'What was easy? What was confusing?'\nNOTES: where they hesitated, wrong taps, exact words,\n       task finished (yes / no)"
+          }
+        },
+        {
+          "heading": "Running the test",
+          "body": "During the test, stay quiet and resist the urge to help or explain. Ask the tester to **think aloud**, saying what they are looking for and what they expect to happen. Note where they hesitate, tap the wrong thing, go back or say things like 'Hmm, where is…?'. These moments are valuable: they show exactly where the design is unclear.\n\nIf someone is completely stuck for a long time, note it and gently move on to the next task. Never blame the tester. If people struggle, it is the design that needs work, not the person."
+        },
+        {
+          "heading": "Improve and test again",
+          "body": "After testing, list every problem you saw and mark how serious it is: does it **stop** people finishing the task, **slow them down**, or is it a **minor** annoyance? Problems that several testers meet are more reliable than one person's opinion. Fix the most serious ones first.\n\nThen test the improved version with new people. Several small rounds of testing and fixing beat one big test at the end, because each round checks that your changes really helped. Keep your old versions so you can show the before-and-after story of your design."
+        }
+      ],
+      "points": [
+        "A prototype only needs to work for the tasks you are testing.",
+        "Write test tasks as goals, without naming the buttons to press.",
+        "Watch quietly; where people hesitate or make mistakes shows you what to fix.",
+        "Small tests with about three to five people, repeated after changes, find most big problems.",
+        "Fix the most serious problems first, then test again."
+      ],
+      "mistakes": [
+        "Explaining the design before or during the test — let testers find their own way so you see the real problems.",
+        "Blaming the tester — if people get stuck, the design needs work.",
+        "Changing many things because of one person's opinion — look for problems that several testers share."
+      ],
+      "task": "Build a paper or Figma/Penpot prototype for your main task. With permission, test it with three people using goal-based tasks and the think-aloud method. Write down every problem you see, rate how serious each one is, fix the top two and test once more.",
+      "quiz": [
+        {
+          "q": "Which task instruction is best for a usability test?",
+          "opts": ["Tap the green 'Borrow' button at the bottom.", "You want to borrow a chemistry textbook for next week. Show me how you would do that.", "Tell me if you like my design.", "Look at each screen and say whether it is pretty."],
+          "a": 1,
+          "why": "A goal-based task shows whether people can find their own way. Naming the buttons gives the answer away."
+        },
+        {
+          "q": "During a test, a tester has been stuck on one screen for a long time. What should you usually do?",
+          "opts": ["Take the phone and do it for them", "Tell them they are doing it wrongly", "Note where and why they are stuck, then gently move to the next task", "End the test and delete their notes"],
+          "a": 2,
+          "why": "Being stuck is valuable information. Note it without blaming them, and keep the session comfortable."
+        },
+        {
+          "q": "Four of your five testers missed the 'Renew book' option hidden in a menu. What is the best conclusion?",
+          "opts": ["The option is hard to find, so make it more visible and test again", "The testers were careless", "Add a long page of instructions", "Remove renewing from the app"],
+          "a": 0,
+          "why": "When most testers miss something, the design is the problem. Fix it, then check the fix with another test."
+        },
+        {
+          "q": "Why test with a few people, improve, and test again, rather than testing once with 30 people at the end?",
+          "opts": ["Testing with 30 people is not allowed", "Small tests are always perfect", "Testing more than once wears out the prototype", "Each small round finds the main problems, and the next round checks that your fixes worked"],
+          "a": 3,
+          "why": "Repeated small rounds are quicker and cheaper, and they confirm that your changes actually helped."
+        },
+        {
+          "q": "You have ten problems on your list but limited time. Which should you fix first?",
+          "opts": ["The colour of the icons", "Problems that stop people completing the main task", "The issue your best friend mentioned", "Whichever problems are quickest, whatever their effect"],
+          "a": 1,
+          "why": "Fix the most serious problems first. Issues that block the main task matter more than small annoyances."
+        }
+      ]
+    }
+  ],
+  "project": {
+    "title": "Design and test a school app flow",
+    "brief": "Design and test a simple app flow of three to five screens that solves one real problem for students at your school, such as a revision timetable that shows what to study today, or a school library app for finding and reserving a book. Work from research with real, consenting users all the way to a tested and improved prototype.",
+    "steps": [
+      "With permission, interview and observe two or three students, or the librarian, about the task, taking notes with code names.",
+      "Create a persona and write a problem statement plus two 'How might we…?' questions.",
+      "Map the user flow for one main task, including at least one error path.",
+      "Sketch at least two paper wireframes for each screen and choose the best.",
+      "Turn them into clean UI screens on paper or in Figma or Penpot, checking contrast, spacing and tap-target size.",
+      "Build a paper or clickable prototype and test it with three to five people using goal-based tasks.",
+      "Fix the most serious problems, test again, and present your before-and-after screens with what you learned."
+    ],
+    "checklist": [
+      "Every research participant and tester agreed to take part, and no unnecessary personal data was collected.",
+      "The problem statement describes a need, not a feature.",
+      "The main task can be completed in a small number of clear steps, and the error path is handled.",
+      "Each screen has one obvious primary action with a clear, specific label.",
+      "Text meets contrast guidance and tap targets are at least about 44–48 pixels.",
+      "You tested with at least three people and changed the design based on what you saw.",
+      "You can explain one problem you found and how your change fixed it."
+    ]
+  }
+}

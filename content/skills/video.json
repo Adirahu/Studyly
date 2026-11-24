@@ -1,0 +1,506 @@
+{
+  "id": "video",
+  "title": "Video creation and editing",
+  "icon": "🎬",
+  "area": "Media",
+  "level": "Beginner",
+  "duration": "About 6 hours",
+  "summary": "Plan, film, record and edit a short educational video on your phone, with clear sound, legal music and captions, and share it safely in a data-friendly size.",
+  "outcomes": [
+    "Plan a short video around one audience and one idea, with a script and a storyboard.",
+    "Film steady, well-lit, well-framed shots on a phone.",
+    "Record clear speech in an ordinary room.",
+    "Edit clips in a free phone editor: cut, trim, reorder and add simple transitions.",
+    "Add readable text and accurate captions, use music legally, then export, share safely and improve with feedback."
+  ],
+  "tools": "A phone with a camera and some free storage, a quiet room and something to rest the phone on (a stack of books works). A free-to-download editing app such as CapCut, InShot or VN, or the trim tool in your phone's gallery app; YouTube Create is another free option where it is available. CapCut says users must be at least 13 and under-18s need a parent's or guardian's permission, and other apps and video platforms have similar age rules, so check them and involve a parent or guardian. Always ask before filming anyone.",
+  "resources": [
+    {
+      "title": "YouTube for Creators — Get started",
+      "url": "https://www.youtube.com/creators/get-started/",
+      "note": "YouTube's official starting point for new creators. Read it with a parent or guardian, as YouTube accounts have age rules."
+    },
+    {
+      "title": "YouTube Help — Add subtitles and captions",
+      "url": "https://support.google.com/youtube/answer/2734796",
+      "note": "How to add automatic, uploaded or typed captions to a YouTube video."
+    },
+    {
+      "title": "YouTube Help — Audio Library",
+      "url": "https://support.google.com/youtube/answer/3376882",
+      "note": "Free music and sound effects for videos; some tracks need a credit in the description."
+    },
+    {
+      "title": "YouTube Help — Change video privacy settings",
+      "url": "https://support.google.com/youtube/answer/157177",
+      "note": "Explains who can see public, unlisted and private videos."
+    },
+    {
+      "title": "YouTube Help — Copyright on YouTube",
+      "url": "https://support.google.com/youtube/answer/2797466",
+      "note": "Plain explanations of copyright, permission and what happens when rules are broken."
+    },
+    {
+      "title": "CapCut Help Center",
+      "url": "https://www.capcut.com/help/",
+      "note": "Official help for the free CapCut editor, including exporting and fixing automatic captions."
+    },
+    {
+      "title": "CapCut — Is CapCut appropriate for kids?",
+      "url": "https://www.capcut.com/help/is-capcut-appropriate-for-kids",
+      "note": "CapCut's own age rules and advice for parents. Read it with a parent or guardian."
+    },
+    {
+      "title": "Creative Commons — About the licences",
+      "url": "https://creativecommons.org/cc-licenses/",
+      "note": "What each Creative Commons licence allows, useful when choosing music and images."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Plan: audience, one idea, script and storyboard",
+      "goal": "Turn a school topic into a focused plan with a hook, a script and a storyboard before you film.",
+      "sections": [
+        {
+          "heading": "One audience, one idea",
+          "body": "A short educational video works best when it is made for a specific audience and explains just one idea. 'JSS2 students revising how plants make food' is far easier to plan for than 'everyone'. Before anything else, write one sentence saying what viewers will understand by the end, such as: 'Viewers will understand that plants use sunlight, water and carbon dioxide to make food.'\n\nA 60–90 second limit is helpful because it forces you to choose the most important point. Decide the shape now too. **Vertical** video (9:16) fills a phone held upright and suits WhatsApp Status and short-video apps; **horizontal** video (16:9) suits YouTube and a classroom projector. Changing later means losing parts of the picture."
+        },
+        {
+          "heading": "Hook, explain, recap",
+          "body": "Most good short lessons follow a simple structure:\n\n1. **Hook (the first few seconds):** a question, a quick demonstration or a surprising fact you have checked\n2. **Explain:** two to four clear steps, each with something to look at\n3. **Recap:** repeat the main idea in one sentence and give viewers a question to try\n\nSkip long introductions about yourself or your channel; viewers decide very quickly whether to keep watching. Check every fact with your textbook or teacher before filming. A confident video that is wrong does more harm than no video at all."
+        },
+        {
+          "heading": "Writing a script",
+          "body": "Write the way you speak: short sentences, everyday words and a quick explanation of any technical term. Read the script aloud and time it with your phone's stopwatch. Many people find that a minute of speech holds only about 130–160 words, so a 60–90 second video needs a short script. Cut anything that does not help the one idea.\n\nA two-column script is useful: what viewers **see** on the left and what they **hear** on the right.",
+          "code": {
+            "lang": "text",
+            "source": "SCRIPT — 'Why does ice float?' (target: about 75 seconds)\n\nSEE                              HEAR\nClose-up: ice cube dropped       'Ice is solid water, so why\ninto a glass of water            doesn't it sink?'\n\nMedium shot: presenter           'It's all about density: how much\nat a table                       mass is packed into a space.'\n\nTop-down: drawing of water       'When water freezes, its molecules\nmolecules                        lock into a pattern with more\n                                 space between them.'\n\nText on screen:                  'So ice is less dense than liquid\n'less dense = floats'            water, and it floats.'\n\nPresenter to camera              'Quick check: does a pond freeze\n                                 from the top or the bottom?\n                                 Pause and think!'"
+          }
+        },
+        {
+          "heading": "Storyboard and shot list",
+          "body": "A **storyboard** is a row of boxes, one per shot, each with a rough sketch, a note of what is said and roughly how long it lasts. Stick figures are fine. It lets you see the whole video before you film and spot missing pictures.\n\nFrom the storyboard, make a **shot list**: every shot you need, where you will film it and which props you need. Include a mix of wide, medium and close-up shots, plus a few extra **cutaway** shots, such as hands writing or a diagram, to show during explanations. Note who will appear on camera and plan to ask for their consent well before filming day.",
+          "code": {
+            "lang": "text",
+            "source": "STORYBOARD — 6 frames\n1. [close-up: ice cube splash]    'Why doesn't ice sink?'          5 s\n2. [medium: presenter, table]     'It's all about density...'     10 s\n3. [top-down: drawn molecules]    'Molecules lock into a pattern' 20 s\n4. [close-up: ice floating]       'Less dense, so it floats'      15 s\n5. [text card]                    'Density = mass ÷ volume'       10 s\n6. [medium: presenter]            'Quick check question'          15 s\nTotal: about 75 s\nProps: clear glass, water, ice cubes, paper, marker\nPeople: presenter (consent asked on Monday)"
+          }
+        }
+      ],
+      "points": [
+        "Choose one audience and one main idea, and say it in one sentence.",
+        "Hook viewers in the first few seconds, explain in a few steps, then recap.",
+        "Write the script for speaking, and time it aloud.",
+        "A storyboard and shot list save time, battery and data when filming and editing.",
+        "Decide on vertical or horizontal video before you start filming."
+      ],
+      "mistakes": [
+        "Trying to cover a whole chapter — pick one idea that fits in 90 seconds.",
+        "Starting with a long introduction about yourself — open with the question or a quick demonstration.",
+        "Filming without a plan — you end up with too many clips and still miss shots you need."
+      ],
+      "task": "Choose a topic from one of your school subjects and write one sentence saying what viewers will understand. Write a script of about 150–200 words with a hook, explanation and recap, time it aloud, then sketch a storyboard of four to six frames.",
+      "quiz": [
+        {
+          "q": "Which plan suits a 60–90 second video best?",
+          "opts": ["Teach the whole of SS1 mathematics", "Explain how to find the area of a triangle, with one worked example", "Introduce yourself, your school and your hobbies, then mention triangles", "Show random classroom clips with music"],
+          "a": 1,
+          "why": "One focused idea with an example fits the time and is easy for viewers to follow."
+        },
+        {
+          "q": "Which opening is the strongest hook for a video on why ice floats?",
+          "opts": ["'Hello everyone, welcome, today I will be talking about many things.'", "Ten seconds of a silent title screen", "A list of the textbook's chapter headings", "'Ice is solid water, so why doesn't it sink? Let's find out.'"],
+          "a": 3,
+          "why": "A clear question in the first seconds tells viewers what they will learn and gives them a reason to keep watching."
+        },
+        {
+          "q": "You read your script aloud and it takes 2 minutes 40 seconds. What should you do?",
+          "opts": ["Cut it to the essential steps until it fits about 90 seconds", "Speak much faster when recording", "Speed the finished video up to double speed", "Remove only the recap"],
+          "a": 0,
+          "why": "Rushed speech is hard to follow. Cutting content keeps the explanation clear and within the time."
+        },
+        {
+          "q": "The video will be shared on WhatsApp Status and watched on phones held upright. What should you decide before filming?",
+          "opts": ["Nothing, because it can be fixed when exporting", "Film horizontally and hope it fits", "Film vertically so the picture fills the screen", "Switch direction from shot to shot"],
+          "a": 2,
+          "why": "Changing the shape later crops the picture. Filming vertically from the start keeps everything important in frame."
+        },
+        {
+          "q": "Why make a storyboard and shot list before filming day?",
+          "opts": ["Editing apps will not open without one", "You know which shots to get, so you waste less time and miss fewer shots", "It makes the phone camera sharper", "It removes the need for good sound"],
+          "a": 1,
+          "why": "Planning means you film what you need and nothing important is forgotten."
+        }
+      ]
+    },
+    {
+      "title": "Filming on a phone: light, steady shots and framing",
+      "goal": "Film steady, well-lit and well-framed shots on a phone.",
+      "sections": [
+        {
+          "heading": "Prepare your phone",
+          "body": "Small preparations make a big difference. Wipe the camera lens with a soft, clean cloth, because a fingerprint makes everything look hazy. Charge the battery, free up storage and switch on flight mode or Do Not Disturb so calls and notifications do not interrupt a good take.\n\nIn the camera settings, 1080p at 30 frames per second is plenty for a school video; 4K looks sharper but uses far more storage and makes files much bigger to share. If your phone has more than one camera, the main back camera usually gives the best picture. Avoid digital zoom, which makes the picture blurry; move the phone closer instead."
+        },
+        {
+          "heading": "Use light well",
+          "body": "Light matters more than an expensive phone. The simplest good light is daylight from a window: have the speaker **face** the window, with the camera between them and the light. If the window is behind the speaker, the phone adjusts for the bright window and their face turns into a dark shape.\n\nOutdoors, open shade or a cloudy sky gives soft, even light. Harsh midday sun causes squinting and strong shadows, and patchy shade under a tree makes faces blotchy. Daylight is also free and does not depend on the power supply. On many phones you can tap the screen on the person's face to set focus and brightness, and tap and hold to lock them."
+        },
+        {
+          "heading": "Keep it steady",
+          "body": "Shaky video is tiring to watch. Whenever possible, rest the phone on something solid, such as a stack of books on a table, or use a cheap phone stand or tripod. If you must hold it, use both hands and tuck your elbows into your body.\n\nAvoid zooming or swinging the phone around while recording. Start recording a few seconds before the action and keep going for a few seconds after it. These spare seconds give you room to make clean cuts when editing."
+        },
+        {
+          "heading": "Frame your shots",
+          "body": "Many phone cameras can show **grid lines** that divide the screen into thirds; look for the option in the camera settings. The **rule of thirds** suggests placing important things along those lines or where they cross, rather than always in the dead centre. For a person speaking, put their eyes near the top line and leave a little space above the head.\n\nMix your **shot sizes**: a **wide** shot shows where we are, a **medium** shot shows a person from the waist or chest up, and a **close-up** shows detail, such as hands balancing a scale or writing an equation. For written work, a top-down shot of the paper is often clearest. Finally, check the background: tidy it and remove anything private, such as letters with addresses or documents with names."
+        }
+      ],
+      "points": [
+        "Clean the lens, free up storage and silence calls and notifications before filming.",
+        "Face the light; strong light behind the speaker turns them into a dark silhouette.",
+        "Keep the phone still on a support, and move closer instead of zooming.",
+        "Use the rule of thirds and leave a little space above the head.",
+        "Mix wide, medium and close-up shots to keep viewers interested."
+      ],
+      "mistakes": [
+        "Filming in front of a bright window — turn around so the window lights the speaker's face.",
+        "Using digital zoom — move the phone closer instead.",
+        "Stopping the recording the instant the action ends — keep recording a few seconds before and after.",
+        "Leaving personal details in the background — check for addresses, documents and anything private."
+      ],
+      "task": "Film the same short sentence in three ways: with a window behind you, with the window in front of you, and with the phone held in your hand compared with resting on books. Turn on the camera grid and try one shot using the rule of thirds. Compare the clips and write down which works best and why.",
+      "quiz": [
+        {
+          "q": "The speaker's face looks dark and the window behind them is bright white. What is the best fix?",
+          "opts": ["Turn the set-up around so the speaker faces the window", "Use the flash from across the room", "Turn up the music", "Film at night instead"],
+          "a": 0,
+          "why": "Light should fall on the face. With the light behind, the phone adjusts for the window and leaves the face dark."
+        },
+        {
+          "q": "You need a close-up of hands mixing a solution, but you are standing far away. What should you do?",
+          "opts": ["Use maximum digital zoom", "Film a wide shot and hope viewers can see", "Ask viewers to look closely", "Move the phone closer and keep it steady"],
+          "a": 3,
+          "why": "Digital zoom blurs the picture. Moving closer keeps the detail sharp."
+        },
+        {
+          "q": "Which framing usually works best for a person speaking to camera?",
+          "opts": ["Their head at the very bottom of the frame", "Their eyes near the top third line, with a little space above the head", "The top of their head cut off at the eyebrows", "The person tiny in a far corner"],
+          "a": 1,
+          "why": "This follows the rule of thirds and looks natural and balanced."
+        },
+        {
+          "q": "Halfway through a great take, a phone call ruins the recording. What would have prevented it?",
+          "opts": ["Recording in 4K", "Holding the phone more tightly", "Switching on flight mode or Do Not Disturb before filming", "Using a filter"],
+          "a": 2,
+          "why": "Silencing calls and notifications before recording stops interruptions."
+        },
+        {
+          "q": "Before filming in your room, you notice a letter with your home address on the desk behind you. What should you do?",
+          "opts": ["Leave it, because nobody will notice", "Remove it from the shot to protect your privacy", "Zoom in so it is readable", "Blur it later only if someone complains"],
+          "a": 1,
+          "why": "Backgrounds can reveal private information, so check and tidy them before you film."
+        }
+      ]
+    },
+    {
+      "title": "Recording clear sound",
+      "goal": "Record speech that is clear, steady and free from distracting noise.",
+      "sections": [
+        {
+          "heading": "Sound comes first",
+          "body": "Viewers will put up with an ordinary picture, but they quickly give up if they cannot hear clearly. In a learning video, most of the explanation is in the words, so clear speech matters more than anything else. The good news is that clean sound depends far more on where and how you record than on expensive equipment."
+        },
+        {
+          "heading": "Choose a quiet, soft space",
+          "body": "Listen to the room before you record. Common problems include generators, traffic, ceiling fans, music from neighbours, animals and people talking nearby. Record at a quieter time of day if you can, and switch off the fan only while you are actually recording.\n\nHard, bare surfaces such as tiles and empty walls bounce sound around and cause echo. Soft things absorb it, so a small room with curtains, cushions, a mattress or a wardrobe full of clothes usually sounds much better than an empty hall or a bathroom. Outdoors, find a spot sheltered from the wind, which makes loud rumbling noises on phone microphones."
+        },
+        {
+          "heading": "Get the microphone close",
+          "body": "The closer the microphone is to the speaker's mouth, the louder the voice is compared with background noise. Find where your phone's microphone is (often a small hole on the bottom edge) and make sure fingers or a case do not cover it. Keep the phone within about an arm's length of the speaker, or closer.\n\nIf the camera has to be further away, you have options. Some wired earphones with a built-in microphone can be used with the camera, depending on your phone, so test first. You can also record the voice on a second phone placed close to the speaker and line it up when editing. Or record a **voice-over**: the narration recorded separately, close to the phone, and played over your shots."
+        },
+        {
+          "heading": "Test, listen, redo",
+          "body": "Always record a 10-second test and listen back with earphones, which reveal hums, echoes and clicks that a phone's small speaker hides. Speak at a steady, natural pace, a little slower than normal conversation, and pause briefly between sentences so mistakes are easy to cut.\n\nIf you stumble, do not stop and restart the whole video. Pause, then say the full sentence again cleanly. You will remove the mistake when editing.",
+          "code": {
+            "lang": "text",
+            "source": "SOUND CHECKLIST\n[ ] Quiet time chosen; generator, fan and music off or far away\n[ ] Room with soft surfaces; no strong echo\n[ ] Microphone uncovered and within about an arm's length\n[ ] Phone on flight mode or Do Not Disturb\n[ ] 10-second test recorded and checked with earphones\n[ ] Speak steadily; pause between sentences"
+          }
+        }
+      ],
+      "points": [
+        "Clear speech matters more than a perfect picture in a learning video.",
+        "Pick a quiet time and a room with soft surfaces to reduce noise and echo.",
+        "Keep the microphone close to the speaker and do not cover it.",
+        "Always record a short test and listen back with earphones.",
+        "Pause between sentences so mistakes are easy to cut."
+      ],
+      "mistakes": [
+        "Recording from across the room — move the phone, or a separate microphone, close to the speaker.",
+        "Recording next to a running generator or busy road — wait for a quieter time or move somewhere else.",
+        "Covering the microphone with a finger or phone case — find where your phone's microphone is first."
+      ],
+      "task": "Record the same two sentences in three places, such as a bare room, a room with curtains and cushions, and outdoors. Listen back with earphones, rank the recordings from clearest to worst and write down what caused the differences. Then record a 10-second test in your best spot.",
+      "quiz": [
+        {
+          "q": "Your recording has a strong echo. Which room is likely to sound better?",
+          "opts": ["An empty tiled hall", "A small room with curtains, cushions or clothes", "A bathroom with hard walls", "A large empty classroom"],
+          "a": 1,
+          "why": "Soft surfaces absorb sound, while hard, bare surfaces bounce it around and cause echo."
+        },
+        {
+          "q": "The speaker is three metres from the phone and sounds faint and noisy. What is the most effective fix?",
+          "opts": ["Boost the volume a lot when editing", "Add loud background music", "Move the phone or a separate microphone much closer to the speaker", "Ask viewers to use earphones"],
+          "a": 2,
+          "why": "Boosting the volume later also boosts the background noise. A closer microphone captures more voice and less noise."
+        },
+        {
+          "q": "A neighbour's generator is running all afternoon. What is the sensible choice?",
+          "opts": ["Wait for a quieter time, or move to a quieter room if you can", "Record anyway and cover it with music", "Shout so you are louder than it", "Record outside right next to it"],
+          "a": 0,
+          "why": "Steady background noise is very hard to remove later, so avoiding it is the best fix."
+        },
+        {
+          "q": "You stumble over a word in the middle of a sentence. Which habit makes editing easiest?",
+          "opts": ["Keep talking quickly so nobody notices", "Stop and start the whole video again from the beginning", "Delete the clip on the phone straight away", "Pause, then say the whole sentence again cleanly"],
+          "a": 3,
+          "why": "A pause and a clean repeat give you a clear point to cut, without re-recording everything."
+        },
+        {
+          "q": "Why listen to a test recording with earphones instead of the phone's speaker?",
+          "opts": ["Earphones reveal hums, echoes and noises that the small speaker can hide", "Phone speakers delete sound", "It makes the file smaller", "Earphones improve the recording itself"],
+          "a": 0,
+          "why": "Small speakers hide problems that viewers wearing earphones will hear."
+        }
+      ]
+    },
+    {
+      "title": "Editing basics in a free phone editor",
+      "goal": "Use a free phone editor to cut, trim and order clips into a clear sequence, using transitions sparingly.",
+      "sections": [
+        {
+          "heading": "Choosing an editor safely",
+          "body": "You do not need expensive software. Free-to-download phone editors such as **CapCut**, **InShot** and **VN** can trim, split and arrange clips, add text and export. **YouTube Create** is another free option in countries where it is available, and your phone's gallery app can usually trim a single clip.\n\nA few safety points:\n\n- download apps only from the official Google Play Store or Apple App Store\n- check each app's age rules; CapCut, for example, says users must be at least 13 and under-18s need a parent's or guardian's permission\n- free versions may add a watermark or offer paid extras, so never pay or enter card details without a parent or guardian\n\nBefore editing, put your clips in one album, and keep the originals until the final video is finished and checked."
+        },
+        {
+          "heading": "The timeline: import, order, trim and split",
+          "body": "Editors show your video as a **timeline**: clips in a row from left to right, with a vertical line called the playhead marking the current moment. The core skills are the same in every app, although button names and positions vary between apps and versions:\n\n1. **Import** your clips in storyboard order when you start a new project.\n2. **Trim:** tap a clip and drag its start or end edge to remove unwanted bits.\n3. **Split:** move the playhead to a point inside a clip and tap Split to cut it in two. To remove a mistake, split on either side of it, then delete the middle piece.\n4. **Reorder:** press and hold a clip, then drag it to a new position.\n5. **Play back** often to check your changes."
+        },
+        {
+          "heading": "Cut for clarity and pace",
+          "body": "Editing is mostly about removing. Cut the seconds of pressing record, long pauses, false starts and repeated takes, and keep only what helps the one idea. If cutting out part of a sentence makes the picture jump awkwardly, cover the join with a cutaway shot, such as a close-up of the diagram, while the voice carries on.\n\nWatch your edit twice: once with the sound off, to check that the pictures make sense, and once without looking, to check that the words make sense on their own. Keep trimming until the video is between 60 and 90 seconds long."
+        },
+        {
+          "heading": "Transitions and effects: less is more",
+          "body": "A **transition** is how one clip changes to the next. The plain **cut**, where one shot simply follows another, is used most of the time in professional videos because it keeps attention on the content. A gentle fade can mark a change of section or the ending.\n\nSpinning, flashing or sliding transitions between every clip quickly become distracting and make a lesson feel less serious. The same goes for heavy filters and sound effects. Use effects only when they help viewers understand, and keep them consistent. Save your project often, and keep your phone charged, because editing uses a lot of battery."
+        }
+      ],
+      "points": [
+        "Import clips in storyboard order before you start cutting.",
+        "Trim removes the start or end of a clip; split cuts a clip in two so you can delete a middle part.",
+        "Cut pauses, false starts and anything that does not help the main idea.",
+        "A plain cut is usually best; save fades for a change of section or the ending.",
+        "Download apps only from official stores, and ask a parent or guardian before paying for anything."
+      ],
+      "mistakes": [
+        "Adding a different flashy transition between every clip — use plain cuts and the odd gentle fade.",
+        "Deleting original clips before the project is finished — keep them until you have exported and checked the final video.",
+        "Leaving in long pauses and repeated takes — trim them so the video moves at a steady pace."
+      ],
+      "task": "Import your clips into a free editor in storyboard order. Trim the start and end of each clip, use split to remove at least one mistake from the middle of a clip, and bring the total length to between 60 and 90 seconds. Use no more than one or two gentle transitions.",
+      "quiz": [
+        {
+          "q": "Your clip starts with five seconds of you pressing record and adjusting the phone. What is the best way to remove them?",
+          "opts": ["Add a transition over them", "Trim the start of the clip", "Speed them up to four times", "Cover them with a sticker"],
+          "a": 1,
+          "why": "Trimming removes unwanted footage from the start or end of a clip."
+        },
+        {
+          "q": "You stumbled in the middle of a clip, then repeated the sentence. How do you remove the mistake?",
+          "opts": ["Trim only the end of the clip", "Add music so nobody hears it", "Split before and after the mistake, then delete that piece", "Apply a filter"],
+          "a": 2,
+          "why": "Splitting lets you cut out a middle section, which trimming the ends cannot do."
+        },
+        {
+          "q": "A classmate's draft has a spinning cube transition between every shot. What feedback would help most?",
+          "opts": ["Use plain cuts for most shots so viewers can focus on the explanation", "Add more transitions to fill the gaps", "Make each transition last longer", "Use a different spinning effect each time"],
+          "a": 0,
+          "why": "Plain cuts keep attention on the content. Flashy transitions everywhere become distracting."
+        },
+        {
+          "q": "Your edit is 2 minutes long but the target is 60–90 seconds. What is the best approach?",
+          "opts": ["Speed the whole video up until it fits", "Cut off the last minute, recap included", "Leave it, because the target does not matter", "Remove parts that do not support the main idea, and trim pauses"],
+          "a": 3,
+          "why": "Cutting unnecessary material keeps the explanation clear. Speeding up makes speech hard to follow."
+        },
+        {
+          "q": "An editing app asks you to pay to remove its watermark. What should you do?",
+          "opts": ["Enter a card number you found at home", "Download a 'cracked' version from a random website", "Talk to a parent or guardian, or keep using the free version or another free app", "Ask someone online to pay for you"],
+          "a": 2,
+          "why": "Payments need a parent or guardian, and cracked apps can carry malware and break the app's rules."
+        }
+      ]
+    },
+    {
+      "title": "Text, captions, music and copyright",
+      "goal": "Add readable on-screen text and accurate captions, and use only music and images you have the right to use.",
+      "sections": [
+        {
+          "heading": "On-screen text that helps",
+          "body": "On-screen text can show a title, a key word or a label on a diagram. Keep it short (a few words), large and easy to read, with strong contrast: white text with a dark outline or a dark box behind it works on most backgrounds. Leave each piece of text on screen long enough to read it twice.\n\nKeep text away from the edges, where it might be cut off or covered by the app's own buttons, especially in vertical videos. Use the same font, colours and position for each kind of text so the video looks planned."
+        },
+        {
+          "heading": "Captions for everyone",
+          "body": "Captions show the spoken words as text. They help people who are deaf or hard of hearing, people watching on mute in a bus or classroom, and viewers who follow English more easily when they can read it too. Many editors and platforms can create **automatic captions**, which saves time, but they often get names, local words and subject terms wrong: 'photosynthesis' might appear as 'photo since this'.\n\nRead every line and correct it against what was actually said. Keep lines short, check that the timing matches the speech, and make sure captions do not cover important parts of the picture. Captions burned into the video stay visible everywhere, which is useful for WhatsApp; platforms such as YouTube also offer captions that viewers can switch on and off."
+        },
+        {
+          "heading": "Music and sound effects",
+          "body": "Music can set the mood, but it should sit well below the voice so every word is clear; most editors let you lower a music track's volume. Remember that songs are protected by copyright. Using a popular song, including the latest Afrobeats hit, without a licence can get your video muted, blocked or removed, and it is not fair to the artists. Crediting the artist does not give you permission, and using only a short part is not automatically allowed either.\n\nSafer choices are music you made yourself, music by a friend who agrees in writing, tracks from a licensed library such as the YouTube Audio Library (some tracks need a credit in the description), Creative Commons music whose conditions you follow, or no music at all. Music libraries inside editing apps have their own rules, so read them before posting the video elsewhere."
+        },
+        {
+          "heading": "Images, clips and people",
+          "body": "The same rules apply to pictures and video clips: use your own, use openly licensed ones with the right credit, or get permission. Do not download other people's videos and reuse them in yours.\n\nEveryone who appears in your video must agree to it. Explain what the video is for and where it will be shared, and accept a no. For classmates, follow your school's rules and get your teacher's approval; for anything shared publicly, their parents or guardians should agree too. Put credits for anything you did not make in the video's description or at the end.",
+          "code": {
+            "lang": "text",
+            "source": "CREDITS (example, for the video description)\nMade by: the SS1 Science Club\nFilmed with the permission of everyone shown and our science teacher\nMusic: 'Track title' by Artist name, from the YouTube Audio Library\nDiagram: 'Water molecules' by A. Bello, via Openverse, CC BY 4.0"
+          }
+        }
+      ],
+      "points": [
+        "Keep on-screen text short, large, high-contrast and on screen long enough to read twice.",
+        "Captions help deaf viewers, people watching on mute and people learning English.",
+        "Always check automatic captions, especially names, local words and subject terms.",
+        "Popular songs are protected by copyright; use your own music, licensed tracks or none.",
+        "A credit is not the same as permission, so follow each licence's conditions."
+      ],
+      "mistakes": [
+        "Trusting automatic captions without checking — read every line and fix the errors.",
+        "Music louder than the voice — lower the music so speech is always clear.",
+        "Using a hit song because 'everyone does it' — the video can be muted or removed, and it is unfair to the artist."
+      ],
+      "task": "Add a title, two key-word labels and full captions to your edit, checking every caption line against what was said. Choose music from a licensed source such as the YouTube Audio Library, or use none, and set it well below the voice. Write a credits list for any music or images you did not make.",
+      "quiz": [
+        {
+          "q": "Your automatic captions show 'photo since this' instead of 'photosynthesis'. What should you do?",
+          "opts": ["Correct every wrong caption by hand before exporting", "Leave it, because viewers will guess", "Turn captions off for the whole video", "Make the captions smaller so the errors are less visible"],
+          "a": 0,
+          "why": "Wrong captions mislead the viewers who rely on them. Always check automatic captions line by line."
+        },
+        {
+          "q": "You want a popular Afrobeats hit as background music. What is the best choice?",
+          "opts": ["Use it and write the artist's name in the description", "Use a track from a licensed library such as the YouTube Audio Library, or your own music", "Use just 30 seconds of it", "Use it, because the video is educational"],
+          "a": 1,
+          "why": "Crediting the artist, using a short clip or having an educational purpose do not automatically give permission. Licensed or original music is safe."
+        },
+        {
+          "q": "Many viewers will watch on WhatsApp Status on a noisy bus with the sound off. What helps most?",
+          "opts": ["Louder background music", "A longer introduction", "Smaller on-screen text", "Clear captions burned into the video"],
+          "a": 3,
+          "why": "Burned-in captions are visible on any platform, so the explanation still works without sound."
+        },
+        {
+          "q": "A title appears on screen for less than one second. What is the problem?",
+          "opts": ["It uses too much data", "Titles must always be at the bottom", "Viewers cannot read it in time, so keep text up long enough to read twice", "There is no problem with short titles"],
+          "a": 2,
+          "why": "Text that disappears before it can be read adds nothing for the viewer."
+        },
+        {
+          "q": "A music track you like has a CC BY licence. What must you do to use it?",
+          "opts": ["Pay the creator first", "Credit the creator as the licence requires", "Nothing at all", "Change the melody"],
+          "a": 1,
+          "why": "BY means attribution: you may use the work as long as you give proper credit."
+        }
+      ]
+    },
+    {
+      "title": "Export, share safely and get feedback",
+      "goal": "Export a video at a sensible size, share it with the right audience and settings, and improve it using feedback.",
+      "sections": [
+        {
+          "heading": "Export settings and file size",
+          "body": "When you export, the editor turns your project into a single video file. Two settings matter most. **Resolution** is how many pixels each frame has: 720p is often fine for phones and WhatsApp, and 1080p is sharper for YouTube or a projector. **Frame rate** is how many pictures are shown each second; 30 is standard for this kind of video. Higher settings make much bigger files that take longer to send and use more of your viewers' data.\n\nMany editors show an estimated file size before exporting. Check it, and choose the smallest setting that still looks clear on a phone. Send large files over Wi-Fi where you can. Some apps, including WhatsApp, also compress videos and limit how long a single status clip can be, so check how yours looks after posting."
+        },
+        {
+          "heading": "Watch it all the way through",
+          "body": "Before sharing, watch the exported file from start to finish on a phone, once with sound and once without. Check that the sound is clear and in time with the picture, the captions are correct and in sync, the text is readable, the spellings are right and the ending is not cut off. If anything is wrong, fix it in the project and export again; do not share a version you know has mistakes."
+        },
+        {
+          "heading": "Consent and privacy before you post",
+          "body": "Check that everyone who appears or is heard in the video agreed to this particular use, and remove anyone who has changed their mind. Then look for personal information. Full names, phone numbers, house numbers, car number plates and documents should not appear, and be careful with combinations, such as a full name plus a school name plus an area, that could help a stranger find someone. Turn off location tagging.\n\nChoose the audience on purpose. For class work, share directly with your teacher or use a restricted setting. On YouTube, **public** videos can be found by anyone, **unlisted** videos can be watched by anyone who has the link, and **private** videos only by people you invite. Links and files can be forwarded, so only share what you would be comfortable with others seeing. Platforms have minimum ages (often 13, and higher for some features), so under-18s should set up and manage accounts with a parent or guardian."
+        },
+        {
+          "heading": "Getting and using feedback",
+          "body": "Show your video to two or three people from your audience. Instead of asking 'Was it good?', ask specific questions: 'What was the main idea?', 'Where did you get confused or lose interest?' and 'Could you hear and read everything?'. Ask them to note the time in the video where any problem happened.\n\nLook for issues that more than one person mentions, fix the most important first, and export an improved version. Keeping notes on what you changed and why will make your next video better and quicker to make.",
+          "code": {
+            "lang": "text",
+            "source": "PRE-SHARING CHECKLIST\n[ ] Watched the whole export, with and without sound\n[ ] Facts checked; captions and spelling correct\n[ ] Everyone shown agreed to this use (teacher or parent approval\n    where needed)\n[ ] No names, phone numbers, addresses or location clues visible\n[ ] Music and images are mine, licensed and credited, or used\n    with permission\n[ ] Resolution and file size suit my viewers' data\n[ ] Sharing setting matches the audience (direct, unlisted or\n    private for class work)"
+          }
+        }
+      ],
+      "points": [
+        "Higher resolution and frame rate mean bigger files and more data; 720p or 1080p at 30 fps suits most phone videos.",
+        "Watch the full export on a phone, with and without sound, before sharing.",
+        "Get consent from everyone shown, and remove personal details and location clues.",
+        "Choose the audience on purpose: direct sharing, unlisted or private for class work.",
+        "Ask specific feedback questions and fix the most important problems first."
+      ],
+      "mistakes": [
+        "Posting publicly by default — decide who needs to see the video and choose the matching setting.",
+        "Exporting at the highest setting 'just in case' — check the file size and choose what your viewers actually need.",
+        "Asking only 'Was it good?' — ask what the main idea was and where viewers got confused."
+      ],
+      "task": "Export your video at 720p or 1080p, note the file size, and watch it all the way through on a phone with and without sound. Complete the pre-sharing checklist, share the video privately with two or three people from your audience, ask three specific feedback questions and make at least two improvements.",
+      "quiz": [
+        {
+          "q": "Your 80-second video, exported at 4K and 60 frames per second, is very large, and your classmates use mobile data. What should you do?",
+          "opts": ["Send it anyway", "Split it into many tiny files", "Remove the captions to save space", "Export again at 720p or 1080p and 30 fps, then check it still looks clear"],
+          "a": 3,
+          "why": "Lower settings make a much smaller file that still looks good on a phone and costs viewers less data."
+        },
+        {
+          "q": "Your video shows two classmates. One now says she does not want it shared publicly. What should you do?",
+          "opts": ["Respect her choice: remove or replace her part, or keep the video private", "Post it anyway, because she agreed earlier", "Remove her name from the description only", "Post it and delete it if she complains"],
+          "a": 0,
+          "why": "People can withdraw consent. Her wishes about her own image come first."
+        },
+        {
+          "q": "Your teacher wants the video for your class only. Which YouTube setting fits best?",
+          "opts": ["Public, with tags so more people find it", "Unlisted or private, with access given only to the class", "Public, with the school name and area in the title", "Public, with comments open to everyone"],
+          "a": 1,
+          "why": "Unlisted or private limits who can find the video. Links can still be forwarded, so share them carefully."
+        },
+        {
+          "q": "Which feedback question is likely to give the most useful answer?",
+          "opts": ["Did you like it?", "Am I a good presenter?", "What was the main idea, and where did you get confused?", "Is it better than my friend's video?"],
+          "a": 2,
+          "why": "It checks whether the video taught its idea and pinpoints where to improve."
+        },
+        {
+          "q": "Watching the export, you notice the captions in the last ten seconds are out of sync. What should you do?",
+          "opts": ["Fix the captions in the project and export again before sharing", "Share it and fix it next time", "Cut the last ten seconds, recap included", "Ask viewers to ignore it"],
+          "a": 0,
+          "why": "Watching the full export is how you catch problems; fix them before anyone sees the video."
+        }
+      ]
+    }
+  ],
+  "project": {
+    "title": "A 60–90 second educational video",
+    "brief": "Plan, film, edit and share a 60–90 second video that explains one topic from a school subject, such as how to balance a simple chemical equation, the parts of a flower or how to use a map scale, for students one or two classes below you. It must be accurate, easy to follow on a phone and safe to share.",
+    "steps": [
+      "Choose one topic, one audience and a one-sentence main idea, and check the facts with your textbook or teacher.",
+      "Write a script of about 150–200 words with a hook, explanation and recap, and time it aloud.",
+      "Draw a storyboard and shot list, decide on vertical or horizontal, and get consent from anyone who will appear.",
+      "Film steady, well-lit shots and record clear sound, starting with a short test.",
+      "Edit in a free phone editor: trim, split and order your clips, using transitions sparingly.",
+      "Add short on-screen text, checked captions and only music or images you have the right to use, with credits.",
+      "Export at a data-friendly size, complete the pre-sharing checklist, share with a small audience, gather feedback and make an improved version."
+    ],
+    "checklist": [
+      "The video is 60–90 seconds long and explains one main idea accurately.",
+      "The opening grabs attention within the first few seconds, and the ending recaps the idea.",
+      "Shots are steady and well lit, and speech is clear throughout.",
+      "Captions are accurate and on-screen text is readable on a phone.",
+      "All music, images and clips are your own, licensed and credited, or used with permission.",
+      "Everyone shown agreed, and no personal details or location clues are visible.",
+      "The file size suits your viewers' data, and the sharing setting matches the intended audience."
+    ]
+  }
+}

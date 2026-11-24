@@ -1,0 +1,352 @@
+{
+  "id": "css",
+  "title": "CSS: style your web pages",
+  "icon": "🎨",
+  "area": "Web development",
+  "level": "Beginner",
+  "duration": "About 5 hours",
+  "summary": "Turn plain HTML into pages that look good and read well: colours, fonts, spacing, Flexbox layouts and responsive designs that work on a small phone first. Every lesson has a short example you can change and run.",
+  "outcomes": [
+    "Write CSS rules with selectors, properties and values, and predict which rule wins",
+    "Style text with readable colours, fonts and sizes",
+    "Control spacing with the box model and arrange items with Flexbox",
+    "Make a page responsive with the viewport tag and mobile-first media queries",
+    "Add hover effects, transitions and shadows while keeping good contrast, and organise your styles so they are easy to update"
+  ],
+  "tools": "Finish the HTML course first. You need a phone or computer with a web browser: use the Try it yourself button in each lesson, Sololearn's free web code playground, or a free code-editor app such as Acode. On a computer, Notepad or the free VS Code works well. No paid software is needed.",
+  "resources": [
+    { "title": "Sololearn — Introduction to CSS", "url": "https://www.sololearn.com/en/learn/courses/css-introduction", "note": "Free bite-sized CSS lessons with quick practice, designed for learning on a phone." },
+    { "title": "Sololearn — Web code playground", "url": "https://www.sololearn.com/en/compiler-playground/web", "note": "Edit HTML, CSS and JavaScript together in your browser. Saving your code needs a Sololearn account, so ask a parent or guardian before you sign up." },
+    { "title": "MDN — CSS styling basics", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics", "note": "Mozilla's free guide to selectors, the cascade, the box model and more, with practice challenges." },
+    { "title": "MDN — Flexbox", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox", "note": "A deeper look at every Flexbox property, with diagrams of the main and cross axes." },
+    { "title": "MDN — Responsive web design", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design", "note": "Explains media queries, flexible layouts and the viewport tag in more detail." },
+    { "title": "WebAIM — Contrast Checker", "url": "https://webaim.org/resources/contrastchecker/", "note": "Type in your text and background colours to see whether they pass the WCAG contrast guidelines." },
+    { "title": "freeCodeCamp — Responsive Web Design certification", "url": "https://www.freecodecamp.org/learn/responsive-web-design-v9/", "note": "A longer, free HTML and CSS course with many small projects. You need an account to save your progress." }
+  ],
+  "chapters": [
+    {
+      "title": "How CSS works",
+      "goal": "Write CSS rules, add CSS to a page in three ways and predict which rule wins when rules clash.",
+      "sections": [
+        {
+          "heading": "Your first CSS rule",
+          "body": "CSS stands for Cascading Style Sheets. It controls how HTML looks: colours, fonts, spacing and layout. A CSS **rule** has two parts:\n\n- a **selector**, which picks the elements to style, such as `h1`\n- a block of **declarations** inside curly brackets. Each declaration is a **property** and a **value**, joined by a colon and ended with a semicolon, such as `color: darkgreen;`\n\nCSS uses American spelling, so the property is `color`, never colour. The first line inside the style block is a **comment**, a note for people that the browser ignores. Run the example, then change the colour names and the sizes and watch what happens.",
+          "code": { "lang": "html", "source": "<style>\n  /* Make the main heading green */\n  h1 {\n    color: darkgreen;\n    font-size: 32px;\n  }\n  p {\n    color: #333333;\n    font-size: 18px;\n  }\n</style>\n<h1>Green Club Lagos</h1>\n<p>We plant trees and keep our school clean.</p>", "runnable": true }
+        },
+        {
+          "heading": "Three places to put CSS",
+          "body": "You can add CSS to a page in three ways:\n\n1. **Inline**: a `style` attribute on one element, such as `<p style=\"color: crimson;\">`. It affects only that element and quickly becomes hard to manage.\n2. **Internal**: a `<style>` block, usually in the `<head>`. It styles one page. The examples in this course use it because the preview cannot load extra files.\n3. **External**: a separate file such as `styles.css`, linked in the `<head>` with `<link rel=\"stylesheet\" href=\"styles.css\">`. One file can style every page of your site, and the browser can keep a saved copy, so it does not need to download the file again for each page.\n\nFor real sites, use an external stylesheet.",
+          "code": { "lang": "html", "source": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <title>Three ways to add CSS</title>\n  <!-- An external file would be linked here: <link rel=\"stylesheet\" href=\"styles.css\"> -->\n  <style>\n    p { color: navy; }\n  </style>\n</head>\n<body>\n  <p>This paragraph is navy because of the style block.</p>\n  <p style=\"color: crimson;\">This one uses an inline style.</p>\n</body>\n</html>", "runnable": true }
+        },
+        {
+          "heading": "Selectors: choosing what to style",
+          "body": "The selector decides which elements a rule affects:\n\n- `p` (a type selector) picks every `<p>`.\n- `.notice` (a class selector) picks every element with `class=\"notice\"`. Many elements can share a class, and one element can have several classes.\n- `#top` (an id selector) picks the one element with `id=\"top\"`. An id must be unique on the page.\n- `h1, h2` (a selector list) picks both kinds of heading.\n- `nav a` (a descendant selector) picks only the links that are inside a `<nav>`.\n\nThe dot and the hash appear only in the CSS, never in the HTML attribute. In the example, notice that the last link is not purple, because it is not inside the nav.",
+          "code": { "lang": "html", "source": "<style>\n  p { color: #444444; }\n  .notice { background-color: lightyellow; }\n  #top { color: darkgreen; }\n  h1, h2 { font-family: sans-serif; }\n  nav a { color: purple; }\n</style>\n<h1 id=\"top\">Press Club</h1>\n<nav><a href=\"news.html\">News</a> <a href=\"join.html\">Join</a></nav>\n<h2>This week</h2>\n<p class=\"notice\">No meeting on Friday because of the inter-house sports.</p>\n<p>Next meeting: Tuesday at 2 p.m. <a href=\"room.html\">Find the room</a></p>", "runnable": true }
+        },
+        {
+          "heading": "The cascade: which rule wins?",
+          "body": "Sometimes two rules give the same element different values. The browser settles the clash with the **cascade**:\n\n1. **Specificity**: a more precise selector beats a less precise one. An id beats a class, and a class beats a type selector such as `p`.\n2. **Order**: if two selectors are equally specific, the rule that comes later wins.\n3. An inline `style` attribute beats the rules in style sheets.\n\nSome properties are also **inherited**: if you set `color` or `font-family` on `body`, the elements inside take it too. Properties such as `border` and `padding` are not inherited. Predict the colour of each line below before you run the example.",
+          "code": { "lang": "html", "source": "<style>\n  body { color: gray; font-family: sans-serif; }\n  p { color: blue; }\n  p { color: green; }\n  .warning { color: red; }\n  #final { color: purple; }\n</style>\n<p>Paragraph 1</p>\n<p class=\"warning\">Paragraph 2</p>\n<p class=\"warning\" id=\"final\">Paragraph 3</p>\n<p class=\"warning\" style=\"color: orange;\">Paragraph 4</p>\n<h2>This heading inherits gray from the body</h2>", "runnable": true }
+        }
+      ],
+      "points": [
+        "A rule is a selector followed by declarations in curly brackets: p { color: navy; }",
+        "Use an external stylesheet for real sites; one file can style every page",
+        ".name selects a class, #name selects an id, and p selects every paragraph",
+        "When rules clash, the more specific selector wins; if they are equally specific, the later rule wins",
+        "Some properties, such as color and font-family, are inherited by the elements inside"
+      ],
+      "mistakes": [
+        "Leaving out the semicolon between declarations — the browser cannot read that declaration or the one after it.",
+        "Writing the dot in the HTML, as in class=\".notice\" — the dot belongs only in the CSS selector.",
+        "Spelling a property the British way, such as colour — CSS ignores it; write color.",
+        "Using the same id on several elements — ids must be unique, so use a class for repeated styles."
+      ],
+      "task": "Open the selectors example. Add the class notice to the last paragraph and run it. Then add a rule p { color: blue; } at the very end of the style block, and before running, predict which paragraphs turn blue. Check your prediction.",
+      "quiz": [
+        { "q": "A style block contains p { color: blue; } and then p { color: green; }. What colour is a plain paragraph?", "opts": ["Green", "Blue", "A mix of blue and green", "Black, because the rules cancel out"], "a": 0, "why": "Both selectors are equally specific, so the rule that comes later wins." },
+        { "q": "The CSS has p { color: blue; } and .notice { color: red; }. What colour is <p class=\"notice\">?", "opts": ["Red", "Blue", "Purple", "Black"], "a": 0, "why": "A class selector is more specific than a type selector, so .notice wins wherever it appears in the file." },
+        { "q": "What is wrong with h1 { color: darkgreen font-size: 30px; }?", "opts": ["A semicolon is missing after darkgreen, so the browser cannot read the declaration", "font-size cannot be used on headings", "Colour names must be written in capital letters", "A rule can only contain one property"], "a": 0, "why": "Without the semicolon, the browser reads darkgreen font-size: 30px as one invalid colour value and ignores it, so neither style is applied." },
+        { "q": "Which HTML element is selected by .price?", "opts": ["<span class=\"price\">₦500</span>", "<span id=\"price\">₦500</span>", "<price>₦500</price>", "<span class=\".price\">₦500</span>"], "a": 0, "why": "A dot in CSS means class, and the class attribute in HTML is written without the dot." },
+        { "q": "Why is an external stylesheet usually best for a site with five pages?", "opts": ["One file styles every page, so a change in one place updates them all", "Browsers only understand CSS that is in a separate file", "It lets the HTML files load without any CSS", "Inline styles do not work on phones"], "a": 0, "why": "All the pages link to the same file, so you edit one place and the browser can reuse its saved copy." }
+      ]
+    },
+    {
+      "title": "Colours, fonts and text",
+      "goal": "Choose colours and fonts that are readable, load quickly and suit your page.",
+      "sections": [
+        {
+          "heading": "Ways to write colours",
+          "body": "CSS understands colours written in several ways:\n\n- **Names** such as `green`, `navy` or `tomato`. They are easy to read, but there is only a fixed list of them.\n- **Hex codes** such as `#008751`. The six digits are three pairs for red, green and blue, from `00` (none) to `ff` (full). `#000000` is black and `#ffffff` is white.\n- **rgb()** such as `rgb(0 135 81)`, which gives the same three amounts as numbers from 0 to 255. Adding a slash and a fourth value, as in `rgb(0 135 81 / 20%)`, makes the colour see-through.\n\n`color` sets the text colour and `background-color` sets the colour behind it. Change them as a pair so the text stays readable.",
+          "code": { "lang": "html", "source": "<style>\n  body { background-color: #f4fbf6; }\n  h1 { color: #008751; }\n  .badge {\n    color: white;\n    background-color: rgb(0 135 81);\n  }\n  .soft { background-color: rgb(0 135 81 / 20%); }\n</style>\n<h1>Independence Day Quiz</h1>\n<p><span class=\"badge\">New</span> Entries close on Friday.</p>\n<p class=\"soft\">This box uses a see-through green.</p>", "runnable": true }
+        },
+        {
+          "heading": "Fonts and sizes",
+          "body": "`font-family` takes a list of fonts. The browser uses the first one the device has, so always end the list with a **generic family** such as `sans-serif`, `serif` or `monospace`. Fonts already on the device cost no data. Web fonts downloaded from the internet can look special, but each one adds to the page's download size, so use them sparingly.\n\nFor sizes, `px` (pixels) is fixed, while `rem` is relative to the root text size, which is usually 16px, so `1.5rem` is usually 24px. `rem` sizes grow when someone chooses a bigger text size in their browser settings, which helps people with low vision. `line-height: 1.5` puts comfortable space between lines, and `font-weight: 700` (or `bold`) makes text heavier.",
+          "code": { "lang": "html", "source": "<style>\n  body {\n    font-family: system-ui, Arial, sans-serif;\n    font-size: 1rem;\n    line-height: 1.5;\n  }\n  h1 { font-size: 2rem; }\n  .heavy { font-weight: 700; }\n  code { font-family: monospace; }\n  .small-print { font-size: 0.875rem; }\n</style>\n<h1>Coding Club</h1>\n<p>We meet in the computer room. <span class=\"heavy\">Bring your notebook.</span></p>\n<p>Today we learn the <code>h1</code> element.</p>\n<p class=\"small-print\">Snacks cost ₦300 and are optional.</p>", "runnable": true }
+        },
+        {
+          "heading": "Styling text for reading",
+          "body": "A few more text properties make a big difference:\n\n- `text-align` lines text up `left`, `right` or `center` (American spelling again). Keep long paragraphs left-aligned, because centred paragraphs are hard to read.\n- `text-transform: uppercase` shows letters as capitals without changing your HTML.\n- `letter-spacing` adds space between letters, which suits short headings.\n- `text-decoration` adds or removes lines such as underlines. Keep the underline on links inside paragraphs so people can tell they are links.\n- `max-width: 60ch` keeps lines to roughly 60 characters. Very long lines are tiring to read on big screens.\n\nThe `ch` unit is the width of the 0 character in the current font.",
+          "code": { "lang": "html", "source": "<style>\n  body { font-family: sans-serif; line-height: 1.6; }\n  h1 {\n    text-align: center;\n    text-transform: uppercase;\n    letter-spacing: 2px;\n  }\n  p { max-width: 60ch; }\n  a { color: #0b5394; text-decoration: underline; }\n  .price { text-align: right; font-weight: bold; }\n</style>\n<h1>Mama Ngozi's Provisions</h1>\n<p>We sell bread, tea, sugar and soft drinks near the school gate. See our <a href=\"prices.html\">full price list</a>.</p>\n<p class=\"price\">Bread: ₦1,200</p>", "runnable": true }
+        }
+      ],
+      "points": [
+        "color sets the text colour; background-color sets the colour behind it",
+        "A hex colour such as #008751 gives red, green and blue in pairs of digits",
+        "List several fonts and end with a generic family such as sans-serif",
+        "rem sizes follow the reader's chosen text size; 1rem is usually 16px",
+        "A line-height of about 1.5 makes paragraphs easier to read on a phone"
+      ],
+      "mistakes": [
+        "Leaving out the unit, as in font-size: 16 — the browser ignores the declaration; write 16px or 1rem.",
+        "Pale grey text on a white background — check the contrast so everyone can read it.",
+        "Loading several web fonts — each one costs data; system fonts are free and appear instantly.",
+        "Removing the underline from links inside paragraphs — readers can no longer tell which words are links."
+      ],
+      "task": "Style a notice for a school event: choose a text colour and a background colour that read well together, set a font list that ends with sans-serif, use rem for the heading size and add line-height: 1.5 to the paragraphs. Then make one word stand out with font-weight.",
+      "quiz": [
+        { "q": "In the hex colour #00aa00, which colour is strongest?", "opts": ["Green", "Red", "Blue", "They are all equal"], "a": 0, "why": "The pairs are red 00, green aa and blue 00, so only green has any amount." },
+        { "q": "A page uses font-family: Ubuntu, Arial, sans-serif; and the phone has neither Ubuntu nor Arial. What happens?", "opts": ["The browser uses the phone's default sans-serif font", "The text disappears", "The browser downloads Ubuntu automatically", "The page shows an error"], "a": 0, "why": "The browser works along the list and falls back to the generic family at the end." },
+        { "q": "The root text size is 16px. How big is text set to 1.5rem?", "opts": ["24px", "15px", "1.5px", "32px"], "a": 0, "why": "1.5rem means 1.5 times the root size: 1.5 × 16 = 24px." },
+        { "q": "Why does h1 { font-size: 32; } have no effect?", "opts": ["The value has no unit such as px or rem, so the browser ignores it", "32 is too big for a heading", "font-size only works on paragraphs", "Rules for h1 must use capital letters"], "a": 0, "why": "Most lengths need a unit. Only 0 can be written without one." },
+        { "q": "Which pair of declarations gives a light green box with dark, readable text?", "opts": ["background-color: #e6f4ea; color: #1b1b1b;", "color: #e6f4ea; background-color: #f0fff0;", "text-color: #1b1b1b; box-color: #e6f4ea;", "background-color: #1b1b1b; color: #222222;"], "a": 0, "why": "A pale background with near-black text has strong contrast. The others are pale on pale, dark on dark, or use properties that do not exist." }
+      ]
+    },
+    {
+      "title": "The box model",
+      "goal": "Control spacing and size using content, padding, border, margin and box-sizing.",
+      "sections": [
+        {
+          "heading": "Every element is a box",
+          "body": "The browser draws every element as a rectangular box with four layers, from the inside out:\n\n1. **Content**: the text or image itself.\n2. **Padding**: space inside the box, between the content and the border. The background colour fills it.\n3. **Border**: a line around the padding.\n4. **Margin**: space outside the border that pushes other boxes away. It is always see-through.\n\nThink of a framed picture on a wall: the picture is the content, the card mount around it is the padding, the frame is the border and the gap to the next picture is the margin. When the bottom margin of one box meets the top margin of the box below, the browser uses only the larger of the two, so the gap between these cards is 30px, not 60px. Change each number in the example and watch which space grows.",
+          "code": { "lang": "html", "source": "<style>\n  .card {\n    background-color: #fff7e0;\n    padding: 20px;\n    border: 4px solid #e0a800;\n    margin: 30px;\n  }\n</style>\n<div class=\"card\">\n  <h2>Cultural Day</h2>\n  <p>Wear your traditional outfit on Friday.</p>\n</div>\n<div class=\"card\">\n  <p>The padding is inside the border; the margin is outside it.</p>\n</div>", "runnable": true }
+        },
+        {
+          "heading": "Width, height and box-sizing",
+          "body": "You can set `width` and `height`, but by default `width` measures only the **content**. Padding and border are added on top, so a box with `width: 200px`, `padding: 20px` and a `5px` border is really 250px wide. That surprises almost everyone at first.\n\nAdd `box-sizing: border-box` and the width includes the padding and border, so the box is exactly 200px wide. Many developers put this rule at the top of their stylesheet so it applies to every element: `* { box-sizing: border-box; }`\n\nOn phones, avoid fixed widths that may be wider than the screen. Use `max-width` instead: `max-width: 400px` means at most 400px, but narrower if the screen is smaller.",
+          "code": { "lang": "html", "source": "<style>\n  div {\n    width: 200px;\n    padding: 20px;\n    border: 5px solid teal;\n    margin-bottom: 10px;\n    background-color: #e0f7f7;\n  }\n  .fixed { box-sizing: border-box; }\n</style>\n<div>content-box: 250px wide in total</div>\n<div class=\"fixed\">border-box: exactly 200px wide</div>", "runnable": true }
+        },
+        {
+          "heading": "Shorthand, centring and rounded corners",
+          "body": "`margin` and `padding` accept one to four values:\n\n- `margin: 10px;` puts 10px on all four sides.\n- `margin: 10px 20px;` puts 10px on the top and bottom and 20px on the left and right.\n- `margin: 5px 10px 15px 20px;` goes clockwise from the top: top, right, bottom, left.\n\n`margin: 20px auto;` centres a block that has a `width` or `max-width`, because the browser shares the leftover space equally between the left and right. The `border` shorthand takes a width, a style and a colour, such as `border: 2px solid green;`. Without a style such as `solid`, `dashed` or `dotted`, no border appears. `border-radius` rounds the corners.",
+          "code": { "lang": "html", "source": "<style>\n  body { background-color: #eef2f7; font-family: sans-serif; }\n  .ticket {\n    max-width: 320px;\n    margin: 20px auto;\n    padding: 16px 20px;\n    background-color: white;\n    border: 2px dashed #1565c0;\n    border-radius: 12px;\n  }\n</style>\n<div class=\"ticket\">\n  <h2>Excursion ticket</h2>\n  <p>Trip to the National Museum, Lagos</p>\n  <p>Price: ₦2,500</p>\n</div>", "runnable": true }
+        }
+      ],
+      "points": [
+        "From the inside out, a box has content, padding, border and margin",
+        "Padding is space inside the border; margin is space outside it",
+        "With box-sizing: border-box, width includes the padding and the border",
+        "margin: 0 auto centres a block that has a width or max-width",
+        "Four-value shorthand goes clockwise: top, right, bottom, left"
+      ],
+      "mistakes": [
+        "Setting width: 100% and adding padding, which creates a sideways scroll — use box-sizing: border-box.",
+        "Using padding when you want space between two cards — space between boxes is margin.",
+        "Giving boxes fixed widths such as width: 800px — on a phone, use max-width so the box can shrink.",
+        "Writing border: 2px green without a style — add solid, dashed or dotted, or no border appears."
+      ],
+      "task": "Make a ticket or ID-card style box for a school event: give it padding, a border and rounded corners, centre it with margin and auto, and limit its width with max-width. Then remove box-sizing or add it, and explain to yourself why the size changes.",
+      "quiz": [
+        { "q": "A box has width: 200px; padding: 10px; and border: 5px solid; with the default box-sizing. How wide is it on screen, not counting margin?", "opts": ["230px", "200px", "215px", "210px"], "a": 0, "why": "The default content-box adds padding on both sides (20px) and border on both sides (10px): 200 + 20 + 10 = 230px." },
+        { "q": "The same box is given box-sizing: border-box. How wide is it now?", "opts": ["200px", "230px", "170px", "250px"], "a": 0, "why": "With border-box, the 200px width already includes the padding and border, so the content area shrinks instead." },
+        { "q": "In margin: 10px 20px 30px 40px; what is the left margin?", "opts": ["40px", "10px", "20px", "30px"], "a": 0, "why": "Four values go clockwise from the top: top 10px, right 20px, bottom 30px, left 40px." },
+        { "q": "Why does border: 3px green; show no border at all?", "opts": ["It is missing a border style such as solid", "Borders cannot be green", "3px is too thin to see", "The rule needs border-radius first"], "a": 0, "why": "The shorthand sets the style to none when you leave it out, and a border with no style is not drawn." },
+        { "q": "Two cards are touching each other. Which change adds space between them without changing the space inside each card?", "opts": ["Add margin to the cards", "Add padding to the cards", "Make the border thicker", "Increase the font size"], "a": 0, "why": "Margin is the space outside the border, so it pushes the cards apart. Padding would make each card bigger inside." }
+      ]
+    },
+    {
+      "title": "Display and Flexbox layout",
+      "goal": "Understand block and inline boxes and use Flexbox to arrange items in rows that wrap on small screens.",
+      "sections": [
+        {
+          "heading": "Block, inline and inline-block",
+          "body": "Every element has a `display` type:\n\n- **Block** elements, such as `<p>`, `<h1>`, `<div>` and `<section>`, start on a new line and stretch across the full width available.\n- **Inline** elements, such as `<a>`, `<span>` and `<strong>`, sit inside a line of text and are only as wide as their content. `width` and `height` have no effect on them.\n- `display: inline-block` keeps an element in the line but lets you set its width, height and padding, which is handy for small badges.\n\nYou can change any element's type, for example by making links `display: block`. `display: none` removes an element from the page completely, and screen readers skip it too.",
+          "code": { "lang": "html", "source": "<style>\n  p, span { border: 1px solid #999999; }\n  span { width: 200px; }\n  .badge {\n    display: inline-block;\n    width: 80px;\n    text-align: center;\n    background-color: gold;\n  }\n  .hidden { display: none; }\n</style>\n<p>A paragraph is a block: it fills the whole width.</p>\n<p>A <span>span ignores width</span> but a <span class=\"badge\">badge</span> obeys it.</p>\n<p class=\"hidden\">You cannot see me.</p>", "runnable": true }
+        },
+        {
+          "heading": "Flexbox: items in a row",
+          "body": "**Flexbox** is a layout tool for arranging items in a row or a column. You switch it on by giving the **parent** `display: flex`. Its direct children then become **flex items** and line up in a row.\n\nThree properties on the parent do most of the work:\n\n- `gap` sets the space between items.\n- `justify-content` spreads items along the row, with values such as `flex-start`, `center`, `space-between` and `flex-end`.\n- `align-items` lines items up across the row; `center` is useful for lining up items of different heights.\n\nA navigation bar is a perfect first job for Flexbox. Try changing `space-between` to `center` or `flex-end`.",
+          "code": { "lang": "html", "source": "<style>\n  nav {\n    display: flex;\n    justify-content: space-between;\n    align-items: center;\n    gap: 12px;\n    padding: 10px;\n    background-color: #1b5e20;\n  }\n  nav a { color: white; text-decoration: none; }\n  .logo { font-weight: bold; font-size: 1.3rem; color: #c8e6c9; }\n</style>\n<nav>\n  <span class=\"logo\">JETS Club</span>\n  <a href=\"projects.html\">Projects</a>\n  <a href=\"join.html\">Join</a>\n</nav>", "runnable": true }
+        },
+        {
+          "heading": "Wrapping cards for small screens",
+          "body": "On a phone there is not enough room for many items in one row. `flex-wrap: wrap` lets items move onto a new line when they run out of space.\n\nThe `flex` property on each item says how it should size itself. `flex: 1 1 150px` means: start at about 150px wide, **grow** to share any spare space and **shrink** if needed. With this, the cards sit side by side on a wide screen and stack on a narrow one, without any extra code.\n\n`flex-direction: column` stacks the items from top to bottom instead, while keeping `gap` and the alignment controls. Change `150px` to `300px` and run the example again to watch the cards rearrange.",
+          "code": { "lang": "html", "source": "<style>\n  .cards {\n    display: flex;\n    flex-wrap: wrap;\n    gap: 12px;\n  }\n  .card {\n    flex: 1 1 150px;\n    padding: 12px;\n    background-color: #e3f2fd;\n    border-radius: 8px;\n  }\n</style>\n<div class=\"cards\">\n  <div class=\"card\">Robotics</div>\n  <div class=\"card\">Solar cooker</div>\n  <div class=\"card\">Water filter</div>\n  <div class=\"card\">Weather station</div>\n</div>", "runnable": true }
+        }
+      ],
+      "points": [
+        "Block elements stack and fill the width; inline elements flow inside a line of text",
+        "display: flex goes on the parent, and its direct children become flex items",
+        "justify-content spaces items along the row; align-items lines them up across it",
+        "flex-wrap: wrap lets items move onto a new line when space runs out",
+        "gap sets the space between flex items without extra margins"
+      ],
+      "mistakes": [
+        "Putting display: flex on the items instead of their parent — the container is the one that needs it.",
+        "Expecting width to work on an inline span — make it inline-block or block first.",
+        "Forgetting flex-wrap, so cards squash into a thin row on phones — add flex-wrap: wrap.",
+        "Using display: none on content everyone needs — it hides it from screen readers as well."
+      ],
+      "task": "Build a row of four cards for your club's activities with Flexbox, using gap, flex-wrap and flex: 1 1 150px. Then add a navigation bar above it with the club name on the left and two links on the right.",
+      "quiz": [
+        { "q": "You want the links in <nav><a>Home</a><a>Events</a><a>Join</a></nav> in a row with space between them. Where should display: flex go?", "opts": ["On the nav", "On each a element", "On the body only", "On the html element"], "a": 0, "why": "Flexbox is switched on in the parent. The links are the nav's children, so they become flex items." },
+        { "q": "In a flex row, which declaration on the parent pushes all the items to the right-hand end?", "opts": ["justify-content: flex-end;", "align-items: flex-end;", "text-align: right;", "flex-direction: column;"], "a": 0, "why": "justify-content works along the row. align-items works across it, so flex-end there moves items to the bottom." },
+        { "q": "Four cards with flex: 1 1 200px sit in a 360px-wide container with flex-wrap: wrap and no gap. How do they appear?", "opts": ["One card per row, each stretched to the full width", "Four cards squeezed into one row", "Two cards per row, each 200px wide", "Only the first card is shown"], "a": 0, "why": "Two cards would need 400px, which is more than 360px, so each wraps onto its own line and then grows to fill it." },
+        { "q": "What does display: none do to an element?", "opts": ["Removes it from the page and the layout, and screen readers skip it too", "Makes it see-through but keeps its space", "Hides it only on phones", "Turns it into an inline element"], "a": 0, "why": "With display: none, the element takes up no space and is not shown or read out at all." },
+        { "q": "The rule span { width: 120px; } has no visible effect on a <span>. Why?", "opts": ["A span is inline, and inline elements ignore width", "Spans can only be styled with classes", "120px is wider than the screen", "width only works with percentages"], "a": 0, "why": "Inline boxes are sized by their content. Use display: inline-block or block to give them a width." }
+      ]
+    },
+    {
+      "title": "Responsive design",
+      "goal": "Make a page that fits phones first and adapts to bigger screens with media queries.",
+      "sections": [
+        {
+          "heading": "The viewport meta tag",
+          "body": "Many phone browsers were designed when most pages were built for computers. Without instructions, they may lay your page out on a wide imaginary screen (980px wide, for example) and then shrink it, leaving tiny text that people must pinch to read.\n\nThis line in the `<head>` tells the browser to use the device's real width at normal zoom:\n\n`<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">`\n\nPut it in every page you make. Never add `user-scalable=no` or `maximum-scale=1`: blocking zoom stops people with low vision from enlarging your text. The preview box behaves like its own small screen whether or not the tag is there, so check the tag on a real phone.",
+          "code": { "lang": "html", "source": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Responsive start</title>\n  <style>\n    body { font-family: sans-serif; margin: 0; padding: 16px; }\n    .banner { max-width: 600px; padding: 12px; background-color: #ffe0b2; }\n  </style>\n</head>\n<body>\n  <h1>Kano Science Fair</h1>\n  <p class=\"banner\">This banner is never wider than 600px, but it shrinks to fit a small phone.</p>\n</body>\n</html>", "runnable": true }
+        },
+        {
+          "heading": "Media queries",
+          "body": "A **media query** wraps rules that apply only when a condition is true. The most useful condition is the width of the viewport:\n\n`@media (min-width: 500px) { ... }`\n\nThe rules inside the curly brackets apply only when the viewport is at least 500px wide. The width at which your layout changes is called a **breakpoint**. Real sites often use breakpoints such as 600px or 768px; these examples use 500px so you can see a change in the small preview box.\n\nThe preview measures its own width, not your whole screen. Change `500px` to `300px` or `900px`, run the example again and watch the links switch between a stack and a row.",
+          "code": { "lang": "html", "source": "<style>\n  .menu a {\n    display: block;\n    padding: 10px;\n    margin-bottom: 4px;\n    background-color: #ede7f6;\n  }\n  @media (min-width: 500px) {\n    .menu { display: flex; gap: 8px; }\n    .menu a { flex: 1; text-align: center; margin-bottom: 0; }\n  }\n</style>\n<nav class=\"menu\">\n  <a href=\"index.html\">Home</a>\n  <a href=\"events.html\">Events</a>\n  <a href=\"gallery.html\">Gallery</a>\n  <a href=\"join.html\">Join</a>\n</nav>\n<p>On a narrow screen the links stack. On a wider one they sit in a row.</p>", "runnable": true }
+        },
+        {
+          "heading": "Mobile-first design",
+          "body": "**Mobile-first** means you write the basic styles for small screens first, with everything in one column, and then add `min-width` media queries to rearrange things on bigger screens. Phones get the simplest layout, and you add complexity only where there is room for it.\n\nA few habits keep pages flexible:\n\n- Use `max-width` and percentages instead of fixed widths.\n- Add `img { max-width: 100%; height: auto; }` so pictures never spill off the screen.\n- Make buttons and links big enough to tap with a thumb.\n- Put each media query after the rules it changes, because a later rule with the same specificity wins.\n\nOn a computer, Chrome, Edge and Firefox can preview phone sizes: press F12 to open the developer tools, then Ctrl + Shift + M for the device or responsive mode.",
+          "code": { "lang": "html", "source": "<style>\n  /* Base styles: phones first */\n  .layout { display: flex; flex-direction: column; gap: 12px; }\n  .box { padding: 16px; background-color: #fff3e0; border-radius: 8px; }\n\n  /* Bigger screens: side by side */\n  @media (min-width: 500px) {\n    .layout { flex-direction: row; }\n    .main { flex: 2; }\n    .side { flex: 1; }\n  }\n</style>\n<div class=\"layout\">\n  <section class=\"box main\">\n    <h2>Club news</h2>\n    <p>Our solar cooker project came second at the state science fair.</p>\n  </section>\n  <aside class=\"box side\">\n    <h2>Next meeting</h2>\n    <p>Friday, 2 p.m.</p>\n  </aside>\n</div>", "runnable": true }
+        }
+      ],
+      "points": [
+        "Put <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> in the head of every page",
+        "A media query applies its rules only when its condition, such as a minimum width, is true",
+        "Mobile-first means base styles for phones, then min-width queries for larger screens",
+        "img { max-width: 100%; height: auto; } stops pictures spilling off small screens",
+        "Never block zooming; people with low vision need it"
+      ],
+      "mistakes": [
+        "Leaving out the viewport tag, so phones show a tiny zoomed-out page.",
+        "Forgetting the curly brackets that wrap the rules inside @media — every rule inside must sit between them.",
+        "Putting a media query before the rules it is meant to change — the later rule wins, so the query never seems to work.",
+        "Designing only on a laptop and checking the phone last — start with the phone layout."
+      ],
+      "task": "Take the mobile-first example and add a third box for a photo gallery. Make all three boxes stack on phones, and use a media query so they sit side by side above 500px. Change the breakpoint to 900px and back to test both layouts.",
+      "quiz": [
+        { "q": "A stylesheet has @media (min-width: 600px) { .menu { display: flex; } }. On a phone whose viewport is 400px wide, is .menu a flex row?", "opts": ["No, because the rules inside apply only at 600px or wider", "Yes, because media queries apply everywhere", "Yes, but only after the page is refreshed", "No, because phones cannot use Flexbox"], "a": 0, "why": "min-width: 600px is false at 400px, so the browser skips the rules inside the query." },
+        { "q": "Which approach is mobile-first?", "opts": ["One-column base styles, then @media (min-width: 700px) adds columns", "Three-column base styles, then @media (max-width: 700px) removes columns", "Only desktop styles, with no media queries", "Separate pages for phones and computers"], "a": 0, "why": "Mobile-first starts with the small-screen layout and uses min-width queries to add to it." },
+        { "q": "A photo 1200px wide spills off a phone screen. Which CSS fixes it?", "opts": ["img { max-width: 100%; height: auto; }", "img { width: 1200px; }", "img { display: inline; }", "img { margin: auto; }"], "a": 0, "why": "max-width: 100% stops the image being wider than its container, and height: auto keeps its shape." },
+        { "q": "Without a viewport meta tag, what may a phone browser do with your page?", "opts": ["Lay it out on a wide imaginary screen and shrink it, making the text tiny", "Refuse to open it", "Turn it into a single column automatically", "Remove all the CSS"], "a": 0, "why": "Many phone browsers assume an old desktop-width page and zoom out to fit it, unless the viewport tag says otherwise." },
+        { "q": "The CSS has .card { width: 100%; }, then @media (min-width: 600px) { .card { width: 50%; } }, then .card { width: 100%; } at the very end. Why are cards never half width?", "opts": ["The last rule has the same specificity and comes later, so it always wins", "Media queries cannot change width", "50% is not a valid width", "A media query must be the first rule in the file"], "a": 0, "why": "Media queries do not add specificity. When the query matches, its rule still loses to an equally specific rule that comes after it." }
+      ]
+    },
+    {
+      "title": "Polish: hover, transitions, shadows and contrast",
+      "goal": "Add small, accessible finishing touches that make a page feel friendly and easy to read.",
+      "sections": [
+        {
+          "heading": "States: :hover, :focus-visible and :active",
+          "body": "A **pseudo-class** styles an element when it is in a certain state. You write it after the selector with a colon:\n\n- `:hover` applies while a mouse pointer is over the element.\n- `:focus-visible` applies when someone reaches the element with the keyboard, so they can see where they are.\n- `:active` applies while the element is being pressed.\n\nTouch screens have no real hover, so never hide important information that only appears on hover. Always keep a visible focus style: if you remove the browser's outline, replace it with something just as clear.",
+          "code": { "lang": "html", "source": "<style>\n  .btn {\n    padding: 12px 20px;\n    background-color: #2e7d32;\n    color: white;\n    border: none;\n    border-radius: 8px;\n    font-size: 1rem;\n  }\n  .btn:hover { background-color: #1b5e20; }\n  .btn:focus-visible { outline: 3px solid #ff9800; outline-offset: 3px; }\n  .btn:active { transform: scale(0.97); }\n</style>\n<button class=\"btn\" type=\"button\">Register for the quiz</button>\n<p>Hover over the button, press it, or tap the preview and press Tab to see each state.</p>", "runnable": true }
+        },
+        {
+          "heading": "Smooth changes with transition",
+          "body": "Without help, a hover colour changes instantly. `transition` makes the change happen smoothly over a short time:\n\n`transition: background-color 0.2s ease;`\n\nThis names the property to animate, how long the change takes and its speed curve. Short times of about 0.15 to 0.3 seconds feel quick and responsive; long ones feel slow. `transform` can move or resize an element without disturbing the layout around it; for example, `transform: translateY(-4px)` lifts a card slightly.\n\nSome people feel dizzy or sick when things move on screen. The media query `prefers-reduced-motion: reduce` lets you switch movement off for anyone who has asked their device for less motion.",
+          "code": { "lang": "html", "source": "<style>\n  .card {\n    padding: 16px;\n    background-color: white;\n    border: 1px solid #dddddd;\n    border-radius: 10px;\n    transition: transform 0.2s ease, box-shadow 0.2s ease;\n  }\n  .card:hover {\n    transform: translateY(-4px);\n    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);\n  }\n  @media (prefers-reduced-motion: reduce) {\n    .card { transition: none; }\n    .card:hover { transform: none; }\n  }\n</style>\n<div class=\"card\">\n  <h2>Art Club exhibition</h2>\n  <p>Move a mouse pointer over this card to lift it.</p>\n</div>", "runnable": true }
+        },
+        {
+          "heading": "Shadows and rounded corners",
+          "body": "`box-shadow` draws a shadow behind a box. Its values are, in order: how far the shadow moves sideways, how far it moves down, how blurred it is, and its colour. For example, `box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);` makes a soft shadow just below the box. A small, pale shadow looks modern; a big black one looks heavy.\n\n`border-radius` rounds corners: `8px` gives gentle curves, and `50%` on a square makes a circle. `text-shadow` works in a similar way for text, but use it rarely, because it can make text blurry and harder to read.",
+          "code": { "lang": "html", "source": "<style>\n  body { background-color: #f5f5f5; font-family: sans-serif; }\n  .profile {\n    max-width: 260px;\n    padding: 20px;\n    background-color: white;\n    border-radius: 12px;\n    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);\n    text-align: center;\n  }\n  .avatar {\n    width: 64px;\n    height: 64px;\n    margin: 0 auto 10px;\n    border-radius: 50%;\n    background-color: #ffb300;\n  }\n</style>\n<div class=\"profile\">\n  <div class=\"avatar\"></div>\n  <h2>Club captain</h2>\n  <p>Leads our Friday meetings.</p>\n</div>", "runnable": true }
+        },
+        {
+          "heading": "Colour contrast",
+          "body": "**Contrast** is the difference in brightness between text and its background. Low contrast, such as light grey on white, is hard to read, especially on a phone in bright sunshine or for people with low vision.\n\nThe Web Content Accessibility Guidelines (WCAG) set minimum contrast ratios. For level AA:\n\n- normal text needs at least **4.5:1**\n- large text (about 24px, or about 19px if bold) needs at least **3:1**\n\nYou do not need to work this out yourself: the free WebAIM Contrast Checker gives the ratio for any two colours. Also, never use colour alone to give a message. Add words or a symbol, such as Sold out, rather than only turning a price red.",
+          "code": { "lang": "html", "source": "<style>\n  body { font-family: sans-serif; }\n  p { padding: 8px; }\n  .poor { color: #aaaaaa; background-color: white; }\n  .good { color: #1f1f1f; background-color: white; }\n  .poor-green { color: #ffeb3b; background-color: #8bc34a; }\n  .good-green { color: white; background-color: #1b5e20; }\n</style>\n<p class=\"poor\">Hard to read: light grey on white.</p>\n<p class=\"good\">Easy to read: near-black on white.</p>\n<p class=\"poor-green\">Hard to read: yellow on light green.</p>\n<p class=\"good-green\">Easy to read: white on dark green.</p>", "runnable": true }
+        }
+      ],
+      "points": [
+        ":hover styles a pointer hovering, :focus-visible shows keyboard focus and :active shows a press",
+        "transition makes changes smooth; keep it short, around 0.2 seconds",
+        "box-shadow takes a sideways offset, a downward offset, a blur and a colour",
+        "Under WCAG AA, normal text needs a contrast ratio of at least 4.5:1 with its background",
+        "Respect prefers-reduced-motion for people who are troubled by movement"
+      ],
+      "mistakes": [
+        "Removing the focus outline with outline: none and giving nothing in its place — keyboard users get lost.",
+        "Menus or information that appear only on hover — phones and other touch screens cannot hover.",
+        "Heavy, dark shadows on everything — a small, soft shadow looks cleaner.",
+        "Choosing text colours by eye — check them with a contrast checker."
+      ],
+      "task": "Style a button for your club page with :hover, :focus-visible and :active states and a 0.2-second transition. Then check your text and button colours in the WebAIM Contrast Checker and change any pair that scores below 4.5:1.",
+      "quiz": [
+        { "q": "The CSS has button { transition: background-color 0.2s; } and button:hover { background-color: navy; }. What happens when a mouse pointer moves over the button?", "opts": ["The background fades to navy over 0.2 seconds", "The button turns navy instantly and stays navy for ever", "The button waits 0.2 seconds and then disappears", "Nothing, because transition only works on text"], "a": 0, "why": "The hover rule changes the colour, and the transition spreads that change over 0.2 seconds. It fades back when the pointer leaves." },
+        { "q": "In box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); what does 4px do?", "opts": ["Moves the shadow 4px down", "Moves the shadow 4px to the right", "Sets the blur to 4px", "Makes the shadow 4px darker"], "a": 0, "why": "The first value is the sideways offset (0), the second is the downward offset (4px) and the third is the blur (10px)." },
+        { "q": "Grey text (#999999) on white has a contrast ratio of about 2.8:1. Does it meet WCAG AA for a normal paragraph?", "opts": ["No, normal text needs at least 4.5:1", "Yes, anything above 2:1 passes", "Yes, grey always passes on white", "No, because grey text is never allowed"], "a": 0, "why": "AA requires 4.5:1 for normal-sized text, so 2.8:1 is too low. A darker grey would pass." },
+        { "q": "A menu only opens when the pointer hovers over the word Clubs. What problem will phone users have?", "opts": ["Touch screens cannot hover, so the menu may be hard or impossible to open", "Phones show the menu twice", "The menu opens on every page automatically", "Phones cannot display menus at all"], "a": 0, "why": "There is no pointer resting over the screen on a touch device, so make menus open with a tap or click as well." },
+        { "q": "A designer adds button:focus { outline: none; } and nothing else. Who is most affected?", "opts": ["People using a keyboard, who can no longer see which button is selected", "People using a mouse, who cannot click the button", "Search engines, which cannot find the button", "Nobody, because outlines are only decoration"], "a": 0, "why": "The focus outline shows keyboard users where they are. Removing it without a replacement leaves them guessing." }
+      ]
+    },
+    {
+      "title": "Organising your styles",
+      "goal": "Write reusable, well-named and well-commented CSS that is easy to update.",
+      "sections": [
+        {
+          "heading": "Reusable classes",
+          "body": "As a site grows, writing a separate rule for every element becomes messy. Instead, create **classes** that describe a job and reuse them wherever that job appears: `.card` for boxes of content, `.button` for buttons and button-like links, `.notice` for important messages.\n\nAn element can have several classes, separated by spaces: `class=\"button button-small\"`. This lets you keep one basic class and add small extras, often called **modifiers**.\n\nName classes by their **purpose**, not their appearance. If you call a class `.red-text` and later decide the colour should be blue, the name becomes misleading. `.warning` stays true whatever colour you choose.",
+          "code": { "lang": "html", "source": "<style>\n  .button {\n    display: inline-block;\n    padding: 10px 16px;\n    background-color: #283593;\n    color: white;\n    border-radius: 6px;\n    text-decoration: none;\n  }\n  .button-small { padding: 4px 10px; font-size: 0.875rem; }\n  .button-light { background-color: #e8eaf6; color: #283593; }\n</style>\n<a class=\"button\" href=\"join.html\">Join the club</a>\n<a class=\"button button-light\" href=\"rules.html\">Read the rules</a>\n<a class=\"button button-small\" href=\"gallery.html\">Photos</a>", "runnable": true }
+        },
+        {
+          "heading": "Custom properties (CSS variables)",
+          "body": "When the same colour or size appears in many rules, store it once in a **custom property**. Its name starts with two hyphens, and you usually set it on `:root`, which stands for the whole page:\n\n`:root { --brand: #008751; }`\n\nRead it anywhere with `var()`, as in `color: var(--brand);`. Change the value in one place and every rule that uses it updates, so you can try a new colour scheme for your club page in seconds.\n\nCustom property names are case-sensitive: `--brand` and `--Brand` are different. If you misspell a name inside `var()`, the browser finds no value and the style does not work as planned.",
+          "code": { "lang": "html", "source": "<style>\n  :root {\n    --brand: #008751;\n    --brand-light: #e6f4ea;\n    --radius: 8px;\n  }\n  h1 { color: var(--brand); }\n  .notice {\n    padding: 10px;\n    background-color: var(--brand-light);\n    border-left: 4px solid var(--brand);\n    border-radius: var(--radius);\n  }\n</style>\n<h1>Green Club</h1>\n<p class=\"notice\">Tree planting starts at 8 a.m. on Saturday.</p>\n<p>Change --brand to #6a1b9a and run the example again.</p>", "runnable": true }
+        },
+        {
+          "heading": "Comments and a clear order",
+          "body": "Comments, like the numbered labels in the example, explain **why** something is there or label the parts of a long file. Every CSS comment starts with a slash and a star and ends with a star and a slash. CSS has no `//` comments; writing one breaks the rule that follows it.\n\nKeeping the same order in every stylesheet helps you find things quickly:\n\n1. Custom properties on `:root`\n2. Base styles for elements such as `body`, `h1` and `a`\n3. Layout, such as the header, main area and footer\n4. Reusable components such as `.card` and `.button`\n5. Media queries for bigger screens\n\nDelete rules you no longer use, and keep your styles in the stylesheet rather than scattered in `style` attributes. Tidy code is easier to fix, and easier for someone else to help you with.",
+          "code": { "lang": "html", "source": "<style>\n  /* 1. Settings */\n  :root { --brand: #b71c1c; --space: 12px; }\n\n  /* 2. Base styles */\n  body { margin: 0; font-family: sans-serif; line-height: 1.5; }\n\n  /* 3. Layout */\n  .site-header { padding: var(--space); background-color: var(--brand); color: white; }\n\n  /* 4. Components */\n  .card { margin: var(--space); padding: var(--space); border: 1px solid #dddddd; }\n\n  /* 5. Bigger screens */\n  @media (min-width: 500px) {\n    .card { max-width: 400px; }\n  }\n</style>\n<header class=\"site-header\"><h1>First Aid Club</h1></header>\n<div class=\"card\">First aid training every Tuesday.</div>", "runnable": true }
+        }
+      ],
+      "points": [
+        "Name classes by purpose, such as .card or .notice, not by appearance",
+        "An element can have several classes separated by spaces",
+        "Custom properties such as --brand store values you reuse; read them with var(--brand)",
+        "CSS comments go between /* and */; there are no // comments in CSS",
+        "Keep a steady order: settings, base styles, layout, components, then media queries"
+      ],
+      "mistakes": [
+        "Copying the same five declarations into many rules — make one class and reuse it.",
+        "Writing // comments in CSS — they are not valid and can break the next rule.",
+        "Naming a class .green-box and later making it blue — choose names that describe the job.",
+        "Mixing inline style attributes with the stylesheet — keep all your styles in one place."
+      ],
+      "task": "Reorganise your club page's CSS into the five sections from this chapter, with a comment at the start of each. Move your main colours into custom properties on :root, then change one value and check that every place using it updates.",
+      "quiz": [
+        { "q": "The CSS has :root { --brand: green; } and h1 { color: var(--brand); }. You change --brand to purple. What happens?", "opts": ["Every rule that uses var(--brand) turns purple", "Only the first h1 turns purple", "Nothing changes until you also edit the h1 rule", "The page shows an error, because variables cannot change"], "a": 0, "why": "var(--brand) reads the current value, so changing it in one place updates every rule that uses it." },
+        { "q": "Which rules can style <p class=\"notice urgent\">?", "opts": ["Both .notice and .urgent", "Only .notice, the first class", "Only .urgent, the last class", "Neither, because an element can have only one class"], "a": 0, "why": "The class attribute holds a space-separated list, and every matching class rule applies." },
+        { "q": "Why does this CSS fail to style the header? // Header styles header { background-color: navy; }", "opts": ["// is not a CSS comment, so it becomes part of the selector and the rule is ignored", "The header element cannot have a background colour", "navy is not a valid colour name", "Comments must come after the rule, not before it"], "a": 0, "why": "The browser reads // Header styles header as a selector, which is invalid, so it drops the whole rule. Use /* */ for comments." },
+        { "q": "Which class name is best for a box used for every event announcement?", "opts": [".event-card", ".blue-box", ".box1", ".x"], "a": 0, "why": "event-card says what the box is for, so it still makes sense if the colour or size changes later." },
+        { "q": "In a mobile-first stylesheet, where should a media query for wide screens usually go?", "opts": ["After the base styles it changes", "Before all other rules", "Inside the HTML instead of the stylesheet", "In a comment, so phones skip it"], "a": 0, "why": "Placed later, the query's rules override the base styles when the screen is wide enough." }
+      ]
+    }
+  ],
+  "project": {
+    "title": "Style your club page for phones and computers",
+    "brief": "Give the club page you built in the HTML course a clear, attractive design that works on a small phone first and adapts to bigger screens. Keep all your styles in one external stylesheet, so that the JavaScript course can add an interactive feature to the same page.",
+    "steps": [
+      "Create styles.css in your club-site folder and link it in the head of index.html with <link rel=\"stylesheet\" href=\"styles.css\">.",
+      "At the top of styles.css, add * { box-sizing: border-box; } and custom properties on :root for two or three club colours.",
+      "Style the base: a system font stack ending in sans-serif, line-height around 1.5, and a main area with max-width and margin: 0 auto.",
+      "Turn the nav into a Flexbox row with gap, and make your activity sections into cards that wrap with flex-wrap.",
+      "Style the table and the form: borders and padding for the table, full-width inputs on phones, and a button with :hover and :focus-visible states.",
+      "Add a min-width media query that gives a wider layout on bigger screens.",
+      "Check text contrast with the WebAIM Contrast Checker and test the page at phone width and at computer width."
+    ],
+    "checklist": [
+      "There is no sideways scrolling on a 360px-wide phone screen",
+      "Text and buttons have a contrast ratio of at least 4.5:1",
+      "Keyboard focus is clearly visible on links and buttons",
+      "All styles live in styles.css, grouped into commented sections",
+      "Images never spill out of their container"
+    ]
+  }
+}

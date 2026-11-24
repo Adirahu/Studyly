@@ -1,0 +1,532 @@
+{
+  "id": "python",
+  "title": "Programming with Python",
+  "icon": "🐍",
+  "area": "Coding",
+  "level": "Beginner",
+  "duration": "About 6 hours",
+  "summary": "Write real Python programs, from your first print() to loops, lists and functions, using examples from school and the market. Finish by building a pocket-money budget tracker.",
+  "outcomes": [
+    "Run Python programs on a phone or computer, including free offline and online options",
+    "Store text and numbers in variables, and convert what a user types into numbers",
+    "Make decisions with if, elif and else, and repeat work with for and while loops",
+    "Organise data in lists and dictionaries and split programs into functions",
+    "Read error messages calmly and fix bugs step by step"
+  ],
+  "tools": "A phone or a computer. On Android, the free Pydroid 3 app runs Python with no internet once it is installed (it shows adverts, offers paid extras you do not need, and needs about 250–300 MB of free storage). On any phone or computer with a browser, a free online editor such as Programiz's Online Python Compiler works without installing anything, but needs internet each time you run code. On a computer you can install Python free from python.org. Ask a parent or guardian before installing apps or creating accounts.",
+  "resources": [
+    { "title": "Python.org — The Python Tutorial", "url": "https://docs.python.org/3/tutorial/index.html", "note": "The official tutorial. Detailed and accurate; best when you want the full story on a topic or have finished this course." },
+    { "title": "Sololearn — Introduction to Python", "url": "https://www.sololearn.com/en/learn/courses/python-introduction", "note": "Free bite-sized lessons with practice questions, in a browser or the Sololearn app. Ask a parent or guardian before creating an account." },
+    { "title": "freeCodeCamp — Python Certification", "url": "https://www.freecodecamp.org/learn/python-v9/", "note": "A free, longer course with theory, workshops and projects that run in the browser. A good next step after this course." },
+    { "title": "Pydroid 3 on Google Play", "url": "https://play.google.com/store/apps/details?id=ru.iiec.pydroid3", "note": "Android app that runs Python offline. Download it once over Wi-Fi to save data." },
+    { "title": "Programiz — Online Python Compiler", "url": "https://www.programiz.com/python-programming/online-compiler/", "note": "Run short programs in any browser with nothing to install. Needs internet." },
+    { "title": "Python.org — Download Python", "url": "https://www.python.org/downloads/", "note": "The free official installer for computers. The Windows and macOS installers include the simple IDLE editor." },
+    { "title": "Python.org — Errors and Exceptions", "url": "https://docs.python.org/3/tutorial/errors.html", "note": "The official explanation of error messages and try/except. Read it after Chapter 8." }
+  ],
+  "chapters": [
+    {
+      "title": "What programming is: your first program",
+      "goal": "Explain what a program is, choose a way to run Python on your phone or computer, and run a program that prints messages.",
+      "sections": [
+        {
+          "heading": "What is a program?",
+          "body": "A **program** is a list of instructions that a computer follows exactly, one after another. The computer does not guess what you meant: if an instruction is spelt wrongly or comes in the wrong order, the result is wrong too. **Programming** (or coding) is the skill of writing those instructions clearly.\n\nPython is a programming language: a set of words and rules that both people and computers can read. Beginners like it because it looks close to plain English, and professionals use it to build websites, analyse data, control robots and automate boring jobs, such as working out grades for a long list of scores.\n\nIn this course you will write small programs about things you know: school results, JAMB scores, naira prices and change from the market. Type each example yourself and check that you get the output shown."
+        },
+        {
+          "heading": "Where to run Python (phone or computer)",
+          "body": "You need somewhere to type code and run it. Pick one of these free options:\n\n- **Pydroid 3 (Android phones and tablets).** A free app on Google Play. Once installed, it runs Python with no internet, which saves data. It shows adverts and offers paid extras you do not need, and it needs about 250–300 MB of free storage. Type your code, then tap the round play button to run it.\n- **An online Python editor (any phone, including iPhones, or any computer).** Websites such as Programiz's Online Python Compiler let you type code in the browser and press **Run**. There is nothing to install, but you need internet each time.\n- **Python on a computer.** Download the free installer from python.org. It comes with IDLE, a simple editor: choose **File > New File**, type your code, save it, then press **F5** to run it.\n\nAsk a parent or guardian before installing apps, and download big apps on Wi-Fi if you can."
+        },
+        {
+          "heading": "Your first program",
+          "body": "The `print()` instruction displays whatever you put inside its brackets. Text must go inside quotation marks, so Python knows it is text and not an instruction. Type the two lines below exactly, run them, and compare your screen with the output.\n\nNotice three details: `print` is written in lowercase, every bracket that opens also closes, and each message has a quotation mark at both ends. Python is **case-sensitive**, so `Print` with a capital P will not work.",
+          "code": {
+            "lang": "python",
+            "source": "print(\"Hello, Lagos!\")\nprint(\"My name is Tolu and I am learning Python.\")",
+            "output": "Hello, Lagos!\nMy name is Tolu and I am learning Python."
+          }
+        },
+        {
+          "heading": "Order, comments and calculations",
+          "body": "Python runs your lines from top to bottom, so the order of your instructions is the order of your output. A line that starts with `#` is a **comment**: Python ignores it, but it helps people understand your code. An empty `print()` prints a blank line.\n\n`print()` can also calculate. Python uses `*` for multiply and `/` for divide. A comma inside `print()` separates items and puts a space between them. But anything inside quotation marks is treated as text, so `print(\"4 * 200\")` shows the sum itself, not the answer.",
+          "code": {
+            "lang": "python",
+            "source": "# A short timetable and a quick sum\nprint(\"Monday\")\nprint(\"8:00 Mathematics\")\nprint(\"9:00 English\")\nprint()\nprint(\"Pens for the class:\", 4 * 200)\nprint(\"4 * 200\")",
+            "output": "Monday\n8:00 Mathematics\n9:00 English\n\nPens for the class: 800\n4 * 200"
+          }
+        }
+      ],
+      "points": [
+        "A program is a list of instructions the computer follows exactly, in order.",
+        "print() shows output; text goes inside quotation marks.",
+        "Python is case-sensitive: print works, Print does not.",
+        "Lines starting with # are comments, which Python ignores.",
+        "Pydroid 3 works offline on Android; online editors work anywhere with internet."
+      ],
+      "mistakes": [
+        "Forgetting a closing quotation mark or bracket, as in print(\"Hello) — check that every opening mark has a partner.",
+        "Typing Print or PRINT instead of print — Python only knows the lowercase word.",
+        "Putting a calculation in quotes, such as print(\"4 * 200\"), when you want the answer — remove the quotes to calculate."
+      ],
+      "task": "Choose one way to run Python and open it now. Write a program of at least four print() lines that introduces you (use a nickname, not your full name), names your favourite subject and prints the result of one calculation, such as the cost of 3 pens at N200 each. Run it and check every line of the output.",
+      "quiz": [
+        { "q": "What does this line print? print(\"5 + 3\")", "opts": ["5 + 3", "8", "53", "An error message"], "a": 0, "why": "Anything inside quotation marks is text, so Python prints it exactly as written. Without the quotes it would print 8." },
+        { "q": "Spot the bug: Print(\"Good morning\") gives an error. Why?", "opts": ["Python is case-sensitive, so the instruction must be print in lowercase", "Good morning is too long for print()", "Text must always use single quotes", "There must be a number inside the brackets"], "a": 0, "why": "Python only recognises print in lowercase. Print with a capital P is a different, unknown name." },
+        { "q": "A program has print(\"B\") on line 1 and print(\"A\") on line 2. What appears on the first line of the output?", "opts": ["B", "A", "AB", "Nothing, because the lines are in the wrong order"], "a": 0, "why": "Python runs lines from top to bottom, so line 1 runs first and B is printed first." },
+        { "q": "What does Python do with this line? # print(\"Hello\")", "opts": ["Ignores it, because the # makes it a comment", "Prints Hello", "Prints # print(\"Hello\")", "Stops the program with an error"], "a": 0, "why": "A # at the start of a line turns the whole line into a comment, so nothing is printed." },
+        { "q": "Bisi has an Android phone and very little data. Which option lets her practise Python offline after a one-time download?", "opts": ["Pydroid 3", "An online Python editor", "A video course she streams each day", "Sending her code to a friend by SMS"], "a": 0, "why": "Pydroid 3 includes its own Python interpreter, so once it is installed it runs code without internet. Online editors need a connection every time." }
+      ]
+    },
+    {
+      "title": "Variables, strings and numbers",
+      "goal": "Store values in variables, work with text (strings) and calculate with whole and decimal numbers.",
+      "sections": [
+        {
+          "heading": "Variables: names for values",
+          "body": "A **variable** is a name that stores a value so you can use it later. You create one with `=`, which in Python means **store this value**, not \"is equal to\". In `price = 450`, the name is on the left and the value is on the right.\n\nRules for names: use letters, numbers and underscores (`_`), never start with a number, and never use spaces. Names are case-sensitive, so `Score` and `score` are different variables. Choose names that explain themselves, such as `jamb_score` rather than `js`. A few words, like `if`, `for` and `class`, belong to Python and cannot be used as names.\n\nA variable keeps its value until you store a new one. In the example, changing `price` later does not change `total`, because `total` was already worked out."
+          ,
+          "code": {
+            "lang": "python",
+            "source": "item = \"Exercise book\"\nprice = 450\nquantity = 3\ntotal = price * quantity\nprint(item)\nprint(\"Total:\", total)\nprice = 500\nprint(\"New price:\", price)\nprint(\"Total is still:\", total)",
+            "output": "Exercise book\nTotal: 1350\nNew price: 500\nTotal is still: 1350"
+          }
+        },
+        {
+          "heading": "Strings: working with text",
+          "body": "Text in Python is called a **string**. Put it inside double quotes (\"Kano\") or single quotes ('Kano'); just use the same kind at both ends. You can join strings with `+`, count the characters in a string with `len()`, and change it to capitals with `.upper()`.\n\nAn **f-string** is the easiest way to put variables into text. Write the letter `f` just before the opening quote, then put variable names inside curly brackets `{}`. Python replaces each `{name}` with the value stored in that variable.",
+          "code": {
+            "lang": "python",
+            "source": "name = \"Chiamaka\"\ncity = \"Enugu\"\nprint(\"Welcome, \" + name + \"!\")\nprint(f\"{name} lives in {city}.\")\nprint(len(name))\nprint(city.upper())",
+            "output": "Welcome, Chiamaka!\nChiamaka lives in Enugu.\n8\nENUGU"
+          }
+        },
+        {
+          "heading": "Numbers: int and float",
+          "body": "Python has two main kinds of number. An **int** is a whole number, like `400` or `-5`. A **float** has a decimal point, like `2.5` or `70.0`. The basic operators are `+`, `-`, `*` (multiply), `/` (divide) and `**` (power).\n\nTwo more are very useful for market maths: `//` divides and throws away the remainder, and `%` gives only the remainder. Ordinary `/` always gives a float, even when the answer is whole, so `10 / 2` is `5.0`.\n\nIn code we write N for naira, because the ₦ sign is hard to type on some keyboards. Python is happy with either.",
+          "code": {
+            "lang": "python",
+            "source": "paid = 1000\ncost = 650\nchange = paid - cost\nprint(\"Change:\", change)\nprint(\"N100 notes:\", change // 100)\nprint(\"Left over:\", change % 100)\nprint(10 / 2)\nprint(2 ** 3)",
+            "output": "Change: 350\nN100 notes: 3\nLeft over: 50\n5.0\n8"
+          }
+        },
+        {
+          "heading": "Mixing text and numbers",
+          "body": "Python will not join a string and a number with `+`. The line `print(\"Total: \" + 1350)` causes a **TypeError**, because Python cannot tell whether you want maths or text. There are three good fixes: separate the items with commas inside `print()`, turn the number into text with `str()`, or use an f-string.\n\nAdding `:,` after a variable name in an f-string puts commas in big numbers, which makes naira amounts easier to read.",
+          "code": {
+            "lang": "python",
+            "source": "total = 1350\nprint(\"Total:\", total)\nprint(\"Total: \" + str(total))\nprint(f\"Total: {total}\")\nprint(f\"Total: N{total:,}\")",
+            "output": "Total: 1350\nTotal: 1350\nTotal: 1350\nTotal: N1,350"
+          }
+        }
+      ],
+      "points": [
+        "= stores a value in a variable; the name goes on the left.",
+        "A string is text in quotes; an int is a whole number; a float has a decimal point.",
+        "// gives the whole-number part of a division and % gives the remainder.",
+        "/ always gives a float, so 10 / 2 is 5.0.",
+        "Use commas, str() or an f-string to mix text with numbers."
+      ],
+      "mistakes": [
+        "Starting a variable name with a number or using a space, such as 2nd score — write second_score instead.",
+        "Writing \"Total: \" + total when total is a number — Python cannot add text and a number; use an f-string such as f\"Total: {total}\".",
+        "Typing 5,000 for five thousand in code — Python reads the comma as separating two values; write 5000.",
+        "Forgetting the f before an f-string, so {name} is printed as it is instead of the value."
+      ],
+      "task": "Write a program for a market trip: store the names and prices of three items in variables, calculate the total, and work out the change from N5000. Use // and % to find how many N500 notes are in the change and what is left over. Print everything with clear labels.",
+      "quiz": [
+        { "q": "What does this print? x = 10; x = x + 5; print(x)", "opts": ["15", "10", "x + 5", "105"], "a": 0, "why": "Python works out x + 5 using the old value (10), then stores 15 back in x." },
+        { "q": "What does print(17 // 5, 17 % 5) show?", "opts": ["3 2", "3.4 0", "3 4", "2 3"], "a": 0, "why": "5 goes into 17 three whole times (15) with 2 left over. // gives 3, % gives 2, and the comma prints a space between them." },
+        { "q": "Which of these is a valid variable name?", "opts": ["jamb_score", "2nd_score", "jamb score", "class"], "a": 0, "why": "Names cannot start with a number or contain spaces, and class is reserved by Python. jamb_score follows every rule." },
+        { "q": "price = 200; total = price * 3; price = 250; print(total). What is printed?", "opts": ["600", "750", "250", "An error"], "a": 0, "why": "total was worked out while price was 200. Changing price afterwards does not recalculate total." },
+        { "q": "Spot the bug: total = 500, then print(\"Total: \" + total). What goes wrong?", "opts": ["A TypeError, because text and a number cannot be joined with +", "Nothing; it prints Total: 500", "It prints Total: total", "It prints 500 only"], "a": 0, "why": "+ cannot join a string to an int. Use print(\"Total:\", total) or an f-string instead." }
+      ]
+    },
+    {
+      "title": "Input and type conversion",
+      "goal": "Ask the user for information with input(), and convert their answers into numbers you can calculate with.",
+      "sections": [
+        {
+          "heading": "Asking questions with input()",
+          "body": "`input()` pauses the program, shows a message called a **prompt**, and waits for the user to type something and press Enter. Whatever they type is handed back to your program, so you normally store it in a variable.\n\nLeave a space at the end of each prompt so the answer does not touch the question. In the output boxes in this course, the words after a prompt (like `Ada` and `Ibadan` below) are what the user typed. When you run the code yourself, type your own answers.",
+          "code": {
+            "lang": "python",
+            "source": "name = input(\"What is your name? \")\ncity = input(\"Which city do you live in? \")\nprint(f\"Hello, {name} from {city}!\")",
+            "output": "What is your name? Ada\nWhich city do you live in? Ibadan\nHello, Ada from Ibadan!"
+          }
+        },
+        {
+          "heading": "Why \"5\" + \"5\" gives 55",
+          "body": "`input()` **always gives back a string**, even when the user types digits. So if someone types 5 and then 5, `+` joins the two strings and you get `55`, not `10`. You can check the type of any value with `type()`.\n\nTo calculate, convert the text first:\n\n- `int()` turns text like \"280\" into the whole number 280.\n- `float()` turns text like \"2.5\" into the decimal number 2.5.\n- `str()` turns a number back into text.",
+          "code": {
+            "lang": "python",
+            "source": "a = input(\"First number: \")\nb = input(\"Second number: \")\nprint(a + b)\nprint(type(a))\nprint(int(a) + int(b))",
+            "output": "First number: 5\nSecond number: 5\n55\n<class 'str'>\n10"
+          }
+        },
+        {
+          "heading": "Converting input before you calculate",
+          "body": "The usual pattern is to wrap `input()` inside `int()` or `float()` on the same line, so the variable holds a number straight away. Python works from the inside out: first `input()` collects the text, then `int()` converts it.\n\nThe example turns a JAMB score out of 400 into a percentage. Dividing with `/` gives a float, so the answer appears as `70.0`.",
+          "code": {
+            "lang": "python",
+            "source": "score = int(input(\"JAMB score (out of 400): \"))\npercent = score / 400 * 100\nprint(f\"That is {percent}% of the marks.\")\nprint(\"Marks short of 400:\", 400 - score)",
+            "output": "JAMB score (out of 400): 280\nThat is 70.0% of the marks.\nMarks short of 400: 120"
+          }
+        },
+        {
+          "heading": "Decimals, rounding and bad input",
+          "body": "Use `float()` when answers may have decimals, and `round(value, 1)` to round a result to one decimal place. In the example, the average of three test scores is 64.333…, which rounds to 64.3.\n\n`int()` only works on text that looks like a whole number. `int(\"12\")` gives 12, but `int(\"twelve\")` and even `int(\"12.5\")` stop the program with a **ValueError**. Users make typing mistakes, so test your programs with odd answers too: a word, an empty answer or a negative number. In Chapter 8 you will learn `try` and `except`, which let a program deal with a bad answer politely instead of crashing.",
+          "code": {
+            "lang": "python",
+            "source": "test1 = float(input(\"Test 1 score: \"))\ntest2 = float(input(\"Test 2 score: \"))\ntest3 = float(input(\"Test 3 score: \"))\naverage = (test1 + test2 + test3) / 3\nprint(\"Average:\", round(average, 1))",
+            "output": "Test 1 score: 65\nTest 2 score: 70\nTest 3 score: 58\nAverage: 64.3"
+          }
+        }
+      ],
+      "points": [
+        "input() always gives back a string, even if the user types digits.",
+        "Use int() for whole numbers and float() for decimals before calculating.",
+        "int(input(\"...\")) collects the text and converts it in one line.",
+        "round(value, 1) rounds a number to one decimal place.",
+        "int() fails with a ValueError on text such as \"twelve\" or \"12.5\"."
+      ],
+      "mistakes": [
+        "Adding two input() answers without converting them, which joins the text (\"5\" + \"5\" is \"55\") — convert with int() first.",
+        "Writing input(int(\"Age: \")) — the brackets are the wrong way round; it should be int(input(\"Age: \")).",
+        "Forgetting the space at the end of a prompt, so answers look squashed against the question."
+      ],
+      "task": "Write a program that asks for the price of one item in naira and how many the user wants, then prints the total cost. Run it three times: with sensible numbers, with 0 as the quantity, and with a word instead of a number. Write down what happens each time.",
+      "quiz": [
+        { "q": "The user types 15 when this runs: age = input(\"Age: \"). What type of value is stored in age?", "opts": ["A string (str)", "A whole number (int)", "A decimal number (float)", "It depends on the number typed"], "a": 0, "why": "input() always gives back a string. Convert it with int() before doing maths." },
+        { "q": "a = input() and b = input(). The user types 4, then 6. What does print(a + b) show?", "opts": ["46", "10", "4 + 6", "An error"], "a": 0, "why": "Both values are strings, so + joins them into \"46\"." },
+        { "q": "Which line correctly stores a whole number typed by the user?", "opts": ["books = int(input(\"Books read: \"))", "books = input(int(\"Books read: \"))", "books = int(\"Books read: \")", "int books = input(\"Books read: \")"], "a": 0, "why": "input() must run first to collect the text, and then int() converts it, so int() goes on the outside." },
+        { "q": "What happens when Python runs int(\"12.5\")?", "opts": ["It stops with a ValueError", "It gives 12", "It gives 13", "It gives 12.5"], "a": 0, "why": "int() only accepts text that looks like a whole number. Use float(\"12.5\") for decimals." },
+        { "q": "What does print(float(\"7\") + 1) show?", "opts": ["8.0", "8", "71", "7.01"], "a": 0, "why": "float(\"7\") gives 7.0, and adding 1 keeps it a float, so the result is 8.0." }
+      ]
+    },
+    {
+      "title": "Making decisions with if, elif and else",
+      "goal": "Write programs that choose what to do, using comparisons, if/elif/else and the logical operators and, or and not.",
+      "sections": [
+        {
+          "heading": "True or False: comparisons",
+          "body": "A **condition** is a question whose answer is either `True` or `False`. These two values are called **Booleans**. You build conditions with comparison operators:\n\n- `==` equal to, and `!=` not equal to\n- `<` less than, and `>` greater than\n- `<=` less than or equal to, and `>=` greater than or equal to\n\nDo not mix up `=` and `==`. A single `=` stores a value; a double `==` asks whether two values are equal. Text comparisons are case-sensitive, so `\"Yes\" == \"yes\"` is `False`.",
+          "code": {
+            "lang": "python",
+            "source": "score = 72\nprint(score >= 50)\nprint(score == 100)\nprint(score != 0)\nprint(\"Yes\" == \"yes\")",
+            "output": "True\nFalse\nTrue\nFalse"
+          }
+        },
+        {
+          "heading": "if, elif and else",
+          "body": "An `if` statement runs a block of code only when its condition is `True`. The `if` line ends with a colon `:` and the block underneath is **indented**, usually by four spaces. Indentation is how Python knows which lines belong to the `if`.\n\nAdd `elif` (short for \"else if\") to test more conditions, and `else` to catch everything left over. Python checks from the top and runs **only the first** block whose condition is `True`, then skips the rest. That is why the highest grade is checked first below. With a score of 64, the first test (`>= 70`) is False and the second (`>= 60`) is True, so only grade B is printed. The last line is not indented, so it always runs.",
+          "code": {
+            "lang": "python",
+            "source": "score = int(input(\"Enter your test score: \"))\nif score >= 70:\n    print(\"Grade A - excellent!\")\nelif score >= 60:\n    print(\"Grade B - very good\")\nelif score >= 50:\n    print(\"Grade C - good\")\nelse:\n    print(\"Below 50 - time for a revision plan\")\nprint(\"Score checked.\")",
+            "output": "Enter your test score: 64\nGrade B - very good\nScore checked."
+          }
+        },
+        {
+          "heading": "Combining conditions: and, or, not",
+          "body": "Sometimes one test is not enough:\n\n- `and` is True only when **both** sides are True.\n- `or` is True when **at least one** side is True.\n- `not` flips True to False, and False to True.\n\nThe example uses a made-up admission rule: a JAMB score of at least 200 **and** at least five credits. Real cut-off marks differ by course and institution, so always check official information.",
+          "code": {
+            "lang": "python",
+            "source": "jamb = 245\ncredits = 4\nday = \"Saturday\"\nif jamb >= 200 and credits >= 5:\n    print(\"Meets the made-up rule.\")\nelse:\n    print(\"Does not meet the made-up rule yet.\")\nif day == \"Saturday\" or day == \"Sunday\":\n    print(\"It is the weekend.\")\nif not credits >= 5:\n    print(\"Needs more credits.\")",
+            "output": "Does not meet the made-up rule yet.\nIt is the weekend.\nNeeds more credits."
+          }
+        },
+        {
+          "heading": "Checking typed answers",
+          "body": "When people type answers, they may use capitals or add spaces by accident. `.lower()` changes a string to lowercase and `.strip()` removes spaces from both ends, so `YES`, `Yes` and ` yes ` can all be treated the same. This is very useful in quiz programs.",
+          "code": {
+            "lang": "python",
+            "source": "answer = input(\"Is Abuja the capital of Nigeria? \")\nif answer.strip().lower() == \"yes\":\n    print(\"Correct!\")\nelse:\n    print(\"Not quite. Abuja is the capital.\")",
+            "output": "Is Abuja the capital of Nigeria? YES\nCorrect!"
+          }
+        }
+      ],
+      "points": [
+        "Conditions are True or False; == compares, while = stores.",
+        "End if, elif and else lines with a colon and indent the block below.",
+        "Python runs only the first branch whose condition is True, so order matters.",
+        "and needs both sides True; or needs at least one; not flips the result.",
+        "Use .strip().lower() so that Yes, YES and yes are treated the same."
+      ],
+      "mistakes": [
+        "Writing if score = 70: — that is a SyntaxError; use == to compare.",
+        "Checking the lowest grade first (score >= 50 before score >= 70), so high scores get the wrong grade — check the highest first.",
+        "Forgetting the colon or the indentation after if, which causes a SyntaxError or IndentationError.",
+        "Writing if day == \"Saturday\" or \"Sunday\": — this is always True; write each comparison in full: day == \"Saturday\" or day == \"Sunday\"."
+      ],
+      "task": "Write a program that asks for the price of an item and how much money the user has. If they have exactly the right amount, print \"No change needed\"; if they have more, print the change; otherwise print how much more they need. Test it with three sets of numbers, one for each branch.",
+      "quiz": [
+        { "q": "score = 50. The program prints \"Pass\" if score > 50, otherwise (else) it prints \"Try again\". What is printed?", "opts": ["Try again", "Pass", "Pass and Try again", "Nothing"], "a": 0, "why": "50 > 50 is False, because 50 is not greater than itself. Use >= if 50 should pass." },
+        { "q": "score = 85. The program says if score >= 50: print(\"C\") and then elif score >= 70: print(\"A\"). What is printed?", "opts": ["C", "A", "C and then A", "Nothing"], "a": 0, "why": "Python runs only the first True branch. 85 >= 50 is True, so it prints C and skips the elif. Check the highest grade first." },
+        { "q": "Spot the bug in this line: if score = 70:", "opts": ["It uses = (store) instead of == (compare)", "It needs brackets around 70", "if must be written in capitals", "70 should be in quotes"], "a": 0, "why": "In a condition you compare with ==. A single = is for storing values and causes a SyntaxError here." },
+        { "q": "age = 16. What does print(age >= 13 and age < 16) show?", "opts": ["False", "True", "16", "An error"], "a": 0, "why": "age >= 13 is True but age < 16 is False, because 16 is not less than 16. With and, both sides must be True." },
+        { "q": "A user types YES for answer = input(\"Ready? \"). Which condition is True?", "opts": ["answer.lower() == \"yes\"", "answer == \"yes\"", "answer.strip() == \"yes\"", "answer.upper() == \"yes\""], "a": 0, "why": ".lower() turns YES into yes, which matches. Comparisons are case-sensitive, and .strip() and .upper() leave the answer as YES, so the others are False." }
+      ]
+    },
+    {
+      "title": "Repeating work with loops",
+      "goal": "Use for loops with range(), keep running totals, and write while loops that stop when they should.",
+      "sections": [
+        {
+          "heading": "for loops and range()",
+          "body": "A **loop** repeats a block of code so you do not have to copy it out many times. A `for` loop runs once for every value it is given, and `range()` is the easiest way to give it numbers:\n\n- `range(5)` gives 0, 1, 2, 3, 4 (five numbers, starting at 0).\n- `range(1, 6)` gives 1 to 5. The stop number is **never included**.\n- `range(0, 20, 5)` counts in steps of 5: 0, 5, 10, 15.\n\nThe variable after `for` (here `day`) takes the next value each time round. Like `if`, the `for` line ends with a colon and the repeated block is indented.",
+          "code": {
+            "lang": "python",
+            "source": "for day in range(1, 6):\n    print(\"Day\", day, \"- read for 20 minutes\")\nprint(\"Reading week planned!\")",
+            "output": "Day 1 - read for 20 minutes\nDay 2 - read for 20 minutes\nDay 3 - read for 20 minutes\nDay 4 - read for 20 minutes\nDay 5 - read for 20 minutes\nReading week planned!"
+          }
+        },
+        {
+          "heading": "Running totals",
+          "body": "A very common pattern is the **running total**: create a variable set to 0 **before** the loop, then add to it **inside** the loop. `total += amount` is a shortcut for `total = total + amount`.\n\nIn this example a student saves N500 more each week than the week before: N500, then N1000, and so on up to N2500. The `print()` inside the loop runs every time; the last line is not indented, so it runs once, after the loop has finished.",
+          "code": {
+            "lang": "python",
+            "source": "total = 0\nfor amount in range(500, 2501, 500):\n    total += amount\n    print(\"Saved\", amount, \"- running total:\", total)\nprint(\"Final total:\", total)",
+            "output": "Saved 500 - running total: 500\nSaved 1000 - running total: 1500\nSaved 1500 - running total: 3000\nSaved 2000 - running total: 5000\nSaved 2500 - running total: 7500\nFinal total: 7500"
+          }
+        },
+        {
+          "heading": "while loops",
+          "body": "A `while` loop repeats **as long as** its condition is True. Use it when you do not know in advance how many repeats you need, such as how many weeks it takes to save N5000 at N1200 a week.\n\nSomething inside the loop must change so that the condition eventually becomes False. If nothing changes, you get an **infinite loop** that never stops. If that happens, use your editor's stop button or close the program (in IDLE, press Ctrl+C).",
+          "code": {
+            "lang": "python",
+            "source": "savings = 0\nweeks = 0\nwhile savings < 5000:\n    savings += 1200\n    weeks += 1\nprint(\"Weeks needed:\", weeks)\nprint(\"Amount saved: N\" + str(savings))",
+            "output": "Weeks needed: 5\nAmount saved: N6000"
+          }
+        },
+        {
+          "heading": "Loops that wait for the right answer",
+          "body": "A `while` loop is also good for checking answers. The program below keeps asking until the user types the correct answer. Notice that `input()` appears twice: once before the loop, and again inside it, so the user gets another chance each time. You can also leave any loop early with `break`, which jumps straight out of it.",
+          "code": {
+            "lang": "python",
+            "source": "answer = input(\"What is 7 x 8? \")\nwhile answer != \"56\":\n    print(\"Not quite. Try again.\")\n    answer = input(\"What is 7 x 8? \")\nprint(\"Correct!\")",
+            "output": "What is 7 x 8? 54\nNot quite. Try again.\nWhat is 7 x 8? 56\nCorrect!"
+          }
+        }
+      ],
+      "points": [
+        "range(start, stop, step) never includes the stop number.",
+        "Set a running total to 0 before the loop and add to it inside the loop.",
+        "Indented lines repeat; the first line that is not indented runs after the loop ends.",
+        "Use while when you do not know how many repeats you need, and make sure something changes so it can stop.",
+        "total += 5 is short for total = total + 5."
+      ],
+      "mistakes": [
+        "Expecting range(1, 5) to include 5 — it stops at 4, so write range(1, 6) for 1 to 5.",
+        "Putting total = 0 inside the loop, which resets the total every time round — put it before the loop.",
+        "Forgetting to change the variable in a while loop, which creates an infinite loop."
+      ],
+      "task": "Write a for loop that prints the 7 times table from 7 x 1 = 7 to 7 x 12 = 84. Then write a while loop that starts with N10000 and takes away N1500 a day until less than N1500 is left, printing the money left each day. Check the last line of each by working it out by hand.",
+      "quiz": [
+        { "q": "What does for i in range(3): print(i) show?", "opts": ["0, 1 and 2 on separate lines", "1, 2 and 3 on separate lines", "0, 1, 2 and 3 on separate lines", "Just the number 3"], "a": 0, "why": "range(3) starts at 0 and stops before 3, giving 0, 1 and 2." },
+        { "q": "How many times does the body of for n in range(2, 10, 2): run?", "opts": ["4", "5", "8", "10"], "a": 0, "why": "It counts 2, 4, 6, 8 and stops before 10, so the body runs 4 times." },
+        { "q": "total = 0, then for n in range(1, 5): total += n, then print(total). What is printed?", "opts": ["10", "15", "4", "0"], "a": 0, "why": "range(1, 5) gives 1, 2, 3 and 4, and 1 + 2 + 3 + 4 = 10." },
+        { "q": "Spot the bug: count = 1, then while count <= 5: print(count). What happens?", "opts": ["It prints 1 forever, because count never changes", "It prints 1 to 5", "It prints nothing", "It stops with a SyntaxError"], "a": 0, "why": "count stays 1, so count <= 5 is always True. Add count += 1 inside the loop." },
+        { "q": "Which job suits a while loop better than a for loop?", "opts": ["Asking a quiz question again and again until the user gets it right", "Printing the numbers 1 to 10", "Printing each day of a five-day week", "Adding up exactly 12 monthly amounts"], "a": 0, "why": "You cannot know in advance how many tries a user will need, so a while loop that checks the answer fits. The others have a fixed number of repeats." }
+      ]
+    },
+    {
+      "title": "Lists and simple dictionaries",
+      "goal": "Store many values in a list, loop through them, and use a dictionary to look up values by name.",
+      "sections": [
+        {
+          "heading": "Lists: many values in one variable",
+          "body": "A **list** stores several values in order, inside square brackets and separated by commas. Each item has a position called an **index**, and Python starts counting at **0**. So `subjects[0]` is the first item, `subjects[1]` the second, and `subjects[-1]` is a handy way to get the last one.\n\n`len()` tells you how many items a list has, and `.append()` adds a new item to the end. Lists can change after you create them: `subjects[1] = \"Literature\"` would replace the second item.",
+          "code": {
+            "lang": "python",
+            "source": "subjects = [\"Maths\", \"English\", \"Biology\", \"Civic Education\"]\nprint(subjects[0])\nprint(subjects[-1])\nprint(len(subjects))\nsubjects.append(\"Computer Studies\")\nprint(subjects)",
+            "output": "Maths\nCivic Education\n4\n['Maths', 'English', 'Biology', 'Civic Education', 'Computer Studies']"
+          }
+        },
+        {
+          "heading": "Looping through a list",
+          "body": "A `for` loop can walk through a list directly, one item at a time. Python also has functions that work on a whole list of numbers: `sum()`, `max()` and `min()`. Together with `len()`, they give you an average in one line.\n\nThe example looks at five test scores. Inside the loop, an `if` picks out the scores of 70 and above.",
+          "code": {
+            "lang": "python",
+            "source": "scores = [68, 74, 55, 81, 62]\nprint(\"Highest:\", max(scores))\nprint(\"Lowest:\", min(scores))\nprint(\"Average:\", sum(scores) / len(scores))\nfor score in scores:\n    if score >= 70:\n        print(score, \"is a distinction\")",
+            "output": "Highest: 81\nLowest: 55\nAverage: 68.0\n74 is a distinction\n81 is a distinction"
+          }
+        },
+        {
+          "heading": "Dictionaries: look things up by name",
+          "body": "A **dictionary** stores pairs: a **key** and its **value**, written `key: value` inside curly brackets. Instead of a position number, you look up a value by its key, just as you look up a word in a dictionary to find its meaning. A price list is a perfect example: the item is the key and its price is the value.\n\n- Read a value: `prices[\"bread\"]`\n- Add or change a value: `prices[\"egg\"] = 300`\n- Loop through every pair: `for item, price in prices.items():`\n\nEach key appears only once. Asking for a key that does not exist, such as `prices[\"yam\"]`, causes a **KeyError**.",
+          "code": {
+            "lang": "python",
+            "source": "prices = {\"bread\": 1200, \"egg\": 250, \"milk\": 900}\nprint(prices[\"bread\"])\nprices[\"egg\"] = 300\nprices[\"sugar\"] = 1500\nfor item, price in prices.items():\n    print(f\"{item}: N{price}\")\nprint(len(prices), \"items in the price list\")",
+            "output": "1200\nbread: N1200\negg: N300\nmilk: N900\nsugar: N1500\n4 items in the price list"
+          }
+        },
+        {
+          "heading": "Choosing a list or a dictionary",
+          "body": "Use a **list** when order matters or when every item is the same kind of thing, such as scores, names or daily sales. Use a **dictionary** when each value needs a label, such as each subject's score or each item's price.\n\nYou can check whether a key exists with `in` before you use it, which avoids a KeyError. Lists and dictionaries can both grow while a program runs, which makes them perfect for storing what a user types.",
+          "code": {
+            "lang": "python",
+            "source": "results = {\"Maths\": 75, \"English\": 68, \"Biology\": 59}\nsubject = input(\"Which subject? \")\nif subject in results:\n    print(subject, \"score:\", results[subject])\nelse:\n    print(\"No score saved for\", subject)",
+            "output": "Which subject? English\nEnglish score: 68"
+          }
+        }
+      ],
+      "points": [
+        "List indexes start at 0, and list[-1] is the last item.",
+        "append() adds an item to the end of a list; len() counts the items.",
+        "sum(), max() and min() work on a whole list of numbers.",
+        "A dictionary stores key: value pairs; look up a value with its key in square brackets.",
+        "Use in to check that a key exists before you use it."
+      ],
+      "mistakes": [
+        "Using subjects[4] for the fourth item — indexes start at 0, so the fourth item is subjects[3].",
+        "Asking for an index or key that does not exist, which causes an IndexError or KeyError — check with len() or in first.",
+        "Forgetting the quotes around a text key, as in prices[bread] — Python then looks for a variable called bread."
+      ],
+      "task": "Make a dictionary of your five subjects with made-up scores. Use a loop to print each subject with its score, then print the highest score with max(results.values()). Add one new subject and score to the dictionary and print it again to check it was added.",
+      "quiz": [
+        { "q": "colours = [\"red\", \"green\", \"blue\"]. What does print(colours[1]) show?", "opts": ["green", "red", "blue", "An IndexError"], "a": 0, "why": "Indexes start at 0, so index 1 is the second item, green." },
+        { "q": "nums = [4, 8, 15], then nums.append(16). What does print(len(nums)) show?", "opts": ["4", "3", "16", "43"], "a": 0, "why": "append() adds one item to the end, so the list now has 4 items." },
+        { "q": "Spot the bug: days = [\"Mon\", \"Tue\", \"Wed\"], then print(days[3]). What happens?", "opts": ["An IndexError, because the last index is 2", "It prints Wed", "It prints Mon", "It prints nothing"], "a": 0, "why": "Three items have the indexes 0, 1 and 2, so index 3 does not exist. Use days[2] or days[-1] for Wed." },
+        { "q": "prices = {\"pen\": 200, \"ruler\": 150}. What does print(prices[\"ruler\"] * 2) show?", "opts": ["300", "150", "rulerruler", "400"], "a": 0, "why": "prices[\"ruler\"] looks up 150, and 150 * 2 is 300." },
+        { "q": "You want to store each learner's code with the number of books they read, and look any learner up quickly. Which is the best choice?", "opts": ["A dictionary with the codes as keys and books read as values", "One long string containing all the codes", "A separate variable for every learner", "A list of book numbers with no codes"], "a": 0, "why": "A dictionary links each key (the code) to a value (books read), so you can look one up directly." }
+      ]
+    },
+    {
+      "title": "Functions: reusable blocks of code",
+      "goal": "Define your own functions with parameters, return results from them, and use them to keep programs short and clear.",
+      "sections": [
+        {
+          "heading": "Why write functions?",
+          "body": "You have already used functions that come with Python: `print()`, `input()`, `len()` and `round()`. A **function** is a named block of code that does one job. You can write your own with `def` and then **call** it (run it) whenever you need that job done.\n\nFunctions save typing, because you write the code once and reuse it. They also make programs easier to read and fix: if the greeting goes wrong, you know to look inside the greeting function.\n\nA definition starts with `def`, then the function's name, brackets and a colon. The body is indented. Defining a function does not run it; nothing happens until you call it by name.",
+          "code": {
+            "lang": "python",
+            "source": "def welcome(name):\n    print(f\"Welcome to the coding club, {name}!\")\n\nwelcome(\"Emeka\")\nwelcome(\"Zainab\")",
+            "output": "Welcome to the coding club, Emeka!\nWelcome to the coding club, Zainab!"
+          }
+        },
+        {
+          "heading": "Parameters and return values",
+          "body": "The names in brackets after the function name are **parameters**. They are like empty boxes that are filled with the values you pass in when you call the function; those values are called **arguments**. A function can have several parameters, separated by commas.\n\n`return` sends a result back to the line that called the function, so you can store it in a variable or use it in a calculation. As soon as Python reaches `return`, the function stops.",
+          "code": {
+            "lang": "python",
+            "source": "def naira_total(price, quantity):\n    return price * quantity\n\npens = naira_total(200, 3)\nbooks = naira_total(450, 2)\nprint(\"Pens:\", pens)\nprint(\"Books:\", books)\nprint(\"Altogether:\", pens + books)",
+            "output": "Pens: 600\nBooks: 900\nAltogether: 1500"
+          }
+        },
+        {
+          "heading": "print is not the same as return",
+          "body": "Beginners often mix these up. `print()` only **shows** a value on the screen; the rest of the program cannot use it. `return` **hands the value back**, so the program can keep working with it. A function with no `return` gives back the special value `None`, which means \"nothing\".\n\nIn the example, `double_print` shows 10 on the screen but gives back nothing, while `double_return` gives back 10 so it can be stored in `b`.",
+          "code": {
+            "lang": "python",
+            "source": "def double_print(n):\n    print(n * 2)\n\ndef double_return(n):\n    return n * 2\n\na = double_print(5)\nb = double_return(5)\nprint(\"a is\", a)\nprint(\"b is\", b)",
+            "output": "10\na is None\nb is 10"
+          }
+        },
+        {
+          "heading": "Functions that make decisions",
+          "body": "A function can contain anything you have learnt so far: `if` statements, loops and lists. It can also have more than one `return`, as long as only one of them runs each time. Here a `grade()` function turns a score into a word, and a loop calls it for every score in a list.\n\nTest each function on its own with a few values, including boundaries such as 50 and 70, before you build it into a bigger program.",
+          "code": {
+            "lang": "python",
+            "source": "def grade(score):\n    if score >= 70:\n        return \"Excellent\"\n    elif score >= 50:\n        return \"Good\"\n    else:\n        return \"Needs work\"\n\nfor s in [82, 50, 31]:\n    print(s, grade(s))",
+            "output": "82 Excellent\n50 Good\n31 Needs work"
+          }
+        }
+      ],
+      "points": [
+        "def name(parameters): starts a function, and its body is indented.",
+        "Defining a function does not run it; calling it by name does.",
+        "Arguments are the values you pass in; parameters are the names that receive them.",
+        "return sends a value back; a function without return gives back None.",
+        "Small functions that each do one job are easier to test and fix."
+      ],
+      "mistakes": [
+        "Calling a function before it has been defined — put the def block above the code that calls it.",
+        "Using print() inside a function when you need the result later — use return instead.",
+        "Passing the wrong number of arguments, such as naira_total(200) when it needs two — this causes a TypeError."
+      ],
+      "task": "Write a function change_due(price, paid) that returns the change, and a function can_afford(price, money) that returns True or False. Call each one with three different sets of made-up numbers and print the results with clear labels.",
+      "quiz": [
+        { "q": "def square(n): return n * n. What does print(square(4) + 1) show?", "opts": ["17", "25", "16", "None"], "a": 0, "why": "square(4) returns 16, and 16 + 1 is 17." },
+        { "q": "A function greet() contains print(\"Hi\") but no return. After x = greet(), what is stored in x?", "opts": ["None", "Hi", "True", "0"], "a": 0, "why": "A function without return gives back None, even though it printed Hi on the screen." },
+        { "q": "Spot the bug: def greet(name): print(\"Hi\", name), and later the program calls greet(). What happens?", "opts": ["A TypeError, because greet needs one argument", "It prints Hi name", "It prints Hi with nothing after it", "It prints nothing and carries on"], "a": 0, "why": "greet was defined with one parameter, so calling it with no argument causes a TypeError about a missing argument." },
+        { "q": "def total(a, b): return a + b. What does print(total(2, 3) * 2) show?", "opts": ["10", "7", "8", "23"], "a": 0, "why": "total(2, 3) returns 5, and 5 * 2 is 10." },
+        { "q": "Which line starts a function definition correctly?", "opts": ["def add(a, b):", "function add(a, b):", "def add(a, b)", "add(a, b) = def:"], "a": 0, "why": "A definition uses the keyword def, the name, brackets with parameters, and ends with a colon." }
+      ]
+    },
+    {
+      "title": "Debugging and reading error messages",
+      "goal": "Read Python error messages, recognise the most common ones and follow a calm routine to find and fix bugs.",
+      "sections": [
+        {
+          "heading": "Three kinds of bug",
+          "body": "Every programmer makes mistakes, and finding and fixing them is called **debugging**. Bugs come in three main kinds:\n\n- **Syntax errors.** Python cannot read the code at all, for example because of a missing colon or bracket. Nothing runs.\n- **Runtime errors.** The program starts, then crashes on a line it cannot carry out, such as `int(\"ten\")` or dividing by zero.\n- **Logic errors.** The program runs without complaint but gives the wrong answer. Python cannot spot these for you; only testing with values you can check by hand will catch them."
+        },
+        {
+          "heading": "Reading an error message",
+          "body": "When Python crashes it prints a **traceback**. Do not panic: read it from the **bottom up**. The last line names the type of error and explains it. The lines above give the file name, the **line number** and the code on that line. The exact layout varies between Python versions and apps.\n\nCommon errors to recognise:\n\n- `SyntaxError` or `IndentationError`: a missing colon, bracket or quote, or wrong spacing\n- `NameError`: a name is misspelt or used before it is created\n- `TypeError`: mixing types (text + number) or the wrong number of arguments\n- `ValueError`: the right type but an impossible value, such as `int(\"ten\")`\n- `IndexError` and `KeyError`: a list position or dictionary key that does not exist\n- `ZeroDivisionError`: dividing by zero",
+          "code": {
+            "lang": "text",
+            "source": "Traceback (most recent call last):\n  File \"main.py\", line 2, in <module>\n    print(\"Total:\", totl)\n                    ^^^^\nNameError: name 'totl' is not defined. Did you mean: 'total'?"
+          }
+        },
+        {
+          "heading": "A calm debugging routine",
+          "body": "1. Read the last line of the error and note the line number.\n2. Look at that line **and the line above it**: a missing bracket or quote often shows up as an error on the next line.\n3. Check spelling, capitals, colons, quotes and indentation.\n4. For logic errors, add `print()` lines that show the values of variables as the program runs.\n5. Change one thing at a time, then run again.\n6. Test with simple numbers you can check by hand.\n\nIn the example, a learner's program said the average of 60, 75 and 90 was 112.5, which is impossible. Printing the running total showed that the total (225) was right, so the bug was in the division: the code divided by 2. Dividing by `len(scores)` fixes it for a list of any size.",
+          "code": {
+            "lang": "python",
+            "source": "scores = [60, 75, 90]\ntotal = 0\nfor score in scores:\n    total += score\n    print(\"score:\", score, \"total so far:\", total)\naverage = total / len(scores)\nprint(\"Average:\", average)",
+            "output": "score: 60 total so far: 60\nscore: 75 total so far: 135\nscore: 90 total so far: 225\nAverage: 75.0"
+          }
+        },
+        {
+          "heading": "Catching bad input with try and except",
+          "body": "Some runtime errors come from users, not from your code. If someone types `three` when you asked for a number, `int()` raises a ValueError. Instead of letting the program crash, put the risky lines inside `try:` and say what to do in `except ValueError:`. If the `try` block works, the `except` block is skipped. Only catch errors you expect, because hiding every error makes real bugs harder to find.",
+          "code": {
+            "lang": "python",
+            "source": "text = input(\"How many exercise books? \")\ntry:\n    books = int(text)\n    print(\"Cost: N\" + str(books * 450))\nexcept ValueError:\n    print(\"Please type a whole number, like 3.\")",
+            "output": "How many exercise books? three\nPlease type a whole number, like 3."
+          }
+        }
+      ],
+      "points": [
+        "Read a traceback from the bottom: error type and message first, then the line number.",
+        "Syntax errors stop code running; runtime errors crash it; logic errors give wrong answers.",
+        "If the error line looks fine, check the line above for a missing bracket or quote.",
+        "Print variables inside your code to see what is really happening.",
+        "try and except let a program handle bad input politely."
+      ],
+      "mistakes": [
+        "Changing many things at once while debugging — change one thing, then run again, so you know what fixed it.",
+        "Testing with only one friendly value — also try 0, boundaries such as 50, a word and an empty answer.",
+        "Writing except: without naming an error, which hides real bugs — catch the specific error you expect, such as ValueError."
+      ],
+      "task": "This program should print the total of the prices 200, 350 and 450, but it has two bugs. Line 1: prices = [200, 350, 450]. Line 2: total = 0. Line 3: for p in prices: Line 4 (indented): total = p. Line 5: print(\"Total: \" + total). Type it in, run it, and fix it until it prints Total: 1000. Write down each error message or wrong result you saw and what fixed it.",
+      "quiz": [
+        { "q": "A program runs without crashing but says the average of 60, 75 and 90 is 112.5. What kind of bug is this?", "opts": ["A logic error", "A syntax error", "A ValueError", "An IndentationError"], "a": 0, "why": "The code runs, so it is not a syntax or runtime error. The answer is wrong, so the logic (here, dividing by the wrong number) is faulty." },
+        { "q": "Python shows NameError: name 'pirce' is not defined. What is the most likely cause?", "opts": ["The variable price has been misspelt as pirce", "The price is too large", "Python cannot store prices", "The file is too long"], "a": 0, "why": "A NameError means Python has never seen that name. A typo in a variable name is the most common cause." },
+        { "q": "Which part of a traceback should you read first?", "opts": ["The last line, which names the error", "The word Traceback at the top", "Only the file name", "Nothing; retype the whole program instead"], "a": 0, "why": "The last line gives the error type and a short explanation. Then use the line number above it to find the problem." },
+        { "q": "Spot the bug: if score >= 50 print(\"Pass\")", "opts": ["The colon after the condition is missing, so it is a SyntaxError", "50 must be in quotes", "print must be in capitals", "score cannot be compared with >="], "a": 0, "why": "An if line must end with a colon, and the code it controls goes on an indented line below it." },
+        { "q": "The code is: try: n = int(input(\"Number: \")) and print(n * 2), except ValueError: print(\"Whole numbers only\"). What is printed after the prompt if the user types 2.5?", "opts": ["Whole numbers only", "5.0", "5", "Nothing, because the program crashes"], "a": 0, "why": "int(\"2.5\") raises a ValueError, so Python skips the rest of the try block and runs the except block." }
+      ]
+    }
+  ],
+  "project": {
+    "title": "Pocket-money budget tracker",
+    "brief": "Build a program that helps a student plan a week of spending from their pocket money. It asks for a budget in naira, lets the user enter items and prices until they type done, then shows every item, the total spent, the money left and a warning if they have overspent. Practise with made-up amounts: the program does not connect to any bank or payment app. If you later use it to plan your real pocket money, do so together with a parent or guardian.",
+    "steps": [
+      "Plan on paper: write down what the program asks, what it stores and what it prints at the end. Decide that typing done will finish the list.",
+      "Ask for the budget with budget = int(input(\"Weekly budget in naira: \")) and print it back to check that this part works.",
+      "Create an empty list with spending = [] and a while True: loop that asks for an item name. If the name is done, use break to leave the loop.",
+      "Inside the loop, ask for the price, convert it with int(), and add a dictionary to the list: spending.append({\"item\": name, \"price\": price}).",
+      "Put the int() line and the append() line inside try:, and add except ValueError: that prints a friendly message such as Please type the price as a whole number. The loop then simply asks for the next item.",
+      "Write a function total_spent(spending) that loops through the list, adds up every price and returns the total. Test it on a small list you type in yourself before using it.",
+      "After the loop, print each item with its price, then the total spent and the money left (budget minus total). Use if and else to print a warning when the total is more than the budget.",
+      "Test with at least three runs: under budget, exactly on budget and over budget. Also try typing done straight away, and a word instead of a price."
+    ],
+    "checklist": [
+      "The program runs from start to finish without crashing, even when a price is typed as a word.",
+      "It uses input() with int(), a while loop, a list of dictionaries, if and else, and at least one function with return.",
+      "The total and the money left are correct when checked by hand.",
+      "Messages are clear and every number is labelled, for example Total spent: N2300.",
+      "Only made-up amounts are used, and a few # comments explain each part of the code."
+    ]
+  }
+}

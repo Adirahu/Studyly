@@ -1,0 +1,352 @@
+{
+  "id": "web",
+  "title": "HTML: build your first web pages",
+  "icon": "🌐",
+  "area": "Web development",
+  "level": "Beginner",
+  "duration": "About 5 hours",
+  "summary": "Write real HTML from your very first line: headings, links, images, lists, tables, forms and well-structured pages. Every lesson has a short example you can change and run, even on a phone.",
+  "outcomes": [
+    "Write a complete HTML page with a head, a body and a clear title",
+    "Use headings, paragraphs, lists, links, images and tables correctly",
+    "Build a simple form with labels, sensible input types and a button",
+    "Structure a page with header, nav, main and footer so that more people can use it",
+    "Check a page and publish it safely, without sharing private information"
+  ],
+  "tools": "A phone or computer with a web browser. Use the Try it yourself button in each lesson, Sololearn's free code playground, or a free code-editor app such as Acode. On a computer, any plain-text editor works, such as Notepad or the free VS Code. No paid software is needed.",
+  "resources": [
+    { "title": "Sololearn — Introduction to HTML", "url": "https://www.sololearn.com/en/learn/courses/html-introduction", "note": "Free bite-sized HTML lessons with quick practice, designed for learning on a phone. Good for extra practice on each topic." },
+    { "title": "Sololearn — HTML code playground", "url": "https://www.sololearn.com/en/compiler-playground/html", "note": "Write and run HTML in your browser. Saving your code needs a Sololearn account, so ask a parent or guardian before you sign up." },
+    { "title": "MDN — Structuring content with HTML", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content", "note": "Mozilla's free, detailed HTML guide with challenges. Use it when you want to go deeper into a topic." },
+    { "title": "MDN — HTML elements reference", "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements", "note": "Look up any HTML element to see what it is for and which attributes it accepts." },
+    { "title": "MDN — Publishing your website", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Your_first_website/Publishing_your_website", "note": "Explains the main ways of putting a finished site online." },
+    { "title": "GitHub Docs — Creating a GitHub Pages site", "url": "https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site", "note": "Official steps for free GitHub Pages hosting. GitHub accounts are for people aged 13 and over." },
+    { "title": "W3C Markup Validation Service", "url": "https://validator.w3.org/", "note": "A free checker that lists mistakes in your HTML. Paste your code into the Validate by Direct Input tab." },
+    { "title": "freeCodeCamp — Responsive Web Design certification", "url": "https://www.freecodecamp.org/learn/responsive-web-design-v9/", "note": "A longer, free HTML and CSS course with many small projects. You need an account to save your progress." }
+  ],
+  "chapters": [
+    {
+      "title": "What HTML is and your first page",
+      "goal": "Explain what HTML does, write a complete basic page and know how to practise on a phone or computer.",
+      "sections": [
+        {
+          "heading": "What HTML does",
+          "body": "HTML stands for HyperText Markup Language. It is not a programming language that does sums or makes decisions; it is a **markup** language. You wrap pieces of content in **tags** to tell the browser what each piece is: this is a heading, this is a paragraph, this is a link.\n\nMost tags come in pairs. `<p>` opens a paragraph and `</p>`, with a slash, closes it. The opening tag, the content and the closing tag together make an **element**. A few elements, such as `<img>` for a picture and `<hr>` for a dividing line, have no content and no closing tag.\n\nHTML gives a page its structure. In the next courses you will add CSS, which controls how the page looks, and JavaScript, which makes it respond when people tap or type. Press **Try it yourself**, change the words and watch the result update.",
+          "code": { "lang": "html", "source": "<h1>Welcome to my first web page</h1>\n<p>My name is Tunde and I live in Ibadan.</p>\n<p>I am learning HTML on my phone.</p>", "runnable": true }
+        },
+        {
+          "heading": "The parts of a complete page",
+          "body": "A full HTML page follows the same pattern every time:\n\n- `<!DOCTYPE html>` tells the browser to use modern HTML rules.\n- `<html lang=\"en\">` wraps everything and says the page is in English.\n- `<head>` holds information **about** the page: the character set, the viewport setting that helps the page fit phone screens, and the `<title>` shown on the browser tab.\n- `<body>` holds everything visitors actually see.\n\nElements sit inside other elements, which is called **nesting**. Indenting the inner lines makes the nesting easy to see. Text between `<!--` and `-->` is a **comment**: a note for people reading the code, which the browser does not display. The title appears on the browser tab, so you will not see it inside the preview box.",
+          "code": { "lang": "html", "source": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"utf-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <title>Tunde's first page</title>\n  </head>\n  <body>\n    <h1>Hello from Ibadan!</h1>\n    <p>This page has a head and a body.</p>\n    <!-- This is a comment. Visitors do not see it. -->\n    <p>The title is shown on the browser tab, not here.</p>\n  </body>\n</html>", "runnable": true }
+        },
+        {
+          "heading": "How the browser reads your code",
+          "body": "The browser reads your file from top to bottom and builds the page as it goes. Browsers are forgiving: if you forget a closing tag, the browser guesses what you meant. Sometimes it guesses wrong, so it is better to write correct code than to rely on guessing.\n\nOne surprise for beginners is **whitespace**. Extra spaces, tabs and new lines in your code all shrink to a single space on the page. Pressing Enter in your code does not start a new line on the screen. To start a new paragraph, use a new `<p>`. For a line break inside the same paragraph, such as the lines of a poem, use the `br` (line break) element, as in the third line of the example.\n\nRun the example and compare what you typed with what the browser shows.",
+          "code": { "lang": "html", "source": "<p>Lagos      is      busy.</p>\n<p>Kano\nis\nhistoric.</p>\n<p>Line one<br>Line two</p>\n<p>Spaces    and new lines in your code   become one space.</p>", "runnable": true }
+        },
+        {
+          "heading": "Practise on your phone or computer",
+          "body": "You do not need a laptop to learn HTML:\n\n1. Use **Try it yourself** in these lessons. The preview runs on your device, and nothing you type is saved, so copy any work you want to keep.\n2. Try **Sololearn's code playground** in your phone's browser or app. Saving code there needs an account, so ask a parent or guardian before you sign up.\n3. Install a free code-editor app such as **Acode**, create a file called `index.html` and open it in your browser.\n\nOn a computer, any plain-text editor works, such as Notepad or the free VS Code. In Notepad, choose **Save as type: All files** and type the name `index.html`, then double-click the file to open it in your browser. Call your main page `index.html`, because web servers usually open that file first."
+        }
+      ],
+      "points": [
+        "HTML describes what each part of a page is; the browser decides how to show it",
+        "Most elements have an opening tag and a closing tag with a slash, such as <p> and </p>",
+        "The head holds information about the page; the body holds what visitors see",
+        "Extra spaces and new lines in your code show as a single space on the page",
+        "Name your main page index.html, and save work you want to keep in a file"
+      ],
+      "mistakes": [
+        "Forgetting the slash in a closing tag (writing <p> instead of </p>) — check that every opening tag has its partner.",
+        "Putting headings or paragraphs inside <head> — everything visitors should see belongs in <body>.",
+        "Saving the file as index.html.txt by accident — in Notepad, choose All files as the type so the name really ends in .html.",
+        "Closing tags in the wrong order, as in <p><strong>Hi</p></strong> — always close the element you opened last first."
+      ],
+      "task": "Open Try it yourself on the full-page example. Change the title and the heading to your own first name and town, add two paragraphs about your favourite subject, and add a comment that says what the page is for. Run it and check that your comment does not appear on the page.",
+      "quiz": [
+        { "q": "A learner writes <p>Hello</p> <p>Abuja</p> in the body. How many paragraphs appear on the page?", "opts": ["Two", "One", "Four", "None, because paragraphs need a heading first"], "a": 0, "why": "Each <p> … </p> pair makes one paragraph, so the page shows two." },
+        { "q": "Where does the <title> element belong?", "opts": ["Inside <head>", "Inside <body>, just before the <h1>", "After the closing </html> tag", "Inside a <p> element"], "a": 0, "why": "The title is information about the page, so it goes in the head. Browsers show it on the tab and in bookmarks." },
+        { "q": "What does the browser show for <p>Port      Harcourt</p>, with six spaces typed in the code?", "opts": ["Port Harcourt with a single space", "Port Harcourt with six spaces", "Port on one line and Harcourt on the next", "An error message about extra spaces"], "a": 0, "why": "Browsers collapse runs of spaces and new lines in text into a single space." },
+        { "q": "Which line is nested correctly?", "opts": ["<p>I love <strong>Kano</strong></p>", "<p>I love <strong>Kano</p></strong>", "<p>I love <strong>Kano<p></strong>", "</p>I love <strong>Kano</strong><p>"], "a": 0, "why": "The element opened last (strong) must be closed first, and then the paragraph is closed." },
+        { "q": "What does <!-- Club meets on Friday --> show on the page?", "opts": ["Nothing; it is a comment for people reading the code", "The words in small grey text", "The words as a heading", "A pop-up message"], "a": 0, "why": "Comments are notes in the code. The browser skips them when it draws the page." }
+      ]
+    },
+    {
+      "title": "Headings, paragraphs and text formatting",
+      "goal": "Organise text with headings and paragraphs, and use formatting tags that match your meaning.",
+      "sections": [
+        {
+          "heading": "Headings help people scan",
+          "body": "HTML has six heading levels, from `<h1>` to `<h6>`. Think of them like the titles in a textbook: `<h1>` is the name of the whole page, `<h2>` starts each main section, and `<h3>` starts a smaller part inside a section.\n\nUse one `<h1>` per page and go down the levels in order, without jumping from `<h1>` straight to `<h4>`. Choose a level for its **meaning**, not its size. If a heading looks too big, you will change its size with CSS later.\n\nGood headings help everyone. People skim them to find what they want, and screen-reader users can jump from heading to heading, just as sighted readers glance down a page.",
+          "code": { "lang": "html", "source": "<h1>Debating Society</h1>\n<p>We meet every Thursday after school.</p>\n\n<h2>What we do</h2>\n<p>We practise speaking, listening and answering questions.</p>\n\n<h3>Inter-house debate</h3>\n<p>Each term, the houses compete for the debate trophy.</p>\n\n<h2>How to join</h2>\n<p>Come to Room 4 on Thursday at 2 p.m.</p>", "runnable": true }
+        },
+        {
+          "heading": "Paragraphs, line breaks and dividers",
+          "body": "Every block of text that forms one idea goes in its own `<p>`. The browser adds a little space between paragraphs automatically.\n\nUse the `br` (line break) element only when lines belong together but must start on a new line, such as the lines of a poem or a short list of meeting details. Do not stack several `br` tags to make empty space; spacing is a job for CSS.\n\nThe `hr` element draws a horizontal line that marks a change of topic, for example between a club notice and last week's results. Both `br` and `hr` are empty elements, so they have no closing tag. Look at how they are written in the example.",
+          "code": { "lang": "html", "source": "<h2>Next meeting</h2>\n<p>\n  Day: Friday<br>\n  Time: 2:30 p.m.<br>\n  Place: Science Block, Room 2\n</p>\n<hr>\n<h2>Last week's result</h2>\n<p>Blue House won the quiz with 18 points.</p>", "runnable": true }
+        },
+        {
+          "heading": "Formatting text with meaning",
+          "body": "Some tags change how text looks and also add meaning:\n\n- `<strong>` marks something important. Browsers show it in bold.\n- `<em>` adds stress, like when you lean on a word as you speak. Browsers show it in italics.\n- `<mark>` highlights text, like a highlighter pen.\n- `<small>` is for fine print, such as a note under a price.\n- `<sub>` and `<sup>` lower or raise characters, which is perfect for formulas such as H₂O and 5².\n\n`<b>` and `<i>` also make text bold and italic, but they do not say that the words are important or stressed. Pick the tag that matches what you mean.",
+          "code": { "lang": "html", "source": "<p><strong>Warning:</strong> never taste any chemical in the lab.</p>\n<p>Water is H<sub>2</sub>O and carbon dioxide is CO<sub>2</sub>.</p>\n<p>A square with 5 m sides has an area of 5<sup>2</sup> = 25 m<sup>2</sup>.</p>\n<p>You <em>must</em> bring your lab coat.</p>\n<p>Revise <mark>chapter 3</mark> before the test.</p>\n<p><small>Lab rules approved by the Science Club patron.</small></p>", "runnable": true }
+        },
+        {
+          "heading": "Showing special characters",
+          "body": "Because `<` starts a tag, you cannot simply type it into your text when you want people to see it. Instead you write a **character reference**, which starts with `&` and ends with `;`:\n\n- `&lt;` shows the less-than sign\n- `&gt;` shows the greater-than sign\n- `&amp;` shows an ampersand\n- `&copy;` shows the copyright sign\n\nThe naira sign ₦ can be typed straight into your code when the page uses `<meta charset=\"utf-8\">`. If your keyboard does not have it, `&#8358;` shows the same sign.",
+          "code": { "lang": "html", "source": "<p>Rice: &#8358;1,500 or ₦1,500 (both show the naira sign)</p>\n<p>In maths, 5 &lt; 8 and 9 &gt; 2.</p>\n<p>Rice &amp; stew is on the menu today.</p>\n<p>To show a tag as text, write &lt;p&gt;.</p>\n<p>&copy; 2026 Press Club</p>", "runnable": true }
+        }
+      ],
+      "points": [
+        "Use one <h1> for the page title, then <h2> and <h3> in order",
+        "Choose a heading level for its meaning, not its size; CSS changes the size",
+        "<strong> marks important text and <em> marks stress; <b> and <i> only change the look",
+        "<sub> and <sup> write formulas such as H2O and 5 squared correctly",
+        "Write &lt; and &amp; to show < and & as text"
+      ],
+      "mistakes": [
+        "Using <h1> for every big line of text — keep one main heading and use <h2> for sections.",
+        "Pressing Enter in the code and expecting a new line on the page — use a new <p> or a <br>.",
+        "Stacking several <br> tags to make empty space — use CSS margins instead, which you will learn in the CSS course.",
+        "Typing x2 for x squared — write x<sup>2</sup> so the 2 is raised."
+      ],
+      "task": "Write a notice page for a club meeting: an <h1> with the club name, two <h2> sections called Next meeting and What to bring, one sentence that uses <strong> for something important, and one formula that uses <sub> or <sup>. Run it and check that the headings go down in order.",
+      "quiz": [
+        { "q": "A page has <h1>Science Club</h1> followed directly by <h4>Next meeting</h4>. What should you change?", "opts": ["Use <h2> for the section heading so the levels go in order", "Nothing, because smaller headings look neater", "Put the <h4> inside a <p> element", "Change the <h1> to <h4> so they match"], "a": 0, "why": "Heading levels should go down one step at a time. A main section under the h1 should be an h2." },
+        { "q": "How should you write the formula for carbon dioxide so the 2 sits lower than the letters?", "opts": ["CO<sub>2</sub>", "CO<sup>2</sup>", "CO<small>2</small>", "CO<br>2"], "a": 0, "why": "<sub> makes subscript text, which sits below the line. <sup> raises it instead." },
+        { "q": "You want Do not run in the lab to be marked as important, not just bold-looking. Which tag fits best?", "opts": ["<strong>", "<b>", "<h6>", "<hr>"], "a": 0, "why": "<strong> means the text is important. <b> only changes the look without adding that meaning." },
+        { "q": "What does the page show for <p>5 &lt; 8</p>?", "opts": ["5 < 8", "5 &lt; 8", "5 8", "An empty paragraph"], "a": 0, "why": "&lt; is the character reference for the less-than sign, so the browser shows <." },
+        { "q": "A poem has four short lines that belong together in one verse. Which markup is best?", "opts": ["One <p> with <br> between the lines", "Four <h1> elements", "One <p> with each line on a new line in the code and no other tags", "Four <hr> elements"], "a": 0, "why": "The lines form one block, so use one paragraph. New lines in the code are ignored, so <br> is needed to break them." }
+      ]
+    },
+    {
+      "title": "Links and images",
+      "goal": "Link pages together, add images with helpful alt text and write correct file paths.",
+      "sections": [
+        {
+          "heading": "Links with the <a> element",
+          "body": "Links are what make the web a web. You make one with the anchor element, `<a>`. Its `href` **attribute** says where the link goes, and the text between the tags is what people tap.\n\nAn attribute is extra information written inside an opening tag as `name=\"value\"`. You will meet many attributes, such as `href`, `src` and `alt`.\n\n- A link to another website needs the full address, starting with `https://`.\n- A link to another page on your own site can use just its file name, such as `rules.html`.\n\nWrite link text that says where the link goes. Read the club rules is far more useful than click here, especially for screen-reader users, who often listen to a list of links on their own. Links may not open inside the preview box, because it is locked down for safety, so test links on your real page.",
+          "code": { "lang": "html", "source": "<h2>Useful links</h2>\n<p>Practise HTML on <a href=\"https://www.sololearn.com/\">Sololearn</a>.</p>\n<p>Look up any tag in the <a href=\"https://developer.mozilla.org/\">MDN Web Docs</a>.</p>\n<p>Read our <a href=\"rules.html\">club rules</a>.</p>", "runnable": true }
+        },
+        {
+          "heading": "Adding images",
+          "body": "The `<img>` element puts a picture on the page. It is an empty element, so it has no closing tag. It needs two attributes:\n\n- `src` (source) says where the image file is.\n- `alt` (alternative text) is a short description that screen readers read aloud and that appears if the image cannot load.\n\nWrite alt text that gives the **purpose** of the picture: Debate team holding the inter-school trophy says much more than photo. If an image is only decoration, use an empty `alt=\"\"` so screen readers skip it. Adding `width` and `height` lets the browser save space for the picture before it arrives, so the page does not jump about.\n\nIn this example, `src` holds a tiny drawing written as text, so it works without a separate file. On your own site you would usually write something like `src=\"images/flag.png\"`.",
+          "code": { "lang": "html", "source": "<h2>Our country</h2>\n<img src=\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='150' height='75'><rect width='150' height='75' fill='green'/><rect x='50' width='50' height='75' fill='white'/></svg>\" alt=\"The Nigerian flag: green, white and green vertical stripes\" width=\"150\" height=\"75\">\n<p>Change the src to flag.png, a file that does not exist, and run again. The alt text appears instead of the picture.</p>", "runnable": true }
+        },
+        {
+          "heading": "File paths: telling the browser where files are",
+          "body": "When `src` or `href` points to a file on your own site, you write a **path**: directions from the current page to the file. Look at the folder below.\n\n- From `index.html`, the logo is at `images/logo.png`: go into the images folder and find the file.\n- From `clubs/debate.html`, the logo is at `../images/logo.png`. The `../` means go up one folder first.\n- A full address such as `https://example.com/logo.png` is an **absolute** URL. It works from anywhere, but it depends on another site.\n\nUse lowercase letters and hyphens in file names, never spaces. Many web servers treat `Logo.PNG` and `logo.png` as different files, so a picture that shows on your phone can go missing online. Keep pictures small: resize photos to the size you need and save them as JPEG or WebP, so visitors on limited data are not kept waiting.",
+          "code": { "lang": "text", "source": "club-site/\n  index.html          uses images/logo.png\n  rules.html\n  images/\n    logo.png\n  clubs/\n    debate.html       uses ../images/logo.png" }
+        }
+      ],
+      "points": [
+        "<a href=\"...\"> makes a link; the text between the tags is what people tap",
+        "Attributes go inside the opening tag as name=\"value\"",
+        "Every informative image needs alt text that says what it shows or does; decorative images use alt=\"\"",
+        "Relative paths such as images/logo.png are measured from the page that uses them, and ../ goes up one folder",
+        "Use lowercase file names without spaces, and keep images small to save data"
+      ],
+      "mistakes": [
+        "Link text such as click here — say where the link goes, for example Download the club timetable.",
+        "Leaving out https:// in a link to another site — without it, the browser looks for a file on your own site.",
+        "Writing alt=\"image\" or alt=\"photo\" — describe what matters, such as Debate team holding the trophy.",
+        "Saving Logo.PNG but writing logo.png in the code — match file names exactly, including capital letters."
+      ],
+      "task": "Make a Useful links section with three links to learning sites, each with clear link text. Then open the flag example, rewrite the alt text in your own words and change the src to a file name that does not exist, so you can see the alt text take the picture's place.",
+      "quiz": [
+        { "q": "Your page is index.html, and the photo team.jpg is in a folder called images next to it. Which src is right?", "opts": ["images/team.jpg", "team.jpg/images", "../images/team.jpg", "C:/Users/Me/images/team.jpg"], "a": 0, "why": "From index.html you go into the images folder and find team.jpg. ../ would leave the site folder, and a C: path only works on your own computer." },
+        { "q": "From the page clubs/debate.html, which path reaches the file images/logo.png at the top level of the site?", "opts": ["../images/logo.png", "images/logo.png", "clubs/images/logo.png", "debate/images/logo.png"], "a": 0, "why": "../ first goes up out of the clubs folder; from there, images/logo.png leads to the file." },
+        { "q": "Which alt text is most helpful for a photo on the Science Club page that shows students testing a water sample?", "opts": ["Students testing a water sample in the school lab", "photo.jpg", "image", "Click here"], "a": 0, "why": "Good alt text tells someone who cannot see the picture what it shows and why it is there." },
+        { "q": "What is wrong with <a>Visit Sololearn</a>?", "opts": ["It has no href, so it does not go anywhere", "Link text cannot contain capital letters", "The closing tag should be </link>", "An <a> element must contain an image"], "a": 0, "why": "The href attribute holds the address. Without it, the text is not a working link." },
+        { "q": "What usually happens when an image file cannot be found?", "opts": ["The browser shows the alt text in its place", "The whole page stops loading", "The browser picks a similar picture from the internet", "The img tag is deleted from your file"], "a": 0, "why": "The rest of the page still loads, and the alt text tells visitors what should have been there." }
+      ]
+    },
+    {
+      "title": "Lists and tables",
+      "goal": "Present related items as lists and organised data as clear, accessible tables.",
+      "sections": [
+        {
+          "heading": "Bulleted and numbered lists",
+          "body": "When items belong together, put them in a list:\n\n- `<ul>` (unordered list) shows bullet points. Use it when the order does not matter, such as things to bring.\n- `<ol>` (ordered list) numbers the items. Use it for steps or rankings, where order matters.\n- Each item goes inside `<li>` (list item), and only `<li>` elements go directly inside `<ul>` or `<ol>`.\n\nYou can put a whole list inside an `<li>` to make a **nested** list, for example topics grouped under subjects. Screen readers announce how many items a list has, which helps listeners know what to expect.",
+          "code": { "lang": "html", "source": "<h2>What to bring</h2>\n<ul>\n  <li>Exercise book</li>\n  <li>Pen and pencil</li>\n  <li>₦200 for materials</li>\n</ul>\n\n<h2>How to join the club</h2>\n<ol>\n  <li>Collect a form from the club patron.</li>\n  <li>Ask a parent or guardian to sign it.</li>\n  <li>Return it by Friday.</li>\n</ol>\n\n<h2>Projects this term</h2>\n<ul>\n  <li>Science\n    <ul>\n      <li>Water filter</li>\n      <li>Solar cooker</li>\n    </ul>\n  </li>\n  <li>Art</li>\n</ul>", "runnable": true }
+        },
+        {
+          "heading": "Building a table",
+          "body": "Tables show data in rows and columns, such as price lists, timetables and results. A table is built **row by row**:\n\n- `<table>` wraps the whole table.\n- `<tr>` (table row) makes each row.\n- `<th>` (table header) is a heading cell, shown in bold by default.\n- `<td>` (table data) is an ordinary cell.\n- `<caption>`, placed straight after `<table>`, gives the table a title.\n\nEvery row should have the same number of cells, or the columns will not line up. Use tables only for data. Placing pictures and text side by side is a layout job for CSS, which you will learn in the next course.",
+          "code": { "lang": "html", "source": "<table>\n  <caption>Example market prices (made up for practice)</caption>\n  <tr>\n    <th>Item</th>\n    <th>Amount</th>\n    <th>Price (₦)</th>\n  </tr>\n  <tr>\n    <td>Rice</td>\n    <td>1 cup</td>\n    <td>400</td>\n  </tr>\n  <tr>\n    <td>Tomatoes</td>\n    <td>1 small basket</td>\n    <td>3,500</td>\n  </tr>\n  <tr>\n    <td>Eggs</td>\n    <td>1 crate</td>\n    <td>5,000</td>\n  </tr>\n</table>", "runnable": true }
+        },
+        {
+          "heading": "Clearer tables: head, body, scope and colspan",
+          "body": "Larger tables are easier to understand, and later to style, when you split them into parts: `<thead>` holds the header row and `<tbody>` holds the data rows.\n\nThe `scope` attribute tells screen readers what a header cell labels. `scope=\"col\"` means it labels the column below it; `scope=\"row\"` means it labels the row beside it. When one cell needs to stretch across several columns, such as a break that happens at the same time every day, add `colspan=\"2\"` (or however many columns it should cover).\n\nThe old `border` attribute on tables is out of date, so this example draws borders with a few lines of CSS in a `<style>` block. You will learn how that works in the CSS course.",
+          "code": { "lang": "html", "source": "<style>\n  table { border-collapse: collapse; }\n  th, td { border: 1px solid gray; padding: 6px; }\n</style>\n<table>\n  <caption>JSS2 timetable (part)</caption>\n  <thead>\n    <tr>\n      <th scope=\"col\">Time</th>\n      <th scope=\"col\">Monday</th>\n      <th scope=\"col\">Tuesday</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th scope=\"row\">8:00</th>\n      <td>Mathematics</td>\n      <td>English</td>\n    </tr>\n    <tr>\n      <th scope=\"row\">10:30</th>\n      <td colspan=\"2\">Break</td>\n    </tr>\n  </tbody>\n</table>", "runnable": true }
+        }
+      ],
+      "points": [
+        "<ul> makes a bulleted list, <ol> a numbered list, and every item goes in <li>",
+        "A table is built row by row: <tr> holds <th> header cells and <td> data cells",
+        "<caption> gives a table a title, and scope=\"col\" or scope=\"row\" says what a header labels",
+        "colspan=\"2\" makes one cell stretch across two columns",
+        "Use tables for data such as prices and timetables, never to lay out a whole page"
+      ],
+      "mistakes": [
+        "Typing text straight inside <ul> without <li> — every item needs its own <li>.",
+        "Using <ol> for items in no particular order, such as members' hobbies — use <ul>.",
+        "Rows with different numbers of cells — count the cells in each <tr> so the columns line up.",
+        "Using a table to place a picture beside some text — tables are for data; layout comes from CSS."
+      ],
+      "task": "Make a price list for a provision shop: a table with a caption, header cells and at least five items with prices in naira. Below it, add a numbered list of three steps for placing an order. Check that every row has the same number of cells.",
+      "quiz": [
+        { "q": "Which markup suits the steps for registering for a school club, where the order matters?", "opts": ["<ol> with an <li> for each step", "<ul> with an <li> for each step", "A <table> with one cell", "A separate <h1> for each step"], "a": 0, "why": "An ordered list numbers the steps, which shows that their order matters." },
+        { "q": "The header row is <tr><th>Item</th><th>Price</th></tr>. The next row is <tr><td>Bread</td></tr>. What will you see?", "opts": ["Bread under Item, with nothing under Price", "Bread under Price, with nothing under Item", "₦0 added automatically under Price", "An error message instead of the table"], "a": 0, "why": "Cells fill from the left, so Bread goes in the first column and the rest of that row is empty. Give every row the same number of cells." },
+        { "q": "What does <th scope=\"col\">Price (₦)</th> tell the browser?", "opts": ["This header labels the cells in its column", "This cell should be coloured", "The column may only hold numbers", "The table should be sorted by price"], "a": 0, "why": "scope=\"col\" links the header to every cell below it, which helps screen readers explain the table." },
+        { "q": "Which code makes a correct nested list?", "opts": ["<ul><li>Fruits<ul><li>Mango</li></ul></li></ul>", "<ul><li>Fruits</li><ul>Mango</ul></ul>", "<ul><li>Fruits</li></ul><li>Mango</li>", "<li><ul>Fruits</ul><ul>Mango</ul></li>"], "a": 0, "why": "The inner list goes inside an <li> of the outer list, and every item, including Mango, is in its own <li>." },
+        { "q": "In a timetable, the Break cell must cover both the Monday and Tuesday columns. Which attribute does that?", "opts": ["colspan=\"2\"", "rowspan=\"2\"", "width=\"2\"", "span=\"columns\""], "a": 0, "why": "colspan stretches a cell across columns. rowspan stretches it down across rows instead." }
+      ]
+    },
+    {
+      "title": "Forms: labels, inputs and buttons",
+      "goal": "Build a simple, accessible form with labels, suitable input types and a button.",
+      "sections": [
+        {
+          "heading": "Forms, inputs and labels",
+          "body": "A **form** collects information, such as a club sign-up. Inside `<form>` you place **controls**: boxes to type in, choices to tick and a button.\n\nThe most common control is `<input>`, an empty element. Every input needs a `<label>` that says what to type. To connect them, give the input an `id` and give the label a matching `for`. Then tapping the label puts the cursor in the box, and screen readers read the label aloud when the box is selected.\n\nThe `name` attribute is the label the data travels under when the form is sent. HTML builds the form, but it cannot store or send anything by itself; that needs a server or a form service. The preview box here is not allowed to send forms, so pressing the button does nothing. That is expected.",
+          "code": { "lang": "html", "source": "<form>\n  <p>\n    <label for=\"first-name\">First name</label>\n    <input type=\"text\" id=\"first-name\" name=\"first-name\">\n  </p>\n  <p>\n    <label for=\"class-name\">Class</label>\n    <input type=\"text\" id=\"class-name\" name=\"class-name\">\n  </p>\n  <button type=\"submit\">Join the club</button>\n</form>", "runnable": true }
+        },
+        {
+          "heading": "Choosing the right input type",
+          "body": "The `type` attribute changes how an input behaves. On a phone it also changes the keyboard that pops up:\n\n- `type=\"email\"` shows a keyboard with @ and checks that the text looks like an email address.\n- `type=\"tel\"` shows a phone keypad.\n- `type=\"number\"` is for numbers, and `min` and `max` set the allowed range.\n- `type=\"date\"` opens a date picker.\n- `type=\"password\"` hides what is typed.\n\nAdd `required` to a field that must be filled in. On a real page, the browser checks required fields and email formats before sending. `placeholder` puts a grey hint inside the box, but the hint disappears as soon as someone types, so it never replaces a label.",
+          "code": { "lang": "html", "source": "<form>\n  <p>\n    <label for=\"tickets\">Number of tickets</label>\n    <input type=\"number\" id=\"tickets\" name=\"tickets\" min=\"1\" max=\"5\" required>\n  </p>\n  <p>\n    <label for=\"email\">Club email (practice only)</label>\n    <input type=\"email\" id=\"email\" name=\"email\" placeholder=\"pressclub@example.com\">\n  </p>\n  <p>\n    <label for=\"trip\">Excursion date</label>\n    <input type=\"date\" id=\"trip\" name=\"trip\">\n  </p>\n  <p>\n    <label for=\"savings\">Amount saved (₦)</label>\n    <input type=\"number\" id=\"savings\" name=\"savings\" min=\"0\" step=\"50\">\n  </p>\n  <button type=\"submit\">Send</button>\n</form>", "runnable": true }
+        },
+        {
+          "heading": "Choices: radio buttons, checkboxes and drop-downs",
+          "body": "When people choose from a fixed set of options, do not make them type:\n\n- **Radio buttons** (`type=\"radio\"`) allow only one choice. All the radio buttons in a group must share the same `name`.\n- **Checkboxes** (`type=\"checkbox\"`) allow any number of choices.\n- A **drop-down** uses `<select>` with an `<option>` for each choice. It saves space on a small screen.\n- `<textarea>` gives a bigger box for longer answers.\n\nWrap a group of related choices in `<fieldset>` and give the group a title with `<legend>`. A radio button or checkbox can sit inside its own `<label>`, which makes the whole label tappable.\n\nOnly ask for what you really need. A school project should never collect passwords, NIN or BVN numbers, home addresses or bank details.",
+          "code": { "lang": "html", "source": "<form>\n  <fieldset>\n    <legend>Meeting day</legend>\n    <label><input type=\"radio\" name=\"day\" value=\"tue\"> Tuesday</label>\n    <label><input type=\"radio\" name=\"day\" value=\"thu\"> Thursday</label>\n  </fieldset>\n  <fieldset>\n    <legend>Activities you enjoy</legend>\n    <label><input type=\"checkbox\" name=\"act\" value=\"writing\"> Writing</label>\n    <label><input type=\"checkbox\" name=\"act\" value=\"photos\"> Photography</label>\n  </fieldset>\n  <p>\n    <label for=\"level\">Class</label>\n    <select id=\"level\" name=\"level\">\n      <option>JSS1</option>\n      <option>JSS2</option>\n      <option>JSS3</option>\n      <option>SS1</option>\n      <option>SS2</option>\n      <option>SS3</option>\n    </select>\n  </p>\n  <p>\n    <label for=\"idea\">Your idea for the club</label><br>\n    <textarea id=\"idea\" name=\"idea\" rows=\"3\"></textarea>\n  </p>\n</form>", "runnable": true }
+        }
+      ],
+      "points": [
+        "Every input needs a <label>; link them by giving the input an id and the label a matching for",
+        "The type attribute changes the keyboard and the checks: email, tel, number and date are common",
+        "Radio buttons that share a name allow one choice; checkboxes allow many",
+        "placeholder is a hint inside the box, not a replacement for a label",
+        "Only ask for information you really need, and never collect passwords or ID numbers in a school project"
+      ],
+      "mistakes": [
+        "A label with for=\"name\" next to an input with id=\"fullname\" — the label is not linked; make the two values match exactly.",
+        "Giving radio buttons different names, so people can select them all — use one name for each group.",
+        "Using type=\"text\" for a phone number — type=\"tel\" shows the number keypad on phones.",
+        "Expecting a form to send messages by itself — HTML only builds the form; sending needs a server or a form service."
+      ],
+      "task": "Build a sign-up form for a school club with labelled boxes for first name and favourite activity, a drop-down for class from JSS1 to SS3, and radio buttons for the meeting day. In the preview, tap each label and check that it selects the right box or option.",
+      "quiz": [
+        { "q": "A form has <label for=\"cls\">Class</label> and <input id=\"class\">. What is wrong?", "opts": ["The for and id values do not match, so the label is not linked", "Labels must come after inputs", "The input needs a closing </input> tag", "The for attribute should be written as href"], "a": 0, "why": "A label is linked to the input whose id matches its for value exactly. Here cls and class are different." },
+        { "q": "Three radio buttons for Monday, Wednesday and Friday let a learner select all three at once. What is the most likely bug?", "opts": ["They do not share the same name", "They should all have type=\"checkbox\"", "They each have a label", "They are inside a form"], "a": 0, "why": "Radio buttons only work as one group, where choosing one clears the others, when they share the same name." },
+        { "q": "People must enter how many tickets they need, from 1 to 5, and phones should show a number keypad. Which input fits best?", "opts": ["<input type=\"number\" min=\"1\" max=\"5\">", "<input type=\"text\">", "<input type=\"password\">", "<input type=\"email\" max=\"5\">"], "a": 0, "why": "type=\"number\" brings up a number keypad on most phones, and min and max set the allowed range." },
+        { "q": "Why is placeholder=\"First name\" not enough on its own?", "opts": ["The hint disappears once typing starts, so it cannot replace a label", "Placeholders make the form send twice", "Placeholders only work on computers", "The placeholder text is sent instead of what the user types"], "a": 0, "why": "Once someone types, the hint is gone and they may forget what the box was for. Screen readers also rely on real labels." },
+        { "q": "A learner should pick one class from JSS1 to SS3 without typing. Which element fits best?", "opts": ["<select> with an <option> for each class", "<input type=\"password\">", "<textarea>", "<button>"], "a": 0, "why": "A drop-down offers a fixed list of choices in a small space and avoids typing mistakes." }
+      ]
+    },
+    {
+      "title": "Page structure and accessibility",
+      "goal": "Organise a page with semantic elements and check that it works for more people.",
+      "sections": [
+        {
+          "heading": "Semantic elements: say what each part is",
+          "body": "A **semantic** element's name tells you its job. Compare `<div>`, a plain box with no meaning, with these:\n\n- `<header>`: the top of the page, usually the site name or logo.\n- `<nav>`: the main navigation links.\n- `<main>`: the main content. Use one per page.\n- `<section>`: a themed part of the page, normally with its own heading.\n- `<article>`: a piece that makes sense on its own, such as a news report.\n- `<aside>`: side information, such as a fun-fact box.\n- `<footer>`: the bottom of the page, with contact and copyright details.\n\nThese elements look like plain boxes until you add CSS, but they help screen-reader users jump straight to the navigation or the main content, help search engines understand your page and make your code easier to read.",
+          "code": { "lang": "html", "source": "<header>\n  <h1>Press Club</h1>\n  <p>News and stories from our school</p>\n</header>\n<nav>\n  <a href=\"index.html\">Home</a> |\n  <a href=\"news.html\">News</a> |\n  <a href=\"join.html\">Join</a>\n</nav>\n<main>\n  <section>\n    <h2>About us</h2>\n    <p>We write the school newsletter every term.</p>\n  </section>\n  <article>\n    <h2>Inter-house sports report</h2>\n    <p>Green House came first in the relay race.</p>\n  </article>\n  <aside>\n    <p>Fun fact: our first newsletter was a single page.</p>\n  </aside>\n</main>\n<footer>\n  <p>&copy; 2026 Press Club</p>\n</footer>", "runnable": true }
+        },
+        {
+          "heading": "Accessibility: pages that work for everyone",
+          "body": "Accessibility means people can use your page whatever their abilities or device: someone who is blind and uses a screen reader, someone with low vision who zooms in, someone who moves around with a keyboard instead of a touch screen, or someone on a cracked phone in bright sunshine.\n\nMost of it comes from good HTML that you already know:\n\n- `lang=\"en\"` on `<html>`, so screen readers use the right pronunciation.\n- Headings in order, and alt text on informative images.\n- A linked label for every input.\n- Real `<button>` and `<a>` elements. A `<div>` made to look like a button cannot be reached with the Tab key and is not announced as a button.\n- Real text instead of pictures of text, so it can be zoomed and read aloud.\n\nPhones have free screen readers built in: TalkBack on Android and VoiceOver on iPhone. Try one for a minute on your own page.",
+          "code": { "lang": "html", "source": "<h2>Hard to use</h2>\n<div>Join now</div>\n<p>For the rules, <a href=\"rules.html\">click here</a>.</p>\n<p><label>Name</label> <input type=\"text\"></p>\n\n<h2>Easier to use</h2>\n<button type=\"button\">Join now</button>\n<p>Read the <a href=\"rules.html\">club rules</a>.</p>\n<p><label for=\"nm\">Name</label> <input type=\"text\" id=\"nm\"></p>", "runnable": true }
+        },
+        {
+          "heading": "Check your page: find the problems",
+          "body": "Before calling a page finished, check it like a teacher marking work:\n\n1. Read the headings on their own. Do they make sense, in order?\n2. Check that every informative image has alt text and every input has a linked label.\n3. Zoom in to 200% and make sure nothing is cut off.\n4. Paste your code into the free **W3C Markup Validation Service** at validator.w3.org, using the **Validate by Direct Input** tab. It lists mistakes such as missing closing tags and labels that point to nothing.\n\nThe example has five problems on purpose. Look at the `<html>` tag, the heading levels, the link text, the label and the Join box, then fix them all.",
+          "code": { "lang": "html", "source": "<!DOCTYPE html>\n<html>\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <title>Chess Club</title>\n</head>\n<body>\n  <main>\n    <h1>Chess Club</h1>\n    <h3>When we meet</h3>\n    <p>Wednesdays at 3 p.m. in the library.</p>\n    <p>For the rules, <a href=\"rules.html\">click here</a>.</p>\n    <label for=\"nm\">Your first name</label>\n    <input type=\"text\" id=\"name\">\n    <div>Join</div>\n  </main>\n</body>\n</html>", "runnable": true }
+        }
+      ],
+      "points": [
+        "header, nav, main, section, article, aside and footer describe the job of each part of a page",
+        "Use one <main> for the main content of each page",
+        "<div> has no meaning; use it only when no semantic element fits",
+        "Real <button> and <a> elements work with keyboards and screen readers; a clickable-looking <div> does not",
+        "Alt text, linked labels and good headings help everyone, not only disabled people"
+      ],
+      "mistakes": [
+        "Building everything from <div> elements — swap them for header, nav, main and footer where they fit.",
+        "Sections with no headings — give each <section> a heading so people know what it contains.",
+        "Showing important information only as a picture of text — write it as real text so it can be zoomed and read aloud.",
+        "Leaving out the lang attribute — screen readers use it to choose the right pronunciation."
+      ],
+      "task": "Fix all five problems in the Chess Club example and write one sentence explaining each fix. Then rebuild your own club page with a header, a nav, a main containing at least two sections with <h2> headings, and a footer.",
+      "quiz": [
+        { "q": "A page has the club name at the top, a row of links to other pages, the news, and copyright text at the bottom. Which elements fit, from top to bottom?", "opts": ["header, nav, main, footer", "footer, nav, main, header", "main, main, main, main", "section, table, form, aside"], "a": 0, "why": "header holds the name, nav the links, main the news and footer the copyright text." },
+        { "q": "Why is a real <button> better than a <div> styled to look like a button?", "opts": ["A button can be reached with the keyboard and is announced as a button by screen readers", "A div cannot contain text", "Buttons load faster on a slow connection", "Divs are not allowed inside the body"], "a": 0, "why": "Browsers give real buttons keyboard support and the correct role for free. A div gets neither." },
+        { "q": "A screen reader reads your English page with the wrong pronunciation. Which fix is most likely to help?", "opts": ["Add lang=\"en\" to the <html> tag", "Add more <div> elements", "Make the headings bigger", "Remove the <title>"], "a": 0, "why": "The lang attribute tells assistive technology which language, and so which pronunciation, to use." },
+        { "q": "Which page has the best heading structure?", "opts": ["h1 Club name, h2 About us, h2 Events, h3 Debate day", "h1 Club name, h1 About us, h1 Events", "h3 Club name, h1 About us, h6 Events", "No headings, just bold paragraphs"], "a": 0, "why": "It has one h1, main sections as h2 and a smaller part as h3, in order." },
+        { "q": "How many visible <main> elements should a normal page have?", "opts": ["One", "One for each section", "None, because main is only for phones", "As many as there are headings"], "a": 0, "why": "main marks the single main content area of the page, so there should be only one visible main." }
+      ]
+    },
+    {
+      "title": "Publishing and sharing safely",
+      "goal": "Check a page carefully and know how to publish it online without risking anyone's privacy.",
+      "sections": [
+        {
+          "heading": "Check before you share",
+          "body": "A page that is online represents you, your club and your school, so check it carefully first:\n\n- Open every link and make sure it goes to the right place.\n- Check that every image appears and that file names match exactly, including capital letters.\n- Read every word aloud to catch spelling mistakes.\n- Look at the page on a phone and, if you can, on a bigger screen.\n- Give the page a clear `<title>`, and add a short `<meta name=\"description\">` in the head. Search engines sometimes show this description under your page's title in their results.\n\nFinally, run the page through the W3C validator and fix what it reports.",
+          "code": { "lang": "html", "source": "<!DOCTYPE html>\n<html lang=\"en\">\n<head>\n  <meta charset=\"utf-8\">\n  <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n  <meta name=\"description\" content=\"The JETS Club builds simple science projects every Friday.\">\n  <title>JETS Club</title>\n</head>\n<body>\n  <main>\n    <h1>JETS Club</h1>\n    <p>We build simple science and technology projects every Friday.</p>\n    <p><small>Last checked: all links and images working.</small></p>\n  </main>\n</body>\n</html>", "runnable": true }
+        },
+        {
+          "heading": "Protect your privacy and other people's",
+          "body": "Anything you publish can be seen, copied and saved by anyone, even if you only shared the link with friends. Before publishing, remove:\n\n- home addresses, phone numbers and personal email addresses\n- learners' full names and dates of birth\n- passwords, ID numbers and bank details\n- photos of people who have not agreed to be online (for anyone under 18, a parent or guardian should agree too, and your school's rules apply)\n- details that show where someone will be at a certain time\n\nDo not hide private details in HTML comments: anyone can read your code with **View page source**. Respect other people's work as well: write your own text, use photos you took or have permission to use, and say where your information came from.",
+          "code": { "lang": "html", "source": "<footer>\n  <h2>Contact the club</h2>\n  <p>Speak to the club patron at school, or drop a note in the Press Club box outside the library.</p>\n  <p>Photos on this page are used with permission.</p>\n  <!-- Comments are NOT private: anyone can read them with View page source. -->\n  <p><small>&copy; 2026 Press Club. Written by club members.</small></p>\n</footer>", "runnable": true }
+        },
+        {
+          "heading": "Free ways to put a page online",
+          "body": "To put a page on the internet, its files must sit on a **web server**, a computer that is always online. Some services do this for free for small sites made of HTML, CSS and JavaScript files:\n\n- **GitHub Pages** publishes the files in a GitHub repository at an address such as `your-username.github.io`. On a free GitHub account the repository must be public, and GitHub's terms say users must be at least 13 years old.\n- **Netlify** has a free plan with usage limits.\n\nBoth need an account, and free plans can change, so read the current terms with a parent or guardian before signing up. You do not have to publish anything to learn; keeping your pages on your phone or in a playground is fine. Whichever service you use, upload the whole folder so that paths such as `images/logo.png` still work.",
+          "code": { "lang": "text", "source": "club-site/\n  index.html     your home page\n  about.html\n  styles.css     added in the CSS course\n  app.js         added in the JavaScript course\n  images/\n    logo.png" }
+        }
+      ],
+      "points": [
+        "Test every link and image, and look at the page on a phone-sized screen before sharing",
+        "The free W3C Markup Validation Service finds mistakes in your HTML",
+        "Anything you publish is public: no home addresses, phone numbers, passwords or photos of people without permission",
+        "GitHub Pages and Netlify have free options; both need an account, and GitHub users must be at least 13",
+        "Under 18? Involve a parent or guardian before creating any account or publishing anything"
+      ],
+      "mistakes": [
+        "Publishing photos of classmates without asking — get their permission, and for under-18s a parent's or guardian's and the school's too.",
+        "Hiding private details in HTML comments — anyone can read them with View page source.",
+        "Copying text or pictures from another website — write your own words and use images you made or have permission to use.",
+        "Thinking a page is private because you have not shared the link — anyone may find a public page."
+      ],
+      "task": "Go through the checklist in this chapter for your club page: test links and images, check the title and description, and validate the code. Then write a three-line privacy note for yourself: what you removed, what you kept and who gave permission for any photos.",
+      "quiz": [
+        { "q": "Your page shows the club patron's personal phone number. What is the safest change before publishing?", "opts": ["Replace it with a general contact method that the school approves", "Make the number bold so it stands out", "Move the number into an HTML comment", "Move the number to the bottom of the page"], "a": 0, "why": "Personal numbers should not be public. An HTML comment is not safe either, because anyone can read it with View page source." },
+        { "q": "Your logo shows on your phone but is missing online. The code says images/Logo.png and the file is called logo.png. Why?", "opts": ["Many web servers treat capital and small letters in file names as different", "Images never work online", "PNG files must be renamed to .html", "The alt text is too long"], "a": 0, "why": "On many servers Logo.png and logo.png are two different names, so the browser cannot find the file. Match names exactly." },
+        { "q": "Which item is fine to put on a public school-club page?", "opts": ["The days and general topics of club meetings", "A member's home address", "Members' passwords", "A photo of a classmate posted without asking them"], "a": 0, "why": "General club information is safe to share. Addresses, passwords and photos without permission are not." },
+        { "q": "GitHub's terms say users must be at least 13. A 12-year-old wants a GitHub Pages site. What is the right choice?", "opts": ["Keep practising offline or in a playground for now, and involve a parent or guardian later", "Sign up with a false date of birth", "Borrow an older friend's account and password", "Publish from a classmate's account without telling anyone"], "a": 0, "why": "Following a service's age rules and involving a trusted adult keeps you safe. Lying about age or sharing passwords is never a good idea." },
+        { "q": "Why should a page have a clear <title> before you share it?", "opts": ["It is the name shown on the browser tab, in bookmarks and often in search results", "It makes the page load faster on a slow connection", "Without it, images will not show", "It hides the page from strangers"], "a": 0, "why": "The title is how people recognise your page in tabs, bookmarks and search results." }
+      ]
+    }
+  ],
+  "project": {
+    "title": "A web page for your school club",
+    "brief": "Build a website of one or two pages for a real or imaginary club at your school, such as the Press Club, JETS Club or Debating Society, so that new JSS1 students can find out what it does and how to join. You will style it in the CSS course and add an interactive feature in the JavaScript course, so keep the files safe.",
+    "steps": [
+      "Plan on paper: the club's name, what it does, when it meets, what to bring and how to join.",
+      "Start from the full page pattern: doctype, <html lang=\"en\">, a head with charset, viewport and a clear title, and a body.",
+      "Add a header with an <h1> and a one-line description, and a nav with links to your pages.",
+      "Inside main, add sections with <h2> headings: About us, Meeting times (a table with a caption), What to bring (a list) and Join us (a form with linked labels).",
+      "Add one image with helpful alt text, such as a logo you drew yourself or a photo you have permission to use.",
+      "Finish with a footer, then check every link, image and label and run the page through the W3C validator.",
+      "Save the page as index.html inside a folder called club-site."
+    ],
+    "checklist": [
+      "There is exactly one <h1>, and the other headings go down in order",
+      "Every informative image has alt text and every input has a linked label",
+      "The table has a caption and header cells, and every row has the same number of cells",
+      "There is no private information: no phone numbers, home addresses or photos used without permission",
+      "The page passes the W3C validator, or you can explain any warning that remains"
+    ]
+  }
+}

@@ -1,0 +1,341 @@
+{
+  "id": "js",
+  "title": "JavaScript: make pages interactive",
+  "icon": "⚡",
+  "area": "Web development",
+  "level": "Beginner",
+  "duration": "About 6 hours",
+  "summary": "Make web pages respond to people: store data in variables, make decisions, repeat work with loops, write functions and change the page when someone taps or types. Every lesson has a short example you can change and run.",
+  "outcomes": [
+    "Explain what JavaScript does and add it to a page with a <script> element",
+    "Use variables, data types, operators and if/else to calculate and make decisions",
+    "Store lists in arrays and work through them with loops",
+    "Write functions with parameters and return values",
+    "Find and change page elements with the DOM, and respond to clicks and typing"
+  ],
+  "tools": "Finish the HTML and CSS courses first. You need a phone or computer with a web browser: use the Try it yourself button in each lesson, Sololearn's free web code playground, or a free code-editor app such as Acode. On a computer, the free VS Code editor and the browser's developer console (press F12) are helpful but not required. No paid software is needed.",
+  "resources": [
+    { "title": "Sololearn — Introduction to JavaScript", "url": "https://www.sololearn.com/en/learn/courses/javascript-introduction", "note": "Free bite-sized JavaScript lessons with quick practice, designed for learning on a phone." },
+    { "title": "Sololearn — Web code playground", "url": "https://www.sololearn.com/en/compiler-playground/web", "note": "Edit HTML, CSS and JavaScript together in your browser. Saving your code needs a Sololearn account, so ask a parent or guardian before you sign up." },
+    { "title": "MDN — Dynamic scripting with JavaScript", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting", "note": "Mozilla's free JavaScript guide for beginners, with practice tasks for each topic." },
+    { "title": "MDN — DOM scripting introduction", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/DOM_scripting", "note": "More about finding and changing elements on a page." },
+    { "title": "MDN — Introduction to events", "url": "https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Scripting/Events", "note": "Explains event listeners and the different events a page can respond to." },
+    { "title": "freeCodeCamp — JavaScript certification", "url": "https://www.freecodecamp.org/learn/javascript-v9/", "note": "A longer, free JavaScript course with many small projects. You need an account to save your progress." }
+  ],
+  "chapters": [
+    {
+      "title": "What JavaScript does",
+      "goal": "Explain what JavaScript is for, add a script to a page and show a result on the page.",
+      "sections": [
+        {
+          "heading": "The third layer of a web page",
+          "body": "HTML gives a page its structure and CSS gives it its look. **JavaScript** gives it behaviour: it can react when someone taps a button, check what they type, do calculations, show a countdown or change the page without loading a new one.\n\nJavaScript is a real programming language. A program is a list of **statements**, instructions that run one after another from top to bottom. Each statement usually ends with a semicolon. In a web page, JavaScript runs inside the visitor's browser, on their own phone or computer. It can also run on servers, using tools such as Node.js, but this course is about the browser.\n\nThe example finds the paragraph with `id=\"msg\"` and changes its text. You will learn exactly how in chapter 6; for now, change the words inside the quotes and run it again.",
+          "code": { "lang": "html", "source": "<p id=\"msg\">Waiting for JavaScript...</p>\n<script>\n  document.querySelector('#msg').textContent = 'Hello from JavaScript!';\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Where the <script> goes",
+          "body": "JavaScript lives inside a `<script>` element. The browser runs a script **as soon as it reaches it**, while it is still reading the page, so a script can only change elements that come **before** it in the HTML. The simplest rule is to put your `<script>` just before `</body>`.\n\nOn a real site you will usually keep JavaScript in a separate file, such as `app.js`, and load it in the `<head>` with `<script src=\"app.js\" defer></script>`. The `defer` attribute tells the browser to wait until it has read the whole page before running the file. It only works together with `src`; on a script written inside the page it does nothing.\n\nTry moving the script in the example above the first paragraph and run it again. Nothing changes, because the paragraphs did not exist yet when the script ran.",
+          "code": { "lang": "html", "source": "<h1>School news</h1>\n<p id=\"first\">Old text</p>\n<p id=\"second\">Old text</p>\n<script>\n  // This runs after the paragraphs above exist\n  document.querySelector('#first').textContent = 'The science fair is on Friday.';\n  document.querySelector('#second').textContent = 'Bring your project by Thursday.';\n</script>", "runnable": true }
+        },
+        {
+          "heading": "console.log, alert and comments",
+          "body": "Programmers often check their work with `console.log()`, which writes a message to the browser's **developer console**. Visitors never see it. On a computer, press F12 in Chrome, Edge or Firefox and open the **Console** tab to read it. The preview box in these lessons does not show the console, so our examples put their results on the page instead.\n\n`alert()` shows a pop-up box with a message. The page waits until the box is closed, so it is fine for a quick test but annoying on a real site.\n\nComments are notes for people. In JavaScript, `//` starts a comment that lasts until the end of the line, and `/* ... */` can cover several lines.",
+          "code": { "lang": "html", "source": "<p id=\"out\"></p>\n<script>\n  // A one-line comment: the browser ignores this\n  console.log('This goes to the developer console');\n  alert('Welcome to the Coding Club!');\n  /* A comment\n     over two lines */\n  document.querySelector('#out').textContent = 'You closed the alert, so the script carried on.';\n</script>", "runnable": true }
+        }
+      ],
+      "points": [
+        "JavaScript runs in the visitor's browser and can change the page after it has loaded",
+        "Statements run in order, from top to bottom",
+        "Put <script> just before </body>, or use an external file with defer in the head",
+        "console.log() writes to the developer console; alert() shows a pop-up box",
+        "// starts a one-line comment and /* */ wraps a longer one"
+      ],
+      "mistakes": [
+        "Running a script before the element it changes exists — place the script after that HTML.",
+        "Using curly quotes copied from a document or chat app — code needs straight quotes, ' or \".",
+        "Expecting console.log to show on the page — it only appears in the developer console.",
+        "Filling a real site with alert() boxes — show messages on the page instead."
+      ],
+      "task": "Open the School news example and change both messages to news from your own school. Add a third paragraph with its own id and a third line of JavaScript that fills it. Then move the script to the top, run it, see what breaks and move it back.",
+      "quiz": [
+        { "q": "What does the page show? <p id=\"a\">One</p> <script> document.querySelector('#a').textContent = 'Two'; </script>", "opts": ["Two", "One", "One Two", "Nothing at all"], "a": 0, "why": "The script runs after the paragraph exists and replaces its text with Two." },
+        { "q": "A script in the <head>, with no src or defer, tries to change a paragraph lower down, and nothing happens. Why?", "opts": ["The script ran before the browser had read the paragraph", "Scripts are not allowed in the head", "The paragraph needs a class instead of an id", "JavaScript only works after you refresh twice"], "a": 0, "why": "The browser runs a script when it reaches it. At that moment the paragraph further down did not exist yet." },
+        { "q": "Where does console.log('Score: 8') put its message?", "opts": ["In the browser's developer console", "On the page, under the last paragraph", "In a pop-up box", "In the page title on the browser tab"], "a": 0, "why": "console.log is a tool for programmers. Its messages appear only in the developer console." },
+        { "q": "Which of these lines causes an error?", "opts": ["alert('Hi\");", "alert('Hi');", "alert(\"Hi\");", "alert('Hi')"], "a": 0, "why": "A string must start and end with the same kind of quote, so 'Hi\" is never closed. Single and double quotes both work when they match, and a missing semicolon at the end of a line is usually tolerated." },
+        { "q": "What happens when alert('Saved!') runs?", "opts": ["A pop-up shows Saved! and the page waits until it is closed", "Saved! is written into the first paragraph", "Saved! is stored on the phone", "The page reloads and shows Saved! on the tab"], "a": 0, "why": "alert opens a message box. The rest of the script continues only after the box is closed." }
+      ]
+    },
+    {
+      "title": "Variables and data types",
+      "goal": "Store values in variables with let and const and recognise the main data types.",
+      "sections": [
+        {
+          "heading": "Storing values with let and const",
+          "body": "A **variable** is a named box for a value. You create one with a keyword, a name, an equals sign and a value:\n\n- `const clubName = 'Coding Club';` creates a variable that cannot be given a new value later.\n- `let members = 12;` creates a variable whose value can change: `members = members + 3;`\n\nUse `const` by default and `let` when you know the value will change. You may see `var` in older code; new code uses `let` and `const`.\n\nNames can contain letters, digits, `_` and `$`, but they cannot start with a digit or contain spaces or hyphens. JavaScript programmers usually write **camelCase**, such as `schoolFees` or `examDate`. Names are case-sensitive, so `score` and `Score` are two different variables.",
+          "code": { "lang": "html", "source": "<p id=\"out\"></p>\n<script>\n  const clubName = 'Coding Club';\n  let members = 12;\n  members = members + 3;  // three new members joined\n\n  document.querySelector('#out').textContent =\n    clubName + ' now has ' + members + ' members.';\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Data types",
+          "body": "Every value has a **type**. The main ones you will use are:\n\n- **String**: text in quotes, such as `'Abuja'` or `\"SS2\"`. Single and double quotes both work.\n- **Number**: whole or decimal numbers without quotes, such as `250` or `3.5`.\n- **Boolean**: `true` or `false`, for yes-or-no facts.\n- **undefined**: the value of a variable that has been created but not given a value yet.\n\nThe `typeof` operator tells you a value's type. **Template literals** are strings written between backticks instead of quotes. They let you drop values straight into the text with `${...}`, which is easier than joining pieces with `+`. On most phone keyboards the backtick is on the symbols page.",
+          "code": { "lang": "html", "source": "<p id=\"out\"></p>\n<script>\n  const city = 'Enugu';\n  const fee = 2500;\n  const isPaid = true;\n  let nextExam;\n\n  document.querySelector('#out').textContent =\n    `${city} is a ${typeof city}, ${fee} is a ${typeof fee}, ` +\n    `${isPaid} is a ${typeof isPaid}, and nextExam is ${typeof nextExam}.`;\n</script>", "runnable": true }
+        },
+        {
+          "heading": "When numbers and text meet",
+          "body": "The `+` operator does two different jobs. With two numbers it adds, but if either side is a string it **joins** them into a longer string. So `'5' + 3` gives `'53'`, not 8. Other maths operators, such as subtraction and multiplication, try to turn strings into numbers, so `'5' * 3` gives 15. This mix-up is one of the most common beginner bugs.\n\nThe fix is to turn text into a number on purpose with `Number()`: `Number('5') + 3` gives 8. This matters because anything a person types into a web page arrives as a string, even when it looks like a number. If the text is not a number at all, `Number('abc')` gives the special value `NaN`, which stands for not a number.",
+          "code": { "lang": "html", "source": "<p id=\"a\"></p>\n<p id=\"b\"></p>\n<p id=\"c\"></p>\n<script>\n  const typed = '500';  // text, like a value from an input box\n  document.querySelector('#a').textContent = `typed + 200 gives ${typed + 200}`;\n  document.querySelector('#b').textContent = `typed * 2 gives ${typed * 2}`;\n  document.querySelector('#c').textContent = `Number(typed) + 200 gives ${Number(typed) + 200}`;\n</script>", "runnable": true }
+        }
+      ],
+      "points": [
+        "Use const by default, and let when the value must change",
+        "Strings are text in quotes, numbers have no quotes, and booleans are true or false",
+        "typeof tells you the type of a value",
+        "Template literals use backticks and ${} to put values inside text",
+        "+ joins strings, so convert text with Number() before adding"
+      ],
+      "mistakes": [
+        "Giving a const a new value, as in const total = 5; then total = 10; — this causes an error; use let if it must change.",
+        "Writing numbers in quotes, so '1000' + '500' gives '1000500' instead of 1500.",
+        "Using a variable before the line that creates it with let or const — this causes an error.",
+        "Using spaces or hyphens in names, such as school-fees — write schoolFees instead."
+      ],
+      "task": "Write a script that stores your first name, your class and the number of subjects you take in three variables, then shows a sentence on the page with a template literal, such as Ada is in SS1 and takes 9 subjects. Then add 1 to the number of subjects with let and show the new sentence.",
+      "quiz": [
+        { "q": "let price = 500; price = price + 200; What is the value of price now?", "opts": ["700", "500", "500200", "200"], "a": 0, "why": "price starts at 500, and the second line stores 500 + 200 back into it." },
+        { "q": "const a = '10'; const b = 5; What is a + b?", "opts": ["'105'", "15", "5", "An error"], "a": 0, "why": "a is a string, so + joins the two values as text instead of adding them." },
+        { "q": "What does typeof true give?", "opts": ["'boolean'", "'string'", "'true'", "'number'"], "a": 0, "why": "true and false are boolean values, so typeof gives the string 'boolean'." },
+        { "q": "const fee = 2000; fee = 2500; What happens?", "opts": ["An error, because a const variable cannot be given a new value", "fee becomes 2500", "fee becomes 4500", "fee stays 2000 and nothing else happens"], "a": 0, "why": "const means the variable cannot be reassigned. Use let for values that change." },
+        { "q": "const name = 'Amaka'; What text does `Hi ${name}!` produce when it is written with backticks?", "opts": ["Hi Amaka!", "Hi ${name}!", "Hi name!", "Hi 'Amaka'!"], "a": 0, "why": "In a template literal, ${name} is replaced by the value of name." }
+      ]
+    },
+    {
+      "title": "Operators and if/else",
+      "goal": "Calculate with operators, compare values and make decisions with if, else if and else.",
+      "sections": [
+        {
+          "heading": "Doing calculations",
+          "body": "JavaScript can do all the maths a web page needs:\n\n- `+` add, `-` subtract, `*` multiply, `/` divide\n- `%` gives the **remainder** after dividing: `17 % 5` is 2\n- `2 ** 3` raises 2 to the power of 3, which is 8\n\nMultiplication and division happen before addition and subtraction, just as in BODMAS, and brackets come first. `Math.round()` rounds to the nearest whole number. To show money neatly, `toLocaleString('en-NG')` adds commas, so `1500` is shown as `1,500`. Both `toLocaleString()` and `toFixed()` give back strings, so do your sums first and format the answer at the very end.",
+          "code": { "lang": "html", "source": "<p id=\"out\"></p>\n<script>\n  const pricePerBook = 450;\n  const books = 3;\n  const paid = 2000;\n\n  const total = pricePerBook * books;\n  const change = paid - total;\n\n  document.querySelector('#out').textContent =\n    `Total: ₦${total.toLocaleString('en-NG')}. Change: ₦${change.toLocaleString('en-NG')}.`;\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Comparing values",
+          "body": "A **comparison** asks a question and gives a boolean answer, `true` or `false`:\n\n- `===` equal to, and `!==` not equal to\n- `>` greater than, `<` less than, `>=` at least, `<=` at most\n\nAlways use `===` rather than `==`. The triple version checks the type as well as the value, so `5 === '5'` is `false`, while the older `==` says `true`, which can hide bugs.\n\nCombine questions with **logical operators**: `&&` (and) is true only if both sides are true, `||` (or) is true if at least one side is true, and `!` (not) turns true into false and false into true.",
+          "code": { "lang": "html", "source": "<p id=\"out\"></p>\n<script>\n  const age = 15;\n  const hasForm = true;\n\n  document.querySelector('#out').textContent =\n    `age >= 13 is ${age >= 13}. ` +\n    `5 === '5' is ${5 === '5'}. ` +\n    `age >= 13 && hasForm is ${age >= 13 && hasForm}. ` +\n    `age > 18 || hasForm is ${age > 18 || hasForm}. ` +\n    `!hasForm is ${!hasForm}.`;\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Making decisions with if, else if and else",
+          "body": "An `if` statement runs a block of code only when its condition is true. `else` gives a block to run when the condition is false, and `else if` adds more conditions in between.\n\nThe browser checks the conditions **from top to bottom** and runs only the first block whose condition is true; it skips all the others. So when you check ranges, such as grades, start with the highest. If you checked `score >= 50` first, a score of 85 would stop there and get the wrong grade.\n\nThe example uses an imaginary school's grading scale. Change `score` to 85, 62, 50 and 30, and run it each time to test every branch.",
+          "code": { "lang": "html", "source": "<p id=\"out\"></p>\n<script>\n  const score = 72;\n  let grade;\n\n  if (score >= 70) {\n    grade = 'A';\n  } else if (score >= 60) {\n    grade = 'B';\n  } else if (score >= 50) {\n    grade = 'C';\n  } else {\n    grade = 'F';\n  }\n\n  document.querySelector('#out').textContent = `A score of ${score} gets grade ${grade}.`;\n</script>", "runnable": true }
+        }
+      ],
+      "points": [
+        "% gives the remainder: 17 % 5 is 2",
+        "Use === and !== to compare; they check both value and type",
+        "&& needs both sides to be true; || needs at least one",
+        "if, else if and else check conditions from top to bottom and run only the first true branch",
+        "When checking ranges such as grades, test the highest range first"
+      ],
+      "mistakes": [
+        "Using = (which stores a value) instead of === (which compares) inside an if.",
+        "Checking score >= 50 before score >= 70, so a score of 75 gets the wrong grade.",
+        "Doing maths with the result of toFixed() or toLocaleString() — they give strings, so format only at the end.",
+        "Comparing numbers stored as text: '9' > '10' is true, because strings are compared character by character."
+      ],
+      "task": "Write a change calculator for a provision shop: store the price of two items and the amount paid, work out the total and the change, and show both in naira with toLocaleString('en-NG'). Use if/else to show You still owe ₦... when the amount paid is too small.",
+      "quiz": [
+        { "q": "Eggs are packed in crates of 30. const eggs = 95; What is eggs % 30?", "opts": ["5", "3", "65", "3.17"], "a": 0, "why": "95 eggs fill 3 crates (90 eggs) with 5 left over, and % gives the remainder." },
+        { "q": "let grade; const score = 75; if (score >= 50) { grade = 'C'; } else if (score >= 70) { grade = 'A'; } What is grade?", "opts": ["'C', because the first true condition wins", "'A', because 75 is at least 70", "Both 'C' and 'A'", "undefined, because neither branch runs"], "a": 0, "why": "75 >= 50 is true, so the first block runs and the else if is skipped. Check the highest range first." },
+        { "q": "What does 5 === '5' give?", "opts": ["false", "true", "'55'", "An error"], "a": 0, "why": "=== checks the type too: one side is a number and the other is a string, so they are not strictly equal." },
+        { "q": "const age = 16; const hasPermission = true; Which condition is true?", "opts": ["age >= 13 && hasPermission", "age > 18 && hasPermission", "age < 13 || !hasPermission", "age === '16'"], "a": 0, "why": "16 >= 13 is true and hasPermission is true, so && gives true. The others are false." },
+        { "q": "What is 10 + 5 * 2?", "opts": ["20", "30", "25", "17"], "a": 0, "why": "Multiplication comes first: 5 * 2 is 10, and 10 + 10 is 20. Write (10 + 5) * 2 if you want 30." }
+      ]
+    },
+    {
+      "title": "Arrays and loops",
+      "goal": "Store lists in arrays and use loops to work through every item.",
+      "sections": [
+        {
+          "heading": "Arrays: lists of values",
+          "body": "An **array** stores a list of values in order, inside square brackets: `const subjects = ['Maths', 'English', 'Biology'];`\n\n- Each item has a position called its **index**, and counting starts at **0**. So `subjects[0]` is `'Maths'` and `subjects[2]` is `'Biology'`.\n- `subjects.length` is the number of items, here 3. The last item is always at `subjects[subjects.length - 1]`.\n- `subjects.push('Chemistry')` adds an item to the end. This works even with `const`, because you are changing what is inside the array, not replacing the array.\n- `subjects.includes('English')` gives `true` if the item is in the array.\n- `subjects.join(', ')` joins all the items into one string.",
+          "code": { "lang": "html", "source": "<p id=\"out\"></p>\n<script>\n  const subjects = ['Maths', 'English', 'Biology'];\n  subjects.push('Chemistry');\n\n  document.querySelector('#out').textContent =\n    `First: ${subjects[0]}. Last: ${subjects[subjects.length - 1]}. ` +\n    `Count: ${subjects.length}. All: ${subjects.join(', ')}.`;\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Repeating with a for loop",
+          "body": "A **loop** repeats code so you do not have to write it many times. The classic `for` loop has three parts inside its brackets:\n\n`for (let i = 0; i < items.length; i++) { ... }`\n\n1. `let i = 0` sets up a counter before the loop starts.\n2. `i < items.length` is checked before every round, and the loop stops when it becomes false.\n3. `i++` adds 1 to the counter after every round.\n\nInside the loop, `items[i]` is the current item. The condition uses `<`, not `<=`, because the last index is one less than the length. The example adds up a shopping list and builds a list on the page with `document.createElement`, which you will meet properly in chapter 6.",
+          "code": { "lang": "html", "source": "<ul id=\"list\"></ul>\n<p id=\"total\"></p>\n<script>\n  const items = ['Bread', 'Milk', 'Sugar'];\n  const prices = [1200, 900, 1500];\n  let total = 0;\n\n  for (let i = 0; i < items.length; i++) {\n    const li = document.createElement('li');\n    li.textContent = `${items[i]}: ₦${prices[i].toLocaleString('en-NG')}`;\n    document.querySelector('#list').append(li);\n    total = total + prices[i];\n  }\n\n  document.querySelector('#total').textContent = `Total: ₦${total.toLocaleString('en-NG')}`;\n</script>", "runnable": true }
+        },
+        {
+          "heading": "for...of and while loops",
+          "body": "When you only need each item and not its index, `for...of` is shorter and harder to get wrong:\n\n`for (const day of days) { ... }`\n\nA `while` loop keeps going **as long as** its condition is true. It suits jobs where you do not know in advance how many rounds you need, such as counting the weeks it takes to save up for a textbook.\n\nMake sure something inside a `while` loop changes its condition. If nothing does, the loop never ends and the page freezes. If that happens, reload the page and fix the code, which is one more reason to copy your work somewhere safe as you go.",
+          "code": { "lang": "html", "source": "<p id=\"weeks\"></p>\n<p id=\"days\"></p>\n<script>\n  const target = 5000;   // the textbook costs ₦5,000\n  const perWeek = 750;   // amount saved each week\n  let saved = 0;\n  let weeks = 0;\n\n  while (saved < target) {\n    saved = saved + perWeek;\n    weeks = weeks + 1;\n  }\n  document.querySelector('#weeks').textContent =\n    `It takes ${weeks} weeks to save ₦${saved.toLocaleString('en-NG')}.`;\n\n  const days = ['Mon', 'Wed', 'Fri'];\n  let text = 'Club days:';\n  for (const day of days) {\n    text = text + ' ' + day;\n  }\n  document.querySelector('#days').textContent = text;\n</script>", "runnable": true }
+        }
+      ],
+      "points": [
+        "Arrays hold ordered lists, and the first item is at index 0",
+        "array.length is the number of items; the last item is array[array.length - 1]",
+        "push() adds an item to the end of an array",
+        "for (let i = 0; i < list.length; i++) visits every index once",
+        "for...of gives you each item directly; a while loop needs a condition that eventually becomes false"
+      ],
+      "mistakes": [
+        "Writing i <= list.length, which runs one round too many and reaches an item that is undefined.",
+        "Forgetting that the first item is at [0], not [1].",
+        "A while loop whose condition never changes — the page freezes; make sure the loop updates a value it checks.",
+        "Starting a total with let total; instead of let total = 0; — adding to undefined gives NaN."
+      ],
+      "task": "Make two arrays for a market list: five item names and their prices in naira. Use a for loop to show each item and price as a list on the page, and work out the total. Then use a while loop to find how many weeks it would take to save that total at ₦500 a week.",
+      "quiz": [
+        { "q": "const subjects = ['Maths', 'English', 'Biology']; What is subjects[1]?", "opts": ["'English'", "'Maths'", "'Biology'", "undefined"], "a": 0, "why": "Indexes start at 0, so index 1 is the second item." },
+        { "q": "How many times does the body of for (let i = 0; i < 4; i++) { ... } run?", "opts": ["4 times", "3 times", "5 times", "It never stops"], "a": 0, "why": "i takes the values 0, 1, 2 and 3. When i becomes 4, the condition i < 4 is false and the loop stops." },
+        { "q": "const prices = [200, 300, 500]; let total = 0; for (const p of prices) { total = total + p; } What is total?", "opts": ["1000", "500", "200300500", "0"], "a": 0, "why": "The loop adds each price in turn: 0 + 200 + 300 + 500 = 1000." },
+        { "q": "let total; for (const p of [100, 200]) { total = total + p; } Why is total NaN?", "opts": ["total started as undefined, and undefined + 100 is NaN", "Arrays cannot be used in for...of loops", "100 and 200 are strings", "The loop runs zero times"], "a": 0, "why": "A variable with no starting value is undefined, and maths with undefined gives NaN. Start with let total = 0;" },
+        { "q": "let savings = 0; while (savings < 2000) { savings = savings + 500; } What is savings after the loop?", "opts": ["2000", "1500", "2500", "500"], "a": 0, "why": "After four rounds savings is 2000, so savings < 2000 becomes false and the loop stops." }
+      ]
+    },
+    {
+      "title": "Functions",
+      "goal": "Write functions with parameters and return values, and reuse them to keep code tidy.",
+      "sections": [
+        {
+          "heading": "Writing and calling a function",
+          "body": "A **function** is a named block of code that does one job. You write it once and **call** it whenever you need that job done.\n\n- `function greet(name) { ... }` defines a function called `greet`. The word inside the brackets, `name`, is a **parameter**: a placeholder for information the function needs.\n- `greet('Chidi')` calls the function. The value you pass in, `'Chidi'`, is an **argument**.\n\nA function does nothing until it is called, and you must include the brackets when you call it, even if it has no parameters. Functions let you split a big problem into small, named steps that you can test one at a time.",
+          "code": { "lang": "html", "source": "<p id=\"a\"></p>\n<p id=\"b\"></p>\n<script>\n  function greet(name) {\n    return `Welcome to the club, ${name}!`;\n  }\n\n  document.querySelector('#a').textContent = greet('Chidi');\n  document.querySelector('#b').textContent = greet('Hauwa');\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Returning a value",
+          "body": "`return` sends a value back to the code that called the function, and the function stops there. Any code after `return` inside the function does not run. If a function has no `return`, calling it gives `undefined`.\n\nA function can take several parameters, separated by commas. The order matters: the first argument goes into the first parameter, the second into the second, and so on. In the example, `change(price, paid)` must be called with the price first. Swap them and you get a negative answer.\n\nSmall helper functions, such as one that formats naira, keep the rest of your code short and easy to read.",
+          "code": { "lang": "html", "source": "<p id=\"out\"></p>\n<script>\n  function formatNaira(amount) {\n    return '₦' + amount.toLocaleString('en-NG');\n  }\n\n  function change(price, paid) {\n    return paid - price;\n  }\n\n  const price = 1850;\n  const paid = 2000;\n  document.querySelector('#out').textContent =\n    `Price ${formatNaira(price)}, paid ${formatNaira(paid)}, change ${formatNaira(change(price, paid))}.`;\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Arrow functions and scope",
+          "body": "You will often see a shorter way to write functions, called **arrow functions**: `const double = (n) => n * 2;` When the body is a single expression like this, its value is returned automatically. For longer arrow functions, use curly brackets and `return` as usual.\n\nVariables created inside a function exist only inside it. This is called **scope**. It means two functions can each have their own variable called `total` without getting in each other's way, and code outside a function cannot reach its variables.\n\nThe example uses a function to count the days until an exam. The date in it is made up, so change it to test the code, and always check JAMB's official announcements for real exam dates.",
+          "code": { "lang": "html", "source": "<p id=\"out\"></p>\n<script>\n  const daysUntil = (dateText) => {\n    const msPerDay = 1000 * 60 * 60 * 24;\n    const diff = new Date(dateText) - new Date();\n    return Math.ceil(diff / msPerDay);\n  };\n\n  const examDate = '2027-04-24';  // a made-up date: change it\n  const days = daysUntil(examDate);\n  const out = document.querySelector('#out');\n\n  if (days > 0) {\n    out.textContent = `Days to go: ${days}. Keep revising!`;\n  } else if (days === 0) {\n    out.textContent = 'The exam is today. Good luck!';\n  } else {\n    out.textContent = 'That date has passed. Change examDate and run again.';\n  }\n</script>", "runnable": true }
+        }
+      ],
+      "points": [
+        "A function is a named, reusable block of code; call it with its name and brackets",
+        "Parameters are the names in the definition; arguments are the values you pass in",
+        "return sends a value back and ends the function",
+        "A function without return gives undefined",
+        "Variables made inside a function cannot be used outside it"
+      ],
+      "mistakes": [
+        "Leaving off the brackets when calling, as in writing total instead of total() — the function does not run.",
+        "Forgetting return, then getting undefined instead of the answer.",
+        "Putting code after return and expecting it to run — return ends the function.",
+        "Passing arguments in the wrong order, such as change(paid, price) when the function expects change(price, paid)."
+      ],
+      "task": "Write a function called tip(bill, percent) that returns the tip in naira, rounded with Math.round(), and a second function that returns bill plus tip. Show the results for a ₦4,500 bill at 10% on the page, using a formatNaira helper.",
+      "quiz": [
+        { "q": "function add(a, b) { return a + b; } What is add(2, 3) * 2?", "opts": ["10", "7", "8", "12"], "a": 0, "why": "add(2, 3) returns 5, and 5 * 2 is 10." },
+        { "q": "function half(n) { n / 2; } What does half(10) give?", "opts": ["undefined", "5", "10", "An error"], "a": 0, "why": "The function works out n / 2 but never returns it, so the call gives undefined." },
+        { "q": "function change(price, paid) { return paid - price; } What does change(2000, 1500) give?", "opts": ["-500", "500", "3500", "1500"], "a": 0, "why": "price becomes 2000 and paid becomes 1500, so it returns 1500 - 2000. The arguments were passed in the wrong order." },
+        { "q": "const square = (n) => n * n; What is square(4)?", "opts": ["16", "8", "4", "44"], "a": 0, "why": "A one-line arrow function returns its expression automatically: 4 * 4 = 16." },
+        { "q": "function setTotal() { const total = 50; } After calling setTotal(), code outside the function uses total. What happens?", "opts": ["An error, because total only exists inside the function", "It gives 50", "It gives 0", "It gives undefined with no error"], "a": 0, "why": "total was declared inside the function, so it is out of scope outside it and JavaScript reports that it is not defined." }
+      ]
+    },
+    {
+      "title": "The DOM: find and change the page",
+      "goal": "Use the DOM to find elements and change their text, styles and classes.",
+      "sections": [
+        {
+          "heading": "What the DOM is and how to find elements",
+          "body": "When the browser reads your HTML, it builds the **DOM** (Document Object Model): a live family tree of objects, one for each element. JavaScript cannot change your HTML file, but it can change the DOM, and the page on screen updates straight away.\n\nTo change an element, you first find it:\n\n- `document.querySelector('#total')` returns the **first** element that matches a CSS selector, or `null` if nothing matches.\n- `document.querySelectorAll('.price')` returns **all** the matching elements, as a list you can loop over with `for...of`.\n\nThe selectors are the same ones you used in CSS: `#id`, `.class`, `p`, `nav a` and so on. Store an element in a `const` if you will use it more than once.",
+          "code": { "lang": "html", "source": "<p class=\"price\">Bread: ₦1,200</p>\n<p class=\"price\">Eggs: ₦5,000</p>\n<p class=\"price\">Rice: ₦400</p>\n<p id=\"note\"></p>\n<script>\n  const first = document.querySelector('.price');\n  first.textContent = 'Bread: sold out';\n\n  const all = document.querySelectorAll('.price');\n  document.querySelector('#note').textContent = `There are ${all.length} prices on this page.`;\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Changing text and adding elements",
+          "body": "`textContent` reads or replaces the text inside an element. It treats everything as plain text, so it is the safe choice for showing anything, including what visitors type.\n\n`innerHTML` reads or replaces the HTML inside an element, so tags in the string become real elements. It can be handy for content you wrote yourself, but never put visitors' text into `innerHTML`: someone could type HTML or code that then runs on your page.\n\nYou can also create new elements. `document.createElement('li')` makes a new element, you set its `textContent`, and `append()` adds it to the end of another element.",
+          "code": { "lang": "html", "source": "<h2 id=\"title\">Club members</h2>\n<ul id=\"members\"></ul>\n<p id=\"demo\"></p>\n<script>\n  const names = ['Ifeoma', 'Musa', 'Bisi'];\n  const list = document.querySelector('#members');\n\n  for (const name of names) {\n    const li = document.createElement('li');\n    li.textContent = name;\n    list.append(li);\n  }\n\n  document.querySelector('#title').textContent = `Club members (${names.length})`;\n  document.querySelector('#demo').textContent = '<b>textContent shows tags as plain text</b>';\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Changing styles and classes",
+          "body": "Every element has a `style` property for setting CSS directly, as in `heading.style.color = 'darkgreen';`. CSS property names with hyphens become **camelCase** in JavaScript, so `background-color` becomes `backgroundColor` and `font-size` becomes `fontSize`. Values are strings and include the unit, such as `'28px'`.\n\nFor anything more than a quick change, it is neater to write the styles in CSS as a class and switch the class on and off with `classList`:\n\n- `el.classList.add('highlight')` adds the class.\n- `el.classList.remove('highlight')` removes it.\n- `el.classList.toggle('highlight')` adds the class if it is missing and removes it if it is there.\n\nThis keeps the look in your CSS and the behaviour in your JavaScript.",
+          "code": { "lang": "html", "source": "<style>\n  .highlight { background-color: #fff59d; font-weight: bold; }\n</style>\n<h1 id=\"heading\">Market prices</h1>\n<p id=\"rice\">Rice: ₦400 a cup</p>\n<p id=\"beans\">Beans: ₦600 a cup</p>\n<script>\n  const heading = document.querySelector('#heading');\n  heading.style.color = 'darkgreen';\n  heading.style.fontSize = '28px';\n\n  document.querySelector('#rice').classList.add('highlight');\n\n  const beans = document.querySelector('#beans');\n  beans.classList.toggle('highlight');  // on\n  beans.classList.toggle('highlight');  // off again\n</script>", "runnable": true }
+        }
+      ],
+      "points": [
+        "The DOM is the browser's live model of the page, and JavaScript can change it",
+        "querySelector returns the first match or null; querySelectorAll returns every match",
+        "textContent sets plain text safely; innerHTML reads HTML tags, so never use it with text people type",
+        "In JavaScript, CSS names become camelCase: background-color becomes backgroundColor",
+        "classList.add, remove and toggle switch CSS classes on and off"
+      ],
+      "mistakes": [
+        "Leaving out # or . in the selector — querySelector('total') looks for a <total> element, not id=\"total\".",
+        "Using an element that was not found — if querySelector gives null, check the spelling of the id or class.",
+        "Writing element.style.background-color — in JavaScript it is element.style.backgroundColor.",
+        "Using querySelector when you need every match — use querySelectorAll and a loop."
+      ],
+      "task": "Make a price list of four items, each in a <p> with the class price. With JavaScript, change the first item's text to sold out, add a highlight class to every price using querySelectorAll and a for...of loop, and add one new item to the page with createElement.",
+      "quiz": [
+        { "q": "The page has <p class=\"price\">₦300</p> and <p class=\"price\">₦500</p>. What does document.querySelector('.price').textContent = 'Sold out'; change?", "opts": ["Only the first paragraph", "Both paragraphs", "Only the last paragraph", "Nothing, because classes cannot be selected"], "a": 0, "why": "querySelector returns only the first match. Use querySelectorAll and a loop to change them all." },
+        { "q": "Which line makes the text of the element with id notice red?", "opts": ["document.querySelector('#notice').style.color = 'red';", "document.querySelector('notice').style.color = 'red';", "document.querySelector('#notice').style.colour = 'red';", "document.querySelector('#notice').color = red;"], "a": 0, "why": "The selector needs #, the property is spelt color, it belongs on style, and the value is a string in quotes." },
+        { "q": "box.classList.toggle('dark') runs twice in a row on a box that started without the class. Does the box have the class dark afterwards?", "opts": ["No, the first toggle adds it and the second removes it", "Yes, it has the class twice", "Yes, toggle only ever adds classes", "No, because toggle causes an error the second time"], "a": 0, "why": "toggle switches the class: missing becomes present, then present becomes missing." },
+        { "q": "Why is textContent safer than innerHTML for showing a name a visitor typed?", "opts": ["textContent treats the input as plain text, so any tags or code in it cannot run", "textContent makes the text bold", "innerHTML only works on phones", "textContent stores the name on the server"], "a": 0, "why": "innerHTML turns tags into real elements, so a visitor could inject HTML. textContent shows the characters exactly as typed." },
+        { "q": "The line document.querySelector('#totl').textContent = '₦0'; causes an error saying it cannot set properties of null. What is the most likely cause?", "opts": ["The id is misspelt, so querySelector found nothing and returned null", "textContent cannot hold the naira sign", "The page has too many elements", "Strings must use double quotes"], "a": 0, "why": "When no element matches, querySelector returns null, and null has no textContent. Check that the id matches the HTML exactly." }
+      ]
+    },
+    {
+      "title": "Events: build something interactive",
+      "goal": "Respond to clicks and typing with event listeners and build a small interactive tool.",
+      "sections": [
+        {
+          "heading": "Responding to clicks",
+          "body": "An **event** is something that happens on the page: a click or tap, a key press, text being typed. You tell an element what to do when an event happens with `addEventListener`:\n\n`button.addEventListener('click', addOne);`\n\nThe first argument is the event's name, in lowercase and in quotes. The second is the **function to run**. Pass the function's name **without** brackets: `addOne`, not `addOne()`. With brackets, the function would run once straight away instead of waiting for the click. You can also write the function right there as an arrow function.\n\nOn a button, the `click` event fires for mouse clicks, finger taps and keyboard presses, so one listener covers phones and computers.",
+          "code": { "lang": "html", "source": "<h2>Club attendance</h2>\n<p>Present today: <span id=\"count\">0</span></p>\n<button type=\"button\" id=\"add\">Add one</button>\n<button type=\"button\" id=\"reset\">Reset</button>\n<script>\n  let count = 0;\n  const countText = document.querySelector('#count');\n\n  function addOne() {\n    count = count + 1;\n    countText.textContent = count;\n  }\n\n  document.querySelector('#add').addEventListener('click', addOne);\n  document.querySelector('#reset').addEventListener('click', () => {\n    count = 0;\n    countText.textContent = count;\n  });\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Reading what people type",
+          "body": "To read an input box, use its `value` property. The value is **always a string**, even in a `type=\"number\"` box, so convert it with `Number()` before you do maths.\n\nThe `input` event fires every time the value changes, so you can update a result while the person is still typing. The `change` event usually fires later, when they finish and leave the box.\n\nAlways plan for unexpected input. An empty box gives `''`, and `Number('')` is 0, which can quietly give wrong answers. In a `type=\"number\"` box, the browser also gives `''` if what was typed is not a valid number. Check for empty boxes before calculating, and show a friendly message on the page.",
+          "code": { "lang": "html", "source": "<label for=\"bill\">Bill (₦)</label>\n<input type=\"number\" id=\"bill\" min=\"0\">\n<label for=\"paid\">Amount paid (₦)</label>\n<input type=\"number\" id=\"paid\" min=\"0\">\n<p id=\"result\">Type both amounts.</p>\n<script>\n  const billBox = document.querySelector('#bill');\n  const paidBox = document.querySelector('#paid');\n  const result = document.querySelector('#result');\n\n  function update() {\n    if (billBox.value === '' || paidBox.value === '') {\n      result.textContent = 'Type both amounts.';\n      return;\n    }\n    const change = Number(paidBox.value) - Number(billBox.value);\n    if (change < 0) {\n      result.textContent = `You still owe ₦${(-change).toLocaleString('en-NG')}.`;\n    } else {\n      result.textContent = `Change: ₦${change.toLocaleString('en-NG')}`;\n    }\n  }\n\n  billBox.addEventListener('input', update);\n  paidBox.addEventListener('input', update);\n</script>", "runnable": true }
+        },
+        {
+          "heading": "Putting it together: a mini quiz",
+          "body": "Now combine everything: variables, if/else, functions, the DOM and events. This mini quiz has one question and three answer buttons. It uses `querySelectorAll` to find all the buttons and a `for...of` loop to give each one a click listener.\n\nInside the listener, `button.textContent` tells you which answer was tapped. The code compares it with the correct answer, shows feedback with `textContent` and adds a class so that the chosen button turns green or red. The feedback also uses words, so it does not rely on colour alone.\n\nFor a full quiz, store several questions in an array and move to the next one after each answer. On a real page with a `<form>`, you would listen for the form's `submit` event and call `event.preventDefault()` to stop the page reloading. The preview box does not allow forms to be sent, so this example uses plain buttons.",
+          "code": { "lang": "html", "source": "<style>\n  button { display: block; width: 100%; margin: 6px 0; padding: 10px; }\n  .right { background-color: #c8e6c9; }\n  .wrong { background-color: #ffcdd2; }\n</style>\n<p>What is the capital of Nigeria?</p>\n<button type=\"button\" class=\"answer\">Lagos</button>\n<button type=\"button\" class=\"answer\">Abuja</button>\n<button type=\"button\" class=\"answer\">Kano</button>\n<p id=\"feedback\"></p>\n<script>\n  const correct = 'Abuja';\n  const feedback = document.querySelector('#feedback');\n\n  for (const button of document.querySelectorAll('.answer')) {\n    button.addEventListener('click', () => {\n      if (button.textContent === correct) {\n        button.classList.add('right');\n        feedback.textContent = 'Correct! Abuja has been the capital since 1991.';\n      } else {\n        button.classList.add('wrong');\n        feedback.textContent = `Not quite: ${button.textContent} is not the capital. Try again.`;\n      }\n    });\n  }\n</script>", "runnable": true }
+        }
+      ],
+      "points": [
+        "element.addEventListener('click', handler) runs the handler each time the element is clicked or tapped",
+        "Pass the function itself (handler), not the result of calling it (handler())",
+        "An input's value is always a string; convert it with Number() before doing sums",
+        "The input event fires every time the value changes, which is ideal for live results",
+        "Check for empty or invalid input and show a friendly message on the page"
+      ],
+      "mistakes": [
+        "Writing addEventListener('click', showTotal()) — this runs showTotal once straight away; pass showTotal without brackets.",
+        "Adding input values without converting them — '500' + '200' gives '500200'.",
+        "Using 'onclick' or 'Click' as the event name in addEventListener — the name is 'click', in lowercase.",
+        "Forgetting that an empty box counts as 0 after Number('') — check for empty input first."
+      ],
+      "task": "Build a naira budget calculator for a club excursion: three labelled number boxes for transport, food and entry fees, and a paragraph that shows the total with toLocaleString('en-NG') as people type. Show a friendly message while any box is empty.",
+      "quiz": [
+        { "q": "What is wrong with btn.addEventListener('click', sayHi());?", "opts": ["sayHi runs once straight away, and its result is used as the listener; write sayHi without brackets", "The event name must be 'onclick'", "Arrow functions are required for click events", "Nothing; this is the correct way to listen for clicks"], "a": 0, "why": "The brackets call the function immediately. addEventListener needs the function itself, so it can call it on each click." },
+        { "q": "Two input boxes, a and b, contain 1500 and 500. What is a.value + b.value?", "opts": ["'1500500'", "2000", "1000", "NaN"], "a": 0, "why": "value is always a string, so + joins the two strings. Use Number(a.value) + Number(b.value) to get 2000." },
+        { "q": "Which event lets a total update while someone is still typing in a box?", "opts": ["input", "change", "load", "submit"], "a": 0, "why": "input fires on every change to the value. change usually waits until the person leaves the box." },
+        { "q": "let count = 0; btn.addEventListener('click', () => { count++; out.textContent = count; }); After three taps on btn, what does out show?", "opts": ["3", "0", "1", "count"], "a": 0, "why": "Each tap runs the arrow function once, adding 1 to count and showing the new value." },
+        { "q": "A calculator does Number(box.value) * 50. Someone leaves the box empty. What happens, and why does it matter?", "opts": ["Number('') is 0, so it quietly shows 0 instead of asking for a value", "It shows an error message automatically", "It shows NaN on every phone", "The page refuses to run the code"], "a": 0, "why": "An empty string converts to 0, so the answer looks real but is wrong. Check for empty input before calculating." }
+      ]
+    }
+  ],
+  "project": {
+    "title": "Add an interactive feature to your club page",
+    "brief": "Add a working feature to the club page you built and styled in the HTML and CSS courses: either a five-question quiz about your club's subject, or a naira budget calculator that helps members plan an excursion. Keep your code in an external app.js file and show every result on the page.",
+    "steps": [
+      "Choose the quiz or the budget calculator, and sketch on paper what people will see and do.",
+      "Add the HTML for the feature in a new section of index.html, with labels for any inputs and an empty element with an id for results.",
+      "Create app.js and load it in the head with <script src=\"app.js\" defer></script>, or just before </body> without defer.",
+      "Store your data in variables and arrays: questions and correct answers, or cost items and their prices in naira.",
+      "Write small functions: one to calculate the score or total, and one to show the result on the page with textContent.",
+      "Connect buttons and inputs with addEventListener, using 'click' or 'input'.",
+      "Test with normal, empty and silly input, fix any bugs and style the new section with your existing CSS classes."
+    ],
+    "checklist": [
+      "The feature works with taps on a phone and with a keyboard on a computer",
+      "Input values are converted with Number(), and empty input shows a friendly message",
+      "Results appear on the page, not only in the console or an alert",
+      "No personal data is collected, stored or sent anywhere",
+      "The code is split into small named functions with short comments"
+    ]
+  }
+}

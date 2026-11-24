@@ -1,0 +1,500 @@
+{
+  "id": "design",
+  "title": "Graphic design fundamentals",
+  "icon": "🎨",
+  "area": "Design",
+  "level": "Beginner",
+  "duration": "About 6 hours",
+  "summary": "Plan and finish clear designs using layout, colour, type and images you have permission to use, from a school event poster to a matching WhatsApp status graphic.",
+  "outcomes": [
+    "Write a design brief that names the audience, purpose, key message and format.",
+    "Arrange text and images with alignment, grouping and a clear visual hierarchy.",
+    "Choose readable colour palettes and font pairings, and check text contrast.",
+    "Find images you are allowed to use, ask people before photographing them and credit sources properly.",
+    "Export a design at the right size and format for print or a phone screen, and improve it with feedback."
+  ],
+  "tools": "Paper and pencil are enough to start. For digital work, a free tool such as Canva (phone app or browser), Google Slides or Google Drawings works well. These need an account, so learners under 18 should ask a parent or guardian before signing up. Use only images you made yourself or have permission to use.",
+  "resources": [
+    {
+      "title": "Canva Design School — Graphic design basics",
+      "url": "https://www.canva.com/design-school/courses/graphic-design-basics-from-the-experts/",
+      "note": "Free beginner course of 12 short lessons on alignment, fonts, colour, photos and exporting. You can follow along in the Canva app."
+    },
+    {
+      "title": "LearnFree (GCFGlobal) — Beginning Graphic Design",
+      "url": "https://www.learnfree.org/series/beginning-graphic-design",
+      "note": "Short, free episodes on typography, colour, layout, images and branding, with a quiz at the end."
+    },
+    {
+      "title": "Google Fonts Knowledge",
+      "url": "https://fonts.google.com/knowledge",
+      "note": "Free lessons on choosing and using type, plus hundreds of fonts that are free to use."
+    },
+    {
+      "title": "WebAIM Contrast Checker",
+      "url": "https://webaim.org/resources/contrastchecker/",
+      "note": "Type in two colour codes to see whether text will be easy to read."
+    },
+    {
+      "title": "Openverse",
+      "url": "https://openverse.org/",
+      "note": "Search openly licensed images and see the licence and credit details for each one."
+    },
+    {
+      "title": "Creative Commons — About the licences",
+      "url": "https://creativecommons.org/cc-licenses/",
+      "note": "Plain explanations of what each Creative Commons licence allows."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "The design brief and your audience",
+      "goal": "Write a design brief that names the audience, purpose, key message and format before you start designing.",
+      "sections": [
+        {
+          "heading": "What graphic design is for",
+          "body": "Graphic design is the job of arranging words, pictures, shapes and colour so that a message gets across quickly. A good design is not just decoration: it solves a communication problem. A flyer for a tailor in Aba has to tell passers-by what she sews, where her shop is and how to reach her, all in the few seconds they spend looking at it.\n\nBefore you open any design app, ask three questions: **What should people know? What should they feel? What should they do next?** If you cannot answer each one in a sentence, the design will probably be unclear too."
+        },
+        {
+          "heading": "Writing a design brief",
+          "body": "A **design brief** is a short written plan that you agree on before designing. Professionals write one with their client; you can write one with a teacher, a club or just for yourself. It usually covers:\n\n- **Audience:** who the design is for, as specifically as possible\n- **Purpose:** what you want people to do after seeing it\n- **Key message:** the one sentence that matters most\n- **Must-include details:** date, time, venue, contact, logos\n- **Format and size:** A4 poster, A3 noticeboard sheet, phone screen\n- **Where it will be seen**, and the **deadline**\n\nThe brief helps you make decisions later. When you are unsure whether to add something, check whether it serves the purpose in the brief.",
+          "code": {
+            "lang": "text",
+            "source": "DESIGN BRIEF — Reading Club poster (fictional example)\nClient:       Library prefects and the club's teacher\nAudience:     JSS1–JSS3 students at a secondary school in Ibadan\nPurpose:      get new members to come to the first meeting\nKey message:  Join the Reading Club — Fridays, 2 pm, School Library\nMust include: date of first meeting, 'Free to join', teacher to contact\nFormats:      A3 poster for the noticeboard\n              1080 × 1920 px image for WhatsApp Status\nSeen where:   busy corridor, from about 2 metres away;\n              on phones in class WhatsApp groups\nDeadline:     Wednesday of week 3"
+          }
+        },
+        {
+          "heading": "Know your audience",
+          "body": "The same event can need very different designs. A poster for JSS1 students might use bold colours and friendly wording, while a flyer for parents might be calmer and give more detail about cost and timing. Think about the audience's age, language, interests and how busy they are when they see your design.\n\nAlso think about **where** they will see it. A noticeboard poster is viewed from a distance by people walking past; a WhatsApp image is seen small, on a phone, among many other messages. In both cases the main message must work at a glance. If you can, ask two or three people from your audience what would make them stop and look."
+        },
+        {
+          "heading": "Collect content before you design",
+          "body": "Gather and check all the words first: the title, date, venue, names, any prices in naira and contact details. Confirm them with whoever is in charge, because a wrong date on 200 printed flyers is an expensive mistake.\n\nThen sketch **thumbnails**: tiny, quick drawings of possible layouts, each about the size of a matchbox. Aim for at least three different ideas. You can also collect a few designs you admire and study what makes them work; this collection is often called a moodboard. Learn from other designs, but never copy them."
+        }
+      ],
+      "points": [
+        "A brief records the audience, purpose, key message, format and deadline before any designing starts.",
+        "Design choices should be explained by the audience and purpose, not by personal taste alone.",
+        "Keep one main message per design; everything else supports it.",
+        "Collect and check all the text before you start the layout.",
+        "Sketch several small thumbnails before choosing a direction."
+      ],
+      "mistakes": [
+        "Opening a design app before knowing the message — write the brief first, even if it only takes five minutes.",
+        "Designing for yourself instead of the audience — ask two or three real audience members what would catch their eye.",
+        "Treating inspiration as a template to copy — study other designs for ideas, then make your own."
+      ],
+      "task": "Write a design brief for a poster advertising your school's science fair or another real event. Include the audience, purpose, a one-sentence key message, the details that must appear, the format and where it will be displayed. Then sketch three thumbnail layouts on paper.",
+      "quiz": [
+        {
+          "q": "A tailor in Aba asks you for a flyer. Before choosing colours or fonts, what should you find out first?",
+          "opts": ["Which colour she likes best", "Who her customers are and what she wants them to do after seeing it", "Which font is popular this month", "How many pictures can fit on the page"],
+          "a": 1,
+          "why": "Audience and purpose shape every later decision. Taste, trends and space only matter once you know what the flyer must achieve."
+        },
+        {
+          "q": "Which is the strongest key message for a reading-club poster?",
+          "opts": ["Reading is a very important activity that everyone should do as often as they can", "Club", "Join the Reading Club — Fridays, 2 pm, School Library", "Books, pens, chairs, tables, librarians and much more"],
+          "a": 2,
+          "why": "It is short and specific, and tells the audience what to do, when and where. The others are vague or too long to take in at a glance."
+        },
+        {
+          "q": "Your science fair poster will hang in a busy corridor where students walk past quickly. What does this mean for the design?",
+          "opts": ["The main message must be readable from a distance in a few seconds", "It should include as much detail as possible", "Small text is fine because people will stop to read", "Colour and contrast do not matter indoors"],
+          "a": 0,
+          "why": "Where a design is seen tells you how much time and attention people will give it. Passers-by need the key message instantly."
+        },
+        {
+          "q": "Your brief says the audience is parents, but your draft is full of student slang. What should you do?",
+          "opts": ["Keep the slang, because it always looks modern", "Change the brief so it matches the draft", "Add even more slang so it is consistent", "Rewrite the wording so it suits parents"],
+          "a": 3,
+          "why": "The brief records who the design is for. The wording should serve that audience, not the other way round."
+        },
+        {
+          "q": "Why should you collect and check all the text before laying out a design?",
+          "opts": ["Design apps cannot add text later", "Late text changes can break a finished layout and let errors slip through", "It makes the exported file smaller", "Checking text is only the printer's job"],
+          "a": 1,
+          "why": "If a date or name changes after the layout is done, you may have to rearrange everything, and rushed changes are where mistakes happen."
+        }
+      ]
+    },
+    {
+      "title": "Layout, alignment and visual hierarchy",
+      "goal": "Arrange text and images so viewers know what to look at first, second and third.",
+      "sections": [
+        {
+          "heading": "Visual hierarchy: first, second, third",
+          "body": "**Visual hierarchy** is the order in which people notice things. You control it with size, weight (how bold something is), colour, contrast and position. Most simple designs need about three levels:\n\n1. **First:** the main message or event name, largest and strongest\n2. **Second:** key details such as date, time and venue\n3. **Third:** small print such as contact details or a sponsor's name\n\nA quick check is the **squint test**: step back or half-close your eyes and look at the design. Whatever you still notice is at the top of your hierarchy. If that is a decorative shape rather than the main message, change the balance."
+        },
+        {
+          "heading": "Alignment and margins",
+          "body": "**Alignment** means lining elements up along shared edges or a shared centre line. When things line up, a design looks organised and is easier to scan, even if viewers cannot say why. Choose one main alignment and stick to it. Left-aligned text is easiest to read in longer passages because each line starts in the same place; centred text works for short headings and a few lines.\n\nLeave a **margin** of empty space around the edges. On paper, this stops text being cut off when printing or trimming; on a phone, it keeps words away from the edges of the screen. Most design apps show guide lines and snap objects into line as you move them, so make use of them."
+        },
+        {
+          "heading": "Group related information",
+          "body": "Items that belong together should sit close together, with more space between different groups. This is called **proximity**. On an event flyer, keep date, time and venue in one block rather than scattering them in three corners, so the reader finds all the 'when and where' information in one look.\n\n**White space** (empty space, whatever its colour) is not wasted. It separates groups, gives the eye a place to rest and makes the important parts stand out. If a design feels crowded, the answer is usually to cut words or remove an element, not to shrink everything."
+        },
+        {
+          "heading": "Repetition and balance",
+          "body": "Repeating the same colours, shapes and text styles ties a design together. If one heading is green and bold, make every heading at that level green and bold. Repetition tells viewers which things are the same kind of information.\n\nBalance is about how visual weight is spread across the page. A **symmetrical** layout, with everything centred, feels formal and calm. An **asymmetrical** layout, such as a large photo on one side and text on the other, can feel more lively. Either can work, as long as one side does not look crowded while the other looks empty by accident.",
+          "code": {
+            "lang": "text",
+            "source": "LAYOUT PLAN — A5 flyer for a tailor in Aba (fictional)\n+----------------------------------+\n|  ADA'S STITCHES        <- level 1|\n|  Native wear, school uniforms    |\n|  and alterations       <- level 2|\n|                                  |\n|  [  photo of a finished outfit ] |\n|                                  |\n|  Mon–Sat, 8 am – 6 pm            |\n|  Shop 14, Ariaria Market, Aba    |\n|  Call: 080X XXX XXXX   <- level 3|\n+----------------------------------+\n- All text left-aligned to the same margin\n- Hours, address and phone grouped in one block\n- Space above and below the photo"
+          }
+        }
+      ],
+      "points": [
+        "Hierarchy uses size, weight, colour and position to show what matters most.",
+        "Choose one main alignment and line every element up with something.",
+        "Group related information and use extra space to separate different groups.",
+        "White space makes a design easier to read; it is not wasted space.",
+        "The squint test shows quickly whether your hierarchy works."
+      ],
+      "mistakes": [
+        "Making everything big and bold — if everything shouts, nothing stands out, so choose one star.",
+        "Mixing centred, left and right alignment at random — pick one main alignment and keep to it.",
+        "Pushing text right to the edges — leave margins so nothing is cut off when printed or viewed on a phone."
+      ],
+      "task": "Take your thumbnails from Chapter 1 and draw a full-size layout for the science fair poster. Mark the three levels of hierarchy, your main alignment line and the margins. Do the squint test and adjust anything that does not stand out in the right order.",
+      "quiz": [
+        {
+          "q": "On a flyer, the date, time and venue are scattered in three different corners. What is the best fix?",
+          "opts": ["Make each one a different colour", "Make all three larger than the headline", "Group them together in one block near the main message", "Remove the venue to save space"],
+          "a": 2,
+          "why": "Related information belongs together, so readers find all the 'when and where' details in one look."
+        },
+        {
+          "q": "Layout A has a large headline, medium-sized details and small contact text. Layout B uses the same size and bold weight for every line. Which communicates better?",
+          "opts": ["Layout A, because the size differences show what to read first", "Layout B, because equal text treats all information fairly", "Layout B, because bold text is always easier to read", "Neither, because hierarchy depends only on colour"],
+          "a": 0,
+          "why": "Clear differences in size create a reading order. When everything is equally bold, nothing stands out."
+        },
+        {
+          "q": "You squint at your poster and the first thing you notice is a decorative border, not the event name. What should you do?",
+          "opts": ["Nothing, because the design is finished", "Remove the event name", "Stop using the squint test", "Tone down the border and strengthen the event name"],
+          "a": 3,
+          "why": "The squint test shows what dominates. The main message should be at the top of the hierarchy, not the decoration."
+        },
+        {
+          "q": "Your poster feels crowded. Which change is most likely to help?",
+          "opts": ["Fill the remaining gaps with clip art", "Cut less important words so the key details have space around them", "Shrink all the text until it fits", "Remove the margins to gain space"],
+          "a": 1,
+          "why": "White space separates ideas and helps important parts stand out. Shrinking text or filling gaps makes crowding worse."
+        },
+        {
+          "q": "A paragraph of competition rules is centred, so every line starts in a different place. What would improve it?",
+          "opts": ["Left-align it so each line starts at the same edge", "Put it all in capital letters", "Right-align only the first line", "Rotate it sideways"],
+          "a": 0,
+          "why": "A straight left edge helps readers find the start of each line. Centring suits short headings, not longer text."
+        }
+      ]
+    },
+    {
+      "title": "Colour: the wheel, contrast and palettes",
+      "goal": "Choose a small colour palette that suits the message and keeps text easy to read.",
+      "sections": [
+        {
+          "heading": "The colour wheel in plain terms",
+          "body": "A colour wheel arranges colours in a circle so you can see how they relate. On the traditional painter's wheel, the **primary** colours are red, yellow and blue. Mixing two primaries gives the **secondary** colours (orange, green and purple), and mixing a primary with a neighbouring secondary gives **tertiary** colours such as yellow-green.\n\nAdding white to a colour makes a lighter **tint**; adding black makes a darker **shade**. Colours on one side of the wheel (reds, oranges, yellows) feel **warm** and energetic, while the other side (blues, greens, purples) feels **cool** and calm. Meanings depend on context: green and white may suggest a national celebration, while your school's own colours instantly say 'this is from us'."
+        },
+        {
+          "heading": "Building a simple palette",
+          "body": "A **palette** is the small set of colours you choose for one design. Common starting points are:\n\n- **Complementary:** two colours opposite each other on the wheel, such as blue and orange, for strong contrast\n- **Analogous:** neighbouring colours, such as blue, blue-green and green, for a calm, harmonious feel\n- **Monochromatic:** tints and shades of one colour, for a simple, tidy look\n\nTwo or three main colours plus a neutral (white, cream, grey or near-black) are enough for most posters. Let one colour dominate, use a second for support and save a bright accent for the thing you most want noticed. Design apps describe colours with **hex codes** such as `#1B5E20`; write yours down so every version uses exactly the same colours.",
+          "code": {
+            "lang": "text",
+            "source": "PALETTE — Reading Club poster (example)\nBackground   cream         #FFF8E1\nMain         deep green    #1B5E20   headings\nAccent       warm yellow   #F9A825   shapes and highlights only\nText         charcoal      #212121   body text\n\nContrast checks (WebAIM Contrast Checker)\ncharcoal on cream     15.16 : 1   passes\ndeep green on cream    7.41 : 1   passes\nyellow on cream        1.85 : 1   fails, never use for text\ncharcoal on yellow     8.17 : 1   passes, fine for a label"
+          }
+        },
+        {
+          "heading": "Contrast keeps text readable",
+          "body": "Text is readable when it is clearly lighter or darker than its background. What matters most is the difference in **lightness**, not just using different colours: bright yellow on white, or red on green, may look bold but is hard to read.\n\nAccessibility guidelines recommend a contrast ratio of at least **4.5:1** for normal text and **3:1** for large headings. Type any two hex codes into a free contrast checker to get the ratio. A quick extra test is to turn a copy of your design to greyscale: if the hierarchy disappears, you need more contrast. When text sits on a photo, put a solid shape behind it or use a calm, plain part of the image."
+        },
+        {
+          "heading": "Colour for everyone, on paper and screen",
+          "body": "Some people have colour vision deficiency (sometimes called colour blindness) and cannot easily tell certain colours apart, often reds and greens. So never use colour as the only way to show meaning. If a provision shop's price list marks sold-out items in red, add the words 'Sold out' as well.\n\nColours also change between devices. Screens give out light, so colours look bright; printed ink often looks darker and duller, and some printers shift colours. If your design will be printed, print one test copy and look at it where it will hang before printing many."
+        }
+      ],
+      "points": [
+        "Tints add white and shades add black; both help you build a palette from one colour.",
+        "Two or three main colours plus a neutral are enough for most designs.",
+        "Readability comes from contrast in lightness, not just from using different colours.",
+        "Aim for at least 4.5:1 contrast for normal text and 3:1 for large headings.",
+        "Never use colour as the only way to show meaning."
+      ],
+      "mistakes": [
+        "Using every colour you like — choose a palette first and stick to it.",
+        "Placing text straight onto a busy photo — add a solid shape behind it or use a calmer area.",
+        "Judging colours only on a bright phone screen — print a test copy or check on another device."
+      ],
+      "task": "Create a palette of two or three colours plus one neutral for your science fair poster and write down the hex codes. Check each text and background pair in a contrast checker, then turn a draft to greyscale to see whether the hierarchy still works.",
+      "quiz": [
+        {
+          "q": "Bright yellow text on a white background looks cheerful on your screen. What is the main problem?",
+          "opts": ["Yellow cannot be printed", "The colours are too similar in lightness, so the text is hard to read", "White is not allowed on posters", "It uses too much ink"],
+          "a": 1,
+          "why": "Readability depends on a difference in lightness. Yellow and white are both very light, so the contrast is very low."
+        },
+        {
+          "q": "Your poster uses green, orange, purple, pink, blue and red in equal amounts. What would most improve it?",
+          "opts": ["Add more colours so every section is different", "Make every word a different colour", "Use a rainbow gradient background", "Pick two or three main colours plus a neutral and use them consistently"],
+          "a": 3,
+          "why": "A small palette looks planned and lets an accent colour draw attention where you want it."
+        },
+        {
+          "q": "A price list marks sold-out items in red and available items in green, with no other label. What is the best fix?",
+          "opts": ["Add the words 'Sold out' as well as the colour", "Use a brighter red", "Make the text smaller", "Swap the red and the green"],
+          "a": 0,
+          "why": "Some people cannot easily tell red from green. Words or icons make the meaning clear to everyone."
+        },
+        {
+          "q": "You want a calm, harmonious feel for a library poster. Which palette is most likely to give that?",
+          "opts": ["Purple and yellow at full strength in equal amounts", "Neighbouring colours such as blue, blue-green and green", "Six bright colours used equally", "Red text on a bright green background"],
+          "a": 1,
+          "why": "Analogous colours sit next to each other on the wheel and blend smoothly. Strong opposites create energy and tension instead."
+        },
+        {
+          "q": "A contrast checker says your body text and background have a ratio of 2.1:1. What should you do?",
+          "opts": ["Keep it, because any ratio above 1:1 is fine", "Make the text smaller and thinner", "Change only the font", "Make the text much darker or the background much lighter until it reaches at least 4.5:1"],
+          "a": 3,
+          "why": "Normal text needs at least 4.5:1 to be comfortable to read. At 2.1:1 many people will struggle."
+        }
+      ]
+    },
+    {
+      "title": "Typography: choosing and pairing fonts",
+      "goal": "Pick readable fonts, pair them well and size text so it works at real viewing size.",
+      "sections": [
+        {
+          "heading": "Typefaces and their personalities",
+          "body": "A **typeface** is a family of letter designs, such as Roboto; a **font** is one particular style of it, such as Roboto Bold. Typefaces fall into broad groups:\n\n- **Serif:** small strokes at the ends of letters; often feels traditional or formal\n- **Sans serif:** no end strokes; clean, modern and very readable on screens\n- **Script:** looks like joined-up handwriting; elegant but harder to read\n- **Display:** bold or unusual designs made for big headlines\n\nEvery typeface has a personality. A heavy, rounded display font suits a sports day; a graceful script might suit a wedding card; neither suits a long paragraph of rules. Choose type that fits the message and the audience in your brief."
+        },
+        {
+          "heading": "Pairing fonts",
+          "body": "Most designs need only one or two typefaces. A safe method is to pair a strong heading typeface with a plain, readable one for the details. Another is to use a single family and create contrast with size and weight: a bold headline, regular details and a light caption.\n\nPairs work when they are clearly different in a planned way. Two fonts that look almost the same, but not quite, make a design look like a mistake. Keep decorative and script fonts for a few words only, and never use them for key details such as the date, time or phone number."
+        },
+        {
+          "heading": "Size, spacing and readability",
+          "body": "Hierarchy needs clear size differences: the headline should be obviously bigger than the details, not just slightly bigger. Give lines of text room to breathe; line spacing of about 1.2 to 1.5 times the text size is comfortable. Very long lines are tiring, so keep paragraphs in narrower columns, and avoid long passages in CAPITAL LETTERS, which are slower to read.\n\nThe most important test is to check text at its **real size**. Print a poster at full size and look at it from where your audience will stand. For phone graphics, send the image to your own phone and look at it without zooming. If you have to squint, the text is too small or too thin.",
+          "code": {
+            "lang": "text",
+            "source": "EXAMPLE TYPE SIZES (a starting point, then test)\n\nA3 poster read from about 2 metres\n  Headline      about 90–120 pt, bold\n  Key details   about 36–48 pt\n  Small print   at least 18 pt\n\n1080 × 1920 px phone status image\n  Headline      about 100–160 px, bold\n  Key details   about 56–80 px\n  Small print   at least 40 px\n\nAlways confirm by printing, or by viewing on a real phone."
+          }
+        },
+        {
+          "heading": "Words and free fonts",
+          "body": "Text is part of the design, so edit it. Cut extra words until each line says one thing clearly, and proofread names, dates and spellings twice; better still, ask someone else to check too.\n\nUse fonts from trusted sources. Fonts built into tools such as Canva or Google Slides can be used in designs you make with those tools, and Google Fonts offers hundreds of typefaces that are free to use. Avoid downloading 'free' fonts from unknown websites: some files carry viruses, and some fonts are only free for personal use."
+        }
+      ],
+      "points": [
+        "Use one or two typefaces, and vary size and weight to create hierarchy.",
+        "Keep decorative and script fonts for short headings only.",
+        "Comfortable line spacing and shorter lines make text easier to read.",
+        "Test text at its real size: printed and viewed from a distance, or on an actual phone.",
+        "Use fonts with a clear licence from trusted sources such as Google Fonts."
+      ],
+      "mistakes": [
+        "Using four or five fonts in one design — limit yourself to two.",
+        "Writing whole paragraphs in capital letters — save capitals for a few words.",
+        "Downloading 'free' fonts from unknown sites — they may carry malware or forbid your use, so stick to trusted sources.",
+        "Making small print too small or too thin — check it at real size before you finish."
+      ],
+      "task": "Choose a heading font and a body font for your poster, or one family in two weights. Set the headline, key details and small print, then print the design or view it at real size. Adjust any text you cannot read comfortably from where your audience will stand.",
+      "quiz": [
+        {
+          "q": "A sports day poster uses a delicate script font for the date, time and venue. What is the risk?",
+          "opts": ["Script fonts are illegal on posters", "The poster will print in black and white", "The key details will be hard to read quickly", "There is no risk, because script suits all text"],
+          "a": 2,
+          "why": "Script fonts are harder to read, especially when small or seen from a distance. Key details need a plain, clear font."
+        },
+        {
+          "q": "Which font choice is likely to work best for a science fair poster?",
+          "opts": ["A bold heading typeface with a plain sans-serif for the details", "Two different script fonts", "A different font for every line", "Two sans-serif fonts that look almost, but not quite, the same"],
+          "a": 0,
+          "why": "A clear, planned contrast between heading and details looks intentional. Near-identical fonts look like a mistake."
+        },
+        {
+          "q": "Your status graphic looks fine zoomed in on a laptop, but on a phone the small print is unreadable. What is the best fix?",
+          "opts": ["Switch to a thinner font", "Add more lines of text", "Cut the text to the essentials and make it larger", "Put a busy photo behind the text"],
+          "a": 2,
+          "why": "Phone graphics are viewed small. Fewer words at a larger size is the reliable fix."
+        },
+        {
+          "q": "A paragraph stretches across the full width of an A3 poster, with the lines squashed close together. How can you make it easier to read?",
+          "opts": ["Put it all in capital letters", "Use a narrower text box and add a little line spacing", "Make the text even smaller", "Centre every line"],
+          "a": 1,
+          "why": "Shorter lines and comfortable spacing reduce effort. Capitals and smaller text make reading slower."
+        },
+        {
+          "q": "A classmate shares a 'free' font from a website you have never heard of. What is the sensible choice?",
+          "opts": ["Install it straight away", "Rename the file so nobody knows where it came from", "Share it with the whole class", "Use a font from a trusted source with a clear licence, such as Google Fonts"],
+          "a": 3,
+          "why": "Unknown downloads may contain malware or restrict how a font can be used. Trusted sources make the licence clear."
+        }
+      ]
+    },
+    {
+      "title": "Images, icons and permission",
+      "goal": "Choose images and icons that support the message, and use only those you have the right to use.",
+      "sections": [
+        {
+          "heading": "Choosing images and icons that work",
+          "body": "An image should help explain the message, not just fill a gap. One strong, relevant picture usually works better than many small ones. Look for images that are sharp, well lit and show the subject clearly: for a science fair, a close photo of a student's model says more than a blurry crowd shot.\n\nCrop images to focus on what matters, and resize them by dragging a corner so they keep their shape; stretching a photo makes people look squashed. If you use icons, keep them in one style, such as all outline or all solid, with the same line thickness and colour."
+        },
+        {
+          "heading": "Copyright in plain language",
+          "body": "**Copyright** is the legal right of creators to control how their work is copied and shared. In Nigeria, as in most countries, a photo, drawing or song is protected automatically once it is made; the creator does not need to register it or add a © symbol. So an image appearing in search results does **not** mean you may use it, and writing the creator's name underneath is not the same as permission.\n\nSafe choices are:\n\n- images you photographed or drew yourself\n- images with a clear open licence, such as Creative Commons, or in the public domain\n- the built-in library of a tool such as Canva, used under that tool's licence\n- work you have **written** permission to use, such as a message from the photographer saying yes"
+        },
+        {
+          "heading": "Creative Commons and credits",
+          "body": "Creative Commons (CC) licences let creators share work with conditions, shown by short codes:\n\n- **BY:** you must credit the creator\n- **SA (ShareAlike):** if you change it, share your version under the same licence\n- **NC (NonCommercial):** not for uses mainly aimed at making money\n- **ND (NoDerivatives):** you may share it but not change it\n\n**CC0** and public-domain works can generally be used freely, though crediting them is still good practice. Search tools such as Openverse show the licence for each result. Write a credit line naming the title, creator, source and licence, and keep a record with your files.",
+          "code": {
+            "lang": "text",
+            "source": "CREDIT LINE (example format)\nPhoto: 'Microscope on lab bench' by A. Bello, via Openverse, CC BY 4.0\n\nIMAGE RECORD (one line per image)\nFile: microscope.jpg\nFrom: Openverse    Creator: A. Bello    Licence: CC BY 4.0\nChanges: cropped\n\nFile: volcano-model.jpg\nFrom: my own photo, taken with permission of the exhibitors"
+          }
+        },
+        {
+          "heading": "People in photos: consent first",
+          "body": "Before photographing anyone, ask. Explain what the picture is for and where it will appear; a school noticeboard is very different from a public social media page. Accept 'no' without pressure. For photos of students, follow your school's rules and get the teacher in charge to approve; for anything shared outside school, a parent or guardian should agree too.\n\nShow people respectfully, and never add personal details such as full names, phone numbers or home addresses. If someone later changes their mind, remove their photo from your designs."
+        }
+      ],
+      "points": [
+        "One clear, relevant, sharp image usually works better than many small ones.",
+        "Finding an image online does not mean you may use it, and a credit is not the same as permission.",
+        "Safe sources are your own work, clearly licensed images, a tool's built-in library or written permission.",
+        "Learn the Creative Commons codes: BY credit, SA share alike, NC non-commercial, ND no changes.",
+        "Always ask before photographing people and before using their photo."
+      ],
+      "mistakes": [
+        "Stretching a photo to fill a space — drag a corner handle or crop it instead.",
+        "Copying a picture from search results — use a licensed source or take your own photo.",
+        "Photographing classmates for a poster without asking — explain how the photo will be used and get a clear yes, plus a teacher's or parent's approval where needed."
+      ],
+      "task": "Find or create two images for your poster: one photo or drawing you made yourself and one openly licensed image from a site such as Openverse. Write a full credit line for the licensed image. If any person appears in your photo, ask for their permission first and note who approved it.",
+      "quiz": [
+        {
+          "q": "You find a perfect photo of a microscope in search results, with no licence information. What should you do?",
+          "opts": ["Use it, because it is on the internet", "Use it and write 'not mine' underneath", "Treat it as protected and find a licensed image or take your own photo", "Use it if you change it to black and white"],
+          "a": 2,
+          "why": "Copyright applies automatically, so no licence means no permission. Editing it or admitting it is not yours does not change that."
+        },
+        {
+          "q": "An image is licensed CC BY-NC. Your club wants it on a poster selling raffle tickets to raise money. What is the issue?",
+          "opts": ["NC means non-commercial, so a money-raising use may not be allowed; ask the creator or choose another image", "BY means you must not credit the creator", "Creative Commons images can be used for anything", "NC means you must change the colours"],
+          "a": 0,
+          "why": "NC limits uses mainly aimed at making money. When unsure, ask the creator or pick an image without that condition."
+        },
+        {
+          "q": "Your poster mixes outline icons, cartoon clip art and shiny 3D icons. What would improve it?",
+          "opts": ["Add more icon styles for variety", "Use icons from one consistent style", "Make the icons bigger than the headline", "Replace all the words with icons"],
+          "a": 1,
+          "why": "A consistent style ties the design together. Mixed styles look random and distract from the message."
+        },
+        {
+          "q": "You want a photo of the debate team for a flyer that will go to the parents' WhatsApp group. What should you do first?",
+          "opts": ["Take the photo secretly so it looks natural", "Use a photo from someone's status without asking", "Blur everyone's faces without telling them", "Ask each person and the teacher in charge for permission, explaining where it will be shared"],
+          "a": 3,
+          "why": "People should know how their image will be used and be free to say no, and school rules and teacher approval apply."
+        },
+        {
+          "q": "A photo looks blurry and pixelated when you enlarge it on the poster. What is the best choice?",
+          "opts": ["Stretch it wider so the blur is less noticeable", "Use a higher-resolution version or a different image", "Cover it with stickers", "Keep it, because blur never shows on paper"],
+          "a": 1,
+          "why": "A low-resolution image cannot be made sharp by enlarging it. A bigger original or a different image is the fix."
+        }
+      ]
+    },
+    {
+      "title": "Print or screen: exporting and feedback",
+      "goal": "Prepare a design for paper or a phone screen, export it in a suitable format and improve it using feedback.",
+      "sections": [
+        {
+          "heading": "Print and screen are different",
+          "body": "Print designs are planned in real-world sizes. **A4** is 210 × 297 mm, **A3** is 297 × 420 mm (twice the area of A4) and **A5** is 148 × 210 mm. For sharp printing, images need enough pixels: about 300 pixels per inch at the final size, which for a full A4 page is roughly 2480 × 3508 pixels. Keep important text at least 5 mm inside the edge, and if colour runs right to the edge, ask the printer whether they need extra **bleed** (often 3 mm) beyond the trim line.\n\nScreen designs are measured in pixels. A common size for WhatsApp Status and other vertical stories is **1080 × 1920 px** (a 9:16 shape), and a square post is often 1080 × 1080 px. Keep words away from the very top and bottom of a status image, where the app shows names and buttons."
+        },
+        {
+          "heading": "Choosing a file format",
+          "body": "- **PNG:** keeps text and flat colours crisp and can have a transparent background; files can be large if they contain photos\n- **JPG (JPEG):** good for photos and small file sizes; it compresses the image, so very small text can look slightly fuzzy\n- **PDF:** best for sending to a printer because it keeps the layout, fonts and quality; many tools offer a print-quality PDF option\n\nAlways keep your editable original too, so you can fix mistakes later. For sharing on phones, check the file size before you send: a sharp image of a few hundred kilobytes is much kinder to friends on limited data than a 20 MB file, and chat apps may compress large images anyway."
+        },
+        {
+          "heading": "Adapting a poster for a phone",
+          "body": "A portrait poster does not fit neatly on a tall phone screen, and shrinking it makes the text tiny. Instead, **rebuild** the design on a new 1080 × 1920 px canvas. Keep the same colours, fonts and main image so the two look like a matching set, but cut the wording to the essentials: event name, date, time, venue and perhaps one short line. Make everything larger than you think it needs to be, then check it on a real phone."
+        },
+        {
+          "heading": "Giving and using feedback",
+          "body": "Show your design to two or three people from your audience for about five seconds, then hide it and ask what they remember. If they cannot recall the event or the date, your hierarchy needs work. Better questions than 'Do you like it?' are 'What did you notice first?' and 'What would you do next?'\n\nWhen you give feedback to others, be specific and kind: say what works, what is unclear and one suggestion, and link comments to the brief rather than personal taste. When you receive feedback, look for problems several people mention and fix those first. Finally, proofread against the brief and print **one** test copy before paying for many.",
+          "code": {
+            "lang": "text",
+            "source": "FINAL CHECK BEFORE EXPORT\n[ ] Key message readable in about 5 seconds\n[ ] Date, time, venue and names checked against the brief\n[ ] Everything aligned; margins clear of the edges\n[ ] Text passes a contrast check\n[ ] Images: my own, licensed and credited, or used with permission\n[ ] Print version: high-quality PDF, one test copy printed\n[ ] Phone version: 1080 × 1920 px JPG or PNG, file size checked"
+          }
+        }
+      ],
+      "points": [
+        "Print is planned in millimetres and needs high resolution; screens are measured in pixels.",
+        "PNG suits text and flat graphics, JPG suits photos and small files, and PDF suits printing.",
+        "Rebuild a design for each format instead of simply shrinking it.",
+        "Good feedback is specific, kind and linked to the brief.",
+        "Proofread and print one test copy before paying for many."
+      ],
+      "mistakes": [
+        "Sending a low-resolution screenshot to the printer — export a print-quality PDF instead.",
+        "Putting key text right at the edge of a print design — keep it inside a safe margin.",
+        "Asking only 'Do you like it?' — ask what people noticed first and what they would do next."
+      ],
+      "task": "Export your poster as a print-quality PDF and a phone-friendly JPG or PNG, then build a matching 1080 × 1920 px status graphic. Show both to two people from your audience for five seconds each, write down what they remembered, and make at least two improvements.",
+      "quiz": [
+        {
+          "q": "The printer asks for your A4 poster. Which file is best to send?",
+          "opts": ["A screenshot of the design on your phone", "A high-quality PDF exported for print", "A small JPG compressed by a chat app", "A link to your design app's home page"],
+          "a": 1,
+          "why": "A print-quality PDF keeps the layout, fonts and sharpness. Screenshots and compressed images can print blurry."
+        },
+        {
+          "q": "You are sharing a flyer with a large photo in a WhatsApp group where many people have limited data. Which export is most sensible?",
+          "opts": ["A JPG at a sensible size, checked to make sure the text is still sharp", "A 40 MB print PDF", "Ten separate screenshots", "A PNG at four times the size needed"],
+          "a": 0,
+          "why": "A reasonably sized JPG suits photos on phones and respects people's data. Oversized files cost more without looking better on a phone."
+        },
+        {
+          "q": "You shrink your A3 poster onto a 1080 × 1920 px status canvas and the text becomes tiny. What should you do?",
+          "opts": ["Keep it, because people can zoom in", "Add more detail, since phone screens are sharp", "Rebuild the layout for the tall screen, keeping only the key message and details", "Make the background darker"],
+          "a": 2,
+          "why": "Each format needs its own layout. Keeping the same colours, fonts and image makes the two designs match."
+        },
+        {
+          "q": "A friend looks at your poster and says, 'It's nice.' Which follow-up question gives the most useful feedback?",
+          "opts": ["Do you like it?", "Is it better than everyone else's?", "Should I add more colours?", "What did you notice first, and when is the event?"],
+          "a": 3,
+          "why": "Specific questions test whether the design actually communicates the message in the brief."
+        },
+        {
+          "q": "A teacher spots a wrong venue after 50 copies have been printed. Which habit would most likely have prevented this?",
+          "opts": ["Using a brighter colour for the venue", "Proofreading against the brief and printing one test copy first", "Exporting as PNG instead of PDF", "Adding more images"],
+          "a": 1,
+          "why": "Checking details against the brief and reviewing a test print catches errors before you pay for many copies."
+        }
+      ]
+    }
+  ],
+  "project": {
+    "title": "School event poster and matching status graphic",
+    "brief": "Design an A4 or A3 poster for a real or imagined school event, such as a science fair, inter-house sports day or reading club launch, plus a matching 1080 × 1920 px graphic for WhatsApp Status or another social platform. Both must share the same message, colours and fonts, and students and parents should understand them within a few seconds.",
+    "steps": [
+      "Write a design brief: audience, purpose, key message, required details, formats and where each will be seen.",
+      "Collect and check all the text, then sketch at least three thumbnail layouts on paper.",
+      "Choose a palette of two or three colours plus a neutral, and one or two fonts; check the text contrast.",
+      "Gather images you made or have permission to use, ask anyone pictured for consent and write credit lines for licensed images.",
+      "Build the poster with a clear hierarchy, consistent alignment and safe margins.",
+      "Rebuild the design for the vertical status format instead of shrinking the poster.",
+      "Test both designs with two or three people from your audience, improve them, then export a print-quality PDF and a phone-friendly JPG or PNG."
+    ],
+    "checklist": [
+      "The key message and event details can be understood in about five seconds.",
+      "Elements are aligned, related information is grouped and there is breathing space.",
+      "Text passes a contrast check and is readable at its real size.",
+      "No more than two typefaces and one consistent colour palette are used across both designs.",
+      "Every image is your own, openly licensed and credited, or used with permission, and anyone pictured agreed.",
+      "Names, dates, times and the venue have been proofread against the brief.",
+      "Files are exported in the right format and size for print and for phones."
+    ]
+  }
+}

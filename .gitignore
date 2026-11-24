@@ -1,0 +1,9 @@
+.env
+node_modules/
+npm-debug.log*
+studyly-backup-*.json
+data/users.json
+data/users.json.*.tmp
+.claude/settings.local.json
+Thumbs.db
+desktop.ini

@@ -1,0 +1,500 @@
+{
+  "id": "speaking",
+  "title": "Presentation and public speaking",
+  "icon": "🎤",
+  "area": "Communication",
+  "level": "Beginner",
+  "duration": "About 5 hours",
+  "summary": "Plan a talk for a real audience, structure it clearly, make simple slides, use your voice and body with confidence, manage nerves and handle questions in class, debates and assemblies.",
+  "outcomes": [
+    "Identify the audience and purpose of a talk, and write one key message.",
+    "Structure a talk with an opening hook, three main points and a strong close.",
+    "Make simple slides that are easy to read on a projector or a phone.",
+    "Use pace, pauses, projection and body language to hold attention.",
+    "Rehearse well, manage nerves and handle questions in class, debates and assemblies."
+  ],
+  "tools": "Your voice and a phone to time and record yourself. Slides are optional: Google Slides (free on phones and computers), Microsoft PowerPoint or LibreOffice Impress all work. Ask before filming anyone else, and keep practice recordings private unless a parent or teacher agrees to sharing.",
+  "resources": [
+    {
+      "title": "Toastmasters International — Public speaking tips",
+      "url": "https://www.toastmasters.org/resources/public-speaking-tips",
+      "note": "Free articles from the worldwide public speaking club on writing, practising and delivering speeches."
+    },
+    {
+      "title": "Toastmasters — How to write and deliver a speech",
+      "url": "https://www.toastmasters.org/resources/public-speaking-tips/how-to-write-and-deliver-a-speech",
+      "note": "A step-by-step guide from planning and outlining to editing and practising a speech."
+    },
+    {
+      "title": "Toastmasters — How to overcome your fear of public speaking",
+      "url": "https://www.toastmasters.org/resources/public-speaking-tips/how-to-overcome-your-fear-of-public-speaking",
+      "note": "Practical ideas for preparing, calming nerves before you speak and coping if you feel nervous during a talk."
+    },
+    {
+      "title": "TED — Best talks on presentation skills",
+      "url": "https://www.ted.com/playlists/574/how_to_make_a_great_presentation",
+      "note": "A free playlist of talks about talk structure, storytelling and speaking clearly. Videos use a lot of data, so watch on Wi-Fi or read the transcripts."
+    },
+    {
+      "title": "TED — Chris Anderson: TED's secret to great public speaking",
+      "url": "https://www.ted.com/talks/chris_anderson_ted_s_secret_to_great_public_speaking",
+      "note": "A short talk by TED's head on building a talk around one clear idea. A transcript is available."
+    },
+    {
+      "title": "Microsoft Support — Tips for creating and delivering an effective presentation",
+      "url": "https://support.microsoft.com/en-us/office/tips-for-creating-and-delivering-an-effective-presentation-f43156b0-20d2-4c51-8345-0c337cefb88b",
+      "note": "Short, practical advice on designing readable slides and presenting with them."
+    }
+  ],
+  "chapters": [
+    {
+      "title": "Understanding your audience and purpose",
+      "goal": "Identify who you are speaking to and why, and write the one message you want them to remember.",
+      "sections": [
+        {
+          "heading": "Every talk has a purpose",
+          "body": "Before you write a single word, decide **why** you are speaking. Most talks mainly aim to do one of these:\n\n- **Inform**: share facts or explain something, such as an assembly announcement about exam dates.\n- **Persuade**: change what people think or do, such as a debate speech or a campaign for class captain.\n- **Inspire**: lift people's spirits or motivate them, such as a send-forth speech for SS3 students.\n- **Entertain**: help people enjoy themselves, such as a funny story on cultural day.\n\nMany talks mix these, but one purpose should lead. Then ask yourself: after my talk, what should people **think, feel or do**?"
+        },
+        {
+          "heading": "Know your audience",
+          "body": "The same topic needs a different talk for different listeners. A talk on healthy eating for JSS1 pupils needs simple words and examples from the school canteen; the same topic for the PTA might include costs and planning. Find out:\n\n- Who will be listening, and how many?\n- What do they already know about the topic?\n- What do they care about?\n- Where will you speak: an open-air assembly, a hot classroom or a hall with a microphone?\n- How long do you have?\n\nChoose examples, words and even jokes that suit this audience. If you are unsure, ask the teacher or organiser."
+        },
+        {
+          "heading": "One key message",
+          "body": "A **key message** is the one sentence you want people to remember if they forget everything else. Write it down before you plan anything else. A good key message is short enough to say in one breath and clear enough that a younger pupil would understand it.\n\nFor example, for a road-safety talk to JSS1: 'Always cross at a zebra crossing or with the traffic warden, even when you are late.' Every story, fact and slide in your talk should support this message. If something does not, cut it, however interesting it is."
+        },
+        {
+          "heading": "Plan for the time",
+          "body": "Keeping to time is part of respecting your audience. To plan the length, find your own speaking speed: read a paragraph aloud at a calm pace for one minute and count the words. If you say about 130 words in a minute, a three-minute talk is about 3 × 130 = 390 words. Planning to this size stops you preparing far too much and rushing at the end. Fill in a planning card like the one below for every talk.",
+          "code": {
+            "lang": "text",
+            "source": "TALK PLANNING CARD\n\nTopic:          Why you should join the reading club\nAudience:       JSS2 and JSS3 pupils at Monday assembly, outdoors, one microphone\nThey know:      There is a library, but few pupils use it\nPurpose:        Persuade\nKey message:    The reading club makes reading enjoyable and helps your English.\nAction I want:  Sign up with the club captain by Friday\nTime limit:     3 minutes (about 390 words at my pace)"
+          }
+        }
+      ],
+      "points": [
+        "Decide whether your talk mainly informs, persuades, inspires or entertains",
+        "Find out who is listening, what they know and where you will speak",
+        "Write one key message you can say in a single breath",
+        "Choose examples and words that suit this particular audience",
+        "Plan for the time limit from the very start"
+      ],
+      "mistakes": [
+        "Giving the same talk to every audience — change your examples and words for pupils, teachers or parents.",
+        "Trying to say everything you know — choose one key message and cut the rest.",
+        "Ignoring the setting — check whether there is a microphone, a projector or shade before you plan."
+      ],
+      "task": "Pick a school topic you could talk about for three minutes. Fill in a talk planning card with the audience, what they already know, your purpose, one key message, the action you want and the time limit. Time yourself reading for one minute to find your own pace.",
+      "quiz": [
+        {
+          "q": "The head girl announces the inter-house sports dates at assembly. What is the main purpose of her talk?",
+          "opts": ["To entertain", "To inform", "To inspire", "To argue against an opponent"],
+          "a": 1,
+          "why": "Her main job is to share facts clearly so that everyone knows the dates."
+        },
+        {
+          "q": "You will give a talk on healthy eating to JSS1 pupils and later to the PTA. What should change?",
+          "opts": ["Nothing at all", "Only the colour of your clothes", "The examples and words you use, to suit each audience", "You should simply speak faster to the parents"],
+          "a": 2,
+          "why": "Different audiences know and care about different things, so your examples and language should match them."
+        },
+        {
+          "q": "Which is the strongest key message for a road-safety talk to JSS1 pupils?",
+          "opts": ["Always cross at a zebra crossing or with the traffic warden, even when you are late", "Roads are important things", "There are many facts about cars, lorries, buses and the history of roads", "Safety"],
+          "a": 0,
+          "why": "It is one clear sentence that tells the audience exactly what to remember and do."
+        },
+        {
+          "q": "You have three minutes and you speak at about 130 words a minute. About how long should your talk be?",
+          "opts": ["About 130 words", "About 390 words", "About 1,300 words", "About 43 words"],
+          "a": 1,
+          "why": "3 minutes × 130 words a minute = 390 words."
+        },
+        {
+          "q": "Why check the setting before you plan your talk?",
+          "opts": ["So you can skip rehearsing", "Because the setting decides your topic", "It affects things like whether you need a microphone, can use slides or must speak louder outdoors", "The setting never matters"],
+          "a": 2,
+          "why": "Knowing the room or space helps you plan your voice, visual aids and timing."
+        }
+      ]
+    },
+    {
+      "title": "Structuring a talk",
+      "goal": "Build a talk with an opening hook, three clear points with examples, smooth links and a memorable close.",
+      "sections": [
+        {
+          "heading": "Open with a hook",
+          "body": "Your audience decides very quickly whether to listen. Use your first one or two sentences as a **hook** that grabs attention. Good hooks include:\n\n- A question: 'Who here has ever missed the school bus?'\n- A surprising fact you have checked, with its source.\n- A very short story: 'Last term, our library had one visitor in a whole week.'\n- A picture in words: 'Imagine opening the tap tomorrow morning and nothing comes out.'\n\nAfter the hook, briefly preview your talk: 'I will give you three reasons to join the reading club.' A preview works like a map: listeners relax when they know where you are going."
+        },
+        {
+          "heading": "Three main points",
+          "body": "Three main points are easy for listeners to follow and remember, which is why the 'rule of three' is so common in speeches. Give each point the same shape:\n\n1. **Claim**: say the point in one sentence.\n2. **Explain**: say why it is true or why it matters.\n3. **Example**: give a story, fact or picture that makes it real.\n\nOrder your points so they make sense: in time order, from problem to solution, or with your strongest point last. Link them with **signposts** such as 'First…', 'My second reason is…' and 'Finally…', so the audience always knows where they are."
+        },
+        {
+          "heading": "Use stories and examples",
+          "body": "Facts inform, but stories and examples make people care. A short example from school life, such as a classmate whose compositions improved after joining a book club, or the queue at the tap during a water shortage, helps listeners picture your point. Keep stories short, relevant and kind. Never embarrass a real person; change names or ask permission if you mention someone. If you use a statistic, make sure it comes from a trustworthy source and say where it came from."
+        },
+        {
+          "heading": "Close strongly",
+          "body": "The end of your talk is often what people remember best, so plan it as carefully as the opening. A strong close does three things:\n\n- **Sums up** your three points in one sentence.\n- **Repeats** your key message.\n- **Ends** with a call to action or a memorable final line.\n\nAvoid fading out with 'So, yeah, that's all.' Say your last line, pause, look at the audience and then say 'Thank you.' The outline below shows the whole structure of a three-minute talk, with rough timings.",
+          "code": {
+            "lang": "text",
+            "source": "3-MINUTE TALK OUTLINE – 'Why you should join the reading club'\n\nOpening hook (0:00–0:30)\n  Question: 'When did you last read a story you could not put down?'\n  Preview: 'I will give you three reasons to join the reading club.'\n\nPoint 1 (0:30–1:10): Reading builds your English\n  Example: Compositions are easier when you know more words.\n\nPoint 2 (1:10–1:50): It is a calm break from screens and stress\n  Example: Thirty quiet minutes with a novel every Wednesday afternoon.\n\nPoint 3 (1:50–2:30): You make friends who share your interests\n  Example: Members swap books and argue happily about endings.\n\nClose (2:30–3:00)\n  Summary: Better English, a calm break and new friends.\n  Call to action: 'Sign up with the club captain by Friday.'\n  Final line: 'Your next favourite story is waiting for you.'"
+          }
+        }
+      ],
+      "points": [
+        "Open with a hook: a question, a checked surprising fact or a short story",
+        "Preview your points so listeners know the route",
+        "Give each main point a claim, an explanation and an example",
+        "Use signposts such as 'first', 'next' and 'finally'",
+        "Close by summing up, repeating your key message and ending strongly"
+      ],
+      "mistakes": [
+        "Opening with only 'Good morning, my name is… and today I will talk about…' — add a hook in your first sentence or two.",
+        "Making points without examples — a short story or fact makes each point stick.",
+        "Ending with 'That's all' — finish with your key message or call to action, then say thank you."
+      ],
+      "task": "Write a full outline for a three-minute talk on your chosen topic, using the format above: a hook, a preview, three points with one example each, and a close with a call to action. Add rough timings and check that they add up to three minutes.",
+      "quiz": [
+        {
+          "q": "Which is the strongest opening hook for a talk about saving water?",
+          "opts": ["Good morning. My topic is water.", "Imagine opening the tap tomorrow morning and nothing comes out.", "I didn't have time to prepare, so please bear with me.", "Water is a liquid, as everyone knows."],
+          "a": 1,
+          "why": "It creates a vivid picture that makes listeners feel why the topic matters to them."
+        },
+        {
+          "q": "What should each main point in your talk include?",
+          "opts": ["A clear claim, an explanation and an example or evidence", "As many unrelated facts as possible", "A joke and nothing else", "A completely new topic"],
+          "a": 0,
+          "why": "The claim states the point, the explanation shows why it matters and the example makes it memorable."
+        },
+        {
+          "q": "Which of these is a signpost?",
+          "opts": ["Um, so, yeah…", "Anyway, whatever", "My second reason is…", "Is my phone ringing?"],
+          "a": 2,
+          "why": "Signposts tell the audience where you are in the talk and what is coming next."
+        },
+        {
+          "q": "Which closing is most effective?",
+          "opts": ["That's all, I think.", "Sorry it was boring.", "Any questions? No? OK, bye.", "So: better English, a calm break and new friends. Sign up by Friday, because your next favourite story is waiting."],
+          "a": 3,
+          "why": "It sums up the points, repeats the key message, gives a clear action and ends on a memorable line."
+        },
+        {
+          "q": "Your outline has a 1-minute opening, three points of 1 minute each and a 30-second close. The limit is 3 minutes. What should you do?",
+          "opts": ["Cut about 1 minute 30 seconds, for example by shortening the opening and each point", "Speak twice as fast", "Remove the close completely", "Keep it, because time limits do not matter"],
+          "a": 0,
+          "why": "1:00 + 3 × 1:00 + 0:30 = 4:30, which is 1:30 too long. An opening of 0:30, points of 0:40 each and a 0:30 close add up to 3:00."
+        }
+      ]
+    },
+    {
+      "title": "Simple, readable slides",
+      "goal": "Make a small number of clear slides that support your talk and are easy to read.",
+      "sections": [
+        {
+          "heading": "Do you need slides?",
+          "body": "Slides can help, but they are not compulsory. Many school talks, such as assembly speeches and debates, have no projector at all. Use slides only when they help the audience understand: a photo of a place, a simple diagram, a chart or a few key words. Other visual aids work too, such as a poster, a real object or a drawing on the board.\n\nRemember that slides **support** your talk; they are not your script. If you could give the talk perfectly well without them, keep them to a minimum."
+        },
+        {
+          "heading": "One idea per slide",
+          "body": "Give each slide **one idea**. Use a short heading that states the point, such as 'Reading grows your vocabulary', rather than just a topic like 'Reading'. Then add only what helps: one picture or diagram and a few key words, not full sentences.\n\nIf a slide is full of text, the audience reads instead of listening, and most people read faster than you speak. Put the details in your spoken words, or in a handout if one is needed. Three to five slides are plenty for a three-minute talk.",
+          "code": {
+            "lang": "text",
+            "source": "BEFORE (too much text)\nTitle: Reading\n- Reading is an activity that has many benefits for students in secondary school because it helps vocabulary and writing\n- The library is open from 8am to 4pm on Monday to Friday except on public holidays and during examination weeks\n- The reading club meets every Wednesday afternoon in the library and all students are welcome to come and join\n\nAFTER (one idea)\nTitle: Reading grows your vocabulary\n[Photo: a pupil reading under a tree, taken with permission]\n- More words, better compositions\n- Club: Wednesdays, library"
+          }
+        },
+        {
+          "heading": "Make it readable",
+          "body": "A slide that cannot be read is worse than no slide. Check these points:\n\n- **Large text**: a common guide is at least 24 point for main text, and larger for headings.\n- **Strong contrast**: dark text on a light background, or light text on a dark one. Avoid text over busy photos.\n- **Plain fonts**, and no more than two of them.\n- **Colour with care**: do not rely on red and green alone to show a difference, because some people cannot tell them apart.\n- **Permission**: use your own photos or images you are allowed to use, and credit them if required.\n\nTest your slides by standing at the back of the room, or by holding your phone at arm's length."
+        },
+        {
+          "heading": "Presenting with slides",
+          "body": "Face your audience, not the screen. Glance at the slide, then turn back and speak. Never read a slide word for word. When you want full attention on you, show a blank screen: in a PowerPoint slide show, pressing **B** turns the screen black, and pressing it again brings the slide back.\n\nAlways have a backup. Save a PDF copy on your phone or a flash drive, and rehearse giving the talk without slides at all. If there is a power cut, the speaker who carries on calmly looks the most prepared."
+        }
+      ],
+      "points": [
+        "Slides support your talk; they are not your script",
+        "Give each slide one idea, with a heading that states the point",
+        "Use large text, strong contrast and plain backgrounds",
+        "Test readability from the back of the room or at arm's length on a phone",
+        "Be ready to give the talk without slides if the power or projector fails"
+      ],
+      "mistakes": [
+        "Pasting paragraphs onto slides and reading them aloud — use key words and say the rest.",
+        "Using pale text on a busy photo — choose dark text on a light background, or the reverse.",
+        "Relying completely on the projector — carry a PDF copy and practise without slides."
+      ],
+      "task": "Make three slides for your talk, one for each main point. Each slide should have a heading that states the point, only a few short lines and one image or diagram you have permission to use. View them on your phone at arm's length and fix anything that is hard to read.",
+      "quiz": [
+        {
+          "q": "Which slide is likely to work best?",
+          "opts": ["Ten bullet points in small text", "A heading that states the point, one photo and two short lines", "A full paragraph copied from a textbook", "White text over a busy, colourful photo"],
+          "a": 1,
+          "why": "Simple, readable slides let the audience understand at a glance and then listen to you."
+        },
+        {
+          "q": "In the middle of your talk, the power goes off and the projector stops. What should you do?",
+          "opts": ["Stop and wait until the power returns", "Apologise and sit down", "Carry on with your key-word cards, because you rehearsed without slides", "Read the slides silently on your phone"],
+          "a": 2,
+          "why": "Slides only support you. A speaker who has practised without them can carry on calmly."
+        },
+        {
+          "q": "Why is the heading 'Reading grows your vocabulary' better than just 'Reading'?",
+          "opts": ["It tells the audience the point, even at a glance", "Longer headings always look more serious", "Headings should use as many words as possible", "It means you do not need to speak"],
+          "a": 0,
+          "why": "A heading that states the point helps people understand the message before you explain it."
+        },
+        {
+          "q": "You want to use a photo you found online on a slide. What should you do?",
+          "opts": ["Use any image, because everything online is free", "Remove the photographer's name so it looks cleaner", "Use your own photo or one you have permission to use, and credit it if required", "Screenshot it from someone's Status"],
+          "a": 2,
+          "why": "Photos belong to the people who took them, so you need permission or a free-to-use licence."
+        },
+        {
+          "q": "Your audience keeps reading your slide instead of listening to you. What could help?",
+          "opts": ["Add more text so they finish reading faster", "Cut the slide to a few key words, or show a blank screen while you speak", "Speak while facing the screen", "Add spinning animations"],
+          "a": 1,
+          "why": "Fewer words, or a blank screen, bring attention back to what you are saying."
+        }
+      ]
+    },
+    {
+      "title": "Voice and body language",
+      "goal": "Use pace, pauses, projection and body language to sound clear and confident.",
+      "sections": [
+        {
+          "heading": "Pace and pauses",
+          "body": "Nerves make most people speak too fast. Aim for a calm, steady pace, a little slower than everyday conversation, especially in a large room or outdoors, where sound carries less clearly.\n\n**Pauses** are one of the strongest tools a speaker has. A short pause before an important point makes people lean in; a pause after it gives them time to think. Pauses can also replace **fillers** such as 'um', 'er', 'like' and 'you know', which make you sound unsure. When you feel a filler coming, close your mouth, breathe and continue.\n\nMark pauses in your notes with one slash (/) for a short pause and two slashes (//) for a longer one, as in the example below.",
+          "code": {
+            "lang": "text",
+            "source": "MARKED-UP OPENING   ( / = short pause    // = long pause    CAPITALS = stress )\n\nImagine opening the tap tomorrow morning / and NOTHING comes out. //\nLast term, / that happened on my street / for THREE weeks. //\nToday I will share THREE simple ways / to save water at school. //"
+          }
+        },
+        {
+          "heading": "Projection and tone",
+          "body": "**Projection** means speaking loudly enough for the back row to hear you clearly, without shouting. It comes from good breathing: stand tall, breathe deeply into your belly and aim your voice at the people furthest away. Open your mouth properly and finish the ends of words, especially names, dates and numbers.\n\nWith a microphone, hold it steady just below your chin, keep the same distance throughout and test it before you start. Avoid a flat **monotone** by changing your tone and stressing key words: 'This is the ONLY library in our area.' Your voice should sound interested in your own topic."
+        },
+        {
+          "heading": "Body language",
+          "body": "Your audience sees you before they hear you. Stand with your feet about hip-width apart and your weight balanced, so that you do not sway. Keep your hands relaxed at your sides or lightly together in front of you, and use natural gestures that match your words, such as holding up three fingers for three points.\n\nMake **eye contact** with different parts of the room: left, centre, right and the back, not only your friends or the teacher. Avoid hands in pockets, fiddling with a pen or turning your back to read slides. At formal Nigerian school events, speakers usually begin by respectfully greeting the principal, staff and guests. Keep these greetings brief and warm, then begin your hook."
+        },
+        {
+          "heading": "Practise with your phone",
+          "body": "Your phone is a free speaking coach. Record one minute of your talk, then review it twice: once **with the sound off**, to study your posture, gestures and eye contact, and once **listening only**, to check your pace, pauses, fillers and volume. Choose one thing to improve, record again and compare. Small, steady changes add up quickly."
+        }
+      ],
+      "points": [
+        "Slow down, and pause before and after important points",
+        "Project your voice to the back row without shouting",
+        "Vary your tone and stress key words to avoid sounding flat",
+        "Stand balanced, make eye contact around the room and use natural gestures",
+        "Record yourself and improve one thing at a time"
+      ],
+      "mistakes": [
+        "Filling every gap with 'um' or 'you know' — pause silently instead.",
+        "Looking only at your notes, the floor or one friend — move your gaze around the whole audience.",
+        "Shouting to be heard — breathe deeply and aim your voice at the back of the room.",
+        "Swaying, fiddling with a pen or keeping your hands in your pockets — plant your feet and rest your hands when you are not gesturing."
+      ],
+      "task": "Mark pauses (/ and //) and stressed words (in capitals) on the first minute of your talk. Record yourself delivering it on your phone, then watch it once with the sound off and listen once without looking. Write down one strength and one change, then record it again.",
+      "quiz": [
+        {
+          "q": "Why pause after an important point?",
+          "opts": ["It shows you have forgotten your speech", "It gives listeners time to take the point in and shows that it matters", "It makes the talk shorter", "Pauses always look nervous"],
+          "a": 1,
+          "why": "A well-placed pause adds emphasis and gives the audience a moment to think."
+        },
+        {
+          "q": "You are speaking at an outdoor assembly with no microphone. What helps most?",
+          "opts": ["Speak faster so you finish quickly", "Shout every word", "Stand tall, breathe deeply and aim your voice at the back row", "Look down at your notes and speak softly"],
+          "a": 2,
+          "why": "Good posture and deep breathing let you project clearly without straining or shouting."
+        },
+        {
+          "q": "A friend says your voice sounded flat. What could you change?",
+          "opts": ["Vary your tone and stress key words", "Keep exactly the same tone throughout", "Add more 'ums'", "Turn your back to the audience"],
+          "a": 0,
+          "why": "Changing your tone and stressing important words keeps listeners interested."
+        },
+        {
+          "q": "Which body language shows confidence?",
+          "opts": ["Hands in pockets and eyes on the floor", "Feet planted, open posture and eye contact with different parts of the room", "Pacing quickly back and forth", "Hiding behind the lectern"],
+          "a": 1,
+          "why": "A steady, open stance and eye contact help the audience trust and connect with you."
+        },
+        {
+          "q": "Watching a recording of yourself with the sound off helps you notice…",
+          "opts": ["how many fillers you use", "whether your voice is loud enough", "your posture, gestures and eye contact", "how clearly you pronounce names"],
+          "a": 2,
+          "why": "Without sound you can focus completely on what your body is doing. Fillers, volume and pronunciation need listening."
+        }
+      ]
+    },
+    {
+      "title": "Managing nerves and rehearsing",
+      "goal": "Use practical techniques to calm nerves and rehearse in a way that builds real confidence.",
+      "sections": [
+        {
+          "heading": "Nerves are normal",
+          "body": "Almost everyone feels nervous before speaking, including experienced speakers. A racing heart, a dry mouth or shaky hands are your body's natural response to a challenge: it is getting you ready to perform. That energy can make you more alert and lively.\n\nTwo things are worth remembering. The audience usually notices far less nervousness than you feel inside, and most audiences want you to succeed. Your aim is not to be perfect but to be prepared, so do not apologise for being nervous. Simply begin."
+        },
+        {
+          "heading": "Calm your body before you speak",
+          "body": "Try these just before your turn:\n\n- **Slow breathing**: breathe in through your nose for a count of four and out through your mouth for a count of six. Repeat a few times.\n- **Arrive early**: check the microphone, the projector and where you will stand.\n- **Greet a few people** as they arrive, so the audience feels friendlier.\n- **Know your first lines very well**, so you start confidently even if your mind feels blank.\n- **Sip water**, and avoid energy drinks, which often contain caffeine and can make you feel more jittery.\n- **Talk to yourself kindly**: 'I have practised. I am ready.'"
+        },
+        {
+          "heading": "Rehearse the smart way",
+          "body": "Rehearsal is the best cure for nerves. Rehearse **aloud** and **standing up**, because reading silently in your head hides problems with timing and tricky words. Time every run.\n\nSpeak from **key-word cards** rather than a full script. Write your first and last sentences in full, then only a few key words for each point. Memorising a script word for word is risky: forgetting one word can make you lose the rest. Learning the structure lets you speak naturally and keep eye contact.\n\nPractise the opening, the links between points and the close most, since these are where speakers often stumble. If you can, rehearse once in the actual room.",
+          "code": {
+            "lang": "text",
+            "source": "ONE-WEEK REHEARSAL PLAN\n\nDay 1: Read the outline aloud twice. Cut anything that does not support the key message.\nDay 2: Speak from key-word cards, standing up. Time it.\nDay 3: Practise the opening and close until you can say them without cards.\nDay 4: Full run with slides (if you use them). Record it on your phone.\nDay 5: Watch the recording. Fix one thing in your voice and one in your body language.\nDay 6: Present to a friend or family member. Ask for one strength and one improvement.\nDay 7: One calm run-through. Pack your cards, a PDF of your slides and water."
+          }
+        },
+        {
+          "heading": "If something goes wrong",
+          "body": "Even well-prepared speakers have small problems. If you lose your place, pause, look at your card and carry on; a pause feels long to you but natural to the audience. If you make a mistake, correct it briefly ('Sorry, I mean Friday') and move on. If there is noise, wait a moment and smile, then continue. If the microphone fails, step forward and project your voice."
+        }
+      ],
+      "points": [
+        "Nervous feelings are normal and are often less visible than you think",
+        "Slow breathing, arriving early and knowing your opening help calm your body",
+        "Rehearse aloud, standing up, timed and from key-word cards",
+        "Practise your opening, your links between points and your close the most",
+        "If you lose your place, pause, check your card and continue"
+      ],
+      "mistakes": [
+        "Memorising a full script word for word — one forgotten word can throw you, so learn the structure and key words instead.",
+        "Rehearsing silently in your head — practise aloud so you hear your timing and any tricky words.",
+        "Apologising for being nervous — just begin; most audiences want you to do well."
+      ],
+      "task": "Write key-word cards for your three-minute talk, with full sentences only for your first and last lines. Follow at least four days of the rehearsal plan, and record your final run on your phone, writing down how long it took.",
+      "quiz": [
+        {
+          "q": "Just before you speak, your heart is racing. What helps?",
+          "opts": ["Drink an energy drink", "Take a few slow breaths, breathing out for longer than you breathe in", "Rush on and speak as fast as possible", "Tell the audience how scared you are"],
+          "a": 1,
+          "why": "Slow breathing, with a longer out-breath, helps your body settle before you begin."
+        },
+        {
+          "q": "Which rehearsal method is most effective?",
+          "opts": ["Reading the script silently in bed", "Only practising the slides", "Rehearsing once, five minutes before the talk", "Standing up and speaking aloud from key-word cards while timing yourself"],
+          "a": 3,
+          "why": "Speaking aloud, standing and timed, is the closest practice to the real thing."
+        },
+        {
+          "q": "Halfway through your talk, you forget your next point. What is the best action?",
+          "opts": ["Pause, glance at your card and continue", "Say 'I've forgotten everything' and sit down", "Start the whole talk again from the beginning", "Make up a new point that does not fit"],
+          "a": 0,
+          "why": "A short pause looks natural to the audience, and your card gets you back on track."
+        },
+        {
+          "q": "Why use key-word cards instead of reading a full script?",
+          "opts": ["Scripts are not allowed in schools", "Cards are more colourful", "You sound natural and can keep eye contact while staying on track", "Cards make the talk longer"],
+          "a": 2,
+          "why": "Key words remind you of the structure without tying your eyes to the page."
+        },
+        {
+          "q": "Which parts of a talk are most worth practising until you can say them without notes?",
+          "opts": ["The opening and the close", "The list of thank-yous only", "The slide numbers", "Only the parts you already know best"],
+          "a": 0,
+          "why": "A confident start calms your nerves, and a strong finish is what the audience often remembers best."
+        }
+      ]
+    },
+    {
+      "title": "Questions, feedback, debates and assemblies",
+      "goal": "Handle questions calmly, use feedback to improve, and adapt your skills for debates and school assemblies.",
+      "sections": [
+        {
+          "heading": "Handling questions",
+          "body": "Questions show that people were listening, so welcome them. Prepare by writing down five questions your audience is likely to ask and practising short answers. When someone asks a question:\n\n1. **Listen** to the whole question without interrupting.\n2. **Thank** them and **repeat or rephrase** it, so everyone hears it and you check you understood.\n3. **Answer briefly**, then link back to your key message if you can.\n\nIf you do not know, say so honestly: 'That is a good question. I don't know, but I will find out and tell you tomorrow.' Then do it. Making up an answer damages your credibility. If a question is rude, stay calm and polite and answer the issue, not the tone."
+        },
+        {
+          "heading": "Giving and using feedback",
+          "body": "Feedback is how speakers improve. Ask for it in a specific way: 'What was my strongest part?' and 'What is one thing I should change?' work far better than 'Was it good?' Listen without arguing, thank the person and write the comments down. Then choose one or two to work on next time.\n\nWhen you give feedback to others, be kind and specific. Name one real strength and one clear, practical improvement, such as 'Your library story was gripping; try pausing after your key message.'"
+        },
+        {
+          "heading": "Speaking in a debate",
+          "body": "School debates, such as an inter-school debate in Enugu, follow a formal structure. Each side speaks for or against a **motion**, a statement such as 'Social media does more harm than good to secondary-school students.' The proposition supports the motion and the opposition opposes it.\n\nA strong debate speech states your side clearly, defines key words, gives arguments with examples or evidence, and includes **rebuttal**: a reply to the other side's points. Attack arguments, never people. Keep your greetings to the chairperson, judges, timekeeper and audience short, watch the timekeeper's signals and finish before the bell.",
+          "code": {
+            "lang": "text",
+            "source": "DEBATE SPEECH OUTLINE\nMotion: 'Social media does more harm than good to secondary-school students'\nSide: Opposition (against the motion)\n\nGreeting (brief): Chairperson, judges, timekeeper, fellow debaters, audience.\nPosition: 'I stand to oppose the motion.'\nDefinition: Social media means apps for sharing and chatting online, such as WhatsApp and Instagram.\nArgument 1: Learning – free revision videos and online study groups.\nArgument 2: Opportunity – students can share their art, writing and projects.\nArgument 3: The problem is misuse, not the tools – guidance reduces the harm.\nRebuttal: 'The proposition says social media wastes time. But time can be wasted\n          in many ways; the answer is self-control and guidance, not blaming the tools.'\nConclusion: Restate the three arguments. 'I urge you to oppose the motion.'"
+          }
+        },
+        {
+          "heading": "Assemblies and announcements",
+          "body": "An assembly audience is large, often outdoors and sometimes restless, so keep your message short and clear. Cover **who, what, when, where** and **what to do**: 'All JSS pupils: the Science Fair is on Friday at 10am in the main hall. Bring your projects to the lab by 9am.' Repeat the most important details, such as the date and time, at the end. Speak slowly, project to the back rows and pause between details so people can take them in."
+        }
+      ],
+      "points": [
+        "Listen to the whole question, rephrase it, then answer briefly",
+        "It is fine to say 'I don't know, but I will find out'",
+        "Ask for specific feedback and act on one or two points",
+        "In debates, state your side clearly, give evidence and answer the other side's arguments politely",
+        "Assembly announcements should give who, what, when and where, and repeat the key details"
+      ],
+      "mistakes": [
+        "Interrupting a questioner or answering before they finish — let them finish, then respond.",
+        "Making up an answer — admit when you do not know and offer to find out.",
+        "Attacking the person instead of the argument in a debate — respond to what they said, not who they are.",
+        "Giving long greetings at assembly — keep them short so people hear the main message."
+      ],
+      "task": "Write five questions your audience might ask about your talk, with a short answer for each. Then write a 60-second assembly announcement about a school event that gives who, what, when, where and one action, and repeats the date and time at the end.",
+      "quiz": [
+        {
+          "q": "Someone asks a question you cannot answer. What is the best response?",
+          "opts": ["Make up an answer confidently", "Thank them, say honestly that you don't know and offer to find out", "Pretend you did not hear", "Tell them it is a silly question"],
+          "a": 1,
+          "why": "Honesty protects your credibility, and following up shows respect for the questioner."
+        },
+        {
+          "q": "Why repeat or rephrase a question from the audience before answering?",
+          "opts": ["To waste time", "To show the questioner was wrong", "Because you must always repeat it three times", "So everyone hears it and you check you understood"],
+          "a": 3,
+          "why": "Not everyone may have heard the question, and rephrasing makes sure you answer what was really asked."
+        },
+        {
+          "q": "In a debate, the other side says students waste time on social media. Which is the best rebuttal?",
+          "opts": ["Time can be wasted in many ways; guidance fixes the habit, and the same apps also offer free learning", "My opponent is lazy and wastes time too", "That is not true, because I said so", "I will simply ignore that point"],
+          "a": 0,
+          "why": "A good rebuttal answers the argument with reasoning and evidence, without attacking the person."
+        },
+        {
+          "q": "Which feedback request is most useful?",
+          "opts": ["Was it good?", "What was one strong part, and one thing I should improve?", "Did you like my shoes?", "Can you clap louder next time?"],
+          "a": 1,
+          "why": "Specific questions get specific answers that you can act on."
+        },
+        {
+          "q": "Which assembly announcement is clearest?",
+          "opts": ["There will be a thing soon somewhere, so please come", "Science is important and we all love science", "The Science Fair is on Friday at 10am in the main hall. Bring your projects to the lab by 9am. Again: Friday, 10am, main hall.", "Good morning to the principal, all the vice principals, all the teachers, all the prefects and everyone else here today…"],
+          "a": 2,
+          "why": "It gives what, when, where and what to do, and repeats the key details so people remember them."
+        }
+      ]
+    }
+  ],
+  "project": {
+    "title": "A 3-minute talk on a school topic",
+    "brief": "Plan, rehearse and record a three-minute talk on a school topic for a specific audience, such as why your school needs a reading club, how to revise for exams or keeping the school compound clean. Record it on a phone, then use feedback to make a second, improved recording.",
+    "steps": [
+      "Fill in a talk planning card: audience, purpose, key message, action and time limit.",
+      "Write an outline with a hook, a preview, three points with examples and a strong close, with timings that add up to three minutes.",
+      "Make up to four simple slides, or choose one visual aid such as a poster or an object.",
+      "Write key-word cards and mark pauses and stressed words on your opening and close.",
+      "Rehearse aloud on at least four different days, timing each run.",
+      "Record your talk on a phone, standing up, ideally in front of one or two listeners.",
+      "Ask for one strength and one improvement, prepare answers to three likely questions, then record a second version."
+    ],
+    "checklist": [
+      "The talk lasts between 2 minutes 45 seconds and 3 minutes 15 seconds.",
+      "The opening hook grabs attention within the first 30 seconds.",
+      "Each of the three points has an example or evidence.",
+      "You speak at a steady pace, pause after key points and look up from your notes.",
+      "The close repeats the key message and ends with a clear action or final line.",
+      "Everyone who appears in the recording agreed to it, and it stays private unless a parent or teacher approves sharing."
+    ]
+  }
+}

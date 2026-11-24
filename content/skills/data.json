@@ -1,0 +1,317 @@
+{
+  "id": "data",
+  "title": "Spreadsheets and data skills",
+  "icon": "📊",
+  "area": "Data",
+  "level": "Beginner",
+  "duration": "About 5 hours",
+  "summary": "Organise information in clean tables, calculate with formulas and functions, sort, filter and chart your data, then explain what it shows honestly and safely.",
+  "outcomes": [
+    "Set up and clean a table so that every row is one record and every column holds one kind of data",
+    "Write formulas with relative and absolute cell references that copy correctly",
+    "Use SUM, AVERAGE, MIN, MAX, COUNT, COUNTIF, IF and ROUND to answer questions about data",
+    "Sort, filter and highlight data without losing or mixing up records",
+    "Make an honest chart, write clear findings and protect people's privacy"
+  ],
+  "tools": "A free spreadsheet app. Google Sheets works in a browser and as a free Android or iPhone app, and needs a Google account (ask a parent or guardian before creating one). Microsoft Excel works on computers and as a phone app. LibreOffice Calc is free for computers and works offline. Everything in this course works in both Google Sheets and Excel, and any differences are pointed out. Practise only with made-up, non-sensitive data.",
+  "resources": [
+    { "title": "LearnFree — Google Sheets", "url": "https://www.learnfree.org/series/google-sheets", "note": "Free short lessons on cells, formulas, cell references, functions, sorting and filtering. Old GCFGlobal spreadsheet links now lead to LearnFree." },
+    { "title": "LearnFree — Excel: Foundations", "url": "https://www.learnfree.org/series/excel-foundations", "note": "The same style of free lessons for Microsoft Excel, from cell basics to formulas, functions and sorting." },
+    { "title": "Google Docs Editors Help — How to use Google Sheets", "url": "https://support.google.com/docs/answer/6000292", "note": "Google's official getting-started guide for creating, editing and sharing a spreadsheet." },
+    { "title": "Google Sheets function list", "url": "https://support.google.com/docs/table/25273", "note": "Every Google Sheets function with a short description. Look up any function you meet." },
+    { "title": "Google Docs Editors Help — Conditional formatting", "url": "https://support.google.com/docs/answer/78413", "note": "Official steps for colour rules and custom formulas in Google Sheets." },
+    { "title": "Microsoft Support — Excel help and learning", "url": "https://support.microsoft.com/en-us/excel", "note": "Microsoft's official Excel guides on formulas, functions, formatting and charts." },
+    { "title": "Microsoft Support — Relative, absolute and mixed references", "url": "https://support.microsoft.com/en-us/excel/switch-between-relative-absolute-and-mixed-references", "note": "A clear official explanation of $ references and the F4 shortcut." },
+    { "title": "freeCodeCamp — Learn Google Sheets for Beginners", "url": "https://www.freecodecamp.org/news/learn-google-sheets/", "note": "A free full course of about three hours on video, including charts and formulas. It uses a lot of data, so watch on Wi-Fi." }
+  ],
+  "chapters": [
+    {
+      "title": "Rows, columns, cells and clean tables",
+      "goal": "Find your way around a spreadsheet, set up a table with one record per row, and clean up messy entries.",
+      "sections": [
+        {
+          "heading": "Cells, columns and rows",
+          "body": "A spreadsheet is a grid. **Columns** run up and down and are named with letters (A, B, C and so on). **Rows** run across and are numbered (1, 2, 3 and so on). Each box is a **cell**, and its **address** is the column letter followed by the row number, so `B3` means column B, row 3. A group of cells is a **range**, written with a colon: `B2:B6` means every cell from B2 down to B6.\n\nOne file can hold several **sheets**, shown as tabs at the bottom. On a phone, tap a cell to select it, then type in the editing bar. On a computer, click a cell, type, and press Enter."
+        },
+        {
+          "heading": "One record per row, one kind of data per column",
+          "body": "Good tables follow a simple pattern that makes every later step easier:\n\n- **Row 1 holds the headings**, one per column, such as `Learner code`, `Class` and `Books read`.\n- **Each row below is one record**: one learner, one sale or one day.\n- **Each column holds one kind of data**: only numbers in `Books read`, only class names in `Class`.\n- Put units in the heading, such as `Price (N)`, and type plain numbers in the cells.\n- Avoid blank rows, merged cells and notes typed into number columns.\n\nOur fictional reading-challenge sheet uses this pattern. It has 8 learners with the codes R01 to R08 in A2:A9, their classes in B2:B9 (JSS1, JSS1, JSS2, JSS2, JSS3, JSS3, JSS1, JSS2) and the books each read this term in C2:C9 (4, 7, 2, 9, 5, 0, 6 and 3). Codes instead of names keep the data private, and they are all you need to answer questions about reading."
+        },
+        {
+          "heading": "Cleaning messy data",
+          "body": "Real data is often messy. A class might be typed as `JSS1`, `Jss 1` and `jss1` with a hidden space at the end. A spreadsheet treats those as three different classes, so counts and filters go wrong. Look out for:\n\n- inconsistent spellings or capitals\n- extra spaces at the start or end of an entry\n- numbers stored as text, such as `N500` or `five`\n- duplicate rows and empty cells\n\nUseful tools are **Find and replace** (Ctrl+H on a Windows computer, in both apps), **Remove duplicates** (Google Sheets: Data > Data cleanup > Remove duplicates; Excel: Data > Remove Duplicates), and the functions `TRIM`, which removes extra spaces, and `UPPER`, which changes letters to capitals. In the example, A2 contains jss 1 with extra spaces before and after it. Always keep a copy of the original data before you clean it, so you can check your changes.",
+          "code": { "lang": "formula", "source": "=UPPER(TRIM(A2))", "output": "JSS 1" }
+        },
+        {
+          "heading": "Small habits that keep tables tidy",
+          "body": "**Freeze the heading row** so it stays visible when you scroll (Google Sheets: View > Freeze > 1 row; Excel: View > Freeze Panes > Freeze Top Row). Give each sheet a clear name, such as `Reading Term 1`. Write formulas in a separate column instead of typing over the original numbers, so the raw data stays safe.\n\nBefore analysing, check for gaps. `COUNTBLANK` counts empty cells in a range and works the same in both apps. For the reading data it returns 0, so no learner is missing a number.",
+          "code": { "lang": "formula", "source": "=COUNTBLANK(C2:C9)", "output": "0" }
+        }
+      ],
+      "points": [
+        "A cell address is the column letter followed by the row number, such as B3.",
+        "A range such as B2:B6 includes every cell from B2 to B6.",
+        "Headings go in row 1; each row below is one record; each column holds one kind of data.",
+        "Clean data before analysing it: fix spellings, spaces, numbers stored as text and duplicates.",
+        "Keep a copy of the original data, and use codes instead of names."
+      ],
+      "mistakes": [
+        "Typing N500 or 500 naira into a price cell — the spreadsheet sees text and will not add it; put (N) in the heading and type 500.",
+        "Leaving blank rows or merged cells in the middle of a table, which breaks sorting and filtering.",
+        "Cleaning by retyping over the only copy of the data — duplicate the sheet first."
+      ],
+      "task": "Create a new spreadsheet called Reading Challenge. In row 1 type the headings Learner code, Class and Books read. Enter the eight made-up learners R01 to R08 with the classes and books read given in this chapter. Freeze the heading row, then use COUNTBLANK to check that no number is missing.",
+      "quiz": [
+        { "q": "What is the address of the cell in column D, row 7?", "opts": ["D7", "7D", "R7D", "D:7"], "a": 0, "why": "Cell addresses are written with the column letter first, then the row number." },
+        { "q": "How many cells are in the range B2:B6?", "opts": ["5", "4", "6", "2"], "a": 0, "why": "B2:B6 includes B2, B3, B4, B5 and B6, which is 5 cells." },
+        { "q": "A Price column contains 500, N500 and five hundred. What is the main problem?", "opts": ["Two entries are text, so formulas such as SUM will not add them", "The column is too narrow", "Prices must always go in column A", "Spreadsheets cannot store numbers above 100"], "a": 0, "why": "Only plain numbers can be calculated. Type 500 and show the currency in the heading or with number formatting." },
+        { "q": "Cell A2 contains jss 2 with extra spaces before and after it. What does =UPPER(TRIM(A2)) return?", "opts": ["JSS 2", "JSS2", "Jss 2, with the spaces kept", "An error, because TRIM and UPPER cannot be combined"], "a": 0, "why": "TRIM removes the extra spaces at the ends (it keeps single spaces between words), then UPPER changes the letters to capitals." },
+        { "q": "Why should each row in a table hold exactly one record?", "opts": ["So that sorting, filtering and counting treat each learner or sale as one unit", "So that the sheet uses less colour", "Because spreadsheets allow only one number per row", "So that the headings can go at the bottom"], "a": 0, "why": "When each row is one record, tools such as sort, filter and COUNTIF work correctly and keep each record's details together." }
+      ]
+    },
+    {
+      "title": "Formulas and cell references",
+      "goal": "Write formulas that calculate from cell references, copy them correctly, and lock a reference with $ when it must not move.",
+      "sections": [
+        {
+          "heading": "Formulas start with =",
+          "body": "A **formula** tells the spreadsheet to calculate. Every formula starts with `=`; without it, the spreadsheet just stores what you typed as text. The cell shows the **result**, while the formula bar shows the formula itself.\n\nThe operators are `+`, `-`, `*` (multiply), `/` (divide) and `^` (power). The usual order of operations (BODMAS) applies, so the example gives 14, while `=(2+3)*4` gives 20.\n\nIn this chapter we use a fictional tuck-shop sheet. Column A lists items, column B the price in naira, and column C the quantity sold this week:\n\n- Row 2: Meat pie, 500, 24\n- Row 3: Puff-puff (pack), 200, 40\n- Row 4: Zobo drink, 300, 35\n- Row 5: Doughnut, 400, 18\n- Row 6: Bottled water, 150, 50",
+          "code": { "lang": "formula", "source": "=2+3*4", "output": "14" }
+        },
+        {
+          "heading": "Use cell references, not typed numbers",
+          "body": "To find the sales for meat pie in D2, you could type `=500*24`, but `=B2*C2` is much better. A **cell reference** points to a cell, so if the price of meat pie changes to 550, the sales figure updates by itself. Typed numbers stay stuck and quietly become wrong.\n\nYou can type references, or tap or click cells while you write a formula to add them. Check each result with a quick estimate: 500 × 24 is a little less than 500 × 25 = 12,500, so 12,000 looks right.",
+          "code": { "lang": "formula", "source": "=B2*C2", "output": "12000" }
+        },
+        {
+          "heading": "Relative references: copying formulas",
+          "body": "When you copy a formula to another cell, its references **move with it**. Copy `=B2*C2` from D2 down to D3 and it becomes `=B3*C3`; in D4 it becomes the formula below. These are **relative references**, and they are why you only need to write a formula once.\n\nTo copy down on a computer, select the cell and drag the small square at its bottom-right corner (the **fill handle**) down the column. On a phone, copy the cell, select the cells below it and paste. After filling D2:D6, column D shows 12000, 8000, 10500, 7200 and 7500, and their total is 45200.",
+          "code": { "lang": "formula", "source": "=B4*C4", "output": "10500" }
+        },
+        {
+          "heading": "Absolute references with $",
+          "body": "Sometimes one reference must **not** move. Suppose the tuck shop plans to raise every price by the percentage typed in cell F1 (10%). In E2, the new price of meat pie is the formula below. The dollar signs in `$F$1` make an **absolute reference**, which stays fixed wherever you copy it, so E3 becomes `=B3*(1+$F$1)` and gives 220.\n\nWithout the dollar signs, E3 would become `=B3*(1+F2)`. F2 is empty and counts as 0, so the price would not rise at all, and nothing warns you.\n\nMixed references lock just one part: `$F1` locks the column and `F$1` locks the row. On a computer, put the cursor on a reference and press **F4** to cycle through the options; this works in both Excel and Google Sheets (some laptops need the Fn key as well). On a phone, type the `$` signs yourself.",
+          "code": { "lang": "formula", "source": "=B2*(1+$F$1)", "output": "550" }
+        }
+      ],
+      "points": [
+        "Every formula starts with =, and the cell shows the result.",
+        "Use cell references such as B2 instead of typed numbers, so results update.",
+        "Relative references (B2) move when copied; absolute references ($F$1) stay fixed.",
+        "Mixed references lock only the column ($F1) or only the row (F$1).",
+        "Check every formula with a rough estimate."
+      ],
+      "mistakes": [
+        "Forgetting the = sign, so the cell shows B2*C2 as text instead of a result.",
+        "Typing numbers into formulas (=500*24), which do not update when the data changes.",
+        "Copying a formula that should always point to one cell without adding $, so it drifts to empty cells and gives wrong answers or #DIV/0!."
+      ],
+      "task": "Type the tuck-shop data into a new sheet. In D2 write =B2*C2 and copy it down to D6, then add up the column in D7 with =D2+D3+D4+D5+D6 (the next chapter shows a quicker way). Type 10% in F1, write =B2*(1+$F$1) in E2 and copy it down. Change F1 to 20% and watch every new price update.",
+      "quiz": [
+        { "q": "B2 contains 500 and C2 contains 24. What does =B2*C2 return?", "opts": ["12000", "524", "B2*C2", "50024"], "a": 0, "why": "* multiplies, so the formula multiplies 500 by 24 to give 12000." },
+        { "q": "D2 contains =B2*C2. You copy it down to D4. What formula is in D4?", "opts": ["=B4*C4", "=B2*C2", "=B3*C3", "=D4*D4"], "a": 0, "why": "Relative references move with the formula. Moving down two rows changes each 2 to a 4." },
+        { "q": "The total of column D is in D7. Which formula in E2 can be copied down to find each item's share of the total?", "opts": ["=D2/$D$7", "=D2/D7", "=$D$2/D7", "=D7/D2"], "a": 0, "why": "D2 must move to D3, D4 and so on, while $D$7 stays fixed on the total." },
+        { "q": "What does =2+3*4 return?", "opts": ["14", "20", "234", "9"], "a": 0, "why": "Multiplication comes before addition, so 3*4 = 12, and then 2 + 12 = 14." },
+        { "q": "Someone copied =D2/D7 down a column and the next row shows #DIV/0!. Why?", "opts": ["The copied formula became =D3/D8, and D8 is empty", "The numbers in column D are too big", "Spreadsheets cannot divide", "The heading row is frozen"], "a": 0, "why": "Without $, D7 moved to D8. An empty cell counts as zero, and dividing by zero gives #DIV/0!." }
+      ]
+    },
+    {
+      "title": "Everyday functions",
+      "goal": "Use SUM, AVERAGE, MIN, MAX, COUNT, COUNTIF, IF and ROUND to summarise data and answer questions.",
+      "sections": [
+        {
+          "heading": "What a function is",
+          "body": "A **function** is a ready-made calculation with a name. You write `=`, the name, then brackets holding the **arguments**: the cells or values the function needs, separated by commas. Most functions accept a range, so `=SUM(C2:C9)` adds eight cells at once. Every function in this chapter has the same name and works the same way in Google Sheets and Excel.\n\nOne difference to know: if your app is set to a region that writes decimals with a comma, as many European countries do, you separate arguments with semicolons instead, for example `=ROUND(A1;1)`. With English (Nigeria) or English (UK) settings, use commas.\n\nWe will use the reading-challenge sheet from Chapter 1: codes in A2:A9, classes in B2:B9 and books read in C2:C9 (4, 7, 2, 9, 5, 0, 6 and 3).",
+          "code": { "lang": "formula", "source": "=SUM(C2:C9)", "output": "36" }
+        },
+        {
+          "heading": "AVERAGE, MIN and MAX",
+          "body": "- `=AVERAGE(C2:C9)` adds the numbers and divides by how many there are: 36 ÷ 8 = 4.5.\n- `=MAX(C2:C9)` finds the largest value (9) and `=MIN(C2:C9)` finds the smallest (0).\n\nTogether these tell you more than the average alone. An average of 4.5 books sounds steady, but MIN and MAX show that one learner read nothing while another read nine. AVERAGE ignores empty cells but counts zeros, so type 0 only when the true answer is zero.",
+          "code": { "lang": "formula", "source": "=AVERAGE(C2:C9)", "output": "4.5" }
+        },
+        {
+          "heading": "COUNT and COUNTIF",
+          "body": "`COUNT` counts how many cells contain **numbers**; it skips text and empty cells. To count every non-empty cell, including text, use `COUNTA`. `COUNTIF` counts only the cells that meet a condition, called the **criterion**, which goes in quotation marks:\n\n- `=COUNTIF(C2:C9,\">=5\")` counts the learners who read 5 or more books.\n- `=COUNTIF(B2:B9,\"JSS1\")` counts the learners in JSS1, which gives 3. Text criteria ignore capitals, so `\"jss1\"` works too.\n\nThe comparison signs you can use are `=`, `>`, `<`, `>=`, `<=` and `<>` (not equal to).",
+          "code": { "lang": "formula", "source": "=COUNTIF(C2:C9,\">=5\")", "output": "4" }
+        },
+        {
+          "heading": "IF and ROUND",
+          "body": "`IF` makes a decision. It has three arguments: a test, what to show if the test is true, and what to show if it is false. In D2, the formula below checks learner R01. C2 is 4, so the result is Keep going. Copy it down column D to label every learner.\n\n`ROUND` tidies long decimals: `=ROUND(value, places)`. The average of the first three learners is 13 ÷ 3 = 4.333…, and `=ROUND(AVERAGE(C2:C4),1)` gives 4.3. Both apps round halves away from zero, so `=ROUND(2.5,0)` gives 3. ROUND changes the value itself, while number formatting only changes how a value looks.",
+          "code": { "lang": "formula", "source": "=IF(C2>=5,\"Target met\",\"Keep going\")", "output": "Keep going" }
+        }
+      ],
+      "points": [
+        "Functions are written =NAME(arguments), with commas between the arguments.",
+        "SUM, AVERAGE, MIN and MAX summarise a range of numbers.",
+        "COUNT counts numbers; COUNTA counts any filled cell; COUNTIF counts cells that meet a condition.",
+        "IF(test, value if true, value if false) labels or decides.",
+        "ROUND(value, places) changes the value; number formatting only changes how it looks."
+      ],
+      "mistakes": [
+        "Leaving out the quotation marks around a COUNTIF condition, as in =COUNTIF(C2:C9,>=5) — write \">=5\".",
+        "Choosing the wrong range, such as C2:C8 when the data goes down to C9 — check the highlighted cells before pressing Enter.",
+        "Using COUNT on a column of names and getting 0 — use COUNTA for text."
+      ],
+      "task": "In your Reading Challenge sheet, add a summary area below the table with a label and a formula for each of these: total books, average, highest, lowest, number of learners (COUNTA) and number who read 5 or more (COUNTIF). Add an IF formula in column D to label each learner Target met or Keep going. Check two of the results by hand.",
+      "quiz": [
+        { "q": "Books read are in C2:C9. Which formula counts the learners who read at least 5 books?", "opts": ["=COUNTIF(C2:C9,\">=5\")", "=COUNT(C2:C9)", "=SUM(C2:C9,\">=5\")", "=COUNTIF(C2:C9,\">5\")"], "a": 0, "why": "COUNTIF counts cells that meet a condition. At least 5 means 5 or more, so the condition is >=5, not >5." },
+        { "q": "C2:C5 contain 4, 6, absent and 8. What does =COUNT(C2:C5) return?", "opts": ["3", "4", "18", "1"], "a": 0, "why": "COUNT only counts cells holding numbers. The word absent is text, so it is skipped." },
+        { "q": "C2 contains 5. What does =IF(C2>=5,\"Target met\",\"Keep going\") show?", "opts": ["Target met", "Keep going", "TRUE", "5"], "a": 0, "why": "5 >= 5 is true, so IF shows its second argument, Target met." },
+        { "q": "What does =ROUND(7.456,1) return?", "opts": ["7.5", "7.4", "7.46", "7"], "a": 0, "why": "Rounding to 1 decimal place looks at the next digit (5), so 7.456 rounds up to 7.5." },
+        { "q": "B2 contains 10, B3 is empty and B4 contains 20. What does =AVERAGE(B2:B4) return?", "opts": ["15", "10", "30", "An error"], "a": 0, "why": "AVERAGE ignores empty cells, so it averages 10 and 20 to get 15. If B3 held 0, the answer would be 10." }
+      ]
+    },
+    {
+      "title": "Sorting, filtering and conditional formatting",
+      "goal": "Reorder and narrow down a table safely, and use conditional formatting to make important values stand out.",
+      "sections": [
+        {
+          "heading": "Sorting without breaking rows",
+          "body": "**Sorting** puts rows in order, such as A to Z or largest to smallest. The golden rule is that every row must move as a whole. If you sort only the Books read column, the numbers move but the learner codes stay put, and your data is ruined.\n\nTo sort safely, select the whole table, including the headings, then:\n\n- **Google Sheets:** choose Data > Sort range > Advanced range sorting options, tick **Data has header row**, then pick the column and the order.\n- **Excel:** choose Data > Sort, tick **My data has headers**, then pick the column and the order. If Excel offers to expand the selection, say yes.\n\nSorting the reading data by Books read, largest first, puts R04 (9 books) at the top and R06 (0 books) at the bottom. If anything goes wrong, undo straight away with Ctrl+Z."
+        },
+        {
+          "heading": "Filters show only the rows you need",
+          "body": "A **filter** hides the rows that do not match a rule, without deleting anything. Turn one on with Data > Create a filter (Google Sheets) or Data > Filter (Excel). Small buttons appear in the headings; tap one to show, for example, only JSS1 or only items priced N300 or more. Turn the filter off and every row comes back.\n\nBe careful: `SUM` still adds the hidden rows. To total only the rows you can see, use `SUBTOTAL`. Its first argument, 109, means \"add up, skipping hidden rows\", and it works the same in both apps. In the tuck-shop sheet, filtering to items priced N300 or more leaves meat pie, zobo and doughnut, so the visible sales in D2:D6 add up to 29700.",
+          "code": { "lang": "formula", "source": "=SUBTOTAL(109,D2:D6)", "output": "29700" }
+        },
+        {
+          "heading": "Conditional formatting",
+          "body": "**Conditional formatting** changes a cell's colour or style automatically when its value meets a rule, so patterns jump out. Find it under Format > Conditional formatting (Google Sheets) or Home > Conditional Formatting (Excel).\n\n- A simple rule: colour the cells in C2:C9 that are greater than or equal to 5.\n- A **colour scale** shades numbers from low to high, which helps you spot the extremes.\n- A **custom formula** can highlight a whole row. Apply the rule to A2:C9 and use the formula below. The `$` locks column C, so every cell in a row checks the Books read value, while the row number changes from row to row. In Google Sheets choose **Custom formula is**; in Excel choose **New Rule > Use a formula to determine which cells to format**.",
+          "code": { "lang": "formula", "source": "=$C2>=5", "output": "TRUE for R02, R04, R05 and R07, so those four rows are highlighted" }
+        },
+        {
+          "heading": "Use colour carefully",
+          "body": "Colour helps, but it should not be the only signal. Some people cannot tell red from green, and printed sheets are often black and white. Add a text label as well, such as the Target met column from Chapter 3, and stick to one or two highlight colours.\n\nRemove old rules you no longer need, because they pile up and confuse anyone who opens the file later. Both apps let you see, edit and delete the rules for a sheet."
+        }
+      ],
+      "points": [
+        "Select the whole table and mark the header row before sorting, so records stay together.",
+        "Filters hide rows temporarily; they never delete data.",
+        "SUM includes hidden rows; SUBTOTAL(109, range) adds only the visible ones.",
+        "Conditional formatting colours cells by rule, and =$C2>=5 can highlight whole rows.",
+        "Pair colour with text labels so everyone can read the result."
+      ],
+      "mistakes": [
+        "Sorting a single column on its own, which separates values from their records — always sort the whole table, and undo at once if it goes wrong.",
+        "Forgetting that a filter is on and thinking rows have been deleted — look for the filter buttons in the heading row.",
+        "Writing a row-highlight rule as =C2>=5 without the $, so cells in the other columns check the wrong cells."
+      ],
+      "task": "In your Reading Challenge sheet, sort the table by Books read from largest to smallest and check that each learner code kept its own number. Turn on a filter and show only JSS2. Then add a conditional formatting rule with the custom formula =$C2>=5 to highlight the whole row of every learner who met the target.",
+      "quiz": [
+        { "q": "You select only column C (Books read) and sort it from largest to smallest. What goes wrong?", "opts": ["The numbers no longer match the right learner codes", "The numbers are deleted", "The sheet turns into a chart", "Nothing, because the whole table always moves"], "a": 0, "why": "Only the selected column is reordered, so the books read are separated from their learners. Select the whole table before sorting." },
+        { "q": "A filter shows only the JSS1 learners. What does =SUM(C2:C9) show?", "opts": ["The total for all learners, including the hidden rows", "The total for JSS1 only", "0", "An error, because rows are hidden"], "a": 0, "why": "SUM ignores filters and adds every cell in the range. Use SUBTOTAL(109,C2:C9) to add only the visible rows." },
+        { "q": "Which custom formula, applied to A2:C9, highlights the whole row of each learner who read 5 or more books (books are in column C)?", "opts": ["=$C2>=5", "=C$2>=5", "=$C$2>=5", "=$A2>=5"], "a": 0, "why": "$C locks the column so every cell checks Books read, and the unlocked row number moves to each row. C$2 and $C$2 would check row 2 for every row." },
+        { "q": "What happens to rows hidden by a filter?", "opts": ["They stay in the sheet and return when the filter is removed", "They are deleted permanently", "They move to a new sheet", "They are emailed to the file owner"], "a": 0, "why": "Filters only hide rows from view. Clearing the filter shows everything again." },
+        { "q": "Why should a colour-highlighted sheet also have a text column such as Target met?", "opts": ["Some people cannot tell certain colours apart, and printouts may be black and white", "Text makes the file open faster", "Conditional formatting stops working without text", "Spreadsheets cannot print colours"], "a": 0, "why": "Colour should support the meaning, not carry it alone, so that everyone can read the result." }
+      ]
+    },
+    {
+      "title": "Charts that tell the truth",
+      "goal": "Choose a suitable chart for a question, build it with clear labels, and avoid designs that mislead.",
+      "sections": [
+        {
+          "heading": "Pick the chart that answers your question",
+          "body": "Start with the question you want the chart to answer, then pick the type:\n\n- **Column or bar chart:** compares separate categories, such as sales of each tuck-shop item or books read by each class.\n- **Line chart:** shows change over time, such as daily sales across two weeks, with time along the bottom.\n- **Pie chart:** shows the parts of one whole, and only works with a few slices that add up to 100%. With many slices, a bar chart is clearer.\n\nAvoid 3D effects and decorations. They make values harder to read and add nothing."
+        },
+        {
+          "heading": "Making a chart",
+          "body": "1. Select the data **including the headings**, for example the item names in A1:A6 and the sales in D1:D6. To select two columns that are not next to each other, hold Ctrl while selecting on a computer, or copy them into a small helper table on a phone.\n2. Google Sheets: Insert > Chart. Excel: Insert > Recommended Charts, or pick a chart type.\n3. Check that the chart type and the columns used are right. In Google Sheets this is on the chart editor's Setup tab.\n4. Add a title that says what and when, such as Tuck-shop sales by item, week 1 (fictional data), and label the axes with units, such as Sales (N)."
+        },
+        {
+          "heading": "Honest axes and fair comparisons",
+          "body": "A chart can be accurate and still give the wrong impression. Watch for these traps:\n\n- **A cut-off axis.** Suppose week 1 sales (in B2) were 45,200 and week 2 sales (in B3) were 49,720. If the value axis starts at 40,000 instead of 0, the week 2 bar looks almost twice as tall, yet the formula below shows the real rise is 10%. Bars should start at zero. Some apps choose a higher starting value when numbers are close, so check: in Google Sheets, open the chart editor's Customise (Customize) tab, then Vertical axis, and set Min to 0; in Excel, right-click the axis, choose Format Axis and set the Minimum bound to 0.\n- **Cherry-picking.** Showing only the best weeks hides the full story.\n- **Unfair comparisons.** Comparing the total books of a class of 40 with a class of 10 is unfair; use averages or percentages.",
+          "code": { "lang": "formula", "source": "=(B3-B2)/B2", "output": "0.1 (shows as 10% when formatted as a percentage)" }
+        },
+        {
+          "heading": "Check before you share",
+          "body": "Before you share a chart, read it as if you were seeing it for the first time:\n\n- Does the title say what, where and when?\n- Are the axes labelled with units, and does a bar or column chart start at zero?\n- Do the bars or points match the numbers in the table? Check the biggest and smallest by hand.\n- Is the source stated, for example \"fictional tuck-shop data, week 1\"?\n- Would someone who cannot see colour still understand it?\n\nA chart is evidence for a finding, so it should be something you are happy to explain and defend."
+        }
+      ],
+      "points": [
+        "Bar or column charts compare categories; line charts show change over time; pie charts show the parts of one whole.",
+        "Select the headings with the data so the chart labels itself.",
+        "Give every chart a clear title, axis labels with units and a data source.",
+        "Bar and column charts should start at zero, so check the axis setting.",
+        "Calculate the real change, for example with =(B3-B2)/B2, before describing a chart."
+      ],
+      "mistakes": [
+        "Using a pie chart with many slices, or for data that is not parts of one whole — use a bar chart instead.",
+        "Letting the value axis of a bar chart start above zero, which makes small differences look huge.",
+        "Leaving a default title such as Chart 1 with no dates or units."
+      ],
+      "task": "Make a column chart of sales by item from your tuck-shop sheet. Give it a full title, label the axes and note that the data is fictional. Then make a copy of the chart and set its axis minimum to 7,000 instead of 0. Write two sentences comparing how the two versions make the bottled water and meat pie sales look.",
+      "quiz": [
+        { "q": "Which chart best compares the week's sales of five tuck-shop items?", "opts": ["A column or bar chart", "A line chart", "A pie chart with each day as a slice", "A scatter chart of the item names"], "a": 0, "why": "Separate categories, such as items, are compared most clearly with bars." },
+        { "q": "Which chart best shows how daily sales changed over ten school days?", "opts": ["A line chart with the days along the bottom", "A pie chart with ten slices", "A single column showing the total", "A colour scale on the totals with no chart"], "a": 0, "why": "Line charts show change over an ordered period, such as days." },
+        { "q": "A bar chart's axis starts at 40,000. Sales of 45,200 and 49,720 look as if one bar is about twice the other. What is the honest description?", "opts": ["Sales rose by 10%, and the cut-off axis exaggerates the difference", "Sales doubled", "Sales fell", "The chart proves the tuck shop will double its profit"], "a": 0, "why": "(49,720 − 45,200) ÷ 45,200 = 0.1, a 10% rise. Starting the bars above zero makes it look much bigger." },
+        { "q": "Week 1 sales are in B2 and week 2 sales are in B3. Which formula gives the percentage change?", "opts": ["=(B3-B2)/B2", "=B3-B2/B2", "=(B2-B3)/B3", "=B3/B2-B2"], "a": 0, "why": "Percentage change is the change divided by the starting value. The brackets make the subtraction happen first; =B3-B2/B2 would divide before subtracting." },
+        { "q": "When is a pie chart a sensible choice?", "opts": ["To show how one total is split into a few parts", "To show change over a year", "To compare 20 different classes", "To show two unrelated totals"], "a": 0, "why": "Pie slices are the parts of one whole. With many slices, or over time, they become hard to read." }
+      ]
+    },
+    {
+      "title": "Explaining findings and protecting data",
+      "goal": "Write clear, honest findings backed by numbers, state their limits, and handle data in ways that protect people's privacy.",
+      "sections": [
+        {
+          "heading": "From numbers to findings",
+          "body": "A **finding** is a short, clear sentence that answers a question using evidence from the data. A good finding names the group, gives a number, and compares or explains:\n\n- Weak: \"Reading was good.\"\n- Strong: \"In this fictional sample of 8 learners, half read 5 or more books this term.\"\n\nPercentages make findings easier to compare. The formula below divides the number of learners who met the target (COUNTIF) by the number of learners (COUNTA). Format the cell as a percentage and it shows 50%. Lead with your most important finding, and keep each one to a sentence or two.",
+          "code": { "lang": "formula", "source": "=COUNTIF(C2:C9,\">=5\")/COUNTA(A2:A9)", "output": "0.5 (shows as 50% when formatted as a percentage)" }
+        },
+        {
+          "heading": "Be honest about limits",
+          "body": "Every dataset has limits, and saying so makes your work more trustworthy, not less:\n\n- **Small samples.** Eight learners cannot tell you about a whole school, let alone the whole country.\n- **Missing data.** If two learners did not hand in their reading log, say so.\n- **Averages hide spread.** An average of 4.5 books includes one learner who read none.\n- **Correlation is not causation.** If reading went up in the same weeks as library visits, you can say the two rose together in this data. You cannot say the visits caused the rise without more evidence, because something else, such as a reading competition, might explain both.\n\nUse careful words such as \"suggests\", \"in this sample\" and \"rose together\"."
+        },
+        {
+          "heading": "Protecting people's data",
+          "body": "Data about people deserves care. Before collecting anything, ask: **do I need it?**\n\n- Collect only what answers your question. A reading challenge needs a code, a class and a number, not phone numbers, home addresses or dates of birth.\n- Use codes instead of names. If a list linking codes to names is needed at all, keep it separate and private.\n- Ask permission before collecting information about anyone, and tell them how it will be used.\n- Never practise with real school records or other people's private details.\n\nNigeria has a law about this, the Nigeria Data Protection Act 2023, which expects organisations to collect personal data fairly, keep it secure and use it only for clear purposes. Good habits now prepare you for that."
+        },
+        {
+          "heading": "Sharing a spreadsheet safely",
+          "body": "When you share a file, give the least access that does the job:\n\n- **Google Sheets:** tap Share, add specific people, and choose **Viewer**, **Commenter** or **Editor**. Keep General access set to **Restricted** unless the file really must be public.\n- **Excel:** use Share and choose whether people can view or edit; avoid links that anyone can open.\n- Protect important cells from accidental changes (Google Sheets: Data > Protect sheets and ranges; Excel: Review > Protect Sheet).\n- Before sharing, check for hidden columns or old sheets with private details, and delete them from the copy you share.\n\nIf you are under 18, ask a teacher, parent or guardian before sharing any data about other people. In Google Sheets, File > Version history lets you go back if someone makes a mistake."
+        }
+      ],
+      "points": [
+        "A good finding names the group, gives a number and answers a question.",
+        "Always state the limits: sample size, missing data and spread.",
+        "Two things rising together does not prove that one caused the other.",
+        "Collect only the data you need, and use codes instead of names.",
+        "Share with specific people at the lowest access level that works."
+      ],
+      "mistakes": [
+        "Claiming a small sample represents everyone — say \"in this sample of 8 learners\" instead.",
+        "Saying one thing caused another just because they happened at the same time.",
+        "Sharing a sheet as \"anyone with the link can edit\", or hiding private columns instead of removing them from the shared copy."
+      ],
+      "task": "Write three findings about your Reading Challenge or tuck-shop sheet, each with a number from the sheet, and add one limitation for each. Then write a short privacy note for the file: what data it holds, who can see it, and what you removed or chose not to collect.",
+      "quiz": [
+        { "q": "Which finding is written most honestly?", "opts": ["In this fictional sample of 8 learners, half read 5 or more books this term", "Nigerian students read 5 books every term", "Everyone in the class loves reading", "The data proves reading makes people clever"], "a": 0, "why": "It names the sample, gives a number from the data and makes no claim beyond it." },
+        { "q": "Reading went up in the same weeks that library visits went up. What can you safely say?", "opts": ["The two rose together in this data", "Library visits definitely caused more reading", "More reading definitely caused more library visits", "Reading and library visits are unrelated"], "a": 0, "why": "The pattern shows the two moved together. Proving a cause needs more evidence, since something else might explain both." },
+        { "q": "A class sheet for a reading challenge has these columns. Which should be removed before sharing?", "opts": ["Parents' phone numbers", "Learner code", "Class", "Books read"], "a": 0, "why": "Phone numbers are personal data that the reading challenge does not need. Collect and share only what answers the question." },
+        { "q": "Your teacher needs to read your Google Sheet but should not change it. Which access level fits?", "opts": ["Viewer", "Editor", "Owner", "Anyone with the link can edit"], "a": 0, "why": "Viewer lets someone see the sheet without changing it, which is the lowest access that does the job." },
+        { "q": "COUNTIF(C2:C9,\">=5\") returns 4 and COUNTA(A2:A9) returns 8. What does =COUNTIF(C2:C9,\">=5\")/COUNTA(A2:A9) show when the cell is formatted as a percentage?", "opts": ["50%", "4%", "200%", "12%"], "a": 0, "why": "4 ÷ 8 = 0.5, which is 50% as a percentage." }
+      ]
+    }
+  ],
+  "project": {
+    "title": "Tuck-shop fortnight report",
+    "brief": "Analyse two weeks of fictional sales from a school tuck shop, then present one honest chart and three findings for an imaginary tuck-shop committee. All the data is made up, so you can practise freely, and nothing in the file is about real people.",
+    "steps": [
+      "Create a sheet with the headings Day, Week, Meat pie (N), Puff-puff (N), Zobo (N) and Total (N). Enter these made-up sales for meat pie, puff-puff and zobo. Week 1: Mon 2500, 1600, 2100; Tue 3000, 1800, 1800; Wed 2000, 1400, 2400; Thu 2500, 1800, 2700; Fri 3500, 2400, 3000. Week 2: Mon 2000, 1200, 1500; Tue 3000, 2000, 2100; Wed 2500, 1600, 2400; Thu 3000, 1800, 2700; Fri 4000, 2600, 3300.",
+      "Clean and check: make sure every sales cell is a plain number, freeze the heading row, and use COUNT on the three sales columns to confirm that there are 30 numbers.",
+      "In the Total (N) column, write a formula such as =SUM(C2:E2) in the first data row and copy it down to all ten days.",
+      "Below the table, add a labelled summary: the total for each item with SUM, the average daily total with AVERAGE, the best and worst daily totals with MAX and MIN, and the number of days over N7000 with COUNTIF.",
+      "Work out each week's total, then the percentage change from week 1 to week 2 with a formula like =(week 2 total - week 1 total)/week 1 total. Round it with ROUND and format it as a percentage.",
+      "Use conditional formatting to highlight the days whose total is above the average, and add an IF column that labels each day Above average or Below average. Sort a copy of the table by Total (N) to find the top three days.",
+      "Make one chart that answers one question, for example a line chart of daily totals or a column chart of total sales per item. Give it a full title, axis labels with units, a zero baseline for bars and a note that the data is fictional.",
+      "Write three honest findings, each with a number from your sheet, and one limitation for each (for example: only two weeks of data, and no information about weather or school events).",
+      "Before sharing, check that the file holds no personal data, then share it view-only with one person, such as your teacher."
+    ],
+    "checklist": [
+      "Every formula gives the right answer when you check at least two cells by hand.",
+      "The table has clear headings, one day per row and plain numbers only.",
+      "The chart type suits the question, bars start at zero, and it has a title, axis labels and a fictional-data note.",
+      "Each finding includes a number from the sheet and avoids claims about causes.",
+      "The file is shared view-only with specific people and contains no personal data."
+    ]
+  }
+}
